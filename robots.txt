@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.uzmdental.com/sitemap.xml
+Sitemap: https://uzmdental.com/sitemap.xml

@@ -1994,7 +1994,7 @@ details[open] > summary .uzm-acc-chev {
 
 /* BAOT SOL SÜTUN: "NASIL YARDIM EDEBİLİRİZ" + "ÖNE ÇIKAN ÜRÜNLER" */
 .uzm-sidebar-help-card {
-  background: linear-gradient(155deg, rgba(10, 20, 36, 0.92) 0%, rgba(22, 48, 82, 0.94) 100%), url('/uploads/uzm_zircrown_5d_ml_disc.png') center/cover no-repeat;
+  background: linear-gradient(155deg, #0A1424 0%, #163052 100%);
   color: #FFFFFF;
   border-radius: 14px;
   padding: 22px 20px;

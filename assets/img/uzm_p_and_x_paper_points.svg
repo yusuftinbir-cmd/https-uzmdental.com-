@@ -1,17 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="UZM Dental P Series &amp; X Series Absorbent Paper Points">
-  <rect width="640" height="420" rx="18" fill="#FAF8F5"/>
-  <rect x="16" y="16" width="608" height="388" rx="14" fill="#FFFFFF" stroke="#E6E1D8"/>
-  <rect x="40" y="56" width="268" height="308" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
-  <text x="174" y="92" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#141413">P SERİSİ (RECIPROC UYUMLU)</text>
-  <polygon points="106,125 118,125 114,315 110,315" fill="#EF4444"/>
-  <polygon points="168,125 180,125 176,315 172,315" fill="#141413"/>
-  <polygon points="230,125 242,125 238,315 234,315" fill="#FACC15"/>
-  <text x="174" y="342" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#475569">P25 (Kırmızı) · P40 (Siyah) · P50 (Sarı)</text>
-  <rect x="332" y="56" width="268" height="308" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
-  <text x="466" y="92" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#141413">X SERİSİ (PROTAPER NEXT UYUMLU)</text>
-  <polygon points="382,125 394,125 390,315 386,315" fill="#FACC15"/>
-  <polygon points="434,125 446,125 442,315 438,315" fill="#EF4444"/>
-  <polygon points="486,125 498,125 494,315 490,315" fill="#3B82F6"/>
-  <polygon points="538,125 550,125 546,315 542,315" fill="#22C55E"/>
-  <text x="466" y="342" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#475569">X1 · X2 · X3 · X4 · X5 (100 Adet)</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600">
+  <rect width="960" height="600" rx="24" fill="#0f172a"/>
+  <rect x="28" y="28" width="904" height="544" rx="20" fill="#17233c" stroke="#38bdf8" stroke-width="2"/>
+  <rect x="56" y="56" width="848" height="68" rx="12" fill="#0f172a" stroke="#334155"/>
+  <text x="80" y="97" fill="#7dd3fc" font-family="Arial, sans-serif" font-size="18" font-weight="bold">UZM DENTAL · ENDODONTİ · P SERİSİ EMİCİ KÂĞIT KONİLER</text>
+  <g transform="translate(180, 175)">
+    <polygon points="0,0 28,0 19,230 9,230" fill="#f8fafc" stroke="#cbd5e1"/>
+    <rect x="0" y="0" width="28" height="24" rx="4" fill="#ef4444"/>
+    <polygon points="140,0 168,0 159,230 149,230" fill="#f8fafc" stroke="#cbd5e1"/>
+    <rect x="140" y="0" width="28" height="24" rx="4" fill="#f59e0b"/>
+    <polygon points="280,0 308,0 299,230 289,230" fill="#f8fafc" stroke="#cbd5e1"/>
+    <rect x="280" y="0" width="28" height="24" rx="4" fill="#3b82f6"/>
+    <polygon points="420,0 448,0 439,230 429,230" fill="#f8fafc" stroke="#cbd5e1"/>
+    <rect x="420" y="0" width="28" height="24" rx="4" fill="#10b981"/>
+    <polygon points="560,0 588,0 579,230 569,230" fill="#f8fafc" stroke="#cbd5e1"/>
+    <rect x="560" y="0" width="28" height="24" rx="4" fill="#64748b"/>
+  </g>
+  <text x="80" y="460" fill="#f1f5f9" font-family="Arial, sans-serif" font-size="25" font-weight="bold">P Serisi Emici Kâğıt Koniler (Paper Point)</text>
+  <rect x="56" y="495" width="848" height="52" rx="10" fill="#1e293b" stroke="#475569"/>
+  <text x="80" y="527" fill="#fbbf24" font-family="Arial, sans-serif" font-size="18" font-weight="bold">TEMSİLİ ÜRÜN GÖRSELİ · RENK KODLU EMİCİ KÂĞIT KONİ ŞEMASI</text>
 </svg>

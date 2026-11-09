@@ -1,0 +1,1879 @@
+
+/* === UZM-0LLM-YAMA-2043: ?lang= HTML LANG & RTL SENKRONU === */
+(function () {
+  try {
+    var params = new URLSearchParams(window.location.search || "");
+    var rawLang = (params.get("lang") || "").toLowerCase().trim();
+    var validLangs = { tr: "tr", en: "en", ar: "ar", zh: "zh", "zh-cn": "zh" };
+    if (rawLang && validLangs[rawLang]) {
+      var targetLang = validLangs[rawLang];
+      document.documentElement.setAttribute("lang", targetLang);
+      document.documentElement.setAttribute("dir", targetLang === "ar" ? "rtl" : "ltr");
+      try { localStorage.setItem("uzm_lang", targetLang); } catch (e) {}
+    }
+  } catch (err) {}
+})();
+
+
+/* === GROK-1104-1954-UZM-V2-OTONOM-OLCUM: ?lang= HTML LANG & RTL SENKRONU === */
+(function () {
+  try {
+    var params = new URLSearchParams(window.location.search || "");
+    var rawLang = (params.get("lang") || "").toLowerCase().trim();
+    var validLangs = { tr: "tr", en: "en", ar: "ar", zh: "zh", "zh-cn": "zh" };
+    if (rawLang && validLangs[rawLang]) {
+      var targetLang = validLangs[rawLang];
+      document.documentElement.setAttribute("lang", targetLang);
+      document.documentElement.setAttribute("dir", targetLang === "ar" ? "rtl" : "ltr");
+      try { localStorage.setItem("uzm_lang", targetLang); } catch (e) {}
+    }
+  } catch (err) {}
+})();
+
+/**
+ * UZM Dental (:8796) — 6 Dil (TR · EN · DE · AR · RU · ZH) Anadil B2B Dental Yazım Motoru (Native Transcreation)
+ * CSP Uyumlu: script-src 'self' (Sıfır inline script).
+ * Rollere Göre Doğal Dental Terminoloji:
+ *   - TR: Baş Seramist & Endodonti Klinik Direktörü
+ *   - EN: Master Ceramist & Clinical Endodontics Specialist
+ *   - DE: Zahntechnikermeister & Fachzahnarzt für Endodontie
+ *   - AR: كبير خبراء الخزف السني واستشاري علاج الجذور (RTL)
+ *   - RU: Зубной техник высшей категории и врач-стоматолог-эндодонтист
+ *   - ZH: 首席牙科技师与牙髓病科临床总监
+ */
+(function () {
+  'use strict';
+
+  var UZM_I18N_DICT = {
+  "tr": {
+    "lang": "tr",
+    "sinter_btn_fast": "1–3 Üye Hızlı",
+    "sinter_btn_std": "4–6 Üye Standart",
+    "sinter_btn_long": "7+ Üye Uzun Ark",
+    "drawer_studio_desc": "Sürgüyü sağa-sola kaydırarak soğuk izostatik preslenmiş (İzostatik Pres) tebeşir kıvamındaki ham diskin fırınlama sonrası gerçek ışık geçirgenliğini inceleyin.",
+    "drawer_compare_lbl": "HAM İzostatik Pres DİSK (%0) ⇄ SİNTERLENMİŞ RESTORASYON (%100)",
+    "foy_pmma_title": "PMMA Ürün Ailesi & Çap Tablosu",
+    "th_pmma_family": "Ürün Ailesi",
+    "td_pmma_family": "Monolayer · Multilayer · Clear · Opaque (X-Ray)",
+    "th_pmma_sys": "Sistem Uyumluluğu",
+    "td_pmma_sys": "98 mm CAD/CAM Sistemleri · 95 mm Sistemler · Amann Girrbach (AG)",
+    "th_pmma_dim": "Mevcut Boyutlar",
+    "td_pmma_dim": "98 × (16, 18, 20, 30 mm) · 95 × 18 mm · AG × 18 mm",
+    "th_pmma_shades": "Mevcut Renkler",
+    "td_pmma_shades": "A1, A2, BL3, Clear (Şeffaf)",
+    "th_pmma_ind": "Klinik Endikasyon",
+    "td_pmma_ind": "Geçici kron/köprü restorasyonları, oklüzal splint, gece plağı, radyografik tanı ve takip",
+    "th_pmma_trace": "Kayıt & İzlenebilirlik",
+    "td_pmma_trace": "ÜTS Kayıt Süreçleri Tamamlanmış Ürünler · QR Kodlu Teknik Doküman",
+    "foy_endo1_title": "Teknik Föy & Kutu İçeriği",
+    "td_med_steel": "Tıbbi Paslanmaz Çelik",
+    "th_calibration": "Kalibrasyon",
+    "td_iso_slots": "ISO #20–#60 Referans Yuvaları",
+    "th_sterilization": "Sterilizasyon",
+    "td_autoclave_135": "135°C Otoklav Uyumu",
+    "th_purpose": "Kullanım Amacı",
+    "td_endo1_purpose": "Master cone uç kesme & apikal çap kontrolü",
+    "foy_endo2_title": "Teknik Föy: Kalibrasyon Yuvaları",
+    "th_hole_diams": "Delik Çapları",
+    "td_iso_std_holes": "ISO Standart Delikleri (#20, #25, #30, #35, #40, #45, #50, #55, #60)",
+    "td_autoclave_resist": "135°C Otoklav Dayanımı",
+    "th_usage_area": "Kullanım Alanı",
+    "td_endo2_usage": "Hassas apikal ölçüm & koni hazırlama",
+    "foy_endo3_title": "Taper, Boyut & Kutu Matrisi",
+    "th_taper": "Taper",
+    "th_avail_dims": "Mevcut Boyutlar",
+    "th_box_content": "Kutu İçeriği",
+    "td_iso_std_gp": "ISO Standart GP",
+    "td_gp_box_100": "100 Adet (Milimetrik Çizgili)",
+    "td_iso_angled_gp": "ISO Açılı GP",
+    "td_gp_box_60_rad": "60 Adet · Yüksek Radyoopak",
+    "td_f_series_gp": "F Serisi GP",
+    "td_variable": "Değişken",
+    "td_f_series_dims": "F1, F2, F3, F4, F5 (ve Asstd)",
+    "td_gp_box_60_rotary": "60 Adet · Rotary Sistem Uyumlu",
+    "td_x_series_gp": "X Serisi GP",
+    "td_x_series_dims": "X1, X2, X3, X4, X5 (ve Asstd)",
+    "td_gp_box_60_xshape": "60 Adet · X-Shape Rotary Uyumlu",
+    "td_p_series_gp": "P Serisi GP",
+    "td_reciproc": "Resiprokal",
+    "td_gp_box_60_recip": "60 Adet · Resiprokal Uyumlu",
+    "td_paper_points": "Paper Points",
+    "td_pp_box": "100 / 200 Adet · Steril Selüloz",
+    "row_ht_fast": "ZirCrown Hızlı Sinter 3D-PRO",
+    "st6_badge": "CAD/CAM DİSK İÇİ",
+    "st6_title": "Frezelenmiş Disk İçi Köprü Yuvaları",
+    "pmma_m_proc_lbl": "İŞLEME PROTOKOLÜ",
+    "pmma_m_proc_val": "Soğuk Freze",
+    "pmma_m_proc_note": "Fırınlama / Pişirme Yok",
+    "pmma_m_diam_lbl": "ÇAP SEÇENEKLERİ",
+    "pmma_m_diam_note": "Açık Sistem Uyumluluğu",
+    "pmma_m_ind_lbl": "ENDİKASYON",
+    "pmma_m_ind_val": "Geçici · Splint · Kılavuz",
+    "pmma_oem_ml": "OEM DİSK · PMMA-ML",
+    "pmma_lbl_proc": "İŞLEME",
+    "pmma_oem_clear": "OEM DİSK · PMMA-CLEAR",
+    "pmma_lbl_opt": "OPTİK",
+    "pmma_oem_xray": "OEM DİSK · PMMA-XRAY",
+    "pmma_lbl_feat": "ÖZELLİK",
+    "zirkon_prism_title": "ZirCrown® Çok Katmanlı Disk Serisi",
+    "zirkon_lbl_sys": "SİSTEM",
+    "zirkon_val_sys": "Açık Ø98.5mm",
+    "zirkon_oem_3dpro": "OEM DİSK · 3D-PRO-ML",
+    "zirkon_oem_5d": "OEM DİSK · 5D-ML",
+    "zirkon_oem_st": "OEM DİSK · ST-ML",
+    "lbl_trans": "IŞIK GEÇİRGENLİĞİ (%)",
+    "dir": "ltr",
+    "dropdown_lbl": "TR ▾",
+    "title_home": "UZM DENTAL — ZirCrown Optik Seramik & Endodonti Sistemleri",
+    "title_studio": "ZirCrown Fırınlanmış Restorasyon & VITA Renk Skalası Arşivi | UZM Dental",
+    "title_zirkonya": "ZirCrown Zirkonyum Bloklar | UZM Dental",
+    "title_pmma": "ZirCrown PMMA Diskler | UZM Dental",
+    "title_endo": "ZirCrown Endodonti Sistemleri | UZM Dental",
+    "title_sinter": "ZirCrown Sinterleme Eğrisi ve Isıl İşlem Analizi | UZM Dental",
+    "title_katalog": "ZirCrown Ürün Kataloğu ve Arşivi | UZM Dental",
+    "brand_sub": "ZirCrown · CAD/CAM & Endo",
+    "nav_blocks": "Zirkonyum Bloklar",
+    "nav_pmma": "PMMA Diskler",
+    "nav_sinter": "Sinterleme Eğrisi",
+    "nav_studio": "Stüdyo Seçkisi",
+    "nav_endo": "Endodonti",
+    "nav_brochures": "Broşürler",
+    "theme_light": "Açık Mod",
+    "theme_dark": "Obsidyen Mod",
+    "quote_btn": "Numune & Teklif",
+    "hamburger_aria": "Mobil Menü",
+    "hero_eyebrow": "DENTAL CAD/CAM ZİRKONYA BLOKLARI · ZIRCROWN® CIP",
+    "hero_title_html": "Dental CAD/CAM <em>Zirkonya Blokları</em> &amp; Çok Katmanlı Diskler",
+    "hero_lead": "Soğuk izostatik presleme (CIP) ile üretilen ZirCrown® çok katmanlı zirkonya diskler; eksiz mamelon geçişi, 1200 MPa kırılma direnci ve açık CAD/CAM sistemleriyle (Ø 98.5 mm) laboratuvar iş akışınızı güçlendirir.",
+    "cta_explore": "Zirkonyum Serilerini İncele",
+    "cta_analysis": "Canlı Katman & MPa Analizi",
+    "metric_trans_lbl": "IŞIK GEÇİRGENLİĞİ",
+    "metric_trans_val": "%43 – %60",
+    "metric_trans_note": "İnsizal → Servikal Gradyan",
+    "metric_strength_lbl": "EĞİLME DİRENCİ",
+    "metric_strength_val": "650 – 1200 MPa",
+    "metric_strength_note": "3-Nokta Bükülme Direnci",
+    "metric_cad_lbl": "CAD/CAM UYUMU",
+    "metric_cad_val": "Ø 98.5 mm",
+    "metric_cad_note": "10 mm – 25 mm · VITA 16 + BL",
+    "simulator_tag": "CANLI OPTİK KESİT SİMÜLATÖRÜ",
+    "stat_trans": "IŞIK GEÇİRGENLİĞİ",
+    "stat_mpa": "EĞİLME DİRENCİ",
+    "stat_temp": "SİNTERLEME",
+    "lbl_mpa": "EĞİLME DİRENCİ (MPa)",
+    "lbl_temp": "ÖNERİLEN SİNTERLEME SICAKLIĞI",
+    "lbl_ind": "İDEAL ENDİKASYON",
+    "msb_title": "UZM Dental B2B Masası",
+    "msb_sub": "Doğrudan Numune & B2B Teklif Masası",
+    "msb_btn": "Numune & Teklif Al →",
+    "drawer_config": "SEÇİLEN KONFİGÜRASYON",
+    "drawer_add": "Numune / Teklif Listesine Ekle",
+    "quote_modal_tag": "DOĞRUDAN B2B LABORATUVAR MASASI",
+    "quote_modal_title": "Numune ve Kurumsal Teklif Listesi",
+    "quote_input_ph": "Laboratuvar / Klinik Adı ve Şehir",
+    "whatsapp_btn": "WhatsApp ile Hızlı Fiyat & Numune İste",
+    "zirkonya_h1": "Doğal Translüsensi Gradyanı, Yüksek Bükülme Direnci.",
+    "zirkonya_lead": "Soğuk izostatik presleme (İzostatik Pres) ile üretilen ZirCrown çok katmanlı zirkonyum diskler; eksiz mamelon geçişi, sıfır kenar kırılması (chipping) ve exocad / 3Shape tam kalibrasyonuyla laboratuvar iş akışınızı sadeleştirir.",
+    "pmma_h1": "Yüksek Biyo-Uyumluluk, Sıfır Fırınlama Gereksinimi.",
+    "pmma_lead": "Yüksek yoğunluklu ve homojen çapraz bağlı yapısıyla ZirCrown CAD/CAM PMMA diskleri; uzun dönem geçici kron-köprüler, splintler ve cerrahi kılavuzlar için geliştirilmiştir. Sıfır sinterleme fırınlama süresi, üstün boyutsal stabilite ve kolay polisaj avantajı sağlar.",
+    "endo_h1": "Isıl İşlem Görmüş ISO 6877 Gutta Percha Konileri, Milimetrik Obturasyon.",
+    "endo_lead": "Biyouyumlu alfa/beta faz dengesi ve mikron düzeyinde koniklik toleransı ile apikal sızdırmazlıkta yüksek başarı.",
+    "sinter_h1": "ZirCrown 1450°C – 1530°C Sinterleme Eğrisi ve Bükülme Dayanımı Dengesi",
+    "studio_eyebrow": "ZIRCROWN® · GERÇEK SİNTERLENMİŞ MONOLİTİK KÖPRÜ & BLOK ARŞİVİ",
+    "studio_heading": "ZirCrown® Gerçek Sinterlenmiş Kron & VITA Renk Karşılaştırma Galerisi (40 Stüdyo Karesi)",
+    "katalog_h1": "ZirCrown Zirkonya, PMMA ve Endodonti Stüdyo Koleksiyonu",
+    "sec1_tag": "01 / OPTİK SERAMİK PORTFÖYÜ",
+    "sec1_title": "ZirCrown Zirkonyum Blok Ailesi",
+    "sec1_sub": "Anterior estetikten tam ark implant üstü köprülere kadar her klinik endikasyon için optimize edilmiş çok katmanlı ZirCrown zirkonyum blok serileri. Katman geçişleri, sinterleme eğrileri ve teknik parametreler için ilgili seriyi inceleyin.",
+    "pill_all": "Tümü (6 Seri)",
+    "pill_anterior": "Anterior &amp; Estetik",
+    "pill_allround": "Tam Ark &amp; Uzun Köprü",
+    "pill_posterior": "Posterior &amp; Altyapı",
+    "sec2_tag": "02 / CAD/CAM BİO-UYUMLU POLİMERLER",
+    "sec2_title": "UZM Dental PMMA Disk Ailesi",
+    "sec2_sub": "Uzun süreli geçici restorasyonlar, teşhis protezleri ve cerrahi implant kılavuzları için monolitik, çok katmanlı, optik şeffaf ve radyoopak CAD/CAM disk serisi.",
+    "pmma_pill_all": "Tüm PMMA (4 Seri)",
+    "pmma_pill_temp": "Geçici &amp; Prova",
+    "pmma_pill_splint": "Splint &amp; Gece Plağı",
+    "pmma_pill_guide": "Cerrahi Kılavuz &amp; X-Ray",
+    "sec3_tag": "03 / MÜHENDİSLİK MATRİSİ &amp; ARŞİV ÇEKMECELERİ",
+    "sec3_title": "800–1200 MPalar ve Stüdyo Seçkisi",
+    "sec3_sub": "İhtiyaç duyduğunuz teknik referans çekmecesini tek tıkla genişletin.",
+    "matrix_badge": "TABLO 01",
+    "matrix_title": "ZirCrown 6 Seri Karşılaştırma ve Sinterleme Matrisi",
+    "matrix_sub": "Işık geçirgenliği (%), 3-nokta eğilme direnci (MPa), sinterleme tepe sıcaklığı ve kalınlık aralığı",
+    "th_block_series": "Blok Serisi",
+    "th_architecture": "Mimari",
+    "th_translucency": "Işık Geçirgenliği",
+    "th_flex_strength": "Eğilme Direnci",
+    "th_sinter_peak": "Sinterleme Tepe",
+    "th_thickness": "Kalınlık (Ø 98.5mm)",
+    "th_detail": "Detay",
+    "btn_inspect": "İncele",
+    "row_arch_10l": "10 Katman Multilayer",
+    "row_arch_8l": "9 Katman Kademeli",
+    "row_arch_6l_aest": "6 Katman Multilayer",
+    "row_arch_6l_bal": "9 Katman Gradyan",
+    "row_arch_4l_mono": "4 Katman Multilayer",
+    "row_arch_mono_infra": "Monolitik Altyapı",
+    "row_temp_1500": "1500°C (2 Saat)",
+    "row_temp_1490": "1490°C (2 Saat)",
+    "row_temp_1510": "1510°C (2 Saat)",
+    "row_trans_homo": "%43 Homojen",
+    "row_trans_high_str": "%43 – %55 Hızlı Sinter",
+    "sinter_badge": "SİNTER 02",
+    "sinter_title": "ZirCrown Termal Fırınlama ve Sinterleme Eğrileri",
+    "sinter_sub": "Hızlı (1–3 üye 1500°C), Standart (4–6 üye 1500°C) ve Uzun Ark (7+ üye 1530°C) protokolleri",
+    "th_resto_type": "Restorasyon Tipi",
+    "th_ramp_up": "Isıtma Rampası",
+    "th_peak_temp": "Tepe Sıcaklık (Tmax)",
+    "th_hold_time": "Bekleme Süresi",
+    "th_ramp_down": "Soğutma Rampası",
+    "th_total_time": "Toplam Süre",
+    "row_fast_title": "1–3 Üye Tek Kron / Küçük Köprü (Hızlı)",
+    "row_std_title": "4–6 Üye Standart Köprü",
+    "row_long_title": "7+ Üye Uzun Ark / Tam Çene Köprü",
+    "time_2h": "2 Saat",
+    "time_25h": "2.5 Saat",
+    "time_3h": "3.0 Saat",
+    "time_45h": "~4.5 Saat",
+    "time_6h": "~6.0 Saat",
+    "time_95h": "~9.5 Saat",
+    "ramp_down_10": "10°C / dk",
+    "ramp_down_8": "8°C / dk",
+    "ramp_down_5ctrl": "5°C / dk (kontrollü)",
+    "btn_open_sinter_sim": "İnteraktif Sinter Simülatörünü Aç &rarr;",
+    "studio_badge": "STÜDYO 02",
+    "studio_title": "Pişmiş Zirkon &amp; Sinterlenmiş Restorasyon Stüdyosu",
+    "studio_sub": "Siyah optik ayna zemin üzerinde sinterlenmiş gerçek ZirCrown® 3D-ML, ST-ML, 4D-ML, 5D-ML ve 3D-PRO restorasyonların VITA A2 / D2 renk skalası doğrulamaları. Her köprünün önünde kendi blok ve VITA renk plakası yer almaktadır.",
+    "st1_title": "VITA A2 Doğrulamalı Karşılaştırmalı Sinter Restorasyon",
+    "st1_desc": "Siyah optik ayna üzerinde VITA A2 tab kılavuzu ile doğrulanmış 3D-ML ve ST-ML fırınlanmış monolitik kronlar.",
+    "st2_title": "ZirCrown Multilayer Uzun Ark Monolitik Köprü",
+    "st2_desc": "ZirCrown Multilayer zirkonya sinterleme protokolü (1530°C) ile elde edilen doğal insizal translüsensi ve servikal kroma geçişi.",
+    "st3_title": "3 Üye Anterior Monolitik Köprü",
+    "st3_desc": "1500°C sinterleme sonrası doğal opalesans ve marjinal kenar stabilitesi sergileyen 3 üye anterior restorasyon.",
+    "st4_title": "Posterior Monolitik Köprü Bukkal Profil",
+    "st4_desc": "1200 MPa homojen dayanımlı ST-ML serisi ile çiğneme kuvvetlerine dirençli fırınlanmış köprü vakası.",
+    "st5_title": "ST-ML A2 &amp; D2 Renk Skalası Karşılaştırması",
+    "st5_desc": "Doğrudan siyah optik aynada VITA A2 ve D2 ton ayrımını ve servikal yoğunluğu sergileyen ikili vaka analizi.",
+    "st6_desc": "CAD/CAM frezeleme sonrası sinterleme öncesi ham fazda marjinal detay ve bağlantı konnektörlerinin anatomik dağılımı.",
+    "btn_inspect_studio": "Stüdyo Galerisinde İncele &rarr;",
+    "st40_summary": "40 Kare Gerçek Laboratuvar Restorasyonu ve VITA Doğrulama Sicili",
+    "st40_desc": "UZM Dental laboratuvar arşivinden gelen 40 adet yüksek çözünürlüklü restorasyon fotoğrafı (3D-ML, ST-ML, 4D-ML, 5D-ML) siyah optik ayna ve VITA A2 / D2 renk kılavuzları referans alınarak sinterlenmiş gerçek laboratuvar vakalarıdır.",
+    "btn_open_full_studio": "40 Kare Tam Stüdyo Galerisini Aç &rarr;",
+    "endo_badge": "ENDO 03",
+    "endo_title": "Endodontik Obtürasyon, Gutta Percha &amp; Hassas Kalibrasyon Sistemleri",
+    "endo_sub": "Lazer ölçekli Gutta Percha, Paper Point, paslanmaz çelik Gutta Makası ve Gutta Corrector kalibratörü",
+    "endo_c1_tag": "KLİNİK MAKAS",
+    "endo_c1_title": "UZM Dental Gutta Makası (Gutta-Cutter)",
+    "endo_c1_desc": "Gutta-perka konilerini apikal çap ölçülerine göre deformasyonsuz kesen ve kalibre eden paslanmaz çelik hassas kesme makası.",
+    "endo_c1_meta": "ISO #20–#60 Yuvalar · Paslanmaz Çelik · 135°C Otoklav",
+    "endo_c2_tag": "KALİBRASYON CETVELİ",
+    "endo_c2_title": "UZM Dental Gutta Corrector (Master Cone Cetveli)",
+    "endo_c2_desc": "Uygun koni bulunmadığında koni ucunu ISO referans delikleriyle kontrollü keserek doğru master cone hazırlamayı sağlayan paslanmaz çelik cetvel.",
+    "endo_c2_meta": "ISO Referans Yuvaları · Paslanmaz Çelik · 135°C Otoklav",
+    "endo_c3_tag": "OBTÜRASYON",
+    "endo_c3_title": "Lazer Kalibrasyonlu Gutta Percha &amp; Paper Point",
+    "endo_c3_desc": "Milimetrik derinlik çizgili, kadmiyumsuz radyoopak güta-perka konileri ve yüksek emicilikli steril paper point serisi.",
+    "endo_c3_meta": "ISO Standart · .02 / .04 / .06 · F &amp; P Serisi",
+    "endo_c4_tag": "CAD/CAM GEÇİCİ DİSK",
+    "endo_c4_title": "UZM Dental PMMA CAD/CAM Geçici Diskler",
+    "endo_c4_desc": "Geçici kron/köprü restorasyonları, estetik geçiciler, oklüzal splint ve radyografik değerlendirme için CAD/CAM disk serisi.",
+    "endo_c4_meta": "98 mm · 95 mm · AG Sistemleri · 16 – 30 mm",
+    "btn_add_to_quote": "Teklif Listesine Ekle",
+    "catalog_badge": "KATALOG 04",
+    "catalog_title": "Resmi Teknik PDF Broşür ve Şartname Kütüphanesi",
+    "catalog_sub": "ZirCrown 2026 Broşürü, PMMA CAD/CAM Kataloğu ve Gutta Percha Kılavuzu",
+    "br1_tag": "ZİRKONYA KATALOĞU",
+    "br1_title": "ZirCrown® 2026 Ürün Broşürü (PDF)",
+    "br1_desc": "Tüm 6 zirkonyum serisinin katman geçişleri, bükülme dirençleri ve fırın sinterleme tabloları.",
+    "br1_btn": "Broşürü İndir (PDF · 2.1 MB)",
+    "br2_tag": "PMMA KATALOĞU",
+    "br2_title": "PMMA CAD/CAM Geçici Diskler Broşürü (PDF)",
+    "br2_desc": "Monolayer, Multilayer ve X-Ray disklerin fiziksel parametreleri, frezeleme ayarları ve ebat seçenekleri.",
+    "br2_btn": "Broşürü İndir (PDF · 3.8 MB)",
+    "br3_tag": "ENDODONTİ KILAVUZU",
+    "br3_title": "Gutta Percha &amp; Obtürasyon Sistemleri (PDF)",
+    "br3_desc": "ISO renk kodları, taper geometrileri, radyoopasite ölçümleri ve klinik uygulama yönergeleri.",
+    "br3_btn": "Broşürü İndir (PDF · 3.2 MB)",
+    "footer_desc": "Klinik ve CAD/CAM laboratuvarları için doğrudan kurumsal tedarik, fırın kalibrasyon desteği ve Parti İzlenebilirlik Sistemi lot izlenebilirliği.",
+    "footer_studio": "Stüdyo Galeri",
+    "footer_katalog": "Teknik Katalog",
+    "footer_sinter": "Optik Simülasyon",
+    "footer_endo": "Endodonti Klinik",
+    "zirkonya_eyebrow": "Ø 98.5MM İZOSTATİK ZİRKONYA · AÇIK CAD/CAM SİSTEM",
+    "zirkonya_h1_html": "Doğal Translüsensi Gradyanı, <em>Yüksek Bükülme Direnci</em>.",
+    "pmma_eyebrow": "CAD/CAM DENTAL PMMA POLİMER · SOĞUK FREZELEME",
+    "pmma_h1_html": "Yüksek Yoğunluklu Çapraz Bağlı <em>CAD/CAM PMMA Blokları</em>, Sıfır Sinterleme.",
+    "reg_badge": "MEVZUAT 05",
+    "reg_title": "T.C. Sağlık Bakanlığı ÜTS Kayıtları, Fabrika LOT Doğrulama & IVISTA Bilim Heyeti",
+    "reg_sub": "Hangzhou IVISTA Medical Ar-Ge, MedPath GmbH Münih EC-REP, Dr. Yao Cheng Liderliği, CE & ISO Akreditasyonları",
+    "reg_c1_title": "Tıbbi Cihaz Mevzuatı & Kayıtlar",
+    "reg_c1_desc": "T.C. Sağlık Bakanlığı Ürün Takip Sistemi (ÜTS) kayıtlı ve %100 izlenebilir. CE 0197 Onaylanmış Kuruluş, ISO-13485:2016 Kalite Yönetim Sistemi ve ISO 6872 Dental Seramik Uygunluk Sertifikaları.",
+    "reg_c2_title": "Üretici Bilim Kurulu & Menşei",
+    "reg_c2_desc": "Üretici: Hangzhou IVISTA Medical Devices Co., Ltd. (10+ yıl Ar-Ge). Avrupa Yetkili Temsilcisi: MedPath GmbH, Mies-van-der-Rohe-Strasse 8, 80807 Münih, Almanya. Kurucu & Teknik Direktör: Dr. Yao Cheng (Fiziksel Kimya Doktora, Çin Bilimler Akademisi; Post-Doktora Stockholm Üniversitesi; 14 yıl Dental Ar-Ge).",
+    "reg_c3_title": "Parti/LOT Doğrulama & QR Güvenlik Sicili",
+    "reg_c3_desc": "Her zirkonya ve PMMA diskinde tekil fabrika parti numarası (LOT). Kutu üzerindeki QR kod ile parti bazlı ışık geçirgenliği (%43–%60), eğilme direnci (650–1200 MPa) ve fırın sinterleme test föyü dijital doğrulanır.",
+    "reg_c4_title": "PMMA CAD/CAM Polimer Teknolojisi",
+    "reg_c4_desc": "Yüksek Yoğunluklu Çapraz Bağlı (High-Density Cross-Linked) homojen yapı. Monolayer, Multilayer, Clear (şeffaf gece plağı/splint), Opaque (X-Ray kontrastlı cerrahi rehber). Soğuk frezeleme, %0 sinterleme fırını gereksinimi.",
+    "kat_kicker": "KURUMSAL GÖRSEL VE DOKÜMAN ARŞİVİ",
+    "kat_lead": "Ana sayfa hızını ve mobil ergonomiyi korumak üzere 40 parçalık tam stüdyo çekim koleksiyonu ve yüksek çözünürlüklü PDF kataloglarımız bu arşivde toplanmıştır.",
+    "kat_c1_title": "ZirCrown 3D-ML Multilayer Disk Serisi",
+    "kat_c1_text": "Servikal 1200 MPa dayanımdan insizal %57–%60 ışık geçirgenliğine kademesiz geçiş.",
+    "kat_c1b_title": "ZirCrown 4D-ML Multilayer Disk Serisi",
+    "kat_c1b_text": "9 katman kademeli (%45–%59 geçirgenlik, 700–1000 MPa dayanım) ön ve arka bölge estetik zirkonya blok serisi.",
+    "kat_c2_title": "Tam Ark Monolitik & İmplant Üstü Köprüler",
+    "kat_c2_text": "Minimum porselen yığılımı veya saf monolitik glazür ile doğal oklüzal anatomi.",
+    "kat_c3_title": "Klinik Endodonti & Obturasyon Ailesi",
+    "kat_c3_text": "ISO Ø 0.15–0.40 mm uç çapı ve .02/.04/.06 konik uyumlu kanal dolum sistemleri.",
+    "kat_btn_zircrown": "ZirCrown 2026 HD Katalog İndir (PDF)",
+    "kat_btn_pmma": "PMMA Katalog İndir (PDF)",
+    "kat_btn_endo": "Endodonti Katalog İndir (PDF)",
+    "sim_kicker": "LABORATUVAR FIRIN PROTOKOLÜ",
+    "sim_lead": "Çok katmanlı (3D/4D Multilayer) ve tek katmanlı (ST-ML / 3D-ML / 3D-PRO / 4D-ML / 5D-ML) ZirCrown disklerde maksimum ışık geçirgenliği ve faz stabilitesi için önerilen standart sinterleme programı:",
+    "sim_th_stage": "Aşama",
+    "sim_th_tstart": "Başlangıç Sıcaklığı",
+    "sim_th_ttarget": "Hedef Sıcaklık",
+    "sim_th_rate": "Isıtma / Soğutma Hızı",
+    "sim_th_dwell": "Bekleme Süresi (Dwell)",
+    "sim_th_note": "Laboratuvar Notu",
+    "sim_r1_c1": "1. Ön Isıtma",
+    "sim_r1_c2": "25°C (Oda)",
+    "sim_r1_c4": "8°C / dk",
+    "sim_r1_c5": "30 dk",
+    "sim_r1_c6": "Renklendirme likidi uygulanmış kronların ön kurutma sonrası termal dengelemesi",
+    "sim_r2_c1": "2. Sinterleme Tırmanışı",
+    "sim_r2_c4": "4°C – 5°C / dk",
+    "sim_r2_c5": "120 dk",
+    "sim_r2_c6": "Tam yoğunlaşma (6.08 g/cm³) ve %43–%60 hedef foton geçirgenliğinin kilitlenmesi",
+    "sim_r3_c1": "3. Kontrollü Soğutma",
+    "sim_r3_c4": "≤ 8°C / dk (Fırın Kapalı)",
+    "sim_r3_c6": "Termal şok ve mikro çatlak oluşumunu önlemek için fırın kapağı 200°C’den önce açılmaz",
+    "endo_kicker1": "ALICI YOLU B · DİŞ KLİNİKLERİ VE ENDODONTİ UZMANLARI",
+    "endo_page_h1": "Isıl İşlem Görmüş ISO 6877 Gutta Percha Konileri, Milimetrik Obturasyon Konları ve Gutta Percha Corrector Kalibrasyon Ekipmanları",
+    "endo_page_lead": "Eğri ve kalsifiye kök kanallarında döngüsel yorulma direncini maksimize eden ISO 6877 Kalibreli Gutta Percha döner eğe sistemleri ile birebir aynı koniklikteki (.02 / .04 / .06 Taper) Gutta Percha ve Absorban Paper Points serileri.",
+    "endo_btn_quote": "Klinik Endodonti Teklifi İste",
+    "endo_btn_brochure": "Endodonti Teknik Broşürü (PDF)",
+    "endo_btn_wa": "WhatsApp Klinik Destek",
+    "endo_caption": "Lazer derinlik işaretli (18 / 19 / 20 / 22 / 24 mm) Gutta Percha ve kalibre obturasyon uyumu",
+    "endo_kicker2": "ISO 6877 Kalibreli Gutta Percha & KALİBRE OBTURASYON",
+    "endo_sec_h2": "ISO 6877 Gutta Percha Konileri, Gutta Percha ve Absorban Paper Points Teknik Matrisi",
+    "endo_legend": "<strong>Teknik Ölçü Lejandı:</strong> ISO Uç Çapı Ø 0.15–0.40 mm · .04/.06 Taper Koniklik &nbsp;|&nbsp; Renk Kodlaması: Beyaz (Ø 0.15 mm) · Sarı (Ø 0.20 mm) · Kırmızı (Ø 0.25 mm) · Mavi (Ø 0.30 mm) · Yeşil (Ø 0.35 mm) · Siyah (Ø 0.40 mm) &nbsp;|&nbsp; Çalışma Boyları: 21 mm · 25 mm · 31 mm.",
+    "endo_th_group": "Ürün Grubu",
+    "endo_th_iso": "ISO Uç Çapı Aralığı",
+    "endo_th_taper": "Taper (Koniklik)",
+    "endo_th_length": "Çalışma Boyu / İşaretleme",
+    "endo_th_feature": "Kutu İçeriği & Klinik Özellik",
+    "endo_r1_c1": "<strong>UZM Gold / Blue ISO 6877 Gutta Percha & Paper Point Seti</strong>",
+    "endo_r1_c2": "Ø 0.15 mm – Ø 0.40 mm (Assorted & Tek Boy)",
+    "endo_r1_c3": ".04 ve .06 Sabit / Değişken Taper",
+    "endo_r1_c5": "6’lı blister paket · Ön-bükülebilir kontrollü hafıza, apikal basamak oluşturmayan güvenli uç",
+    "endo_r2_c1": "<strong>UZM Standart ISO Gutta Percha Konları</strong>",
+    "endo_r2_c2": "ISO #15 – #80 (Tek Boy ve Assorted)",
+    "endo_r2_c3": ".02 Standart El Eğesi Uyumu",
+    "endo_r2_c4": "Lazer milimetrik işaretli (18, 19, 20, 22, 24 mm)",
+    "endo_r2_c5": "120 adetlik sürgülü kutu · Biyouyumlu doğal gutta percha reçinesi, yüksek radyoopasite",
+    "endo_r3_c1": "<strong>UZM Özel Taper Açılı Gutta Percha Konları</strong>",
+    "endo_r3_c3": ".04 ve .06 Döner Sistem Uyumu",
+    "endo_r3_c4": "Milimetrik derinlik çizgili",
+    "endo_r3_c5": "60 adetlik steril ambalaj · Güvenilir termomekanik obturasyon ve sıcak dolum uyumu",
+    "endo_r4_c1": "<strong>UZM Steril Absorban Paper Points (Kağıt Konlar)</strong>",
+    "endo_r4_c3": ".02 / .04 / .06 Uyumlu",
+    "endo_r4_c4": "Milimetrik işaretli",
+    "endo_r4_c5": "200 / 100 adetlik steril hücreli paket · Yüksek emicilik, dağılmayan lif yapısı",
+    "endo_r5_c1": "<strong>UZM Gutta Percha Corrector Kalibrasyon Cetveli</strong>",
+    "endo_r5_c2": "ISO #20 – #60 Konik Yuvalar",
+    "endo_r5_c3": "Hassas jilet bıçaklı kesim yuvası",
+    "endo_r5_c4": "Eloksallı alüminyum gövde",
+    "endo_r5_c5": "1 adet steril edilebilir kalibratör · Master cone uç çapını tam milimetrik keserek apikal uyumu garanti eder",
+    "bc_home": "← Anasayfa",
+    "bc_studio": "Stüdyo Galerisi",
+    "studio_btn_all": "Tümü (40 Kare)",
+    "studio_btn_3dml": "3D-ML Serisi (18)",
+    "studio_btn_stml": "ZirCrown ST-ML Serisi (8)",
+    "studio_btn_vita": "VITA Renk Skalası Kıyas (7)",
+    "studio_btn_4d5d": "4D-ML & 5D-ML Uzun Ark (9)",
+    "studio_btn_3dpro": "3D-PRO Disk & Kutu (5)",
+    "studio_code_tag": "ZirCrown® Stüdyo"
+  },
+  "en": {
+    "lang": "en",
+    "sinter_btn_fast": "1–3 Units Fast",
+    "sinter_btn_std": "4–6 Units Standard",
+    "sinter_btn_long": "7+ Units Long Span",
+    "drawer_studio_desc": "Slide left-right to inspect real light translucency transition from chalky green-state isostatic disc to fully sintered restoration.",
+    "drawer_compare_lbl": "GREEN-STATE RAW DISC (0%) ⇄ SINTERED RESTORATION (100%)",
+    "foy_pmma_title": "PMMA Product Family & Diameter Matrix",
+    "th_pmma_family": "Product Family",
+    "td_pmma_family": "Monolayer · Multilayer · Clear · Opaque (X-Ray)",
+    "th_pmma_sys": "System Compatibility",
+    "td_pmma_sys": "98 mm CAD/CAM Systems · 95 mm Systems · Amann Girrbach (AG)",
+    "th_pmma_dim": "Available Dimensions",
+    "td_pmma_dim": "98 × (16, 18, 20, 30 mm) · 95 × 18 mm · AG × 18 mm",
+    "th_pmma_shades": "Available Shades",
+    "td_pmma_shades": "A1, A2, BL3, Clear",
+    "th_pmma_ind": "Clinical Indication",
+    "td_pmma_ind": "Provisional crown/bridge restorations, occlusal splints, night guards, radiographic diagnosis",
+    "th_pmma_trace": "Registration & Traceability",
+    "td_pmma_trace": "Medical Device Registry Approved · QR-Coded Technical Documentation",
+    "foy_endo1_title": "Technical Data & Box Contents",
+    "td_med_steel": "Medical Grade Stainless Steel",
+    "th_calibration": "Calibration",
+    "td_iso_slots": "ISO #20–#60 Reference Slots",
+    "th_sterilization": "Sterilization",
+    "td_autoclave_135": "135°C Autoclave Compatible",
+    "th_purpose": "Intended Use",
+    "td_endo1_purpose": "Master cone tip trimming & apical diameter control",
+    "foy_endo2_title": "Technical Data: Calibration Slots",
+    "th_hole_diams": "Hole Diameters",
+    "td_iso_std_holes": "ISO Standard Holes (#20, #25, #30, #35, #40, #45, #50, #55, #60)",
+    "td_autoclave_resist": "135°C Autoclave Resistance",
+    "th_usage_area": "Application Area",
+    "td_endo2_usage": "Precision apical measurement & cone preparation",
+    "foy_endo3_title": "Taper, Size & Box Matrix",
+    "th_taper": "Taper",
+    "th_avail_dims": "Available Sizes",
+    "th_box_content": "Box Content",
+    "td_iso_std_gp": "ISO Standard GP",
+    "td_gp_box_100": "100 Pcs (Millimeter Marked)",
+    "td_iso_angled_gp": "ISO Greater Taper GP",
+    "td_gp_box_60_rad": "60 Pcs · Highly Radiopaque",
+    "td_f_series_gp": "F Series GP",
+    "td_variable": "Variable",
+    "td_f_series_dims": "F1, F2, F3, F4, F5 (and Asstd)",
+    "td_gp_box_60_rotary": "60 Pcs · Rotary System Compatible",
+    "td_x_series_gp": "X Series GP",
+    "td_x_series_dims": "X1, X2, X3, X4, X5 (and Asstd)",
+    "td_gp_box_60_xshape": "60 Pcs · X-Shape Rotary Compatible",
+    "td_p_series_gp": "P Series GP",
+    "td_reciproc": "Reciprocating",
+    "td_gp_box_60_recip": "60 Pcs · Reciprocating Compatible",
+    "td_paper_points": "Paper Points",
+    "td_pp_box": "100 / 200 Pcs · Sterile Cellulose",
+    "row_ht_fast": "ZirCrown HT Speed",
+    "st6_badge": "IN-DISC CAD/CAM",
+    "st6_title": "Milled Intra-Disc Bridge Nesting Architecture",
+    "pmma_m_proc_lbl": "PROCESSING PROTOCOL",
+    "pmma_m_proc_val": "Cold Milling",
+    "pmma_m_proc_note": "No Sintering / No Baking",
+    "pmma_m_diam_lbl": "DIAMETER OPTIONS",
+    "pmma_m_diam_note": "Open System Compatibility",
+    "pmma_m_ind_lbl": "INDICATION",
+    "pmma_m_ind_val": "Provisional · Splint · Guide",
+    "pmma_oem_ml": "OEM DISC · PMMA-ML",
+    "pmma_lbl_proc": "PROCESSING",
+    "pmma_oem_clear": "OEM DISC · PMMA-CLEAR",
+    "pmma_lbl_opt": "OPTICS",
+    "pmma_oem_xray": "OEM DISC · PMMA-XRAY",
+    "pmma_lbl_feat": "FEATURE",
+    "zirkon_prism_title": "ZirCrown® Multilayer Disc Series",
+    "zirkon_lbl_sys": "SYSTEM",
+    "zirkon_val_sys": "Open Ø98.5mm",
+    "zirkon_oem_3dpro": "OEM DISC · 3D-PRO-ML",
+    "zirkon_oem_5d": "OEM DISC · 5D-ML",
+    "zirkon_oem_st": "OEM DISC · ST-ML",
+    "lbl_trans": "LIGHT TRANSMITTANCE (%)",
+    "dir": "ltr",
+    "dropdown_lbl": "EN ▾",
+    "title_home": "UZM DENTAL — ZirCrown Optical Ceramics & Endodontic Systems",
+    "title_studio": "ZirCrown Sintered Restorations & VITA Shade Verification Archive | UZM Dental",
+    "title_zirkonya": "ZirCrown Zirconia Discs | UZM Dental",
+    "title_pmma": "ZirCrown PMMA Pucks | UZM Dental",
+    "title_endo": "ZirCrown Endodontic Systems | UZM Dental",
+    "title_sinter": "ZirCrown Sintering Protocol & Thermal Analysis | UZM Dental",
+    "title_katalog": "ZirCrown Product Catalog & Archive | UZM Dental",
+    "brand_sub": "ZirCrown · CAD/CAM & Endo",
+    "nav_blocks": "Zirconia Discs",
+    "nav_pmma": "PMMA Blanks",
+    "nav_sinter": "Sintering Matrix",
+    "nav_studio": "Studio Gallery",
+    "nav_endo": "Endodontics",
+    "nav_brochures": "Brochures",
+    "theme_light": "Light Mode",
+    "theme_dark": "Obsidian Mode",
+    "quote_btn": "Sample & Quote",
+    "hamburger_aria": "Mobile Menu",
+    "hero_eyebrow": "DENTAL CAD/CAM ZIRCONIA BLOCKS · ZIRCROWN® CIP",
+    "hero_title_html": "Dental CAD/CAM <em>Zirconia Blocks</em> &amp; Multilayer Discs",
+    "hero_lead": "Cold isostatic pressed (CIP) ZirCrown® multilayer zirconia discs deliver seamless mamelon gradient, 1200 MPa fracture resistance, and full open CAD/CAM system calibration (Ø 98.5 mm).",
+    "cta_explore": "Explore Zirconia Series",
+    "cta_analysis": "Live Layer & MPa Analysis",
+    "metric_trans_lbl": "LIGHT TRANSMITTANCE",
+    "metric_trans_val": "43% – 60%",
+    "metric_trans_note": "Incisal → Cervical Gradient",
+    "metric_strength_lbl": "FLEXURAL STRENGTH",
+    "metric_strength_val": "650 – 1200 MPa",
+    "metric_strength_note": "3-Point Bending Test",
+    "metric_cad_lbl": "CAD/CAM COMPATIBILITY",
+    "metric_cad_val": "Ø 98.5 mm",
+    "metric_cad_note": "10 mm – 25 mm · VITA 16 + BL",
+    "simulator_tag": "LIVE OPTICAL SECTION SIMULATOR",
+    "stat_trans": "TRANSLUCENCY",
+    "stat_mpa": "FLEXURAL STRENGTH",
+    "stat_temp": "SINTERING",
+    "lbl_mpa": "FLEXURAL STRENGTH (MPa)",
+    "lbl_temp": "RECOMMENDED SINTERING TEMP",
+    "lbl_ind": "IDEAL CLINICAL INDICATION",
+    "msb_title": "UZM Dental B2B Desk",
+    "msb_sub": "Direct Sample & B2B Quotation Desk",
+    "msb_btn": "Request Sample & Quote →",
+    "drawer_config": "SELECTED CONFIGURATION",
+    "drawer_add": "Add to Sample / Quote List",
+    "quote_modal_tag": "DIRECT B2B DENTAL LAB DESK",
+    "quote_modal_title": "Sample & B2B Quotation List",
+    "quote_input_ph": "Laboratory / Clinic Name & City",
+    "whatsapp_btn": "Quick Quote & Sample via WhatsApp",
+    "zirkonya_h1": "Natural Translucency Gradient, Superior Flexural Strength.",
+    "zirkonya_lead": "Manufactured via cold isostatic pressing (CIP), ZirCrown multilayer zirconia discs streamline dental laboratory workflows with seamless mamelon transitions, zero chipping, and complete exocad / 3Shape calibration.",
+    "pmma_h1": "High Biocompatibility, Zero Sintering Required.",
+    "pmma_lead": "Engineered with high-density homogeneous cross-linked polymers, ZirCrown PMMA discs deliver maximum biocompatibility and dimensional stability for long-term temporaries, splints, and surgical guides with zero sintering requirement.",
+    "endo_h1": "Thermally Treated ISO 6877 Gutta Percha Points, Precise Obturation.",
+    "endo_lead": "Biocompatible alpha/beta phase stability and micron-level taper tolerance for superior apical sealing.",
+    "sinter_h1": "ZirCrown 1450°C – 1530°C Sintering Profile & Flexural Strength Balance",
+    "studio_eyebrow": "ZIRCROWN® · SINTERED MONOLITHIC BRIDGE & DISC SHOWCASE",
+    "studio_heading": "ZirCrown® Sintered Crown & VITA Shade Verification Gallery (40 Studio Shots)",
+    "katalog_h1": "ZirCrown Zirconia, PMMA and Endodontic Studio Catalog",
+    "sec1_tag": "01 / OPTICAL CERAMIC PORTFOLIO",
+    "sec1_title": "ZirCrown Zirconia Disc Portfolio",
+    "sec1_sub": "Multi-layered ZirCrown zirconia block series optimized for every clinical indication from anterior aesthetics to full-arch implant-supported bridges. Explore the respective series for layer transitions, sintering curves, and technical parameters.",
+    "pill_all": "All (6 Series)",
+    "pill_anterior": "Anterior &amp; Aesthetic",
+    "pill_allround": "Full-Arch &amp; Long-Span Bridge",
+    "pill_posterior": "Posterior &amp; Substructure",
+    "sec2_tag": "02 / CAD/CAM BIOCOMPATIBLE POLYMERS",
+    "sec2_title": "UZM Dental PMMA Disc Family",
+    "sec2_sub": "Monolithic, multilayer, optical clear, and radiopaque CAD/CAM disc portfolio for long-term provisionals, diagnostic prosthetics, and surgical implant guides.",
+    "pmma_pill_all": "All PMMA (4 Series)",
+    "pmma_pill_temp": "Provisionals &amp; Try-In",
+    "pmma_pill_splint": "Splint &amp; Nightguard",
+    "pmma_pill_guide": "Surgical Guide &amp; X-Ray",
+    "sec3_tag": "03 / ENGINEERING MATRIX &amp; ARCHIVE DRAWERS",
+    "sec3_title": "Technical Reference Matrices &amp; Studio Portfolio",
+    "sec3_sub": "Expand any technical specification drawer with a single click.",
+    "matrix_badge": "TABLE 01",
+    "matrix_title": "ZirCrown 6-Series Comparative &amp; Sintering Matrix",
+    "matrix_sub": "Translucency (%), 3-point flexural strength (MPa), sintering peak temperature, and thickness range",
+    "th_block_series": "Disc Series",
+    "th_architecture": "Architecture",
+    "th_translucency": "Translucency",
+    "th_flex_strength": "Flexural Strength",
+    "th_sinter_peak": "Peak Sintering",
+    "th_thickness": "Thickness (Ø 98.5mm)",
+    "th_detail": "Details",
+    "btn_inspect": "Inspect",
+    "row_arch_10l": "10-Layer Multilayer",
+    "row_arch_8l": "8-Layer Hybrid",
+    "row_arch_6l_aest": "6-Layer Aesthetic",
+    "row_arch_6l_bal": "6-Layer Balanced",
+    "row_arch_4l_mono": "4-Layer Monolithic",
+    "row_arch_mono_infra": "Monolithic Substructure",
+    "row_temp_1500": "1500°C (2 Hours)",
+    "row_temp_1490": "1490°C (2 Hours)",
+    "row_temp_1510": "1510°C (2 Hours)",
+    "row_trans_homo": "43% Homogeneous",
+    "row_trans_high_str": "43% – 55% Fast Sinter",
+    "sinter_badge": "SINTER 02",
+    "sinter_title": "ZirCrown Thermal Firing &amp; Sintering Profiles",
+    "sinter_sub": "Fast (1–3 units 1500°C), Standard (4–6 units 1500°C), and Long-Span Full Arch (7+ units 1530°C) protocols",
+    "th_resto_type": "Restoration Type",
+    "th_ramp_up": "Heating Ramp",
+    "th_peak_temp": "Peak Temp (Tmax)",
+    "th_hold_time": "Holding Time",
+    "th_ramp_down": "Cooling Ramp",
+    "th_total_time": "Total Cycle",
+    "row_fast_title": "1–3 Units Single Crown / Short Bridge (Fast)",
+    "row_std_title": "4–6 Units Standard Bridge",
+    "row_long_title": "7+ Units Long-Span Full Arch Bridge",
+    "time_2h": "2 Hours",
+    "time_25h": "2.5 Hours",
+    "time_3h": "3.0 Hours",
+    "time_45h": "~4.5 Hours",
+    "time_6h": "~6.0 Hours",
+    "time_95h": "~9.5 Hours",
+    "ramp_down_10": "10°C / min",
+    "ramp_down_8": "8°C / min",
+    "ramp_down_5ctrl": "5°C / min (controlled)",
+    "btn_open_sinter_sim": "Open Interactive Sinter Simulator &rarr;",
+    "studio_badge": "STUDIO 02",
+    "studio_title": "Sintered Zirconia &amp; Fired Restorations Studio",
+    "studio_sub": "High-definition verification of actual sintered ZirCrown® 3D-ML, ST-ML, 4D-ML, 5D-ML and 3D-PRO restorations on black optical mirrors matched against VITA A2 / D2 shade tabs with native batch discs.",
+    "st1_title": "VITA A2 Verified Comparative Sintered Restoration",
+    "st1_desc": "3D-ML and ST-ML monolithic crowns verified against VITA A2 shade tabs on black optical reflective surface.",
+    "st2_title": "ZirCrown Multilayer Long-Span Monolithic Bridge",
+    "st2_desc": "Natural incisal translucency and cervical chroma transitions achieved via 1530°C sintering protocol.",
+    "st3_title": "3-Unit Anterior Monolithic Bridge",
+    "st3_desc": "3-unit anterior restoration demonstrating natural opalescence and edge stability post 1500°C sintering.",
+    "st4_title": "Posterior Monolithic Bridge Buccal Profile",
+    "st4_desc": "Mastication-resistant fired bridge produced with 1200 MPa homogeneous strength ST-ML series.",
+    "st5_title": "ST-ML A2 &amp; D2 Shade Scale Comparison",
+    "st5_desc": "Dual case analysis on black optical mirror displaying clear VITA A2 vs D2 differentiation and cervical density.",
+    "st6_desc": "Marginal details and anatomical connector support distribution in the green stage prior to sintering.",
+    "btn_inspect_studio": "Inspect in Studio Gallery &rarr;",
+    "st40_summary": "40 Studio Restorations &amp; VITA Calibration Archive",
+    "st40_desc": "40 high-resolution restoration photographs from the UZM Dental laboratory archive (3D-ML, ST-ML, 4D-ML, 5D-ML) sintered and verified on black optical mirrors against VITA A2 / D2 guides.",
+    "btn_open_full_studio": "Open 40-Frame Full Studio Gallery &rarr;",
+    "endo_badge": "ENDO 03",
+    "endo_title": "Endodontic Obturation, Gutta Percha &amp; Precision Calibration",
+    "endo_sub": "Laser-calibrated Gutta Percha, Paper Points, surgical stainless steel Gutta Cutter, and Gutta Corrector ruler",
+    "endo_c1_tag": "CLINICAL CUTTER",
+    "endo_c1_title": "UZM Dental Gutta Cutter",
+    "endo_c1_desc": "Precision stainless steel cutter that trims and gauges gutta-percha cones to apical diameter specifications without deformation.",
+    "endo_c1_meta": "ISO #20–#60 Gauges · Stainless Steel · 135°C Autoclavable",
+    "endo_c2_tag": "CALIBRATION RULER",
+    "endo_c2_title": "UZM Dental Gutta Corrector (Master Cone Ruler)",
+    "endo_c2_desc": "Surgical stainless steel ruler providing controlled apical trimming through ISO reference apertures to create customized master cones.",
+    "endo_c2_meta": "ISO Reference Apertures · Stainless Steel · 135°C Autoclave",
+    "endo_c3_tag": "OBTURATION",
+    "endo_c3_title": "Laser-Calibrated Gutta Percha &amp; Paper Points",
+    "endo_c3_desc": "Millimetric depth marked, cadmium-free radiopaque gutta-percha cones and sterile high-absorbency paper points.",
+    "endo_c3_meta": "ISO Standard · .02 / .04 / .06 · F &amp; P Series",
+    "endo_c4_tag": "CAD/CAM PROVISIONAL DISC",
+    "endo_c4_title": "UZM Dental PMMA CAD/CAM Provisional Discs",
+    "endo_c4_desc": "CAD/CAM disc portfolio for provisional crown/bridge restorations, aesthetic temporaries, occlusal splints, and radiographic diagnostics.",
+    "endo_c4_meta": "98 mm · 95 mm · AG Systems · 16 – 30 mm",
+    "btn_add_to_quote": "Add to Quote Request",
+    "catalog_badge": "CATALOG 04",
+    "catalog_title": "Official Technical PDF Brochures &amp; Specifications",
+    "catalog_sub": "ZirCrown 2026 Brochure, PMMA CAD/CAM Catalog, and Gutta Percha Guide",
+    "br1_tag": "ZIRCONIA CATALOG",
+    "br1_title": "ZirCrown® 2026 Product Brochure (PDF)",
+    "br1_desc": "Layer gradients, flexural strengths, and furnace sintering schedules for all 6 zirconia series.",
+    "br1_btn": "Download Brochure (PDF · 2.1 MB)",
+    "br2_tag": "PMMA CATALOG",
+    "br2_title": "PMMA CAD/CAM Provisional Discs Brochure (PDF)",
+    "br2_desc": "Physical specifications, milling parameters, and dimensions for Monolayer, Multilayer, and X-Ray discs.",
+    "br2_btn": "Download Brochure (PDF · 3.8 MB)",
+    "br3_tag": "ENDODONTICS GUIDE",
+    "br3_title": "Gutta Percha &amp; Obturation Systems Guide (PDF)",
+    "br3_desc": "ISO color codings, taper geometries, radiopacity values, and clinical application guidelines.",
+    "br3_btn": "Download Guide (PDF · 3.2 MB)",
+    "footer_desc": "Direct institutional procurement, furnace calibration support, and Batch Traceability System LOT tracking for dental clinics and CAD/CAM laboratories.",
+    "footer_studio": "Studio Gallery",
+    "footer_katalog": "Technical Catalog",
+    "footer_sinter": "Optical Simulation",
+    "footer_endo": "Clinical Endodontics",
+    "zirkonya_eyebrow": "Ø 98.5MM ISOSTATIC ZIRCONIA · OPEN CAD/CAM SYSTEM",
+    "zirkonya_h1_html": "Natural Translucency Gradient, <em>High Flexural Strength</em>.",
+    "pmma_eyebrow": "HIGH-DENSITY CROSS-LINKED CAD/CAM PMMA · COLD MILLING",
+    "pmma_h1_html": "High-Density Cross-Linked <em>CAD/CAM PMMA Blocks</em>, Zero Sintering.",
+    "reg_badge": "REGULATORY 05",
+    "reg_title": "Ministry of Health UTS Registry, Factory LOT Verification & IVISTA Scientific Board",
+    "reg_sub": "Hangzhou IVISTA Medical R&D, MedPath GmbH Munich EC-REP, Dr. Yao Cheng Leadership, CE & ISO Accreditations",
+    "reg_c1_title": "Medical Device Regulatory & Registrations",
+    "reg_c1_desc": "Registered with Ministry of Health Product Tracking System (ÜTS) with 100% traceability. Certified with CE 0197 Notified Body, ISO-13485:2016 Medical Quality Management and ISO 6872 Dental Ceramic Standard.",
+    "reg_c2_title": "Manufacturer Scientific Board & Origin",
+    "reg_c2_desc": "Manufacturer: Hangzhou IVISTA Medical Devices Co., Ltd. (10+ years R&D). European Authorized Representative: MedPath GmbH, Mies-van-der-Rohe-Strasse 8, 80807 Munich, Germany. Founder & Technical Director: Dr. Yao Cheng (Ph.D. in Physical Chemistry, Chinese Academy of Sciences; Post-doc Stockholm University; 14 years in Dental R&D).",
+    "reg_c3_title": "Batch/LOT Verification & QR Quality Registry",
+    "reg_c3_desc": "Unique factory batch number (LOT) on every zirconia and PMMA disc. Scanning the box QR code instantly verifies batch-specific translucency (43%–60%), flexural strength (650–1200 MPa) and furnace sintering test sheet.",
+    "reg_c4_title": "PMMA CAD/CAM Polymer Technology",
+    "reg_c4_desc": "High-Density Cross-Linked homogeneous polymer matrix. Monolayer, Multilayer, Clear (transparent night guards/splints), Opaque (X-ray contrast surgical guides). Cold milling, zero furnace sintering required.",
+    "kat_kicker": "CORPORATE MEDIA & DOCUMENT ARCHIVE",
+    "kat_lead": "To optimize homepage loading and mobile ergonomics, our complete 40-piece studio showcase and high-resolution PDF technical catalogs are consolidated in this archive.",
+    "kat_c1_title": "ZirCrown 3D-ML Multilayer Disc Series",
+    "kat_c1_text": "Smooth transition from 1200 MPa cervical strength to 57%–60% incisal translucency.",
+    "kat_c1b_title": "ZirCrown 4D-ML Multilayer Disc Series",
+    "kat_c1b_text": "9-layer gradient (45%–59% translucency, 700–1000 MPa flexural strength) aesthetic zirconia disc series.",
+    "kat_c2_title": "Full-Arch Monolithic & Implant-Supported Bridges",
+    "kat_c2_text": "Natural occlusal anatomy with minimal porcelain layering or pure monolithic glazing.",
+    "kat_c3_title": "Clinical Endodontics & Obturation Family",
+    "kat_c3_text": "Canal filling systems matching ISO Ø 0.15–0.40 mm tip sizes and .02/.04/.06 tapers.",
+    "kat_btn_zircrown": "Download ZirCrown 2026 HD Catalog (PDF)",
+    "kat_btn_pmma": "Download PMMA Catalog (PDF)",
+    "kat_btn_endo": "Download Endodontics Catalog (PDF)",
+    "sim_kicker": "LABORATORY FURNACE PROTOCOL",
+    "sim_lead": "Recommended sintering schedule for maximum optical translucency and tetragonal phase stability across multilayer (3D/4D) and monolayer (ST-ML / 3D-ML / 3D-PRO / 4D-ML / 5D-ML) ZirCrown discs:",
+    "sim_th_stage": "Stage",
+    "sim_th_tstart": "Start Temperature",
+    "sim_th_ttarget": "Target Temperature",
+    "sim_th_rate": "Heating / Cooling Rate",
+    "sim_th_dwell": "Holding Time (Dwell)",
+    "sim_th_note": "Laboratory Notice",
+    "sim_r1_c1": "1. Pre-heating",
+    "sim_r1_c2": "25°C (Ambient)",
+    "sim_r1_c4": "8°C / min",
+    "sim_r1_c5": "30 min",
+    "sim_r1_c6": "Thermal stabilization after preliminary drying of restorations treated with coloring liquids",
+    "sim_r2_c1": "2. Sintering Ramp",
+    "sim_r2_c4": "4°C – 5°C / min",
+    "sim_r2_c5": "120 min",
+    "sim_r2_c6": "Full densification (6.08 g/cm³) and establishment of 43%–60% target optical translucency",
+    "sim_r3_c1": "3. Controlled Cooling",
+    "sim_r3_c4": "≤ 8°C / min (Chamber Closed)",
+    "sim_r3_c6": "Furnace chamber must remain sealed until 200°C to prevent thermal shock and micro-cracking",
+    "endo_kicker1": "BUYER PATH B · DENTAL CLINICS & ENDODONTIC SPECIALISTS",
+    "endo_page_h1": "Heat-Treated ISO 6877 Gutta Percha Points, Millimetric Obturation Cones & Gutta Percha Corrector Calibration Equipment",
+    "endo_page_lead": "ISO 6877 calibrated gutta percha and absorbent paper point series sharing identical taper (.02 / .04 / .06) with rotary file systems, maximizing cyclic fatigue resistance in curved and calcified canals.",
+    "endo_btn_quote": "Request Clinical Endodontic Quote",
+    "endo_btn_brochure": "Endodontics Datasheet (PDF)",
+    "endo_btn_wa": "WhatsApp Clinical Support",
+    "endo_caption": "Laser depth-marked (18 / 19 / 20 / 22 / 24 mm) Gutta Percha cones for calibrated obturation fit",
+    "endo_kicker2": "ISO 6877 Calibrated Gutta Percha & PRECISION OBTURATION",
+    "endo_sec_h2": "Technical Matrix of ISO 6877 Gutta Percha Cones and Absorbent Paper Points",
+    "endo_legend": "<strong>Technical Dimension Legend:</strong> ISO Tip Diameter Ø 0.15–0.40 mm · .04/.06 Taper &nbsp;|&nbsp; Color Coding: White (0.15) · Yellow (0.20) · Red (0.25) · Blue (0.30) · Green (0.35) · Black (0.40) &nbsp;|&nbsp; Working Lengths: 21 mm · 25 mm · 31 mm.",
+    "endo_th_group": "Product Line",
+    "endo_th_iso": "ISO Tip Diameter Range",
+    "endo_th_taper": "Taper",
+    "endo_th_length": "Working Length / Markings",
+    "endo_th_feature": "Packaging & Clinical Feature",
+    "endo_r1_c1": "<strong>UZM Gold / Blue ISO 6877 Gutta Percha & Paper Point Set</strong>",
+    "endo_r1_c2": "Ø 0.15 mm – Ø 0.40 mm (Assorted & Individual)",
+    "endo_r1_c3": ".04 and .06 Constant / Variable Taper",
+    "endo_r1_c5": "6-pack blister · Pre-bendable controlled memory, non-cutting safety tip preventing apical ledging",
+    "endo_r2_c1": "<strong>UZM Standard ISO Gutta Percha Cones</strong>",
+    "endo_r2_c2": "ISO #15 – #80 (Individual & Assorted)",
+    "endo_r2_c3": ".02 Standard Hand File Compatibility",
+    "endo_r2_c4": "Laser millimetric depth markings (18, 19, 20, 22, 24 mm)",
+    "endo_r2_c5": "120-piece slider box · Biocompatible natural gutta percha matrix, high radiopacity",
+    "endo_r3_c1": "<strong>UZM Special Tapered Gutta Percha Cones</strong>",
+    "endo_r3_c3": ".04 and .06 Rotary System Match",
+    "endo_r3_c4": "Millimetric depth etched",
+    "endo_r3_c5": "60-piece sterile box · Reliable warm vertical condensation and thermomechanical obturation",
+    "endo_r4_c1": "<strong>UZM Sterile Absorbent Paper Points</strong>",
+    "endo_r4_c3": ".02 / .04 / .06 Taper Matched",
+    "endo_r4_c4": "Millimetric marked",
+    "endo_r4_c5": "200 / 100-pack sterile blister · Ultra-absorbent, non-fraying fibrous integrity",
+    "endo_r5_c1": "<strong>UZM Gutta Percha Corrector Calibration Gauge</strong>",
+    "endo_r5_c2": "ISO #20 – #60 Conical Gauge Orifices",
+    "endo_r5_c3": "Precision razor trimming slot",
+    "endo_r5_c4": "Anodized aluminum alloy frame",
+    "endo_r5_c5": "1 autoclavable calibration gauge · Ensures exact apical tug-back by trimming master cones to exact millimetric tolerances",
+    "bc_home": "← Home",
+    "bc_studio": "Studio Gallery",
+    "studio_btn_all": "All (40 Shots)",
+    "studio_btn_3dml": "3D-ML Series (18)",
+    "studio_btn_stml": "ZirCrown ST-ML Series (8)",
+    "studio_btn_vita": "VITA Shade Comparison (7)",
+    "studio_btn_4d5d": "4D-ML & 5D-ML Full-Arch (9)",
+    "studio_btn_3dpro": "3D-PRO Disc & Packaging (5)",
+    "studio_code_tag": "ZirCrown® Studio"
+  },
+  "ar": {
+    "lang": "ar",
+    "sinter_btn_fast": "1–3 وحدات سريع",
+    "sinter_btn_std": "4–6 وحدات قياسي",
+    "sinter_btn_long": "7+ وحدات قوس طويل",
+    "drawer_studio_desc": "حرّك شريط التمرير لمعاينة انتقال نفاذية الضوء الحقيقي من القرص الخام إلى الترميم النهائي بعد التلبيد.",
+    "drawer_compare_lbl": "قرص خام أولي (0%) ⇄ ترميم نهائي متلبد (100%)",
+    "foy_pmma_title": "عائلة منتجات PMMA وجدول الأقطار",
+    "th_pmma_family": "عائلة المنتجات",
+    "td_pmma_family": "أحادي الطبقة · متعدد الطبقات · شفاف · معتم (X-Ray)",
+    "th_pmma_sys": "توافق النظام",
+    "td_pmma_sys": "أنظمة CAD/CAM قياس 98 مم · أنظمة 95 مم · Amann Girrbach (AG)",
+    "th_pmma_dim": "الأبعاد المتاحة",
+    "td_pmma_dim": "98 × (16، 18، 20، 30 مم) · 95 × 18 مم · AG × 18 مم",
+    "th_pmma_shades": "الألوان المتوفرة",
+    "td_pmma_shades": "A1, A2, BL3, شفاف (Clear)",
+    "th_pmma_ind": "دواعي الاستعمال السريرية",
+    "td_pmma_ind": "ترميمات التيجان والجسور المؤقتة، الجبائر الإطباقية، الواقيات الليلية، التشخيص الشعاعي",
+    "th_pmma_trace": "التسجيل وقابلية التتبع",
+    "td_pmma_trace": "منتجات معتمدة في السجل الطبي · وثائق فنية برمز QR",
+    "foy_endo1_title": "المواصفات الفنية ومحتوى العبوة",
+    "td_med_steel": "فولاذ طبي مقاوم للصدأ",
+    "th_calibration": "المعايرة",
+    "td_iso_slots": "فتحات مرجعية ISO #20–#60",
+    "th_sterilization": "التعقيم",
+    "td_autoclave_135": "متوافق مع الأوتوكلاف حتى 135 درجة مئوية",
+    "th_purpose": "الغرض من الاستخدام",
+    "td_endo1_purpose": "قص طرف المخروط الرئيسي وضبط القطر الذروي",
+    "foy_endo2_title": "المواصفات الفنية: فتحات المعايرة",
+    "th_hole_diams": "أقطار الثقوب",
+    "td_iso_std_holes": "ثقوب المعايير القياسية ISO (#20، #25، #30، #35، #40، #45، #50، #55، #60)",
+    "td_autoclave_resist": "مقاومة الأوتوكلاف حتى 135 درجة مئوية",
+    "th_usage_area": "مجال الاستخدام",
+    "td_endo2_usage": "القياس الذروي الدقيق وتجهيز المخروط",
+    "foy_endo3_title": "جدول درجات الاستدقاق والمقاسات والعبوات",
+    "th_taper": "درجة الاستدقاق (Taper)",
+    "th_avail_dims": "المقاسات المتوفرة",
+    "th_box_content": "محتويات العبوة",
+    "td_iso_std_gp": "أقماع غوتا بيركا القياسية ISO",
+    "td_gp_box_100": "100 قطعة (مدرجة بالمليمتر)",
+    "td_iso_angled_gp": "أقماع غوتا بيركا ذات الزاوية الكبيرة ISO",
+    "td_gp_box_60_rad": "60 قطعة · عالية التعتيم الشعاعي",
+    "td_f_series_gp": "سلسلة F غوتا بيركا",
+    "td_variable": "متغير",
+    "td_f_series_dims": "F1, F2, F3, F4, F5 (ومتنوع)",
+    "td_gp_box_60_rotary": "60 قطعة · متوافقة مع الأنظمة الدوارة",
+    "td_x_series_gp": "سلسلة X غوتا بيركا",
+    "td_x_series_dims": "X1, X2, X3, X4, X5 (ومتنوع)",
+    "td_gp_box_60_xshape": "60 قطعة · متوافقة مع نظام X-Shape الدوار",
+    "td_p_series_gp": "سلسلة P غوتا بيركا",
+    "td_reciproc": "تبادلي (Reciprocating)",
+    "td_gp_box_60_recip": "60 قطعة · متوافقة مع الأنظمة التبادلية",
+    "td_paper_points": "أقماع ورقية ماصة (Paper Points)",
+    "td_pp_box": "100 / 200 قطعة · سليلوز معقم",
+    "row_ht_fast": "ZirCrown HT السريع",
+    "st6_badge": "داخل قرص CAD/CAM",
+    "st6_title": "توزيع أعشاش الجسور داخل القرص بعد التفريز",
+    "pmma_m_proc_lbl": "بروتوكول المعالجة",
+    "pmma_m_proc_val": "تفريز بارد",
+    "pmma_m_proc_note": "بدون تلبيد أو حرق",
+    "pmma_m_diam_lbl": "خيارات الأقطار",
+    "pmma_m_diam_note": "توافق مع الأنظمة المفتوحة",
+    "pmma_m_ind_lbl": "دواعي الاستعمال",
+    "pmma_m_ind_val": "مؤقت · جبيرة · دليل جراحي",
+    "pmma_oem_ml": "قرص أصلي · PMMA-ML",
+    "pmma_lbl_proc": "المعالجة",
+    "pmma_oem_clear": "قرص أصلي · PMMA-CLEAR",
+    "pmma_lbl_opt": "الخصائص البصرية",
+    "pmma_oem_xray": "قرص أصلي · PMMA-XRAY",
+    "pmma_lbl_feat": "الميزة",
+    "zirkon_prism_title": "سلسلة أقراص ZirCrown® متعددة الطبقات",
+    "zirkon_lbl_sys": "النظام",
+    "zirkon_val_sys": "نظام مفتوح Ø98.5 مم",
+    "zirkon_oem_3dpro": "قرص أصلي · 3D-PRO-ML",
+    "zirkon_oem_5d": "قرص أصلي · 5D-ML",
+    "zirkon_oem_st": "قرص أصلي · ST-ML",
+    "lbl_trans": "النفاذية الضوئية (%)",
+    "dir": "rtl",
+    "dropdown_lbl": "AR ▾",
+    "title_home": "UZM DENTAL — أنظمة زيركراون الخزفية البصرية وعلاج الجذور",
+    "title_studio": "أرشيف ترميمات ZirCrown المحروقة ومطابقة ألوان VITA | UZM Dental",
+    "title_zirkonya": "أقراص زيركونيوم ZirCrown | UZM Dental",
+    "title_pmma": "أقراص PMMA ZirCrown | UZM Dental",
+    "title_endo": "أنظمة علاج الجذور ZirCrown | UZM Dental",
+    "title_sinter": "منحنى تلبيد ZirCrown والتحليل الحراري | UZM Dental",
+    "title_katalog": "كتالوج وأرشيف منتجات ZirCrown | UZM Dental",
+    "brand_sub": "ZirCrown · أنظمة CAD/CAM وعلاج الجذور",
+    "nav_blocks": "أقراص الزيركونيوم",
+    "nav_pmma": "أقراص PMMA",
+    "nav_sinter": "منحنى التلبيد",
+    "nav_studio": "معرض الاستوديو",
+    "nav_endo": "علاج الجذور",
+    "nav_brochures": "الكتالوجات",
+    "theme_light": "الوضع الفاتح",
+    "theme_dark": "الوضع الداكن",
+    "quote_btn": "طلب عينة وعرض أسعار",
+    "hamburger_aria": "القائمة المتنقلة",
+    "hero_eyebrow": "أقراص زركونيا كاد كام للأسنان · زيركراون® CIP",
+    "hero_title_html": "أقراص وبلوكات <em>الزركونيا متعددة الطبقات</em> لأنظمة CAD/CAM",
+    "hero_lead": "أقراص زيركراون® متعددة الطبقات المضغوطة متوازنة الخواص على البارد (CIP)؛ تدرج لوني سلس ومقاومة انكسار تصل إلى 1200 ميجا باسكال وتوافق كامل مع أنظمة CAD/CAM المفتوحة (Ø 98.5 مم).",
+    "cta_explore": "استعراض سلاسل الزيركونيوم",
+    "cta_analysis": "تحليل الطبقات ومقاومة الانحناء MPa",
+    "metric_trans_lbl": "النفاذية الضوئية",
+    "metric_trans_val": "43% – 60%",
+    "metric_trans_note": "تدرج قاطع ← عنقي",
+    "metric_strength_lbl": "مقاومة الانثناء",
+    "metric_strength_val": "650 – 1200 ميغاباسكال",
+    "metric_strength_note": "اختبار الانثناء ثلاثي النقاط",
+    "metric_cad_lbl": "توافق CAD/CAM",
+    "metric_cad_val": "Ø 98.5 مم",
+    "metric_cad_note": "10 مم – 25 مم · VITA 16 + BL",
+    "simulator_tag": "محاكي المقاطع الضوئية الحي",
+    "stat_trans": "الشفافية الضوئية",
+    "stat_mpa": "مقاومة الانثناء",
+    "stat_temp": "التلبيد",
+    "lbl_mpa": "مقاومة الانثناء (MPa)",
+    "lbl_temp": "درجة حرارة التلبيد الموصى بها",
+    "lbl_ind": "دواعي الاستخدام المثالية",
+    "msb_title": "مكتب UZM Dental للتعاملات B2B",
+    "msb_sub": "طلب عينات وعروض أسعار مباشرة للمختبرات",
+    "msb_btn": "طلب عينة وعرض أسعار ←",
+    "drawer_config": "التكوين المختار",
+    "drawer_add": "إضافة إلى قائمة العينات والعروض",
+    "quote_modal_tag": "مكتب المختبرات السنية المباشر B2B",
+    "quote_modal_title": "قائمة العينات وعروض الأسعار المؤسسية",
+    "quote_input_ph": "اسم المختبر / العيادة والمدينة",
+    "whatsapp_btn": "طلب سريع للأسعار والعينات عبر واتساب",
+    "zirkonya_h1": "تدرج شفافية طبيعي، ومقاومة انثناء فائقة.",
+    "zirkonya_lead": "سلسلة أقراص الزيركونيوم متعددة الطبقات ZirCrown المصنعة بتقنية الكبس المتساوي الساكن على البارد (CIP): تدرج ماملون متصل، وانعدام تام للتشظي، وتوافق ميكروني مع برامج exocad و 3Shape.",
+    "pmma_h1": "توافق حيوي عالٍ، دون الحاجة للحرق.",
+    "pmma_lead": "أقراص ZirCrown PMMA المصنعة من بوليمرات متشابكة متجانسة للتيجان والجسور المؤقتة طويلة الأمد والجبائر الجراحية؛ توافق حيوي استثنائي وثبات أبعادي فائق بدون الحاجة إلى أفران التلبيد.",
+    "endo_h1": "أقماع جوتا بيركا المعالجة حرارياً وفق ISO 6877، حشو قنيوي ميكروني.",
+    "endo_lead": "استقرار مرحلي حيوي ألفا/بيتا وتسامح مخروطي ميكروني لتحقيق إغلاق قمي متكامل.",
+    "sinter_h1": "منحنى حرق ZirCrown بين 1450°م – 1530°م وتوازن مقاومة الانثناء",
+    "studio_eyebrow": "ZIRCROWN® · أرشيف التيجان والأقراص المتجانسة المحروقة",
+    "studio_heading": "معرض تيجان ZirCrown® المحروقة ومطابقة ألوان VITA (40 لقطة استوديو)",
+    "katalog_h1": "مجموعة ZirCrown لأقراص الزيركونيوم و PMMA وعلاج الجذور",
+    "sec1_tag": "01 / محفظة الخزف البصري",
+    "sec1_title": "عائلة أقراص أكسيد الزيركونيوم ZirCrown",
+    "sec1_sub": "سلسلة أقراص الزيركون متعددة الطبقات ZirCrown المحسنة لكل الدواعي السريرية بدءاً من جماليات الأسنان الأمامية حتى جسور الغرسات الكاملة. استكشف السلسلة المعنية للاطلاع على تدرجات الطبقات ومنحنيات التلبيد والمعايير الفنية.",
+    "pill_all": "الكل (6 سلاسل)",
+    "pill_anterior": "الأسنان الأمامية والجماليات",
+    "pill_allround": "الجسور الكاملة والممتدة",
+    "pill_posterior": "الأسنان الخلفية والهياكل",
+    "sec2_tag": "02 / بوليمرات CAD/CAM متوافقة حيوياً",
+    "sec2_title": "عائلة أقراص PMMA من UZM Dental",
+    "sec2_sub": "مجموعة أقراص CAD/CAM متجانسة ومتعددة الطبقات وشفافة ومعتمة شعاعياً للترميمات المؤقتة والجبائر والأدلة الجراحية.",
+    "pmma_pill_all": "كافة أقراص PMMA (4 سلاسل)",
+    "pmma_pill_temp": "مؤقت وتجريبي",
+    "pmma_pill_splint": "الجبائر والواقيات الليلية",
+    "pmma_pill_guide": "الدليل الجراحي والأشعة",
+    "sec3_tag": "03 / المصفوفة الهندسية وأدراج الأرشيف",
+    "sec3_title": "الجداول الفنية ومجموعة الاستوديو",
+    "sec3_sub": "افتح أي درج مرجعي فني بنقرة واحدة.",
+    "matrix_badge": "جدول 01",
+    "matrix_title": "مصفوفة مقارنة سلاسل ZirCrown الستة ومعايير التلبيد",
+    "matrix_sub": "نفاذية الضوء (%)، مقاومة الانثناء (ميجا باسكال)، درجة حرارة التلبيد القصوى ونطاق السماكة",
+    "th_block_series": "سلسلة القرص",
+    "th_architecture": "البنية",
+    "th_translucency": "نفاذية الضوء",
+    "th_flex_strength": "مقاومة الانثناء",
+    "th_sinter_peak": "حرارة التلبيد",
+    "th_thickness": "السماكة (Ø 98.5 مم)",
+    "th_detail": "التفاصيل",
+    "btn_inspect": "معاينة",
+    "row_arch_10l": "10 طبقات متعدد",
+    "row_arch_8l": "8 طبقات هجين",
+    "row_arch_6l_aest": "6 طبقات جمالية",
+    "row_arch_6l_bal": "6 طبقات متوازنة",
+    "row_arch_4l_mono": "4 طبقات متجانسة",
+    "row_arch_mono_infra": "هيكل متجانس",
+    "row_temp_1500": "1500°م (ساعتان)",
+    "row_temp_1490": "1490°م (ساعتان)",
+    "row_temp_1510": "1510°م (ساعتان)",
+    "row_trans_homo": "43% متجانس",
+    "row_trans_high_str": "43% – 55% تلبيد سريع",
+    "sinter_badge": "تلبيد 02",
+    "sinter_title": "منحنيات الحرق الحراري والتلبيد ZirCrown",
+    "sinter_sub": "بروتوكولات السريع (1-3 وحدات 1500°م)، القياسي (4-6 وحدات 1500°م) والفك الكامل (7+ وحدات 1530°م)",
+    "th_resto_type": "نوع الترميم",
+    "th_ramp_up": "معدل التسخين",
+    "th_peak_temp": "أقصى حرارة (Tmax)",
+    "th_hold_time": "مدة البقاء",
+    "th_ramp_down": "معدل التبريد",
+    "th_total_time": "الوقت الإجمالي",
+    "row_fast_title": "تاج فردي / جسر قصير 1-3 وحدات (سريع)",
+    "row_std_title": "جسر قياسي 4-6 وحدات",
+    "row_long_title": "جسر فك كامل ممتد 7+ وحدات",
+    "time_2h": "ساعتان",
+    "time_25h": "2.5 ساعة",
+    "time_3h": "3.0 ساعات",
+    "time_45h": "~4.5 ساعة",
+    "time_6h": "~6.0 ساعات",
+    "time_95h": "~9.5 ساعات",
+    "ramp_down_10": "10°م / دقيقة",
+    "ramp_down_8": "8°م / دقيقة",
+    "ramp_down_5ctrl": "5°م / دقيقة (مضبوط)",
+    "btn_open_sinter_sim": "فتح محاكي التلبيد التفاعلي &larr;",
+    "studio_badge": "استوديو 02",
+    "studio_title": "استوديو ترميمات الزيركونيا المحروقة والمفحوصة",
+    "studio_sub": "مطابقة عالية الدقة لترميمات ZirCrown® المحروقة (3D-ML, ST-ML, 4D-ML, 5D-ML, 3D-PRO) على مرايا بصرية سوداء مقارنة بعينات ألوان VITA A2 / D2 مع أقراص تشغيلاتها الأصلية.",
+    "st1_title": "ترميم تلبيدي مقارن معتمد بـ VITA A2",
+    "st1_desc": "تيجان متجانسة من 3D-ML و ST-ML تم التحقق منها باستخدام دليل VITA A2 على مرآة بصرية.",
+    "st2_title": "جسر ZirCrown متعدد الطبقات كامل الفك",
+    "st2_desc": "شفافية قاطعة طبيعية وتدرج لوني عنقي تم تحقيقهما ببروتوكول تلبيد 1530°م.",
+    "st3_title": "جسر أمامي متجانس 3 وحدات",
+    "st3_desc": "ترميم أمامي 3 وحدات يظهر بريقاً طبيعياً واستقراراً حوافياً ممتازاً بعد التلبيد في 1500°م.",
+    "st4_title": "المظهر الخدي لجسر خلفي متجانس",
+    "st4_desc": "جسر صلب مقاوم لقوى المضغ مصنوع من سلسلة ST-ML بقوة متجانسة 1200 ميجا باسكال.",
+    "st5_title": "مقارنة تدرجات الألوان ST-ML A2 و D2",
+    "st5_desc": "تحليل مقارن يوضح التمايز الدقيق بين درجات VITA A2 و D2 والكثافة العنقية على مرآة سوداء.",
+    "st6_desc": "الدقة الحوافية وتوزيع الوصلات التشريحية الداعمة في المرحلة الخام قبل التلبيد.",
+    "btn_inspect_studio": "معاينة في معرض الاستوديو &larr;",
+    "st40_summary": "أرشيف 40 صورة لترميمات مخبرية حقيقية ومطابقة VITA",
+    "st40_desc": "40 صورة عالية الدقة من أرشيف مختبر UZM Dental لترميمات حقيقية خضعت للتلبيد والمطابقة مع دليلي VITA A2 و D2 على مرايا بصرية.",
+    "btn_open_full_studio": "فتح معرض الاستوديو الكامل (40 لقطة) &larr;",
+    "endo_badge": "علاج الجذور 03",
+    "endo_title": "أنظمة حشو القنوات السنية ونقاط الجوتا بيركا والمعايرة",
+    "endo_sub": "أقماع جوتا بيركا مقاسة بالليزر، أقماع ورقية، مقص جوتا بيركا من الفولاذ المقاوم للصدأ ومسطرة معايرة",
+    "endo_c1_tag": "مقص سريري",
+    "endo_c1_title": "مقص الجوتا بيركا من UZM Dental",
+    "endo_c1_desc": "مقص دقيق من الفولاذ المقاوم للصدأ لقص وتعيير أقماع الجوتا بيركا وفق الأقطار الذروية دون تشويه.",
+    "endo_c1_meta": "فتحات ISO #20-#60 · فولاذ مقاوم للصدأ · تعقيم 135°م",
+    "endo_c2_tag": "مسطرة معايرة",
+    "endo_c2_title": "مسطرة تعيير القمع الرئيسي من UZM Dental",
+    "endo_c2_desc": "مسطرة من الفولاذ المقاوم للصدأ لقص أطراف الأقماع بدقة عبر ثقوب ISO المرجعية لتحضير القمع الرئيسي المثالي.",
+    "endo_c2_meta": "ثقوب ISO القياسية · فولاذ مقاوم للصدأ · تعقيم 135°م",
+    "endo_c3_tag": "حشو القنوات",
+    "endo_c3_title": "أقماع جوتا بيركا وأقماع ورقية مقاسة بالليزر",
+    "endo_c3_desc": "أقماع جوتا بيركا خالية من الكادميوم ومعتمة للأشعة بخطوط عمق ملليمترية وأقماع ورقية معقمة عالية الامتصاص.",
+    "endo_c3_meta": "معيار ISO · 0.02 / 0.04 / 0.06 · سلاسل F و P",
+    "endo_c4_tag": "قرص مؤقت CAD/CAM",
+    "endo_c4_title": "أقراص PMMA المؤقتة لأنظمة CAD/CAM من UZM Dental",
+    "endo_c4_desc": "سلسلة أقراص CAD/CAM للتيجان والجسور المؤقتة والجبائر الإطباقية والفحص الشعاعي.",
+    "endo_c4_meta": "أنظمة 98 مم · 95 مم · AG · سماكات 16 - 30 مم",
+    "btn_add_to_quote": "إضافة إلى قائمة التسعير",
+    "catalog_badge": "كتالوج 04",
+    "catalog_title": "مكتبة الكتيبات والمواصفات الفنية الرسمية (PDF)",
+    "catalog_sub": "كتيب ZirCrown 2026 وكتالوج أقراص PMMA ودليل علاج الجذور",
+    "br1_tag": "كتالوج الزيركونيا",
+    "br1_title": "كتيب منتجات ZirCrown® 2026 (PDF)",
+    "br1_desc": "تدرجات الطبقات ومقاومة الانثناء وجداول التلبيد في الأفران لكافة سلاسل الزيركونيا الست.",
+    "br1_btn": "تحميل الكتيب (PDF · 2.1 ميجابايت)",
+    "br2_tag": "كتالوج PMMA",
+    "br2_title": "كتيب أقراص PMMA المؤقتة لأنظمة CAD/CAM (PDF)",
+    "br2_desc": "المعايير الفيزيائية وإعدادات التفريز وخيارات المقاسات لأقراص Monolayer و Multilayer و X-Ray.",
+    "br2_btn": "تحميل الكتيب (PDF · 3.8 ميجابايت)",
+    "br3_tag": "دليل علاج الجذور",
+    "br3_title": "دليل أقماح الجوتا بيركا وأنظمة حشو القنوات (PDF)",
+    "br3_desc": "ترميز ألوان ISO وهندسة التدرج وقياسات التعتيم الشعاعي وإرشادات التطبيق السريري.",
+    "br3_btn": "تحميل الدليل (PDF · 3.2 ميجابايت)",
+    "footer_desc": "التوريد المؤسسي المباشر، دعم معايرة الأفران وتتبع أرقام التشغيلات (LOT) لمختبرات CAD/CAM والعيادات.",
+    "footer_studio": "معرض الاستوديو",
+    "footer_katalog": "الكتالوج التقني",
+    "footer_sinter": "المحاكاة البصرية",
+    "footer_endo": "عيادة الجذور",
+    "zirkonya_eyebrow": "أكسيد الزيركونيوم متساوي الضغط Ø 98.5 مم · نظام CAD/CAM مفتوح",
+    "zirkonya_h1_html": "تدرج شفافية طبيعي، ومقاومة <em>انثناء فائقة</em>.",
+    "pmma_eyebrow": "بوليمر PMMA عالي الكثافة لأنظمة CAD/CAM · تفريز بارد",
+    "pmma_h1_html": "أقراص <em>CAD/CAM PMMA عالية الكثافة والمتشابكة</em>، بدون تلبيد أو حرق.",
+    "reg_badge": "اللوائح 05",
+    "reg_title": "تسجيلات ÜTS لوزارة الصحة، التحقق من تشغيلة LOT، والمجلس العلمي IVISTA",
+    "reg_sub": "أبحاث IVISTA Medical، الممثل الأوروبي MedPath GmbH ميونيخ، قيادة د. ياو تشنغ، اعتمادات CE و ISO",
+    "reg_c1_title": "التشريعات والتسجيلات الطبية",
+    "reg_c1_desc": "مسجلة بنظام تتبع المنتجات (ÜTS) بوزارة الصحة مع تتبع بنسبة 100%. شهادات CE 0197 وهيئة التفتيش، ونظام الجودة ISO-13485:2016، ومطابقة السيراميك السني ISO 6872.",
+    "reg_c2_title": "المجلس العلمي للجهة المصنعة وبلد المنشأ",
+    "reg_c2_desc": "الجهة المصنعة: Hangzhou IVISTA Medical Devices Co., Ltd. (أكثر من 10 سنوات أبحاث). الممثل الأوروبي المعتمد: MedPath GmbH، ميونيخ، ألمانيا. المؤسس والمدير الفني: د. ياو تشنغ (دكتوراه كيمياء فيزيائية بالأكاديمية الصينية للعلوم، دراسات ما بعد الدكتوراه بجامعة ستوكهولم، 14 عاماً بأبحاث السيراميك السني).",
+    "reg_c3_title": "التحقق من تشغيلة LOT وسجل الجودة برمز QR",
+    "reg_c3_desc": "رقم تشغيلة مصنعي فريد (LOT) على كل قرص زيركون و PMMA. يتيح مسح رمز QR التحقق الرقمي الفوري من نفاذية الضوء المحددة للدفعة (43%–60%) وقوة الانثناء (650-1200 ميجاباسكال) وجدول الحرق.",
+    "reg_c4_title": "تقنية بوليمر PMMA لأنظمة CAD/CAM",
+    "reg_c4_desc": "مصفوفة بوليمرية متجانسة عالية الكثافة ومتشابكة. متوفر بطبقة واحدة، ومتعدد الطبقات، وشفاف (لحراس الليل والجبائر)، ومعتم (لأدلة الجراحة بالأشعة). تفريز بارد بدون حرق إطلاقاً.",
+    "kat_kicker": "أرشيف الصور والوثائق المؤسسية",
+    "kat_lead": "للحفاظ على سرعة الصفحة الرئيسية وتجربة التصفح عبر الجوال، تم جمع مجموعة تصوير الاستوديو المكونة من 40 صورة وكتالوجات PDF عالية الدقة في هذا الأرشيف.",
+    "kat_c1_title": "سلسلة أقراص ZirCrown 3D-ML متعددة الطبقات",
+    "kat_c1_text": "تدرج سلس من مقاومة عنقية 1100 ميجاباسكال إلى نفاذية ضوئية 57%–60% عند حافة القواطع.",
+    "kat_c1b_title": "سلسلة أقراص ZirCrown 4D-ML متعددة الطبقات",
+    "kat_c1b_text": "تدرج من 9 طبقات (نفاذية 45%–59% ومقاومة انحناء 700–1000 ميجاباسكال) للتركيبات التجميلية.",
+    "kat_c2_title": "جسور متجانسة لكامل القوس وعلى الزرعات",
+    "kat_c2_text": "تشريح إطباقي طبيعي مع حد أدنى من طبقات الخزف أو التزجيج المتجانس الصافي.",
+    "kat_c3_title": "عائلة علاج الجذور السريري والحشو القنيوي",
+    "kat_c3_text": "أنظمة حشو القنوات المتوافقة مع أقطار أطراف ISO من 0.15 إلى 0.40 مم ومخروطية .02/.04/.06.",
+    "kat_btn_zircrown": "تحميل كتالوج ZirCrown 2026 عالي الدقة (PDF)",
+    "kat_btn_pmma": "تحميل كتالوج أقراص PMMA (PDF)",
+    "kat_btn_endo": "تحميل كتالوج أدوات علاج الجذور (PDF)",
+    "sim_kicker": "بروتوكول أفران المعامل",
+    "sim_lead": "برنامج الحرق القياسي الموصى به لتحقيق أقصى نفاذية ضوئية واستقرار بلوري عبر أقراص ZirCrown المتعددة والأحادية الطبقات:",
+    "sim_th_stage": "المرحلة",
+    "sim_th_tstart": "درجة الحرارة الابتدائية",
+    "sim_th_ttarget": "درجة الحرارة المستهدفة",
+    "sim_th_rate": "معدل التسخين / التبريد",
+    "sim_th_dwell": "مدة الثبات (Dwell)",
+    "sim_th_note": "ملاحظات المختبر",
+    "sim_r1_c1": "1. التسخين المبدئي",
+    "sim_r1_c2": "25°م (الغرفة)",
+    "sim_r1_c4": "8°م / دقيقة",
+    "sim_r1_c5": "30 دقيقة",
+    "sim_r1_c6": "الموازنة الحرارية بعد التجفيف الأولي للتيجان الملونة بالسوائل المخصصة",
+    "sim_r2_c1": "2. صعود الحرق",
+    "sim_r2_c4": "4°م – 5°م / دقيقة",
+    "sim_r2_c5": "120 دقيقة",
+    "sim_r2_c6": "الوصول للكثافة الكاملة (6.08 جم/سم³) وتثبيت النفاذية الضوئية المستهدفة بنسبة 43%–60%",
+    "sim_r3_c1": "3. التبريد المتحكم به",
+    "sim_r3_c4": "≤ 8°م / دقيقة (الفرن مغلق)",
+    "sim_r3_c6": "لا يُفتح باب الفرن قبل انخفاض الحرارة إلى 200°م منعاً للصدمات الحرارية والتشققات المجهرية",
+    "endo_kicker1": "المسار السريري ب · عيادات الأسنان واستشاريو علاج الجذور",
+    "endo_page_h1": "أقماع جوتا بيركا المعالجة حرارياً وفق ISO 6877، وأقماع الحشو الميليمترية وأجهزة المعايرة",
+    "endo_page_lead": "سلاسل جوتا بيركا وأقماع ورقية ماصة مطابقة لمعيار ISO 6877 بنفس مخروطية المبارد الدوارة (.02 / .04 / .06) لتحقيق أعلى مقاومة لإجهاد الانحناء في القنوات المتكلسة والمنحنية.",
+    "endo_btn_quote": "طلب عرض سعر علاج الجذور",
+    "endo_btn_brochure": "كتيب علاج الجذور التقني (PDF)",
+    "endo_btn_wa": "دعم العيادات عبر واتساب",
+    "endo_caption": "علامات عمق محفورة بالليزر (18 / 19 / 20 / 22 / 24 مم) لملاءمة قنيوية دقيقة",
+    "endo_kicker2": "جوتا بيركا مطابقة لمعيار ISO 6877 وحشو قنيوي دقيق",
+    "endo_sec_h2": "المصفوفة التقنية لأقماع جوتا بيركا والأقماع الورقية الماصة ISO 6877",
+    "endo_legend": "<strong>دليل القياسات التقنية:</strong> قطر الطرف ISO من 0.15 إلى 0.40 مم · مخروطية .04/.06 | ترميز الألوان: أبيض (0.15) · أصفر (0.20) · أحمر (0.25) · أزرق (0.30) · أخضر (0.35) · أسود (0.40) | أطوال العمل: 21 مم · 25 مم · 31 مم.",
+    "endo_th_group": "مجموعة المنتجات",
+    "endo_th_iso": "نطاق قطر الطرف ISO",
+    "endo_th_taper": "المخروطية (Taper)",
+    "endo_th_length": "طول العمل / العلامات",
+    "endo_th_feature": "محتوى العبوة والخصائص",
+    "endo_r1_c1": "<strong>طقم أقماع جوتا بيركا وأقماع ورقية UZM Gold / Blue ISO 6877</strong>",
+    "endo_r1_c2": "Ø 0.15 مم – Ø 0.40 مم (مشكل وفردي)",
+    "endo_r1_c3": "مخروطية ثابتة / متغيرة .04 و .06",
+    "endo_r1_c5": "عبوة بليستر من 6 قطع · ذاكرة مرنة قابلة للثني المسبق، طرف أمان غير قاطع يمنع الانحشار الذروي",
+    "endo_r2_c1": "<strong>أقماع جوتا بيركا القياسية UZM ISO</strong>",
+    "endo_r2_c2": "ISO #15 – #80 (فردي ومشكل)",
+    "endo_r2_c3": "توافق مع مبارد اليد القياسية .02",
+    "endo_r2_c4": "علامات ليزر ميليمترية (18، 19، 20، 22، 24 مم)",
+    "endo_r2_c5": "علبة منزلقة 120 قطعة · مصفوفة جوتا بيركا طبيعية متوافقة حيوياً، عتامة إشعاعية عالية",
+    "endo_r3_c1": "<strong>أقماع جوتا بيركا المخروطية الخاصة UZM</strong>",
+    "endo_r3_c3": "توافق مع الأنظمة الدوارة .04 و .06",
+    "endo_r3_c4": "محددة بالعمق الميلمتري",
+    "endo_r3_c5": "عبوة معقمة من 60 قطعة · مناسبة للحشو الحراري الميكانيكي والتكثيف الرأسي الدافئ",
+    "endo_r4_c1": "<strong>أقماع ورقية ماصة ومعقمة UZM Paper Points</strong>",
+    "endo_r4_c3": "متوافقة مع مخروطية .02 / .04 / .06",
+    "endo_r4_c4": "علامات ميليمترية",
+    "endo_r4_c5": "عبوة معقمة مقسمة من 200 / 100 قطعة · امتصاص فائق وبنية ألياف لا تتفتت",
+    "endo_r5_c1": "<strong>مسطرة معايرة أقماع جوتا بيركا UZM Corrector</strong>",
+    "endo_r5_c2": "فتحات معايرة مخروطية ISO #20 – #60",
+    "endo_r5_c3": "شفرة تقطيع حادة وعالية الدقة",
+    "endo_r5_c4": "هيكل من الألمنيوم المؤكسد",
+    "endo_r5_c5": "معيار واحد قابل للتعقيم · يضمن ملاءمة ذروية دقيقة من خلال قص طرف القمع الرئيسي بدقة ميليمترية كاملة",
+    "bc_home": "← الرئيسية",
+    "bc_studio": "معرض الاستوديو",
+    "studio_btn_all": "الكل (40 لقطة)",
+    "studio_btn_3dml": "سلسلة 3D-ML (18)",
+    "studio_btn_stml": "سلسلة ZirCrown ST-ML (8)",
+    "studio_btn_vita": "مقارنة ألوان VITA (7)",
+    "studio_btn_4d5d": "4D-ML و 5D-ML القوس الكامل (9)",
+    "studio_btn_3dpro": "أقراص وعبوات 3D-PRO (5)",
+    "studio_code_tag": "استوديو ZirCrown®"
+  },
+  "zh": {
+    "lang": "zh",
+    "sinter_btn_fast": "1–3 单位快速",
+    "sinter_btn_std": "4–6 单位标准",
+    "sinter_btn_long": "7+ 单位长跨度",
+    "drawer_studio_desc": "左右滑动滑块，对比冷等静压生坯瓷块在烧结前后的真实透光率质感转变。",
+    "drawer_compare_lbl": "生坯毛坯瓷块 (0%) ⇄ 最终烧结修复体 (100%)",
+    "foy_pmma_title": "PMMA 产品系列与直径表",
+    "th_pmma_family": "产品系列",
+    "td_pmma_family": "单层 · 多层 · 透明 · 阻射 (X-Ray)",
+    "th_pmma_sys": "系统兼容性",
+    "td_pmma_sys": "98 mm CAD/CAM 系统 · 95 mm 系统 · Amann Girrbach (AG)",
+    "th_pmma_dim": "可选尺寸",
+    "td_pmma_dim": "98 × (16, 18, 20, 30 mm) · 95 × 18 mm · AG × 18 mm",
+    "th_pmma_shades": "可选色号",
+    "td_pmma_shades": "A1, A2, BL3, Clear (透明)",
+    "th_pmma_ind": "临床适应症",
+    "td_pmma_ind": "临时冠桥修复、咬合垫、夜磨牙垫、放射诊断与追踪",
+    "th_pmma_trace": "注册与追溯",
+    "td_pmma_trace": "已完成医疗器械注册 · 配备二维码技术文档",
+    "foy_endo1_title": "技术参数与包装清单",
+    "td_med_steel": "医用级不锈钢",
+    "th_calibration": "校准",
+    "td_iso_slots": "ISO #20–#60 基准插槽",
+    "th_sterilization": "消毒灭菌",
+    "td_autoclave_135": "耐受 135°C 高压灭菌",
+    "th_purpose": "预期用途",
+    "td_endo1_purpose": "主胶尖尖端修剪与根尖直径控制",
+    "foy_endo2_title": "技术参数：校准孔槽",
+    "th_hole_diams": "孔径规格",
+    "td_iso_std_holes": "ISO 标准测量孔 (#20, #25, #30, #35, #40, #45, #50, #55, #60)",
+    "td_autoclave_resist": "耐 135°C 高温高压灭菌",
+    "th_usage_area": "应用范围",
+    "td_endo2_usage": "高精度根尖测量与主胶尖定规制备",
+    "foy_endo3_title": "锥度、规格与包装矩阵",
+    "th_taper": "锥度",
+    "th_avail_dims": "可选尺寸",
+    "th_box_content": "包装容量",
+    "td_iso_std_gp": "ISO 标准牙胶尖",
+    "td_gp_box_100": "100 支（带毫米刻度）",
+    "td_iso_angled_gp": "ISO 大锥度牙胶尖",
+    "td_gp_box_60_rad": "60 支 · 高度阻射",
+    "td_f_series_gp": "F 系列牙胶尖",
+    "td_variable": "可变",
+    "td_f_series_dims": "F1, F2, F3, F4, F5 (及混装)",
+    "td_gp_box_60_rotary": "60 支 · 适配机用旋转镍钛系统",
+    "td_x_series_gp": "X 系列牙胶尖",
+    "td_x_series_dims": "X1, X2, X3, X4, X5 (及混装)",
+    "td_gp_box_60_xshape": "60 支 · 适配 X-Shape 机用系统",
+    "td_p_series_gp": "P 系列牙胶尖",
+    "td_reciproc": "往复运动",
+    "td_gp_box_60_recip": "60 支 · 适配往复机用系统",
+    "td_paper_points": "吸水纸尖",
+    "td_pp_box": "100 / 200 支 · 无菌纤维素",
+    "row_ht_fast": "ZirCrown HT 快速烧结",
+    "st6_badge": "盘内 CAD/CAM 切削",
+    "st6_title": "生坯盘内排样与微米级连接体切削分布",
+    "pmma_m_proc_lbl": "加工工艺流程",
+    "pmma_m_proc_val": "冷切削",
+    "pmma_m_proc_note": "无需烧结或烘烤",
+    "pmma_m_diam_lbl": "直径规格选项",
+    "pmma_m_diam_note": "开放系统兼容性",
+    "pmma_m_ind_lbl": "临床适应症",
+    "pmma_m_ind_val": "临时冠 · 咬合板 · 手术导板",
+    "pmma_oem_ml": "原厂切削盘 · PMMA-ML",
+    "pmma_lbl_proc": "加工方式",
+    "pmma_oem_clear": "原厂切削盘 · PMMA-CLEAR",
+    "pmma_lbl_opt": "光学特性",
+    "pmma_oem_xray": "原厂切削盘 · PMMA-XRAY",
+    "pmma_lbl_feat": "核心特性",
+    "zirkon_prism_title": "ZirCrown® 多层氧化锆盘系列",
+    "zirkon_lbl_sys": "系统架构",
+    "zirkon_val_sys": "开放式 Ø98.5mm",
+    "zirkon_oem_3dpro": "原厂切削盘 · 3D-PRO-ML",
+    "zirkon_oem_5d": "原厂切削盘 · 5D-ML",
+    "zirkon_oem_st": "原厂切削盘 · ST-ML",
+    "lbl_trans": "透光率 (%)",
+    "dir": "ltr",
+    "dropdown_lbl": "ZH ▾",
+    "title_home": "UZM DENTAL — ZirCrown 光学陶瓷与牙髓病学系统",
+    "title_studio": "ZirCrown 烧结全冠与 VITA 比色板验证图库 | UZM Dental",
+    "title_zirkonya": "ZirCrown 氧化锆瓷块 | UZM Dental",
+    "title_pmma": "ZirCrown PMMA 树脂盘 | UZM Dental",
+    "title_endo": "ZirCrown 牙髓根管充填系统 | UZM Dental",
+    "title_sinter": "ZirCrown 烧结规程与热力学分析 | UZM Dental",
+    "title_katalog": "ZirCrown 产品技术手册与影集 | UZM Dental",
+    "brand_sub": "ZirCrown · CAD/CAM 与牙髓系统",
+    "nav_blocks": "氧化锆瓷块",
+    "nav_pmma": "PMMA 树脂盘",
+    "nav_sinter": "烧结曲线矩阵",
+    "nav_studio": "实拍影集",
+    "nav_endo": "牙髓病学系列",
+    "nav_brochures": "技术手册",
+    "theme_light": "浅色模式",
+    "theme_dark": "黑曜石深色",
+    "quote_btn": "样品与报价",
+    "hamburger_aria": "移动端导航",
+    "hero_eyebrow": "牙科CAD/CAM氧化锆瓷块 · ZIRCROWN® 等静压",
+    "hero_title_html": "牙科CAD/CAM<em>氧化锆瓷块</em>与多层渐变瓷盘",
+    "hero_lead": "采用冷等静压（CIP）工艺制成的ZirCrown®多层氧化锆瓷盘；切端至颈部自然透光过渡，1200 MPa抗折强度，全面适配开放式CAD/CAM系统（Ø 98.5 mm）。",
+    "cta_explore": "浏览氧化锆系列",
+    "cta_analysis": "层析与强度 (MPa) 分析",
+    "metric_trans_lbl": "透光率",
+    "metric_trans_val": "43% – 60%",
+    "metric_trans_note": "切端 → 颈部梯度",
+    "metric_strength_lbl": "抗弯强度",
+    "metric_strength_val": "650 – 1200 MPa",
+    "metric_strength_note": "三点抗弯测试",
+    "metric_cad_lbl": "CAD/CAM 适配",
+    "metric_cad_val": "Ø 98.5 mm",
+    "metric_cad_note": "10 mm – 25 mm · VITA 16 + BL",
+    "simulator_tag": "实时光学截面模拟器",
+    "stat_trans": "透光率",
+    "stat_mpa": "抗弯强度",
+    "stat_temp": "烧结工艺",
+    "lbl_mpa": "抗弯强度 (MPa)",
+    "lbl_temp": "推荐烧结温度",
+    "lbl_ind": "最佳适应症",
+    "msb_title": "UZM Dental 企业服务台",
+    "msb_sub": "义齿加工所直通样品与报价",
+    "msb_btn": "获取样品与报价 →",
+    "drawer_config": "已选规格",
+    "drawer_add": "加入样品 / 报价清单",
+    "quote_modal_tag": "齿科技工所直通企业服务台",
+    "quote_modal_title": "样品与企业报价清单",
+    "quote_input_ph": "技工所 / 诊所名称与城市",
+    "whatsapp_btn": "通过 WhatsApp 快速获取价格与样品",
+    "zirkonya_h1": "天然透光渐变梯度，高抗弯强度。",
+    "zirkonya_lead": "冷等静压 (CIP) 多层氧化锆 ZirCrown 瓷块；天然发育沟与切端渐变过渡，零边缘崩瓷，全面校准 exocad 与 3Shape，显著优化义齿技工所工作流。",
+    "pmma_h1": "极高生物相容性，免烧结加工。",
+    "pmma_lead": "采用高密度均质交联高分子结构的 ZirCrown PMMA 树脂盘，专为长期临时冠桥、咬合垫及种植导板设计；具备优异生物相容性与边缘稳定性，无需烧结炉耗时。",
+    "endo_h1": "热处理 ISO 6877 牙胶尖，毫米级精准根管充填。",
+    "endo_lead": "优异生物相容性阿尔法/贝塔相平衡及微米级锥度公差，确保根尖严密封闭。",
+    "sinter_h1": "ZirCrown 1450°C – 1530°C 烧结曲线与抗折强度平衡",
+    "studio_eyebrow": "ZIRCROWN® · 实物全冠桥与高透瓷块高清档案展厅",
+    "studio_heading": "ZirCrown® 烧结全冠桥与 VITA 比色板实拍对比图库 (40 张影棚实拍)",
+    "katalog_h1": "ZirCrown 氧化锆、PMMA 与牙髓科产品影棚系列",
+    "sec1_tag": "01 / 光学陶瓷产品系列",
+    "sec1_title": "ZirCrown 氧化锆瓷块全系列",
+    "sec1_sub": "专为从前牙美学到全口种植支持桥等各类临床适应症优化的 ZirCrown 多层氧化锆瓷块系列。查看相应系列以获取层析过渡、烧结曲线与技术参数详情。",
+    "pill_all": "全部 (6大系列)",
+    "pill_anterior": "前牙与美学",
+    "pill_allround": "全口与长跨度桥",
+    "pill_posterior": "后牙与基底支架",
+    "sec2_tag": "02 / CAD/CAM 生物相容性聚合物",
+    "sec2_title": "UZM Dental PMMA 树脂盘系列",
+    "sec2_sub": "涵盖单色、多层渐变、光学透明及放射阻射显影的 CAD/CAM 树脂盘系列，专为长期临时冠桥、诊断义齿及种植导板设计。",
+    "pmma_pill_all": "全部 PMMA (4大系列)",
+    "pmma_pill_temp": "临时修复与试戴",
+    "pmma_pill_splint": "咬合垫与夜磨牙护齿",
+    "pmma_pill_guide": "种植导板与显影",
+    "sec3_tag": "03 / 工程参数矩阵与档案库",
+    "sec3_title": "技术参考表与实拍图谱",
+    "sec3_sub": "一键展开所需的技术参考面板与实拍档案。",
+    "matrix_badge": "表 01",
+    "matrix_title": "ZirCrown 6大系列性能对比与烧结参数矩阵",
+    "matrix_sub": "透光率 (%)、三点抗弯强度 (MPa)、最高烧结温度与厚度范围",
+    "th_block_series": "瓷块系列",
+    "th_architecture": "层状结构",
+    "th_translucency": "透光率",
+    "th_flex_strength": "抗弯强度",
+    "th_sinter_peak": "最高烧结温度",
+    "th_thickness": "厚度 (Ø 98.5mm)",
+    "th_detail": "详情",
+    "btn_inspect": "查看",
+    "row_arch_10l": "10层渐变多层",
+    "row_arch_8l": "8层混合多层",
+    "row_arch_6l_aest": "6层高透美学",
+    "row_arch_6l_bal": "6层平衡通用",
+    "row_arch_4l_mono": "4层一体多层",
+    "row_arch_mono_infra": "一体基底冠",
+    "row_temp_1500": "1500°C (保温2小时)",
+    "row_temp_1490": "1490°C (保温2小时)",
+    "row_temp_1510": "1510°C (保温2小时)",
+    "row_trans_homo": "43% 均质透光",
+    "row_trans_high_str": "43% – 55% 快速烧结",
+    "sinter_badge": "烧结 02",
+    "sinter_title": "ZirCrown 热处理烧结升温与保温曲线",
+    "sinter_sub": "快速烧结 (1–3单冠 1500°C)、标准烧结 (4–6单位桥 1500°C) 及全口长跨度桥 (7+单位 1530°C) 工艺规范",
+    "th_resto_type": "修复体类型",
+    "th_ramp_up": "升温速率",
+    "th_peak_temp": "最高温度 (Tmax)",
+    "th_hold_time": "保温时间",
+    "th_ramp_down": "降温速率",
+    "th_total_time": "总烧结周期",
+    "row_fast_title": "1–3单位单冠 / 短桥 (快速工艺)",
+    "row_std_title": "4–6单位常规长桥 (标准工艺)",
+    "row_long_title": "7+单位全口长桥 (缓速控温工艺)",
+    "time_2h": "2小时",
+    "time_25h": "2.5小时",
+    "time_3h": "3.0小时",
+    "time_45h": "~4.5小时",
+    "time_6h": "~6.0小时",
+    "time_95h": "~9.5小时",
+    "ramp_down_10": "10°C / 分钟",
+    "ramp_down_8": "8°C / 分钟",
+    "ramp_down_5ctrl": "5°C / 分钟 (程序控温)",
+    "btn_open_sinter_sim": "打开交互式烧结仿真器 &rarr;",
+    "studio_badge": "实拍 02",
+    "studio_title": "烧结氧化锆义齿实拍与比色图谱",
+    "studio_sub": "在黑色光学反射镜面上拍摄的 ZirCrown® 3D-ML、ST-ML、4D-ML、5D-ML 及 3D-PRO 真实烧结全冠桥实物，严格对照 VITA A2 / D2 国际比色板与对应出厂瓷块。",
+    "st1_title": "经 VITA A2 比色板校验的烧结对比实拍",
+    "st1_desc": "在黑色光学反射镜上以 VITA A2 比色片校验的 3D-ML 与 ST-ML 烧结全锆单冠。",
+    "st2_title": "ZirCrown 多层全口长跨度一体桥",
+    "st2_desc": "严格执行 1530°C 烧结规范获得的切端通透感与颈缘饱满色度自然过渡。",
+    "st3_title": "3单位前牙一体美学桥",
+    "st3_desc": "在 1500°C 烧结后展现出天然蛋白光泽与微米级边缘稳定性的前牙3单位桥。",
+    "st4_title": "后牙一体桥颊侧解剖外形",
+    "st4_desc": "采用 1200 MPa 均质高强度 ST-ML 瓷块切削烧结、耐受咀嚼咬合力的后牙桥。",
+    "st5_title": "ST-ML A2 与 D2 临床比色对比",
+    "st5_desc": "在黑色光学反射镜上直观呈现 VITA A2 与 D2 色调色阶及颈缘密度的双病例分析。",
+    "st6_desc": "CAD/CAM 切削后烧结前生坯阶段展现的微米边缘精度与解剖连接体布局。",
+    "btn_inspect_studio": "在实拍图库中查看 &rarr;",
+    "st40_summary": "40 张技工所真实病例实拍与 VITA 比色校准档案",
+    "st40_desc": "来自 UZM Dental 技工所档案的40张超清实拍照片 (3D-ML、ST-ML、4D-ML、5D-ML)，均在黑色光学反射镜上对照 VITA A2/D2 比色板严格校准。",
+    "btn_open_full_studio": "进入完整 40 张棚拍图库 &rarr;",
+    "endo_badge": "牙髓 03",
+    "endo_title": "牙髓根管充填、牙胶尖与微米级校准系统",
+    "endo_sub": "激光毫米刻度牙胶尖、吸水纸尖、医用不锈钢切胶剪刀与根尖校准尺",
+    "endo_c1_tag": "临床剪刀",
+    "endo_c1_title": "UZM Dental 不锈钢牙胶剪刀",
+    "endo_c1_desc": "医用不锈钢精密剪刀，可按根尖直径规范无形变剪切和校准牙胶尖。",
+    "endo_c1_meta": "ISO #20–#60 导槽 · 医用不锈钢 · 135°C 高压灭菌",
+    "endo_c2_tag": "校准测隙尺",
+    "endo_c2_title": "UZM Dental 牙胶尖主尖校准尺",
+    "endo_c2_desc": "带 ISO 标准孔径的不锈钢测隙尺，用于在缺少合适型号时精准切制主牙胶尖。",
+    "endo_c2_meta": "ISO 基准孔 · 医用不锈钢 · 135°C 高温灭菌",
+    "endo_c3_tag": "根管充填",
+    "endo_c3_title": "激光毫米测距牙胶尖与高吸收灭菌吸水纸尖",
+    "endo_c3_desc": "带毫米级深度标记线、无镉高显影牙胶尖与高吸水无菌吸水纸尖。",
+    "endo_c3_meta": "ISO 标准 · .02 / .04 / .06 锥度 · F 与 P 系列",
+    "endo_c4_tag": "CAD/CAM 临时冠桥盘",
+    "endo_c4_title": "UZM Dental PMMA CAD/CAM 临时修复树脂盘",
+    "endo_c4_desc": "适用于临时单冠/长桥、前牙美学试戴、咬合夹板与放射显影评估的 CAD/CAM 盘。",
+    "endo_c4_meta": "98mm · 95mm · AG 适配系统 · 16 – 30mm",
+    "btn_add_to_quote": "加入样品与询价清单",
+    "catalog_badge": "产品手册 04",
+    "catalog_title": "官方产品手册与技术规范 PDF 资料库",
+    "catalog_sub": "ZirCrown 2026 产品手册、PMMA CAD/CAM 技术目录与牙髓充填规范指南",
+    "br1_tag": "氧化锆产品技术手册",
+    "br1_title": "ZirCrown® 2026 产品总览手册 (PDF)",
+    "br1_desc": "包含全部 6 款氧化锆系列瓷块的层析图谱、抗弯强度与电炉烧结温控曲线。",
+    "br1_btn": "下载技术手册 (PDF · 2.1 MB)",
+    "br2_tag": "PMMA 产品手册",
+    "br2_title": "PMMA CAD/CAM 树脂盘技术手册 (PDF)",
+    "br2_desc": "涵盖单色、多层渐变与显影盘的物理性能参数、切削加工设置与规格厚度。",
+    "br2_btn": "下载技术手册 (PDF · 3.8 MB)",
+    "br3_tag": "根管技术指南",
+    "br3_title": "牙胶尖与根管充填系统临床操作指南 (PDF)",
+    "br3_desc": "ISO 颜色编码、锥度几何公差、放射阻射度实测与临床操作指南。",
+    "br3_btn": "下载技术指南 (PDF · 3.2 MB)",
+    "footer_desc": "为齿科临床诊所与 CAD/CAM 加工所提供原厂直供采购、电炉烧结温控校准支持及严格的批号追溯系统。",
+    "footer_studio": "实拍画廊",
+    "footer_katalog": "技术画册",
+    "footer_sinter": "光学仿真",
+    "footer_endo": "牙髓临床",
+    "zirkonya_eyebrow": "Ø 98.5MM 等静压氧化锆 · 开放式 CAD/CAM 系统",
+    "zirkonya_h1_html": "天然透光渐变梯度，<em>超高抗弯强度</em>。",
+    "pmma_eyebrow": "高密度交联 CAD/CAM PMMA 树脂盘 · 冷加工切削",
+    "pmma_h1_html": "高密度高度交联 <em>CAD/CAM PMMA 瓷块</em>，零烧结工艺。",
+    "reg_badge": "法规与认证 05",
+    "reg_title": "卫生部 ÜTS 医疗器械注册、出厂批号 LOT 验证与 IVISTA 科学委员会",
+    "reg_sub": "杭州 IVISTA 医疗研发基地、德国慕尼黑 MedPath GmbH 欧盟授权代表、程尧博士领衔、CE与ISO权威认证",
+    "reg_c1_title": "医疗器械法规与注册许可",
+    "reg_c1_desc": "已在土耳其卫生部产品溯源系统 (ÜTS) 正式注册并实现 100% 全程追溯。具备 CE 0197 欧盟公告机构认证、ISO-13485:2016 医疗器械质量体系认证及 ISO 6872 牙科陶瓷合规标准。",
+    "reg_c2_title": "制造企业科学顾问团与全球资质",
+    "reg_c2_desc": "生产厂家：杭州艾维斯医疗器械有限公司（Hangzhou IVISTA Medical，深耕牙科陶瓷 10 余年）。欧盟授权代表：德国慕尼黑 MedPath GmbH。创始人兼技术总监：程尧博士（中国科学院研究生院物理化学博士、瑞典斯德哥尔摩大学博士后，专注牙科生物陶瓷研发 14 年，荣获海外高层次人才引进奖）。",
+    "reg_c3_title": "出厂批次 LOT 查验与二维码质量溯源档案",
+    "reg_c3_desc": "每件氧化锆与 PMMA 瓷块均附带独立出厂批号 (LOT)。扫描外包装二维码即可秒级调取对应批次的透光率（43%–60%）、三点抗弯强度（650–1200 MPa）及烧结质检报告。",
+    "reg_c4_title": "高精 CAD/CAM PMMA 生物聚合物技术",
+    "reg_c4_desc": "高密度高度交联均质高分子结构。包含单层、多层渐变、Clear 高透（透明夜磨牙合垫/保持器）、Opaque 显影阻射（X光对比外科种植导板）。纯冷切削加工，零烧结收缩，无需烤瓷炉。",
+    "kat_kicker": "企业官方媒体与文档档案库",
+    "kat_lead": "为确保首页极致响应速度与移动端浏览体验，40 张影棚级全套实拍图鉴与高清 PDF 技术手册已完整汇总于本档案库。",
+    "kat_c1_title": "ZirCrown 3D-ML 多层渐变氧化锆瓷块系列",
+    "kat_c1_text": "从颈部 1200 MPa 超高强度到切端 57%–60% 高透光率的无阶过渡。",
+    "kat_c1b_title": "ZirCrown 4D-ML 多层渐变氧化锆瓷块系列",
+    "kat_c1b_text": "9 层渐变结构（透光率 45%–59%，抗弯强度 700–1000 MPa），兼顾前牙美学与后牙强度。",
+    "kat_c2_title": "全牙弓单片整体全冠与种植体支持式固定桥",
+    "kat_c2_text": "通过极简微堆瓷或纯单片整体上釉呈现生动逼真的咬合面生物解剖形态。",
+    "kat_c3_title": "临床牙髓病学与根管充填耗材家族",
+    "kat_c3_text": "完美匹配 ISO Ø 0.15–0.40 mm 尖端直径与 .02/.04/.06 锥度的根管充填系统。",
+    "kat_btn_zircrown": "下载 ZirCrown 2026 高清综合画册 (PDF)",
+    "kat_btn_pmma": "下载 PMMA 专用产品画册 (PDF)",
+    "kat_btn_endo": "下载牙髓根管充填手册 (PDF)",
+    "sim_kicker": "义齿技工所烧结炉工艺规范",
+    "sim_lead": "针对 ZirCrown 多层渐变 (3D/4D) 与单层 (ST-ML / 3D-ML / 3D-PRO / 4D-ML / 5D-ML) 氧化锆瓷块推荐的标准化烧结程序，确保最佳透光率与四方晶相稳定性：",
+    "sim_th_stage": "阶段",
+    "sim_th_tstart": "起始温度",
+    "sim_th_ttarget": "目标温度",
+    "sim_th_rate": "升温 / 降温速率",
+    "sim_th_dwell": "恒温保持时间",
+    "sim_th_note": "技工操作要领",
+    "sim_r1_c1": "1. 预热排湿阶段",
+    "sim_r1_c2": "25°C（室温）",
+    "sim_r1_c4": "8°C / 分钟",
+    "sim_r1_c5": "30 分钟",
+    "sim_r1_c6": "浸染染色液后牙冠预干燥后的均热平衡阶段",
+    "sim_r2_c1": "2. 高温致密烧结升温段",
+    "sim_r2_c4": "4°C – 5°C / 分钟",
+    "sim_r2_c5": "120 分钟",
+    "sim_r2_c6": "实现完全致密化（理论密度 6.08 g/cm³）并锁定 43%–60% 目标透光性能",
+    "sim_r3_c1": "3. 受控降温阶段",
+    "sim_r3_c4": "≤ 8°C / 分钟（炉膛闭合）",
+    "sim_r3_c6": "炉膛在降至 200°C 之前严禁开盖，以彻底杜绝热震微裂纹产生",
+    "endo_kicker1": "采购通道 B · 口腔诊所与牙髓病科专科医师",
+    "endo_page_h1": "经热处理的高精 ISO 6877 牙胶尖、毫米标记根管充填尖与牙胶修剪校准尺",
+    "endo_page_lead": "与主流机用旋转镍钛系统锥度（.02 / .04 / .06 Taper）完全一致的 ISO 6877 校准牙胶尖与吸水纸尖，大幅提升弯曲钙化根管的适形充填质量。",
+    "endo_btn_quote": "获取牙髓根管产品大宗报价",
+    "endo_btn_brochure": "下载牙髓科技术资料 (PDF)",
+    "endo_btn_wa": "WhatsApp 临床专家在线咨询",
+    "endo_caption": "激光毫米级定长刻度（18 / 19 / 20 / 22 / 24 mm）确保根尖孔严密锁固",
+    "endo_kicker2": "符合 ISO 6877 国际标准的高精根管封闭系统",
+    "endo_sec_h2": "ISO 6877 牙胶尖与吸水纸尖全规格技术参数矩阵",
+    "endo_legend": "<strong>规格图例说明：</strong> ISO 尖端直径 Ø 0.15–0.40 mm · .04/.06 锥度 &nbsp;|&nbsp; 国际色标：白 (0.15) · 黄 (0.20) · 红 (0.25) · 蓝 (0.30) · 绿 (0.35) · 黑 (0.40) &nbsp;|&nbsp; 工作长度：21 mm · 25 mm · 31 mm。",
+    "endo_th_group": "产品系列",
+    "endo_th_iso": "ISO 尖端直径范围",
+    "endo_th_taper": "锥度 (Taper)",
+    "endo_th_length": "工作长度 / 深度刻度",
+    "endo_th_feature": "包装规格与临床特性",
+    "endo_r1_c1": "<strong>UZM 金标/蓝标 ISO 6877 牙胶尖与吸水纸尖套装</strong>",
+    "endo_r1_c2": "Ø 0.15 mm – Ø 0.40 mm（混装与单号）",
+    "endo_r1_c3": ".04 与 .06 恒定 / 渐变锥度",
+    "endo_r1_c5": "6 支泡罩包装 · 具备可预弯控形记忆，非切割型安全导向尖端防止形成根尖台阶",
+    "endo_r2_c1": "<strong>UZM 标准 ISO 国际色标牙胶尖</strong>",
+    "endo_r2_c2": "ISO #15 – #80（单号与混装规格）",
+    "endo_r2_c3": ".02 标准手用不锈钢根管锉兼容",
+    "endo_r2_c4": "激光毫米级定长标识（18, 19, 20, 22, 24 mm）",
+    "endo_r2_c5": "120 支推拉滑盒包装 · 生物相容性天然古塔胶树脂基质，卓越 X 光阻射显影性",
+    "endo_r3_c1": "<strong>UZM 大锥度专用充填牙胶尖</strong>",
+    "endo_r3_c3": ".04 与 .06 专用旋转机用系统高度适形",
+    "endo_r3_c4": "毫米级定深环标清晰可见",
+    "endo_r3_c5": "60 支无菌包装 · 胜任热牙胶垂直加压充填与热机械固化密闭",
+    "endo_r4_c1": "<strong>UZM 医用无菌吸水纸尖 (Paper Points)</strong>",
+    "endo_r4_c3": "全兼容 .02 / .04 / .06 锥度",
+    "endo_r4_c4": "附带毫米刻度标尺",
+    "endo_r4_c5": "200/100 支独立无菌分区盒装 · 瞬间强效导液吸水，纤维结构致密不散烂",
+    "endo_r5_c1": "<strong>UZM 牙胶尖微米级修剪校准尺 (Corrector)</strong>",
+    "endo_r5_c2": "ISO #20 – #60 标准微孔槽位",
+    "endo_r5_c3": "内置外科级精准微型裁切锋刃",
+    "endo_r5_c4": "阳极氧化高刚性航空铝合金主体",
+    "endo_r5_c5": "1 件高温高压灭菌校准器 · 毫米级定长修剪主牙胶尖，确立严密坚实的根尖倒吸阻抗 (Tug-back)",
+    "bc_home": "← 返回首页",
+    "bc_studio": "影棚实拍展厅",
+    "studio_btn_all": "全部 (40 张实拍)",
+    "studio_btn_3dml": "3D-ML 系列 (18)",
+    "studio_btn_stml": "ZirCrown ST-ML 系列 (8)",
+    "studio_btn_vita": "VITA 比色板对比 (7)",
+    "studio_btn_4d5d": "4D-ML 与 5D-ML 长桥全弓 (9)",
+    "studio_btn_3dpro": "3D-PRO 瓷块与包装实拍 (5)",
+    "studio_code_tag": "ZirCrown® 影棚"
+  }
+};
+
+  function setText(selector, text) {
+    if (!text) return;
+    var els = document.querySelectorAll(selector);
+    for (var i = 0; i < els.length; i++) {
+      els[i].textContent = text;
+    }
+  }
+
+  function setHtml(selector, html) {
+    if (!html) return;
+    var els = document.querySelectorAll(selector);
+    for (var i = 0; i < els.length; i++) {
+      els[i].innerHTML = html;
+    }
+  }
+
+  
+  var subpageAdditions = {"tr": {"teklif_tel_desc": "Doğrudan B2B danışma ve sipariş hattı: <a href=\"tel:+905426460220\" class=\"uzm-tel-link\">0542 646 02 20</a>", "footer_copy_zirkonya": "© 2026 UZM Dental. ZirCrown® bir UZM Dental tescilli markasıdır. Ø 98.5 mm açık sistem CAD/CAM uyumludur.", "footer_copy_pmma": "© 2026 UZM Dental. PMMA CAD/CAM polimer diskleri soğuk frezeleme protokolüyle işlenir. Ø 98.5 mm, Ø 95 mm ve Amann Girrbach uyumludur.", "card_3d_pro_sub": "6 katmanlı doğal renk ve translüsensi gradyanı. Ön estetik kronlar ve 3–4 üye köprüler için ideal denge.", "card_5d_sub": "1200 MPa servikal direnç ve %49 insizal translüsensi ile 14 üye tam ark monolitik restorasyonlar için garantili dayanım.", "card_st_sub": "Anterior estetik laminalar, inley/onley ve yüksek ışık geçirgenliği gerektiren monolitik kuronlar.", "card_pmma_ml_sub": "Uzun dönem geçici kronlar, estetik anterior vakalar ve tam ark diagnostik prova köprüleri.", "card_pmma_clear_sub": "Oklüzal splint, gece plağı, horlama apareyi ve koruyucu plak uygulamaları için berrak şeffaf disk.", "card_pmma_xray_sub": "Radyoopak yapısıyla geçici restorasyonların radyografik takibi ve cerrahi implant kılavuzu planlaması.", "tag_zirconia_types": "KATMANLI VE MONOLİTİK ZİRKONYA", "sec_zirconia_title": "ZirCrown® Zirkonyum Serileri", "sec_zirconia_sub": "Ön bölge yüksek estetikten arka bölge uzun ark köprülere kadar her endikasyona optimize edilmiş mikroyapı.", "card_3d_pro_tag": "ÖN & ARKA BÖLGE", "card_5d_tag": "UZUN ARK KÖPRÜLER", "card_st_tag": "SÜPER TRANSLÜSENT", "tag_pmma_types": "CAD/CAM POLİMER ÇEŞİTLERİ", "sec_pmma_title": "UZM Dental PMMA Serileri", "sec_pmma_sub": "Geçici restorasyonlardan cerrahi planlamaya kadar her aşamada güvenilir boyutsal stabilite.", "card_pmma_ml_tag": "GEÇİCİ & PROVA", "card_pmma_clear_tag": "SPLİNT & GECE PLAĞI", "card_pmma_xray_tag": "KILAVUZ & OPAK", "card_pmma_ml_mat": "Yüksek Çapraz Bağlı PMMA", "card_pmma_ml_proc": "Soğuk Frezeleme & Polisaj", "card_pmma_clear_opt": "Yüksek Optik Berraklık", "card_pmma_xray_feat": "Homojen Radyoopak Yapı", "lbl_material": "MATERYAL", "lbl_processing": "İŞLEME", "lbl_optical": "OPTİK", "lbl_feature": "ÖZELLİK", "btn_download_brochure": "Broşürü İndir", "btn_catalog_detail": "Katalog Detayı", "btn_sinter_curve": "Sinter Eğrisi", "btn_view_studio": "Stüdyo İncele"}, "en": {"teklif_tel_desc": "Direct B2B consultation & order hotline: <a href=\"tel:+905426460220\" class=\"uzm-tel-link\">+90 542 646 02 20</a>", "footer_copy_zirkonya": "© 2026 UZM Dental. ZirCrown® is a registered trademark of UZM Dental. Compatible with Ø 98.5 mm open CAD/CAM systems.", "footer_copy_pmma": "© 2026 UZM Dental. PMMA CAD/CAM polymer discs are processed via cold milling protocol. Compatible with Ø 98.5 mm, Ø 95 mm, and Amann Girrbach.", "card_3d_pro_sub": "6-layer natural color and translucency gradient. Perfect balance for anterior aesthetic crowns and 3–4 unit bridges.", "card_5d_sub": "Guaranteed durability for 14-unit full arch monolithic restorations with 1200 MPa cervical strength and 49% incisal translucency.", "card_st_sub": "Anterior aesthetic veneers, inlays/onlays, and monolithic crowns requiring superior light transmission.", "card_pmma_ml_sub": "Long-term provisional crowns, aesthetic anterior cases, and full-arch diagnostic try-in bridges.", "card_pmma_clear_sub": "Crystal-clear disc for occlusal splints, night guards, snoring appliances, and protective retainers.", "card_pmma_xray_sub": "Radiopaque formulation for radiographic tracking of provisionals and precise surgical implant guide planning.", "tag_zirconia_types": "LAYERED & MONOLITHIC ZIRCONIA", "sec_zirconia_title": "ZirCrown® Zirconia Series", "sec_zirconia_sub": "Microstructure optimized for every indication from anterior high aesthetics to long-span posterior bridges.", "card_3d_pro_tag": "ANTERIOR & POSTERIOR", "card_5d_tag": "LONG-SPAN BRIDGES", "card_st_tag": "SUPER TRANSLUCENT", "tag_pmma_types": "CAD/CAM POLYMER VARIANTS", "sec_pmma_title": "UZM Dental PMMA Series", "sec_pmma_sub": "Reliable dimensional stability at every stage from temporaries to surgical planning.", "card_pmma_ml_tag": "PROVISIONAL & TRY-IN", "card_pmma_clear_tag": "SPLINT & NIGHT GUARD", "card_pmma_xray_tag": "SURGICAL GUIDE & OPAQUE", "card_pmma_ml_mat": "High Cross-Linked PMMA", "card_pmma_ml_proc": "Cold Milling & Polishing", "card_pmma_clear_opt": "High Optical Clarity", "card_pmma_xray_feat": "Homogeneous Radiopaque Structure", "lbl_material": "MATERIAL", "lbl_processing": "PROCESSING", "lbl_optical": "OPTICS", "lbl_feature": "FEATURE", "btn_download_brochure": "Download Brochure", "btn_catalog_detail": "Catalog Details", "btn_sinter_curve": "Sintering Curve", "btn_view_studio": "View Studio"}, "ar": {"teklif_tel_desc": "خط الاستشارة والطلبات المباشرة للشركات B2B: <a href=\"tel:+905426460220\" class=\"uzm-tel-link\">+90 542 646 02 20</a>", "footer_copy_zirkonya": "© 2026 UZM Dental. ZirCrown® علامة تجارية مسجلة لشركة UZM Dental. متوافق مع أنظمة CAD/CAM المفتوحة بقطر 98.5 مم.", "footer_copy_pmma": "© 2026 UZM Dental. تتم معالجة أقراص بوليمر PMMA CAD/CAM عبر بروتوكول الطحن البارد. متوافق مع أقطار 98.5 مم و 95 مم و Amann Girrbach.", "card_3d_pro_sub": "تدرج طبيعي للون والشفافية من 6 طبقات. توازن مثالي لتيجان الأسنان الأمامية التجميلية والجسور حتى 4 وحدات.", "card_5d_sub": "متانة مضمونة للترميمات المتراصة لكامل الفك حتى 14 وحدة مع مقاومة عنقية 1200 ميغاباسكال وشفافية قاطعة 49%.", "card_st_sub": "قشور الفينير التجميلية للأسنان الأمامية والحشوات المصبوبة والتيجان المتراصة التي تتطلب نفاذية ضوء فائقة.", "card_pmma_ml_sub": "تيجان مؤقتة طويلة الأجل، حالات الأسنان الأمامية التجميلية، وجسور تجريبية تشخيصية لكامل الفك.", "card_pmma_clear_sub": "قرص شفاف نقي تماماً لجبائر الإطباق، والواقيات الليلية، وأجهزة علاج الشخير، والواقيات الطبية.", "card_pmma_xray_sub": "تركيبة ظليلة للأشعة للتتبع الشعاعي للترميمات المؤقتة والتخطيط الدقيق لأدلة زراعة الأسنان الجراحية.", "tag_zirconia_types": "الزيركونيوم متعدد الطبقات والمتراص", "sec_zirconia_title": "سلسلة زيركون ZirCrown®", "sec_zirconia_sub": "بنية مجهرية محسّنة لكل استخدام من التجميل الأمامي العالي إلى الجسور الخلفية الطويلة.", "card_3d_pro_tag": "المنطقة الأمامية والخلفية", "card_5d_tag": "جسور طويلة المدى", "card_st_tag": "فائق الشفافية", "tag_pmma_types": "أنواع بوليمر CAD/CAM", "sec_pmma_title": "سلسلة UZM Dental PMMA", "sec_pmma_sub": "استقرار أبعادي موثوق في كل مرحلة من الترميمات المؤقتة إلى التخطيط الجراحي.", "card_pmma_ml_tag": "مؤقت وتجريبي", "card_pmma_clear_tag": "جبيرة وواقي ليلي", "card_pmma_xray_tag": "دليل جراحي وظليل", "card_pmma_ml_mat": "PMMA عالي التشابك", "card_pmma_ml_proc": "طحن بارد وصقل", "card_pmma_clear_opt": "وضوح بصري عالي", "card_pmma_xray_feat": "بنية ظليلة متجانسة", "lbl_material": "المادة", "lbl_processing": "المعالجة", "lbl_optical": "البصريات", "lbl_feature": "الميزة", "btn_download_brochure": "تحميل الكتالوج", "btn_catalog_detail": "تفاصيل الكتالوج", "btn_sinter_curve": "منحنى التلبيد", "btn_view_studio": "معاينة الاستوديو"}, "zh": {"teklif_tel_desc": "直接 B2B 咨询与订购专线：<a href=\"tel:+905426460220\" class=\"uzm-tel-link\">+90 542 646 02 20</a>", "footer_copy_zirkonya": "© 2026 UZM Dental。ZirCrown® 为 UZM Dental 注册商标。兼容 Ø 98.5 mm 开放式 CAD/CAM 系统。", "footer_copy_pmma": "© 2026 UZM Dental。PMMA CAD/CAM 聚合物圆盘采用冷铣削协议加工。兼容 Ø 98.5 mm、Ø 95 mm 及 Amann Girrbach 系统。", "card_3d_pro_sub": "6 层自然仿生颜色与透光渐变。前牙美学冠及 3-4 单位桥体理想之选。", "card_5d_sub": "颈部抗折强度达 1200 MPa，切端透光率 49%，保障 14 单位全口无缝长桥持久稳定。", "card_st_sub": "前牙美学贴面、嵌体/高嵌体以及对光通透度有极高要求的单冠修复体。", "card_pmma_ml_sub": "长期临时冠桥、前牙美学修复及全口诊断试戴桥。", "card_pmma_clear_sub": "高透纯净圆盘，用于咬合垫、夜磨牙护板、止鼾矫治器及保持器。", "card_pmma_xray_sub": "显影阻射配方，便于临时修复体的 X 光追踪及精准种植外科导板规划。", "tag_zirconia_types": "多层分层与单片氧化锆", "sec_zirconia_title": "ZirCrown® 氧化锆系列", "sec_zirconia_sub": "针对从前牙极高美学到后牙长跨度全冠桥的各种适应症深度优化的微观结构。", "card_3d_pro_tag": "前牙与后牙通用", "card_5d_tag": "长跨度连桥", "card_st_tag": "超高透光", "tag_pmma_types": "CAD/CAM 聚合物类型", "sec_pmma_title": "UZM Dental PMMA 系列", "sec_pmma_sub": "从临时修复体到外科规划，全流程保持极其可靠的尺寸稳定性。", "card_pmma_ml_tag": "长期临时与试戴", "card_pmma_clear_tag": "咬合垫与夜磨牙护板", "card_pmma_xray_tag": "种植导板与显影阻射", "card_pmma_ml_mat": "高度交联 PMMA 树脂", "card_pmma_ml_proc": "冷切削铣削与精密抛光", "card_pmma_clear_opt": "极高光学纯净度", "card_pmma_xray_feat": "均匀显影阻射结构", "lbl_material": "材料规格", "lbl_processing": "加工协议", "lbl_optical": "光学特性", "lbl_feature": "核心优势", "btn_download_brochure": "下载技术手册", "btn_catalog_detail": "产品目录详情", "btn_sinter_curve": "烧结曲线", "btn_view_studio": "影集预览"}};
+  for (var sLang in subpageAdditions) {
+    if (UZM_I18N_DICT[sLang]) {
+      for (var sKey in subpageAdditions[sLang]) {
+        UZM_I18N_DICT[sLang][sKey] = subpageAdditions[sLang][sKey];
+      }
+    }
+  }
+
+  // SQL katalog 5 dil köprüsü (2102): window.UZM_I18N_EXTRA bu betikten ÖNCE yüklenen
+  // /assets/uzm-sql-i18n.js + /assets/i18n-sql/<sayfa>.js tarafından doldurulur. Eksik dil → TR'ye düşer.
+
+  /* === UZM 1402 TIKLAMA-2 I18N EKLEMELERI === */
+  var tiklama2Additions = {"tr": {"nav_offer": "Numune & Teklif", "drawer_tab_1": "1. Katman & Varyant", "drawer_tab_2": "2. Sinterleme Eğrisi", "drawer_tab_3": "3. Ham Disk ⇄ Kron", "blog_eyebrow": "BİLGİ BANKASI & KLİNİK REHBERLER", "blog_sec_title": "Teknik Makaleler ve Uygulama Notları", "blog_sec_sub": "Zirkonya sinterleme protokolleri, CAD/CAM materyal seçimi ve klinik endodonti uygulamaları üzerine teknik bilgi bankası.", "blog_all_btn": "Tüm Bilgi Bankası Yazıları →", "blog_cat_zir": "Zirkonya & Estetik", "blog_cat_cad": "CAD/CAM & Materyal", "blog_cat_sinter": "Sinterleme & Laboratuvar",
+      "blog_cat_endo": "Endodontik Ürünler",
+      "blog_prod_endo": "Paper Point & Endodonti Serisi", "blog_readtime": "⏱ 1 dk okuma", "blog_read_link": "Makaleyi Oku →", "blog_c1_title": "Zirkonya Disk Seçerken Nelere Dikkat Edilmeli?", "blog_c1_exc": "Laboratuvar ve klinik süreçlerde doğru zirkonya blok seçimi için ışık geçirgenliği, bükülme dayanımı ve sinterleme uyumu kriterleri.", "blog_c2_title": "PMMA Disklerde Katman Yapısı Ne Anlama Gelir?", "blog_c2_exc": "Monolayer ve Multilayer PMMA diskler arasındaki optik geçiş, işlenebilirlik ve uzun süreli geçici restorasyon farkları.", "blog_c3_title": "Paper Point Seçiminde ISO Renk Kodlarının Önemi", "blog_c3_exc": "Kök kanal kurutma işlemlerinde .02, .04 ve .06 taper açıları ile ISO standart renk kodlamasının klinik hata payını azaltması.", "blog_c4_title": "CE ve ISO Belgelerinin Dental Ürünlerdeki Rolü", "blog_c4_exc": "CE 0197, ISO 13485 ve ÜTS kayıt süreçlerinin dental protez laboratuvarları ve klinik hasta güvenliği açısından önemi.", "blog_c5_title": "Dental Depo ve Bayilerle İş Birliği Nasıl İşliyor?", "blog_c5_exc": "Bölgesel dental depolar, kurumsal tedarik zinciri, lot takibi ve sürdürülebilir bayilik ekosisteminde çalışma ilkelerimiz.", "blog_c6_title": "UZM Dental Yeni Üretim Hattını Devreye Aldı", "blog_c6_exc": "Artan CAD/CAM disk ve endodontik sarf malzemesi talebine hızla yanıt vermek üzere genişletilen tedarik ve stok kapasitemiz.", "pmma_arch_tag": "POLİMER MİMARİSİ", "pmma_thick_lbl": "KALINLIK", "pmma_mono_badge": "GEÇİCİ KRON & KÖPRÜ · ≥100 MPa", "pmma_mono_title": "UZM Dental Monolayer PMMA (≥100 MPa)", "pmma_mono_sub": "Yüksek yoğunluklu çapraz bağlı homojen yapı ve ≥100 MPa bükülme dayanımı. Tek katmanlı uzun süreli geçici kron ve köprü restorasyonları.", "pmma_ml_badge": "5 KATMAN ESTETİK GEÇİCİ · ≥110 MPa", "pmma_ml_title": "UZM Dental Multilayer PMMA (5 Katman · ≥110 MPa)", "pmma_clear_badge": "SPLİNT & GECE PLAĞI · >%91 GEÇİRGENLİK", "pmma_clear_title": "UZM Dental Clear & Flexible Splint Şeffaf PMMA (>%91)", "pmma_xray_badge": "RADYOOPAK KILAVUZ · >200% Al", "pmma_xray_title": "UZM Dental X-Ray Radyoopak PMMA (>200% Al)"}, "en": {"nav_offer": "Sample & Quote", "drawer_tab_1": "1. Layer & Variant", "drawer_tab_2": "2. Sintering Curve", "drawer_tab_3": "3. Raw Disc ⇄ Crown", "blog_eyebrow": "KNOWLEDGE BASE & CLINICAL GUIDES", "blog_sec_title": "Technical Articles & Application Notes", "blog_sec_sub": "Technical knowledge base on zirconia sintering protocols, CAD/CAM material selection, and clinical endodontic applications.", "blog_all_btn": "All Knowledge Base Articles →", "blog_cat_zir": "Zirconia & Aesthetics", "blog_cat_cad": "CAD/CAM & Materials", "blog_cat_sinter": "Sintering & Lab",
+      "blog_cat_endo": "Endodontic Products",
+      "blog_prod_endo": "Paper Point & Endodontic Series", "blog_readtime": "⏱ 1 min read", "blog_read_link": "Read Article →", "blog_c1_title": "Key Considerations When Selecting Zirconia Discs", "blog_c1_exc": "Light translucency, flexural strength, and sintering compatibility criteria for selecting the right zirconia block in dental labs.", "blog_c2_title": "What Does Layer Structure Mean in PMMA Discs?", "blog_c2_exc": "Optical transition, machinability, and long-term provisional restoration differences between Monolayer and Multilayer PMMA discs.", "blog_c3_title": "Importance of ISO Color Coding in Paper Point Selection", "blog_c3_exc": "How .02, .04, and .06 tapers and ISO standard color coding minimize clinical errors during root canal drying.", "blog_c4_title": "Role of CE and ISO Certifications in Dental Materials", "blog_c4_exc": "Why CE 0197, ISO 13485, and medical device registry traceability matter for prosthetic laboratories and patient safety.", "blog_c5_title": "How Our Dental Depot & Distributor Partnership Works", "blog_c5_exc": "Our operating principles in regional dental depots, B2B supply chains, LOT tracking, and sustainable distributor networks.", "blog_c6_title": "UZM Dental Launches Expanded Supply & Production Line", "blog_c6_exc": "Expanded inventory and supply capacity to rapidly meet growing demand for CAD/CAM discs and endodontic consumables.", "pmma_arch_tag": "POLYMER ARCHITECTURE", "pmma_thick_lbl": "THICKNESS", "pmma_mono_badge": "PROVISIONAL CROWN & BRIDGE · ≥100 MPa", "pmma_mono_title": "UZM Dental Monolayer PMMA (≥100 MPa)", "pmma_mono_sub": "High-density cross-linked homogeneous structure with ≥100 MPa flexural strength for long-term single-layer provisional crowns and bridges.", "pmma_ml_badge": "5-LAYER AESTHETIC PROVISIONAL · ≥110 MPa", "pmma_ml_title": "UZM Dental Multilayer PMMA (5-Layer · ≥110 MPa)", "pmma_clear_badge": "SPLINT & NIGHT GUARD · >91% TRANSMITTANCE", "pmma_clear_title": "UZM Dental Clear & Flexible Splint Transparent PMMA (>91%)", "pmma_xray_badge": "RADIOPAQUE GUIDE · >200% Al", "pmma_xray_title": "UZM Dental X-Ray Radiopaque PMMA (>200% Al)"}, "ar": {"nav_offer": "عينة وعرض سعر", "drawer_tab_1": "1. الطبقات والمقاسات", "drawer_tab_2": "2. منحنى التلبيد", "drawer_tab_3": "3. قرص خام ⇄ تاج", "blog_eyebrow": "قاعدة المعرفة والأدلة السريرية", "blog_sec_title": "مقالات تقنية وملاحظات تطبيقية", "blog_sec_sub": "قاعدة معرفة تقنية حول بروتوكولات تلبيد الزيركونيا، واختيار مواد CAD/CAM، وتطبيقات علاج الجذور السريرية.", "blog_all_btn": "جميع مقالات قاعدة المعرفة ←", "blog_cat_zir": "الزيركونيا والجماليات", "blog_cat_cad": "CAD/CAM والمواد", "blog_cat_sinter": "التلبيد والمختبر",
+      "blog_cat_endo": "منتجات علاج الجذور",
+      "blog_prod_endo": "سلسلة أقماع التجفيف وعلاج الجذور", "blog_readtime": "⏱ دقيقة للقراءة", "blog_read_link": "اقرأ المقال ←", "blog_c1_title": "ما الذي يجب مراعاته عند اختيار أقراص الزيركونيا؟", "blog_c1_exc": "معايير نفاذية الضوء، ومقاومة الانثناء، وتوافق التلبيد لاختيار بلوك الزيركونيا المناسب في المختبرات والعيادات.", "blog_c2_title": "ماذا يعني هيكل الطبقات في أقراص PMMA؟", "blog_c2_exc": "الفروق في التدرج البصري وقابلية التشغيل والترميمات المؤقتة طويلة الأمد بين أقراص PMMA أحادية ومتعددة الطبقات.", "blog_c3_title": "أهمية رموز الألوان القياسية ISO في اختيار أقماع الورق", "blog_c3_exc": "كيف تساهم زوايا التدرج .02 و.04 و.06 وترميز الألوان القياسي ISO في تقليل الأخطاء السريرية أثناء تجفيف القنوات.", "blog_c4_title": "دور شهادات CE و ISO في منتجات طب الأسنان", "blog_c4_exc": "أهمية شهادات CE 0197 و ISO 13485 وتتبع الدفعات لمختبرات تعويضات الأسنان وسلامة المرضى.", "blog_c5_title": "كيف يعمل التعاون مع مستودعات وموزعي طب الأسنان؟", "blog_c5_exc": "مبادئ عملنا مع مستودعات الأسنان الإقليمية، وسلسلة التوريد المؤسسية، وتتبع رقم التشغيلة LOT.", "blog_c6_title": "UZM Dental تشغّل خط الإنتاج والتوريد الجديد", "blog_c6_exc": "توسيع طاقتنا الإنتاجية والمخزنية للاستجابة السريعة للطلب المتزايد على أقراص CAD/CAM ومستلزمات علاج الجذور.", "pmma_arch_tag": "هندسة البوليمر", "pmma_thick_lbl": "السماكة", "pmma_mono_badge": "تيجان وجسور مؤقتة · ≥100 ميجا باسكال", "pmma_mono_title": "UZM Dental Monolayer PMMA (≥100 ميجا باسكال)", "pmma_mono_sub": "بنية متجانسة عالية الكثافة ومقاومة انثناء ≥100 ميجا باسكال للتيجان والجسور المؤقتة طويلة الأمد.", "pmma_ml_badge": "مؤقت جمالي 5 طبقات · ≥110 ميجا باسكال", "pmma_ml_title": "UZM Dental Multilayer PMMA (5 طبقات · ≥110 ميجا باسكال)", "pmma_clear_badge": "جبيرة وواقي ليلي · شفافية >91%", "pmma_clear_title": "UZM Dental Clear & Flexible Splint PMMA شفاف (>91%)", "pmma_xray_badge": "دليل ظليل للأشعة · >200% Al", "pmma_xray_title": "UZM Dental X-Ray PMMA ظليل للأشعة (>200% Al)"}, "zh": {"nav_offer": "样品与报价", "drawer_tab_1": "1. 分层与规格", "drawer_tab_2": "2. 烧结升温曲线", "drawer_tab_3": "3. 素坯圆盘 ⇄ 修复冠", "blog_eyebrow": "技术知识库与临床应用指南", "blog_sec_title": "技术文章与临床应用笔记", "blog_sec_sub": "涵盖氧化锆烧结升温程序、CAD/CAM 材料选型及牙髓根管临床操作的技术知识库。", "blog_all_btn": "查看全部技术文章 →", "blog_cat_zir": "氧化锆与美学", "blog_cat_cad": "CAD/CAM 与材料", "blog_cat_sinter": "烧结工艺与技工室", "blog_readtime": "⏱ 1 分钟阅读", "blog_read_link": "阅读全文 →", "blog_c1_title": "选择氧化锆圆盘时应注意哪些核心指标？", "blog_c1_exc": "技工室与临床选择氧化锆瓷块时的透光率、三点抗弯强度及烧结炉温兼容性关键标准。", "blog_c2_title": "PMMA 圆盘中的多层渐变结构意味着什么？", "blog_c2_exc": "单层 Monolayer 与多层 Multilayer PMMA 圆盘在光学过渡、切削加工性及长期临时修复中的差异。", "blog_c3_title": "ISO 国际色标在吸水纸尖选型中的重要性", "blog_c3_exc": "根管干燥操作中 .02、.04 和 .06 锥度配合 ISO 标准色标如何有效降低临床失误率。", "blog_c4_title": "CE 与 ISO 认证在牙科医疗器械中的核心作用", "blog_c4_exc": "CE 0197、ISO 13485 及医疗器械批次追溯体系对义齿加工所与临床患者安全的重要意义。", "blog_c5_title": "牙科器材商与区域经销商合作模式解析", "blog_c5_exc": "我们在区域牙科器材商、B2B 企业供应链、LOT 批号追踪及可持续经销网络中的合作原则。", "blog_c6_title": "UZM Dental 全新生产线与仓储中心正式投产", "blog_c6_exc": "全面扩展供应链与现货库存容量，快速响应日益增长的 CAD/CAM 圆盘与牙髓耗材需求。", "pmma_arch_tag": "高分子聚合物架构", "pmma_thick_lbl": "厚度规格", "pmma_mono_badge": "临时冠桥修复 · ≥100 MPa", "pmma_mono_title": "UZM Dental 单色 Monolayer PMMA (≥100 MPa)", "pmma_mono_sub": "高密度交联均质结构，抗弯强度 ≥100 MPa，适用于长效单层临时冠桥修复（厚度 16 / 18 / 20 / 30 mm）。", "pmma_ml_badge": "5层美学渐变临时修复 · ≥110 MPa", "pmma_ml_title": "UZM Dental 多层 Multilayer PMMA (5层 · ≥110 MPa)", "pmma_clear_badge": "咬合垫与夜磨牙护板 · >91% 透光率", "pmma_clear_title": "UZM Dental Clear 透明咬合垫 PMMA (>91% 高透)", "pmma_xray_badge": "X光显影种植导板 · >200% Al", "pmma_xray_title": "UZM Dental X-Ray 放射显影 PMMA (>200% Al)", "sq_skip": "跳转到主要内容", "sq_aria_home": "UZM Dental 首页", "sq_aria_lang": "语言选择", "sq_aria_nav": "主导航", "sq_aria_crumb": "面包屑导航", "sq_btn_numune": "样品与报价", "sq_nav_ana": "首页", "sq_nav_urunler": "全部产品", "sq_nav_zirkonya": "氧化锆瓷块", "sq_nav_pmma": "PMMA 圆盘", "sq_nav_endo": "牙髓根管", "sq_nav_distributorluk": "经销合作", "sq_nav_sss": "常见问题", "sq_nav_blog": "技术专栏", "sq_nav_hakkimizda": "关于我们", "sq_nav_iletisim": "联系我们", "sq_footer_desc": "UZM Dental 提供氧化锆瓷块、PMMA 圆盘、牙胶尖 (Gutta Percha) 与吸水纸尖 (Paper Points) 的生产、进口与B2B供应服务。", "sq_f_kurumsal": "企业与指南", "sq_f_kalite": "质量方针", "sq_f_bayilik": "经销商申请", "sq_f_destek": "技术支持", "sq_f_sss": "常见问题 (FAQ)", "sq_f_dokuman": "技术文档与宣传册", "sq_f_tel": "电话: 0542 646 02 20", "sq_copy": "Copyright © UZM Dental 2026 | 保留所有权利。CE 0197 · ISO 13485 · ÜTS 注册牙科供应链。", "sq_lbl_sayfa": "本页内容", "sq_lbl_urun_kodu": "产品代码", "sq_lbl_kategori": "产品类别", "sq_lbl_marka": "品牌", "sq_lbl_uyumluluk": "系统兼容性", "sq_lbl_varyant": "可选规格", "sq_lbl_ozellik": "技术参数", "sq_lbl_parametre": "参数", "sq_lbl_deger": "数值", "sq_lbl_ilgili": "同系列其他产品", "sq_lbl_diger_yazilar": "更多技术文章", "sq_btn_teklif_al": "获取报价 / 申请样品", "sq_btn_whatsapp": "通过 WhatsApp 咨询", "sq_btn_eposta": "发送电子邮件请求", "sq_btn_incele": "查看详情", "sq_btn_oku": "阅读文章", "sq_btn_kategori_ac": "打开分类页面", "sq_btn_iletisime_gec": "联系我们", "sq_btn_bayilik": "提交经销申请", "sq_btn_whatsapp_hat": "WhatsApp 商务专线", "sq_btn_haritada_ac": "在谷歌地图中打开", "sq_urun_not": "批发采购、样品申请或索取技术资料表，请通过电话、WhatsApp 或邮件与我们联系。", "sq_home_katalog_eyebrow": "完整产品目录 · 19 款产品 · 6 篇技术文章 · 17 项解答", "sq_home_katalog_baslik": "全部产品页面、常见问答与企业信息", "sq_home_katalog_aciklama": "点击下方入口即可浏览 ZirCrown 氧化锆、UZM Dental PMMA、牙胶尖及吸水纸尖的独立技术参数页。", "sq_wa_bilgi": "您好，我想了解 UZM Dental 产品信息与报价。", "sq_wa_bayi": "您好，我想咨询 UZM Dental 经销与代理合作。", "sq_wa_urun_tpl": "您好，我想申请 {name} ({sku}) 的样品与B2B报价。", "sq_mail_bayi_konu": "经销商合作申请", "sq_mail_teklif_konu": "UZM Dental 报价与样品申请", "sq_mail_urun_konu": "{name} 报价申请"}};
+  for (var t2Lang in tiklama2Additions) {
+    if (UZM_I18N_DICT[t2Lang]) {
+      for (var t2Key in tiklama2Additions[t2Lang]) {
+        UZM_I18N_DICT[t2Lang][t2Key] = tiklama2Additions[t2Lang][t2Key];
+      }
+    }
+  }
+
+
+  /* === UZM 1551 LOT VE QR DOGRULAMA 6 DIL I18N === */
+  var lotVerifyAdditions = {
+    "tr": {
+      "lot_sec_badge": "PARTİ İZLENEBİLİRLİĞİ · CE 0197 · ISO 13485 · ÜTS KAYITLI",
+      "lot_sec_title": "LOT ve QR ile Ürün ve ÜTS Doğrulama",
+      "lot_sec_desc1": "Ürün kutusu ve disk etiketi üzerindeki LOT numarası ve QR kod ile üretim partisi, CE 0197 / ISO 13485 kalite standartları ve T.C. Sağlık Bakanlığı Ürün Takip Sistemi (ÜTS) kaydı doğrulanabilir.",
+      "lot_sec_desc2": "Elinizdeki ürünün LOT numarasıyla parti, üretim ve teknik doğrulama bilgisi almak için LOT numarasını WhatsApp (+90 542 646 02 20) veya e-posta (uzmandisdental@gmail.com) üzerinden doğrudan iletebilirsiniz.",
+      "lot_pill_1": "✓ Kutu & Disk Etiketi Üzerinde LOT ve QR İzlenebilirliği",
+      "lot_pill_2": "✓ CE 0197 & ISO 13485 Kalite Yönetim Standartları",
+      "lot_pill_3": "✓ T.C. Sağlık Bakanlığı ÜTS Kayıt Doğrulaması",
+      "lot_btn_wa": "WhatsApp ile LOT Bilgisi Al (+90 542 646 02 20)",
+      "lot_btn_mail": "E-posta ile LOT Gönder (uzmandisdental@gmail.com)",
+      "reg_c3_title": "LOT & QR ile Parti ve ÜTS Doğrulama",
+      "reg_c3_desc": "Ürün kutusu ve disk etiketi üzerindeki LOT numarası ve QR kod ile üretim partisi, CE 0197 / ISO 13485 kalite standartları ve ÜTS kaydı doğrulanabilir; LOT numarasını WhatsApp veya e-posta ile ileterek bilgi alabilirsiniz."
+    },
+    "en": {
+      "lot_sec_badge": "BATCH TRACEABILITY · CE 0197 · ISO 13485 · ÜTS REGISTERED",
+      "lot_sec_title": "Product & ÜTS Verification via LOT and QR Code",
+      "lot_sec_desc1": "Using the LOT number and QR code on the product box and disc label, the production batch, CE 0197 / ISO 13485 quality standards, and Ministry of Health Product Tracking System (ÜTS) registration can be verified.",
+      "lot_sec_desc2": "To request batch, production, and technical verification details for your product's LOT number, you can send the LOT number directly via WhatsApp (+90 542 646 02 20) or email (uzmandisdental@gmail.com).",
+      "lot_pill_1": "✓ LOT & QR Traceability on Product Box and Disc Label",
+      "lot_pill_2": "✓ CE 0197 & ISO 13485 Quality Management Standards",
+      "lot_pill_3": "✓ Ministry of Health ÜTS Registration Verification",
+      "lot_btn_wa": "Request LOT Info via WhatsApp (+90 542 646 02 20)",
+      "lot_btn_mail": "Send LOT via Email (uzmandisdental@gmail.com)",
+      "reg_c3_title": "Batch/LOT & ÜTS Verification",
+      "reg_c3_desc": "Using the LOT number and QR code on the product box and label, production batch, CE 0197 / ISO 13485 quality standards, and ÜTS registration can be verified via WhatsApp or email."
+    },
+    "ar": {
+      "lot_sec_badge": "تتبع الدفعات · CE 0197 · ISO 13485 · مسجل في ÜTS",
+      "lot_sec_title": "التحقق من المنتج وتسجيل ÜTS عبر رقم LOT ورمز QR",
+      "lot_sec_desc1": "من خلال رقم التشغيلة (LOT) ورمز الاستجابة السريعة (QR) الموجودين على عبوة المنتج وملصق القرص، يمكن التحقق من دفعة الإنتاج ومعايير الجودة CE 0197 / ISO 13485 والتسجيل في نظام تتبع المنتجات (ÜTS) بوزارة الصحة.",
+      "lot_sec_desc2": "للحصول على معلومات الدفعة والإنتاج والتحقق الفني باستخدام رقم LOT الخاص بمنتجك، يمكنك إرسال رقم LOT مباشرةً عبر واتساب (+90 542 646 02 20) أو البريد الإلكتروني (uzmandisdental@gmail.com).",
+      "lot_pill_1": "✓ تتبع رقم LOT ورمز QR على العبوة وملصق القرص",
+      "lot_pill_2": "✓ معايير إدارة الجودة CE 0197 و ISO 13485",
+      "lot_pill_3": "✓ التحقق من التسجيل في نظام تتبع المنتجات (ÜTS)",
+      "lot_btn_wa": "الاستعلام عن رقم LOT عبر واتساب (+90 542 646 02 20)",
+      "lot_btn_mail": "إرسال رقم LOT عبر البريد الإلكتروني (uzmandisdental@gmail.com)",
+      "reg_c3_title": "التحقق من دفعة LOT وتسجيل ÜTS",
+      "reg_c3_desc": "من خلال رقم LOT ورمز QR على عبوة المنتج والملصق، يمكن التحقق من دفعة الإنتاج ومعايير CE 0197 / ISO 13485 وتسجيل ÜTS عبر واتساب أو البريد الإلكتروني."
+    },
+    "zh": {
+      "lot_sec_badge": "批次追溯体系 · CE 0197 · ISO 13485 · ÜTS 官方注册",
+      "lot_sec_title": "通过 LOT 批号与二维码进行产品及 ÜTS 注册验证",
+      "lot_sec_desc1": "通过产品包装盒与瓷盘标签上的 LOT 生产批号及二维码，可核验生产批次、CE 0197 / ISO 13485 医疗器械质量管理标准以及卫生部产品追踪系统 (ÜTS) 注册信息。",
+      "lot_sec_desc2": "如需凭手中的产品 LOT 批号查询批次、生产及技术验证详情，您可通过 WhatsApp (+90 542 646 02 20) 或电子邮件 (uzmandisdental@gmail.com) 直接发送 LOT 批号与我们联系。",
+      "lot_pill_1": "✓ 包装盒与瓷盘标签配备 LOT 批号与二维码追溯",
+      "lot_pill_2": "✓ CE 0197 与 ISO 13485 医疗器械质量管理标准",
+      "lot_pill_3": "✓ 卫生部产品追踪系统 (ÜTS) 官方注册核验",
+      "lot_btn_wa": "通过 WhatsApp 查询 LOT 批号 (+90 542 646 02 20)",
+      "lot_btn_mail": "通过电子邮件发送 LOT 批号 (uzmandisdental@gmail.com)",
+      "reg_c3_title": "出厂批次 LOT 与 ÜTS 注册信息核验",
+      "reg_c3_desc": "凭产品包装盒与瓷盘标签上的 LOT 批号及二维码，可通过 WhatsApp 或电子邮件核验对应生产批次、CE 0197 / ISO 13485 认证及 ÜTS 注册记录。"
+    }
+  };
+  for (var lvLang in lotVerifyAdditions) {
+    if (UZM_I18N_DICT[lvLang]) {
+      for (var lvKey in lotVerifyAdditions[lvLang]) {
+        UZM_I18N_DICT[lvLang][lvKey] = lotVerifyAdditions[lvLang][lvKey];
+      }
+    }
+    if (typeof tiklama2Additions !== 'undefined' && tiklama2Additions[lvLang]) {
+      for (var lvKey2 in lotVerifyAdditions[lvLang]) {
+        tiklama2Additions[lvLang][lvKey2] = lotVerifyAdditions[lvLang][lvKey2];
+      }
+    }
+  }
+
+  var uzmExtra = window.UZM_I18N_EXTRA || null;
+  if (uzmExtra) {
+    for (var xLang in uzmExtra) {
+      if (!UZM_I18N_DICT[xLang]) continue;
+      for (var xKey in uzmExtra[xLang]) {
+        UZM_I18N_DICT[xLang][xKey] = uzmExtra[xLang][xKey];
+      }
+    }
+    if (uzmExtra.tr) {
+      for (var fLang in UZM_I18N_DICT) {
+        for (var fKey in uzmExtra.tr) {
+          if (UZM_I18N_DICT[fLang][fKey] === undefined) UZM_I18N_DICT[fLang][fKey] = uzmExtra.tr[fKey];
+        }
+      }
+    }
+  }
+
+  function applyUzmLanguage(langCode) {
+            var code = UZM_I18N_DICT[langCode] ? langCode : 'tr';
+    if (window.UZM_I18N_EXTRA) {
+      var dynExtra = window.UZM_I18N_EXTRA[code] || window.UZM_I18N_EXTRA.en || {};
+      for (var dk in dynExtra) {
+        UZM_I18N_DICT[code][dk] = dynExtra[dk];
+      }
+    }
+    if (typeof tiklama2Additions !== 'undefined' && tiklama2Additions[code]) {
+      for (var tk2 in tiklama2Additions[code]) {
+        UZM_I18N_DICT[code][tk2] = tiklama2Additions[code][tk2];
+      }
+    }
+    var d = UZM_I18N_DICT[code];
+
+    document.documentElement.setAttribute('lang', code);
+    document.documentElement.setAttribute('dir', d.dir || 'ltr');
+
+    // Page title logic
+    var path = window.location.pathname;
+    var titleKey = document.documentElement.getAttribute('data-i18n-title');
+    if (titleKey) {
+      if (d[titleKey]) document.title = d[titleKey];
+    } else if (path.indexOf('studyo-galeri') !== -1) {
+      document.title = d.title_studio;
+    } else if (path.indexOf('zirkonya') !== -1) {
+      document.title = d.title_zirkonya;
+    } else if (path.indexOf('pmma') !== -1) {
+      document.title = d.title_pmma;
+    } else if (path.indexOf('endodonti') !== -1 || path.indexOf('endo') !== -1) {
+      document.title = d.title_endo;
+    } else if (path.indexOf('optik-simulasyon') !== -1) {
+      document.title = d.title_sinter;
+    } else if (path.indexOf('katalog') !== -1) {
+      document.title = d.title_katalog;
+    } else {
+      document.title = d.title_home;
+    }
+
+    // Language dropdown summary label
+    var summaries = document.querySelectorAll('.lang-dropdown summary');
+    for (var sIdx = 0; sIdx < summaries.length; sIdx++) {
+      summaries[sIdx].textContent = d.dropdown_lbl;
+    }
+
+    // Brand sub
+    setText('.uzm-brand-sub', d.brand_sub);
+
+    // Nav links with data-i18n
+    setText('[data-i18n="nav_blocks"]', d.nav_blocks);
+    setText('[data-i18n="nav_pmma"]', d.nav_pmma);
+    setText('[data-i18n="nav_sinter"]', d.nav_sinter);
+    setText('[data-i18n="nav_studio"]', d.nav_studio);
+    setText('[data-i18n="nav_endo"]', d.nav_endo);
+    setText('[data-i18n="nav_brochures"]', d.nav_brochures);
+
+    // Header buttons
+    var themeLabel = document.getElementById('uzmThemeLabel');
+    if (themeLabel) {
+      var isDark = document.documentElement.getAttribute('data-theme') === 'obsidian';
+      themeLabel.textContent = isDark ? d.theme_light : d.theme_dark;
+    }
+    var quoteTrayText = document.querySelector('#uzmQuoteTrayBtn span:first-child');
+    if (quoteTrayText) quoteTrayText.textContent = d.quote_btn;
+
+    var hamburger = document.getElementById('uzmHamburgerBtn');
+    if (hamburger) hamburger.setAttribute('aria-label', d.hamburger_aria);
+
+    // Subpage & Hero Section logic (page-specific, NEVER overwrite subpages with index title!)
+    if (path.indexOf('zirkonya') !== -1) {
+      setText('.uzm-hero .uzm-eyebrow span:last-child', d.zirkonya_eyebrow || d.hero_eyebrow);
+      setHtml('.uzm-hero-title', d.zirkonya_h1_html || d.zirkonya_h1);
+      setText('.uzm-hero-lead', d.zirkonya_lead);
+    } else if (path.indexOf('pmma') !== -1) {
+      setText('.uzm-hero .uzm-eyebrow span:last-child', d.pmma_eyebrow || d.hero_eyebrow);
+      setHtml('.uzm-hero-title', d.pmma_h1_html || d.pmma_h1);
+      setText('.uzm-hero-lead', d.pmma_lead);
+    } else if (path.indexOf('endodonti') !== -1 || path.indexOf('endo') !== -1) {
+      setHtml('h1.uzm-h1, .uzm-subpage-hero .uzm-hero-title, .uzm-hero-title', d.endo_page_h1 || d.endo_h1);
+      setText('p.uzm-lead, .uzm-subpage-hero .uzm-hero-lead, .uzm-hero-lead', d.endo_page_lead || d.endo_lead);
+    } else if (path.indexOf('optik-simulasyon') !== -1) {
+      setHtml('h1.uzm-h1, .uzm-subpage-hero .uzm-hero-title, .uzm-hero-title', d.sim_h1 || d.sinter_h1);
+      setText('p.uzm-lead, .uzm-subpage-hero .uzm-hero-lead', d.sim_lead);
+    } else if (path.indexOf('studyo-galeri') !== -1) {
+      setText('.uzm-studio40-eyebrow', d.studio_eyebrow);
+      setText('.uzm-studio40-heading', d.studio_heading);
+      setText('.uzm-studio40-sub', d.studio_sub);
+      var studioCards = document.querySelectorAll('.uzm-studio40-card');
+      for (var sc = 0; sc < studioCards.length; sc++) {
+        var card = studioCards[sc];
+        var codeSpan = card.querySelector('.uzm-studio40-code');
+        var titleH4 = card.querySelector('.uzm-studio40-title');
+        var cCode = card.getAttribute('data-code') || '';
+        if (codeSpan && d.studio_code_tag) codeSpan.textContent = cCode + ' · ' + d.studio_code_tag;
+        if (titleH4 && code !== 'tr') {
+          var t = titleH4.textContent;
+          t = t.replace(/3 Üye Köprü/g, code === 'zh' ? '3单位固定桥' : code === 'ar' ? 'جسر 3 وحدات' : '3-Unit Bridge');
+          t = t.replace(/Oklüzal Açı/g, code === 'zh' ? '咬合面视角' : code === 'ar' ? 'منظور إطباقي' : 'Occlusal View');
+          t = t.replace(/Yakın Plan/g, code === 'zh' ? '微距特写' : code === 'ar' ? 'لقطة قريبة' : 'Close-up');
+          t = t.replace(/Basamak & Marjin/g, code === 'zh' ? '肩台与边缘适形' : code === 'ar' ? 'الحافة والانطباق' : 'Margin & Step');
+          t = t.replace(/VITA Renk Skalası/g, code === 'zh' ? 'VITA 比色板' : code === 'ar' ? 'دليل VITA' : 'VITA Shade');
+          t = t.replace(/Disk & Kutu/g, code === 'zh' ? '瓷块与包装' : code === 'ar' ? 'القرص والعلبة' : 'Disc & Box');
+          t = t.replace(/Uzun Ark/g, code === 'zh' ? '长牙弓' : code === 'ar' ? 'القوس الكامل' : 'Full-Arch');
+          titleH4.textContent = t;
+        }
+      }
+    } else if (path.indexOf('katalog') !== -1) {
+      setHtml('h1.uzm-h1, .uzm-subpage-hero .uzm-hero-title, .uzm-hero-title', d.kat_h1 || d.katalog_h1);
+      setText('p.uzm-lead, .uzm-subpage-hero .uzm-hero-lead', d.kat_lead);
+    } else {
+      // index.html
+      setText('.uzm-hero .uzm-eyebrow span:last-child', d.hero_eyebrow);
+      setHtml('.uzm-hero-title', d.hero_title_html);
+      setText('.uzm-hero-lead', d.hero_lead);
+    }
+
+    var ctaExplore = document.querySelector('.uzm-hero-cta-row a.uzm-btn-primary');
+    if (ctaExplore) ctaExplore.textContent = d.cta_explore;
+
+    var ctaAnalysis = document.querySelector('.uzm-hero-cta-row button.uzm-btn-outline, .uzm-hero-cta-row a.uzm-btn-outline');
+    if (ctaAnalysis && !ctaAnalysis.getAttribute('data-i18n')) ctaAnalysis.textContent = d.cta_analysis;
+
+    // Metrics
+    var metricBoxes = document.querySelectorAll('.uzm-hero-metrics .uzm-metric-box');
+    if (metricBoxes.length > 0) {
+      var m1 = metricBoxes[0];
+      var m2 = metricBoxes[1];
+      var m3 = metricBoxes[2];
+
+      if (m1) {
+        var l1 = m1.querySelector('.uzm-metric-lbl'); if (l1) l1.textContent = d.metric_trans_lbl;
+        var v1 = m1.querySelector('.uzm-metric-val'); if (v1) v1.textContent = d.metric_trans_val;
+        var n1 = m1.querySelector('.uzm-metric-note'); if (n1) n1.textContent = d.metric_trans_note;
+      }
+      if (m2) {
+        var l2 = m2.querySelector('.uzm-metric-lbl'); if (l2) l2.textContent = d.metric_strength_lbl;
+        var v2 = m2.querySelector('.uzm-metric-val'); if (v2) v2.textContent = d.metric_strength_val;
+        var n2 = m2.querySelector('.uzm-metric-note'); if (n2) n2.textContent = d.metric_strength_note;
+      }
+      if (m3) {
+        var l3 = m3.querySelector('.uzm-metric-lbl'); if (l3) l3.textContent = d.metric_cad_lbl;
+        var v3 = m3.querySelector('.uzm-metric-val'); if (v3) v3.textContent = d.metric_cad_val;
+        var n3 = m3.querySelector('.uzm-metric-note'); if (n3) n3.textContent = d.metric_cad_note;
+      }
+    }
+
+    // Prism Simulator
+    setText('.uzm-prism-head .uzm-mono-tag', d.simulator_tag);
+    var prismStatRows = document.querySelectorAll('.uzm-prism-stats .uzm-prism-stat-row');
+    if (prismStatRows.length >= 3) {
+      var s0 = prismStatRows[0].querySelector('.uzm-mono-tag');
+      if (s0) s0.textContent = d.stat_trans || (d.lbl_trans ? d.lbl_trans.replace(/\s*\([^)]*\)/, '') : 'IŞIK GEÇİRGENLİĞİ');
+      var s1 = prismStatRows[1].querySelector('.uzm-mono-tag');
+      if (s1) s1.textContent = d.stat_mpa || (d.lbl_mpa ? d.lbl_mpa.replace(/\s*\([^)]*\)/, '') : 'EĞİLME DİRENCİ');
+      var s2 = prismStatRows[2].querySelector('.uzm-mono-tag');
+      if (s2) s2.textContent = d.stat_temp || 'SİNTERLEME';
+    }
+    var prismRows = document.querySelectorAll('.uzm-prism-spec-row');
+    if (prismRows.length >= 4) {
+      var k0 = prismRows[0].querySelector('.uzm-spec-k'); if (k0) k0.textContent = d.lbl_mpa;
+      var k1 = prismRows[1].querySelector('.uzm-spec-k'); if (k1) k1.textContent = d.lbl_trans;
+      var k2 = prismRows[2].querySelector('.uzm-spec-k'); if (k2) k2.textContent = d.lbl_temp;
+      var k3 = prismRows[3].querySelector('.uzm-spec-k'); if (k3) k3.textContent = d.lbl_ind;
+    }
+
+    // Mobile sticky bar
+    setText('.uzm-msb-text strong', d.msb_title);
+    setText('.uzm-msb-text span', d.msb_sub);
+    setText('#uzmMobileQuoteBtn', d.msb_btn);
+
+    // Slide Drawer & Modal
+    setText('#drawerSelectedSummary', d.drawer_config);
+    setText('#drawerAddToQuoteBtn', d.drawer_add);
+    setText('#uzmQuoteModal .uzm-mono-tag', d.quote_modal_tag);
+    setText('#uzmQuoteModal .uzm-slide-title', d.quote_modal_title);
+    var labInput = document.getElementById('uzmLabNameInput');
+    if (labInput) labInput.setAttribute('placeholder', d.quote_input_ph);
+    setText('#uzmSendWhatsAppBtn', d.whatsapp_btn);
+
+    // Global data-i18n translation
+    var transEls = document.querySelectorAll('[data-i18n]');
+    for (var tIdx = 0; tIdx < transEls.length; tIdx++) {
+      var el = transEls[tIdx];
+      var key = el.getAttribute('data-i18n');
+      if (d[key] !== undefined) {
+        if (typeof d[key] === 'string' && (d[key].indexOf('<') !== -1 || d[key].indexOf('&') !== -1)) {
+          el.innerHTML = d[key];
+        } else {
+          el.textContent = d[key];
+        }
+      }
+    }
+
+    // SQL katalog sonrası kanca: aria-label / alt / WhatsApp & e-posta şablonları
+    if (typeof window.uzmI18nAfter === 'function') {
+      try { window.uzmI18nAfter(code, d); } catch (hookErr) {}
+    }
+
+    // Dynamic Cards Re-render
+    window.uzmCurrentLang = code;
+    if (window.renderUzmCards) {
+      window.renderUzmCards(null, code);
+    }
+
+    syncInternalLinksLang(code);
+
+    try {
+      window.localStorage.setItem('uzm_b2b_lang', code);
+    } catch (e) {}
+  }
+
+  function syncInternalLinksLang(langCode) {
+    try {
+      var params = new URLSearchParams(window.location.search || '');
+      var urlLang = (params.get('lang') || params.get('dil') || '').toLowerCase().trim();
+      var docLang = (document.documentElement.getAttribute('lang') || '').toLowerCase().trim();
+      if (docLang === 'zh-cn') docLang = 'zh';
+      var active = (langCode || urlLang || docLang || 'tr').toLowerCase().trim();
+      if (active === 'zh-cn') active = 'zh';
+      if (!UZM_I18N_DICT[active]) active = 'tr';
+      var anchors = document.querySelectorAll('a[href]');
+      for (var i = 0; i < anchors.length; i++) {
+        var a = anchors[i];
+        if (a.hasAttribute('data-lang-switch')) continue;
+        var href = a.getAttribute('href');
+        if (!href || /^(mailto:|tel:|javascript:|#|data:|whatsapp:)/i.test(href)) continue;
+        if (/^https?:\/\//i.test(href) && href.indexOf(window.location.origin) !== 0) continue;
+        if (/\.(pdf|png|jpe?g|webp|svg|gif|mp4|zip)(\?|$)/i.test(href)) continue;
+        var hashIdx = href.indexOf('#');
+        var hashPart = hashIdx >= 0 ? href.slice(hashIdx) : '';
+        var withoutHash = hashIdx >= 0 ? href.slice(0, hashIdx) : href;
+        var qIdx = withoutHash.indexOf('?');
+        var basePath = qIdx >= 0 ? withoutHash.slice(0, qIdx) : withoutHash;
+        var queryStr = qIdx >= 0 ? withoutHash.slice(qIdx + 1) : '';
+        if (!(/\.html$/i.test(basePath) || basePath === '/')) continue;
+        var qp = new URLSearchParams(queryStr);
+        qp.set('lang', active);
+        a.setAttribute('href', basePath + '?' + qp.toString() + hashPart);
+      }
+    } catch (e) {}
+  }
+
+  function initUzmI18n() {
+    var langMenus = document.querySelectorAll('details.lang-dropdown, .lang-dropdown-menu, .uzm-lang-menu');
+    for (var mIdx = 0; mIdx < langMenus.length; mIdx++) {
+      langMenus[mIdx].setAttribute('dir', 'ltr');
+    }
+    var langLinks = document.querySelectorAll('a[data-lang-switch]');
+    for (var i = 0; i < langLinks.length; i++) {
+      langLinks[i].setAttribute('dir', 'ltr');
+      langLinks[i].addEventListener('click', function (ev) {
+        ev.preventDefault();
+        var targetCode = this.getAttribute('data-lang-switch');
+        if (targetCode) {
+          applyUzmLanguage(targetCode);
+          var details = this.closest('details');
+          if (details) details.removeAttribute('open');
+          if (window.history && window.history.replaceState) {
+            var url = new URL(window.location.href);
+            url.searchParams.set('lang', targetCode);
+            window.history.replaceState({}, '', url.toString());
+          }
+        }
+      });
+    }
+
+    var params = new URLSearchParams(window.location.search);
+    var urlLang = params.get('lang') || params.get('dil');
+    var savedLang = null;
+    try {
+      savedLang = window.localStorage.getItem('uzm_b2b_lang');
+    } catch (e) {}
+
+    var activeLang = urlLang || savedLang || 'tr';
+    if (!UZM_I18N_DICT[activeLang]) {
+      activeLang = 'tr';
+    }
+
+    applyUzmLanguage(activeLang);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initUzmI18n);
+  } else {
+    initUzmI18n();
+  }
+
+  
+  window.UZM_I18N_DICT = UZM_I18N_DICT;
+  window.applyUzmLanguage = applyUzmLanguage;
+  window.syncInternalLinksLang = syncInternalLinksLang;
+  window.addEventListener('load', function () {
+    syncInternalLinksLang(window.uzmCurrentLang);
+  });
+})();

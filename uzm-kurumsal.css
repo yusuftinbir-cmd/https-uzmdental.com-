@@ -1,0 +1,6295 @@
+@import url('/assets/fonts/fonts.css');
+
+/* ==========================================================================
+   UZM DENTAL — BEYAZ BLOK & FERAH GEÇİŞLİ TURKUAZ (CYAN-TEAL) OPTİK PALETİ
+   Zemin: #FFFFFF (Berrak Klinik Buzul Beyaz Zemin)
+   Kart Blokları: #FFFFFF (Tertemiz Parlak Beyaz Bloklar)
+   Aksan Gradyan: linear-gradient(90deg, #007791 0%, #0099B8 25%, #00B4D8 50%, #14B8A6 75%, #10B981 100%) (Ferah Geçişli Turkuaz & Spektrum)
+   Aksiyon Gradyan: linear-gradient(135deg, #007791 0%, #0099B8 48%, #00B4D8 100%) (Turkuaz-Teal Geçişli)
+   Metin: #0F172A (Berrak Arduvaz Lacivert, 15.8:1 AAA) / #334155 (8.5:1 AAA)
+   ========================================================================== */
+
+:root,
+html,
+html[data-theme="luminous"],
+html[data-theme="ivory"],
+html[data-theme="light"],
+html[data-theme="obsidian"],
+html[data-theme="dark"],
+html[data-theme="zircrown-5d"],
+body {
+  --bg-page: #FFFFFF;         /* Ferah berrak klinik buzul beyaz sayfa zemini */
+  --bg-surface: #FFFFFF;      /* Parlak pürüzsüz BEYAZ BLOK kart yüzeyleri */
+  --bg-subtle: #EDF4FC;       /* Açık ferah buzul/safir panel & sekme zemini */
+  --bg-obsidian: #0F172A;     /* Koyu kontrast zemin */
+  --text-main: #0F172A;       /* Berrak koyu lacivert-arduvaz ana metin (15.8:1 AAA) */
+  --text-secondary: #334155;  /* Gümüşi koyu arduvaz metin (8.5:1 AAA) */
+  --text-muted: #334155;      /* Okunabilir açık gri metin (4.6:1 AA) */
+  --accent-primary: #005f73;  /* Canlı Lagün Turkuaz */
+  --accent-sapphire: #00B4D8; /* Canlı Cam Göbeği / Cyan */
+  --accent-terracotta: #0D9488; /* Canlı Teal */
+  --accent-emerald: #10B981;  /* Canlı Zümrüt-Yeşil */
+  --accent-gold: #EAB308;     /* Canlı Altın */
+      --accent-amber: #F59E0B;    /* Sıcak zirkonya kehribar rozet */
+  --accent-amber-ink: #B45309;
+  --accent-pmma: #0284C7;     /* Canlı PMMA gök mavisi/turkuaz */
+  --border-color: rgba(0, 153, 184, 0.16);    /* İnce ferah turkuaz sınır çizgisi */
+  --border-focus: #0099B8;
+  --shadow-card: 0 10px 30px -5px rgba(0, 153, 184, 0.08), 0 2px 10px -2px rgba(15, 23, 42, 0.04), 0 0 0 1px rgba(226, 232, 240, 0.9);
+  --shadow-card-hover: 0 20px 42px -10px rgba(0, 180, 216, 0.22), 0 0 0 2px rgba(0, 153, 184, 0.35);
+
+  --font-display: 'Plus Jakarta Sans', 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+html[data-theme="ivory"],
+html[data-theme="light"] {
+  --bg-page: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #F1F5F9;
+  --bg-obsidian: #0F172A;
+  --text-main: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #475569;
+  --accent-primary: #0066CC;
+  --accent-sapphire: #0066CC;
+  --accent-terracotta: #0066CC;
+  --accent-amber: #D97706;
+  --accent-amber-ink: #B45309;
+  --accent-pmma: #4F46E5;
+  --border-color: #E2E8F0;
+  --border-focus: #0066CC;
+  --shadow-card: 0 4px 16px -2px rgba(15, 23, 42, 0.06), 0 12px 32px -6px rgba(15, 23, 42, 0.05);
+  --shadow-card-hover: 0 20px 42px -10px rgba(0, 102, 204, 0.16), 0 8px 18px -4px rgba(15, 23, 42, 0.08);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .uzm-serif,
+.uzm-brand-title,
+.uzm-hero-title,
+.uzm-section-title,
+.uzm-prism-title,
+.uzm-card-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.uzm-hero-title {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.uzm-mono, .uzm-mono-tag, .uzm-mono-badge, .uzm-metric-lbl, .uzm-prism-stat-val, .uzm-lot-code {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.uzm-metric-val {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.uzm-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* 5 DİL SEÇİCİ KİLİDİ (SIZINTI = 0) */
+details.lang-dropdown {
+  position: relative;
+}
+details.lang-dropdown:not([open]) > *:not(summary) {
+  display: none !important;
+}
+details.lang-dropdown summary {
+  list-style: none;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--bg-surface);
+  color: var(--text-main);
+}
+details.lang-dropdown summary::marker,
+details.lang-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+.lang-dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  min-width: 170px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  padding: 0.4rem;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+}
+.lang-dropdown-menu a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.75rem;
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 0.85rem;
+  border-radius: 8px;
+}
+.lang-dropdown-menu a:hover {
+  background: var(--bg-subtle);
+}
+
+/* ÜST BAR */
+.uzm-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: color-mix(in srgb, var(--bg-page) 90%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  min-height: 72px;
+}
+.uzm-header-inner {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.uzm-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--text-main);
+  min-height: 44px;
+}
+.uzm-brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: #0b1528;
+  background-image: url('/images/uzm-logo.png');
+  background-size: 88% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1.5px solid rgba(45, 212, 191, 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  flex-shrink: 0;
+}
+.uzm-brand-zircrown-badge {
+  display: inline-flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(203, 213, 225, 0.8);
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin-left: 8px;
+  height: 26px;
+  vertical-align: middle;
+}
+.uzm-brand-zircrown-badge img {
+  height: 18px;
+  width: auto;
+  display: block;
+}
+.uzm-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+.uzm-brand-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.uzm-brand-sub {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+.uzm-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+.uzm-nav-link {
+  min-height: 44px;
+  padding: 0.5rem 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.uzm-nav-link:hover {
+  color: var(--text-main);
+  background: var(--bg-subtle);
+}
+.uzm-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* BUTONLAR (>= 44x44px GARANTİLİ) */
+.uzm-btn-primary,
+.uzm-btn-outline,
+.uzm-btn-ghost {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.55rem 1rem;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.uzm-btn-primary {
+  background: linear-gradient(135deg, #007791 0%, #0099B8 48%, #00B4D8 100%) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  box-shadow: 0 8px 24px -4px rgba(0, 153, 184, 0.40), 0 2px 6px -1px rgba(0, 180, 216, 0.25) !important;
+  font-weight: 700 !important;
+}
+.uzm-btn-primary:hover {
+  background: linear-gradient(135deg, #006075 0%, #005f73 48%, #00A3C4 100%) !important;
+  border: none !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 12px 30px -4px rgba(0, 153, 184, 0.45) !important;
+  transform: translateY(-2px);
+}
+.uzm-btn-outline {
+  background: #FFFFFF !important;
+  color: #007791 !important;
+  border: 2px solid #0099B8 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 8px rgba(0, 153, 184, 0.08) !important;
+}
+.uzm-btn-outline:hover {
+  background: linear-gradient(135deg, #007791 0%, #0099B8 50%, #00B4D8 100%) !important;
+  color: #FFFFFF !important;
+  border-color: transparent !important;
+  box-shadow: 0 6px 18px rgba(0, 153, 184, 0.35) !important;
+  transform: translateY(-2px);
+}
+.uzm-btn-ghost {
+  background: var(--bg-subtle);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  font-weight: 600;
+}
+.uzm-btn-lg {
+  min-height: 48px;
+  padding: 0.7rem 1.35rem;
+}
+.uzm-theme-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+}
+.uzm-tray-badge {
+  background: linear-gradient(90deg, #007791 0%, #0099B8 25%, #00B4D8 50%, #14B8A6 75%, #10B981 100%);
+  color: #FFFFFF;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+/* HERO */
+.uzm-hero {
+  padding: clamp(2.5rem, 5vw, 5rem) 0;
+  background: radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.10) 0%, transparent 60%),
+              radial-gradient(circle at 20% 80%, rgba(0, 153, 184, 0.08) 0%, transparent 50%),
+              var(--bg-page);
+  border-bottom: 1px solid var(--border-color);
+}
+.uzm-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+.uzm-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+}
+.uzm-eyebrow-line {
+  width: 28px;
+  height: 2px;
+  background: linear-gradient(90deg, #007791 0%, #0099B8 25%, #00B4D8 50%, #14B8A6 75%, #10B981 100%);
+}
+.uzm-hero-title {
+  font-size: clamp(2.35rem, 4.4vw, 4rem);
+  margin-bottom: 1.25rem;
+}
+.uzm-hero-title em {
+  font-style: italic;
+  font-weight: 800;
+  background: linear-gradient(135deg, #007791 0%, #0099B8 48%, #00B4D8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.uzm-hero-lead {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 58ch;
+  margin-bottom: 1.75rem;
+}
+.uzm-hero-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.25rem;
+}
+.uzm-hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+.uzm-metric-box {
+  display: flex;
+  flex-direction: column;
+}
+.uzm-metric-lbl {
+  display: block;
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+.uzm-metric-val {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+.uzm-metric-note {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+/* PRİZMA KARTI */
+.uzm-prism-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+}
+.uzm-prism-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+.uzm-mono-tag {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  display: block;
+}
+.uzm-prism-title {
+  font-size: 1.65rem;
+  margin-top: 0.2rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+.uzm-prism-pills {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+.uzm-prism-pill {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-subtle);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.uzm-prism-pill.is-active {
+  background: linear-gradient(135deg, #007791 0%, #0099B8 48%, #00B4D8 100%) !important;
+  color: #FFFFFF !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 12px rgba(0, 153, 184, 0.35) !important;
+}
+
+/* 3'LÜ VİTRİN GÖRÜNÜM MODU SEÇİCİ (YUSUF 4 REFERANS STİLİ: DİSK / KUTU & SET / KATMAN KESİTİ) */
+.uzm-prism-pills.is-dimmed {
+  opacity: 0.35;
+  pointer-events: none;
+  filter: grayscale(0.5);
+  transition: opacity 0.25s ease, filter 0.25s ease;
+}
+.uzm-hero-mode-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 14px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+}
+.uzm-hero-mode-pill {
+  position: relative;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #334155;
+  background: #F8FAFC;
+  border: 1px solid rgba(0, 153, 184, 0.25);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.uzm-hero-mode-pill:hover {
+  background: #E2E8F0;
+  color: #0F172A;
+  border-color: #0099B8;
+  transform: translateY(-1px);
+}
+.uzm-hero-mode-pill.is-active {
+  background: linear-gradient(135deg, #007791 0%, #0099B8 100%) !important;
+  color: #FFFFFF !important;
+  border-color: transparent !important;
+  box-shadow: 0 3px 12px rgba(0, 153, 184, 0.32) !important;
+}
+.uzm-mode-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.85;
+}
+.uzm-hero-wide-img {
+  max-width: 290px !important;
+  max-height: 185px !important;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.14);
+}
+.uzm-hero-set-display .uzm-hero-real-disc-img {
+  max-width: 320px !important;
+  max-height: 175px !important;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.10));
+}
+.uzm-hero-box-display .uzm-hero-real-disc-img {
+  max-width: 300px !important;
+  max-height: 190px !important;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.14);
+}
+.uzm-hero-macro-display .uzm-hero-real-disc-img {
+  max-width: 260px !important;
+  max-height: 190px !important;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16);
+}
+@media (max-width: 480px) {
+  .uzm-hero-set-display .uzm-hero-real-disc-img {
+    max-width: 250px !important;
+    max-height: 135px !important;
+  }
+  .uzm-hero-box-display .uzm-hero-real-disc-img,
+  .uzm-hero-macro-display .uzm-hero-real-disc-img {
+    max-width: 240px !important;
+    max-height: 160px !important;
+  }
+}
+
+.uzm-prism-stage {
+  background: linear-gradient(135deg, #F0F9FB 0%, #FFFFFF 50%, #E6F6F9 100%) !important;
+  color: #0F172A !important;
+  border: 1px solid rgba(0, 153, 184, 0.22) !important;
+  box-shadow: inset 0 1px 0 #FFFFFF, 0 8px 24px -4px rgba(0, 153, 184, 0.12) !important;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.uzm-prism-stage:hover {
+  border-color: #00B4D8 !important;
+  box-shadow: inset 0 1px 0 #FFFFFF, 0 16px 36px -8px rgba(0, 180, 216, 0.24) !important;
+  transform: translateY(-2px);
+}
+.uzm-hero-disc-display {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+.uzm-hero-disc-glow {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.14) 0%, rgba(6, 182, 212, 0.06) 50%, transparent 70%);
+  pointer-events: none;
+  filter: blur(16px);
+  z-index: 1;
+}
+.uzm-hero-real-disc-img {
+  position: relative;
+  z-index: 2;
+  max-width: 240px;
+  max-height: 170px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 24px rgba(13, 148, 136, 0.18));
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.uzm-hero-disc-display:hover .uzm-hero-real-disc-img {
+  transform: scale(1.03) rotate(0.5deg);
+}
+.uzm-hero-disc-badge {
+  position: relative;
+  z-index: 2;
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(13, 148, 136, 0.22);
+  color: #0d9488;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.08);
+}
+.uzm-disc-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #0d9488;
+}
+
+/* Hero Sahneleri Temizlendi — Yalnız Saf Beyaz Zirkonya Disk Kapakları */
+
+.uzm-prism-stat-row {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.uzm-prism-stat-row:last-child {
+  border-bottom: none;
+}
+.uzm-prism-stat-val {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #007791 !important;
+  font-weight: 800;
+  display: block;
+}
+.uzm-prism-foot {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.uzm-prism-ind {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+.uzm-link-btn {
+  min-height: 44px;
+  padding: 0.4rem 0.75rem;
+  background: transparent;
+  border: none;
+  color: var(--accent-primary);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* BÖLÜM & KART IZGARASI */
+.uzm-section {
+  padding: clamp(3rem, 6vw, 5.5rem) 0;
+}
+.uzm-section-alt {
+  background: var(--bg-subtle);
+  border-top: 1px solid var(--border-color);
+}
+.uzm-section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.25rem;
+}
+.uzm-section-title {
+  font-size: clamp(1.85rem, 3.2vw, 2.75rem);
+  margin: 0.3rem 0 0.5rem;
+}
+.uzm-section-sub {
+  color: var(--text-secondary);
+  max-width: 62ch;
+  margin: 0;
+  font-size: 0.95rem;
+}
+.uzm-filter-pills {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+.uzm-filter-btn {
+  min-height: 44px;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.uzm-filter-btn.is-active {
+  background: var(--accent-primary);
+  color: #FFFFFF;
+  border-color: var(--accent-primary);
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.28);
+}
+
+.uzm-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.uzm-block-card {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(0, 153, 184, 0.16) !important;
+  border-radius: 18px !important;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 10px 30px -5px rgba(0, 153, 184, 0.08), 0 2px 10px -2px rgba(15, 23, 42, 0.04), 0 0 0 1px rgba(226, 232, 240, 0.9) !important;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  min-height: 0;
+}
+@media (min-width: 901px) {
+  .uzm-cards-grid > .uzm-block-card {
+    height: 100%;
+  }
+  .uzm-cards-grid > .uzm-block-card .uzm-card-actions {
+    margin-top: auto;
+  }
+}
+.uzm-block-card[data-cat="zirconia"] {
+  border-top: 4px solid #005f73 !important;
+  border-image: linear-gradient(90deg, #007791 0%, #0099B8 25%, #00B4D8 50%, #14B8A6 75%, #10B981 100%) 1 !important;
+}
+.uzm-block-card[data-cat="pmma"] {
+  border-top: 4px solid #0284C7 !important;
+  border-image: linear-gradient(90deg, #0284C7 0%, #38BDF8 50%, #06B6D4 100%) 1 !important;
+}
+.uzm-block-card:hover {
+  transform: translateY(-4px) !important;
+  border-color: #00B4D8 !important;
+  box-shadow: 0 20px 42px -10px rgba(0, 180, 216, 0.22), 0 0 0 2px rgba(0, 153, 184, 0.35) !important;
+}
+.uzm-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.uzm-card-title {
+  font-size: 1.45rem;
+  margin: 0.35rem 0 0.2rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0F172A !important;
+}
+.uzm-card-sub {
+  font-size: 0.88rem;
+  color: #334155 !important;
+  margin: 0 0 0.85rem;
+  line-height: 1.5;
+}
+
+/* RESMİ OEM DİSK / ÜRÜN GÖRSELİ (100% BİREBİR EŞLEŞEN TEK SAHNE) */
+.uzm-card-oem-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0.5rem 0 0.75rem;
+  padding: 0.85rem 0.5rem;
+  background: #F8FAFC !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  border-radius: 12px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.uzm-card-oem-stage:hover {
+  border-color: #00B4D8 !important;
+  transform: translateY(-2px);
+}
+.uzm-card-oem-stage img,
+.uzm-card-oem-stage .uzm-card-disc-img {
+  width: 100%;
+  max-width: 220px;
+  height: 140px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: transparent;
+}
+.uzm-card-oem-badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background: linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 100%) !important;
+  color: #007791 !important;
+  border: 1px solid #7DD3FC !important;
+}
+.uzm-card-stage-desc {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+  margin: 0.2rem 0 0.65rem;
+  text-align: center;
+}
+.uzm-lot-code {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  background: #E0F2FE;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.uzm-card-disc-preview {
+  background: var(--bg-subtle);
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.uzm-card-metrics strong {
+  display: block;
+  line-height: 1.3;
+}
+.uzm-card-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1rem;
+}
+.uzm-card-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.uzm-card-actions button,
+.uzm-card-actions a {
+  flex: 1;
+}
+
+/* ==========================================================================
+   UZM DENTAL — BEYAZ BLOK & FERAH GEÇİŞLİ TURKUAZ (CYAN-TEAL) OPTİK PALETİ
+   Zemin: #FFFFFF (Berrak Klinik Buzul Beyaz Zemin)
+   Kart Blokları: #FFFFFF (Tertemiz Parlak Beyaz Bloklar)
+   Aksan Gradyan: linear-gradient(90deg, #007791 0%, #0099B8 25%, #00B4D8 50%, #14B8A6 75%, #10B981 100%) (Ferah Geçişli Turkuaz & Spektrum)
+   Aksiyon Gradyan: linear-gradient(135deg, #007791 0%, #0099B8 48%, #00B4D8 100%) (Turkuaz-Teal Geçişli)
+   Metin: #0F172A (Berrak Arduvaz Lacivert, 15.8:1 AAA) / #334155 (8.5:1 AAA)
+   ========================================================================== */
+details.uzm-acilir-panel:not([open]) > *:not(summary) {
+  display: none !important;
+}
+.uzm-acilir-panel {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin: 0.75rem 0 1rem;
+  overflow: hidden;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.uzm-acilir-panel[open] {
+  border-color: var(--accent-primary);
+  background: var(--bg-surface);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+.uzm-foy-summary {
+  list-style: none;
+  cursor: pointer;
+  min-height: 48px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--text-main);
+  user-select: none;
+  touch-action: manipulation;
+}
+.uzm-foy-summary::-webkit-details-marker,
+.uzm-foy-summary::marker {
+  display: none;
+}
+.uzm-foy-summary:hover {
+  background: rgba(0, 102, 204, 0.06);
+}
+.uzm-foy-summary:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: -2px;
+}
+.uzm-foy-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: left;
+}
+.uzm-foy-chevron {
+  min-width: 32px;
+  min-height: 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+details.uzm-acilir-panel[open] .uzm-foy-chevron {
+  transform: rotate(45deg);
+  background: var(--accent-primary);
+  color: #FFFFFF;
+  border-color: var(--accent-primary);
+}
+.uzm-foy-content {
+  padding: 0.85rem 1rem 1rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+.uzm-foy-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.uzm-foy-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  margin: 0.25rem 0;
+}
+.uzm-foy-table th,
+.uzm-foy-table td {
+  padding: 0.5rem 0.65rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+.uzm-foy-table th {
+  color: var(--text-muted);
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  width: 36%;
+  background: rgba(0, 0, 0, 0.02);
+}
+.uzm-foy-table td {
+  color: var(--text-main);
+  font-weight: 500;
+}
+.uzm-foy-table-multi th {
+  width: auto;
+  background: var(--bg-subtle);
+  color: var(--text-main);
+}
+.uzm-card-disc-box {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-surface);
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  padding: 3px;
+}
+.uzm-card-disc-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+}
+.uzm-brochures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+.uzm-brochure-card {
+  background: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.uzm-brochure-card strong {
+  font-size: 1.05rem;
+  color: var(--text-main);
+}
+.uzm-brochure-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+.uzm-brochure-card .uzm-btn-outline {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.uzm-endo-visual {
+  height: 160px;
+  border-radius: 10px;
+  background: var(--bg-page);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.uzm-endo-img {
+  max-width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  display: block;
+}
+
+/* KAPALI AKORDEON ÇEKMECELER */
+.uzm-drawers-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+details.uzm-home-drawer:not([open]) > *:not(summary) {
+  display: none !important;
+}
+.uzm-home-drawer {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.uzm-drawer-summary {
+  list-style: none;
+  cursor: pointer;
+  min-height: 64px;
+  padding: 1.15rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.uzm-drawer-summary::-webkit-details-marker,
+.uzm-drawer-summary::marker {
+  display: none;
+}
+.uzm-drawer-summary-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.uzm-drawer-summary-left strong {
+  display: block;
+  font-size: 1.05rem;
+}
+.uzm-drawer-summary-left small {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+}
+.uzm-mono-badge {
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(0, 153, 184, 0.08) 0%, rgba(236, 72, 153, 0.14) 100%) !important;
+  border: 1px solid rgba(0, 180, 216, 0.35) !important;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #007791 !important;
+  white-space: nowrap;
+}
+.uzm-drawer-chevron {
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+details.uzm-home-drawer[open] .uzm-drawer-chevron {
+  transform: rotate(45deg);
+  background: var(--text-main);
+  color: var(--bg-page);
+}
+.uzm-drawer-body {
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* TABLO & STÜDYO */
+.uzm-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 1rem;
+}
+.uzm-tech-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+.uzm-tech-table th,
+.uzm-tech-table td {
+  padding: 0.85rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+.uzm-table-btn {
+  min-height: 44px;
+  min-width: 68px;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-subtle);
+  color: var(--text-main);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.uzm-studio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+.uzm-endo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+.uzm-studio-card,
+.uzm-endo-card {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(0, 153, 184, 0.16) !important;
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 24px -4px rgba(0, 153, 184, 0.08), 0 2px 8px -2px rgba(15, 23, 42, 0.04) !important;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+.uzm-studio-card:hover,
+.uzm-endo-card:hover {
+  transform: translateY(-4px);
+  border-color: #00B4D8 !important;
+  box-shadow: 0 16px 36px -8px rgba(0, 180, 216, 0.22) !important;
+}
+.uzm-studio-visual {
+  height: 180px;
+  border-radius: 10px;
+  background: #121210;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.uzm-studio-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.uzm-studio-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #FFFFFF !important;
+  background: linear-gradient(135deg, #007791 0%, #0099B8 50%, #00B4D8 100%) !important;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 153, 184, 0.30);
+}
+  backdrop-filter: blur(4px);
+}
+.uzm-endo-meta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--accent-terracotta);
+  margin: 0.75rem 0 1rem;
+}
+
+/* SAĞDAN AÇILAN SLIDE-OVER TEKNİK PANEL */
+.uzm-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 12, 11, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+}
+.uzm-slide-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(560px, 100vw);
+  height: 100vh;
+  background: var(--bg-surface);
+  border-left: 1px solid var(--border-color);
+  z-index: 110;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(102%);
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.28s;
+  box-shadow: -20px 0 50px rgba(0, 0, 0, 0.25);
+}
+.uzm-slide-drawer.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+.uzm-slide-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.uzm-slide-title {
+  font-size: 1.65rem;
+}
+.uzm-icon-close {
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-subtle);
+  color: var(--text-main);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.uzm-slide-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-subtle);
+}
+.uzm-slide-tab {
+  min-height: 48px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.82rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.uzm-slide-tab.is-active {
+  color: var(--accent-terracotta);
+  border-bottom-color: var(--accent-terracotta);
+  background: var(--bg-surface);
+}
+.uzm-slide-content {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+.uzm-slide-desc {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  margin-top: 0;
+}
+.uzm-layer-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin: 1.25rem 0;
+}
+.uzm-layer-row {
+  display: grid;
+  grid-template-columns: 95px 1fr 110px;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.76rem;
+}
+.uzm-layer-bar-track {
+  height: 16px;
+  border-radius: 999px;
+  background: var(--bg-subtle);
+  overflow: hidden;
+}
+.uzm-layer-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #0066CC, #D97706);
+}
+.uzm-selector-block {
+  margin-top: 1.25rem;
+}
+.uzm-chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.5rem;
+}
+.uzm-chip-btn {
+  min-height: 44px;
+  min-width: 52px;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-page);
+  color: var(--text-main);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.uzm-chip-btn.is-active {
+  background: var(--text-main);
+  color: var(--bg-page);
+  border-color: var(--text-main);
+}
+.uzm-sinter-controls {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.uzm-sinter-btn {
+  min-height: 44px;
+  flex: 1;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-page);
+  color: var(--text-main);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.uzm-sinter-btn.is-active {
+  background: var(--accent-terracotta);
+  color: #FFFFFF;
+  border-color: var(--accent-terracotta);
+}
+.uzm-sinter-svg-wrap {
+  background: var(--bg-obsidian);
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.uzm-compare-stage {
+  background: var(--bg-obsidian);
+  color: #F7F4EF;
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.uzm-range-input {
+  width: 100%;
+  min-height: 44px;
+}
+.uzm-slide-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* B2B TEKLİF MODALI */
+.uzm-quote-modal[hidden],
+.uzm-quote-modal:not(.is-open) {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+.uzm-quote-modal.is-open {
+  display: flex !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+.uzm-quote-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 12, 11, 0.65);
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.uzm-quote-dialog {
+  width: min(540px, 100%);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.uzm-quote-list {
+  padding: 1.25rem 1.5rem;
+  max-height: 260px;
+  overflow-y: auto;
+}
+.uzm-quote-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.88rem;
+}
+.uzm-quote-form-row {
+  padding: 0 1.5rem 1rem;
+}
+.uzm-input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.6rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-page);
+  color: var(--text-main);
+}
+
+/* FOOTER */
+.uzm-footer {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-surface);
+}
+.uzm-footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.uzm-footer-brand-box {
+  display: flex;
+  flex-direction: column;
+}
+.uzm-footer-logos {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  max-width: 100% !important;
+  margin-bottom: 0.75rem !important;
+}
+.uzm-footer-logo-uzm {
+  height: 42px !important;
+  max-height: 42px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  background: #0d1f40;
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(45, 212, 191, 0.4);
+  display: block;
+}
+.uzm-footer-logo-zircrown {
+  height: 34px !important;
+  max-height: 34px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  background: #ffffff !important;
+  padding: 4px 10px !important;
+  border-radius: 8px !important;
+  border: 1px solid #cbd5e1 !important;
+  display: block !important;
+}
+.uzm-footer-desc {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  max-width: 52ch;
+  margin: 0.35rem 0 0;
+}
+.uzm-footer-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.uzm-footer-links a {
+  min-height: 44px;
+  padding: 0.45rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.88rem;
+}
+
+/* 412x915 MOBİL SIFIR TAŞMA KURALLARI */
+@media (max-width: 960px) {
+  .uzm-hero-grid,
+  .uzm-cards-grid,
+  .uzm-studio-grid,
+  .uzm-endo-grid {
+    grid-template-columns: 1fr;
+  }
+  .uzm-prism-stage {
+    grid-template-columns: 1fr;
+  }
+  .uzm-hero-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* SIFIR INLINE STYLE VE TEKNİK ÇEKMECE CSP %100 UYUMU */
+.uzm-card-disc-box {
+  width: 120px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uzm-compare-stage-meta {
+  font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+  font-size: 0.8rem;
+  color: var(--gold-subtle, #DFB882);
+  margin-bottom: 0.5rem;
+}
+
+.uzm-text-lg,
+.uzm-compare-stage-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Katman Çubuğu Yüzdeleri (Sıfır Inline Style) */
+.uzm-bar-w-20 { width: 20%; }
+.uzm-bar-w-25 { width: 25%; }
+.uzm-bar-w-30 { width: 30%; }
+.uzm-bar-w-35 { width: 35%; }
+.uzm-bar-w-40 { width: 40%; }
+.uzm-bar-w-42 { width: 42%; }
+.uzm-bar-w-43 { width: 43%; }
+.uzm-bar-w-44 { width: 44%; }
+.uzm-bar-w-45 { width: 45%; }
+.uzm-bar-w-46 { width: 46%; }
+.uzm-bar-w-48 { width: 48%; }
+.uzm-bar-w-49 { width: 49%; }
+.uzm-bar-w-50 { width: 50%; }
+.uzm-bar-w-51 { width: 51%; }
+.uzm-bar-w-53 { width: 53%; }
+.uzm-bar-w-54 { width: 54%; }
+.uzm-bar-w-55 { width: 55%; }
+.uzm-bar-w-57 { width: 57%; }
+.uzm-bar-w-60 { width: 60%; }
+.uzm-bar-w-65 { width: 65%; }
+.uzm-bar-w-70 { width: 70%; }
+.uzm-bar-w-75 { width: 75%; }
+.uzm-bar-w-80 { width: 80%; }
+.uzm-bar-w-85 { width: 85%; }
+.uzm-bar-w-90 { width: 90%; }
+.uzm-bar-w-95 { width: 95%; }
+.uzm-bar-w-100 { width: 100%; }
+
+
+/* ==========================================================================
+   UZM DENTAL — BEYAZ BLOK & FERAH GEÇİŞLİ TURKUAZ (CYAN-TEAL) OPTİK PALETİ
+   Zemin: #FFFFFF (Berrak Klinik Buzul Beyaz Zemin)
+   Kart Blokları: #FFFFFF (Tertemiz Parlak Beyaz Bloklar)
+   Aksan Gradyan: linear-gradient(90deg, #007791 0%, #0099B8 25%, #00B4D8 50%, #14B8A6 75%, #10B981 100%) (Ferah Geçişli Turkuaz & Spektrum)
+   Aksiyon Gradyan: linear-gradient(135deg, #007791 0%, #0099B8 48%, #00B4D8 100%) (Turkuaz-Teal Geçişli)
+   Metin: #0F172A (Berrak Arduvaz Lacivert, 15.8:1 AAA) / #334155 (8.5:1 AAA)
+   ========================================================================== */
+
+:root,
+html[data-tasarim="1"] {
+  --uzm-bg-canvas: #FFFFFF;
+  --uzm-bg-surface: #FFFFFF;
+  --uzm-bg-card: #FFFFFF;
+  --uzm-ink-primary: #0F172A;
+  --uzm-ink-secondary: #334155;
+  --uzm-accent-primary: #005f73;
+  --uzm-accent-secondary: #00B4D8;
+  --uzm-hairline: rgba(0, 153, 184, 0.14);
+  --uzm-compare-bg: #EDF4FC;
+  --uzm-compare-border: rgba(0, 180, 216, 0.35);
+  --uzm-compare-ink: #0F172A;
+  --uzm-eigen-ratio: 1.382;
+}
+
+html[data-tasarim="2"] {
+  --uzm-bg-canvas: #FFFFFF;
+  --uzm-bg-surface: #FFFFFF;
+  --uzm-bg-card: #FFFFFF;
+  --uzm-ink-primary: #0F172A;
+  --uzm-ink-secondary: #334155;
+  --uzm-accent-primary: #005f73;
+  --uzm-accent-secondary: #00B4D8;
+  --uzm-hairline: rgba(0, 153, 184, 0.14);
+  --uzm-compare-bg: #EDF4FC;
+  --uzm-compare-border: rgba(0, 180, 216, 0.35);
+  --uzm-compare-ink: #0F172A;
+  --uzm-eigen-ratio: 1.618;
+}
+
+/* Buz mavisi zeminlerin sıcak mine/kireçtaşı tonlarına sıfırlanması */
+.uzm-hero-stage-compact {
+  background: var(--uzm-bg-canvas, #F8FAFC) !important;
+  border: 1px solid var(--uzm-hairline, rgba(26, 22, 18, 0.14)) !important;
+}
+
+.uzm-chamber-metric {
+  background: #F3EFE6 !important;
+  color: #1A1612 !important;
+}
+
+/* Üst Çift Tasarım Seçici Bar (#uzmDualDesignBar) */
+.uzm-dual-design-bar {
+  background: linear-gradient(90deg, #14110E 0%, #0E1B2A 100%);
+  color: #F8FAFC;
+  border-bottom: 1px solid rgba(200, 168, 64, 0.38);
+  padding: 8px 0;
+  font-size: 12.5px;
+  position: relative;
+  z-index: 1150;
+}
+
+.uzm-dual-design-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.uzm-dual-design-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.uzm-dual-design-label {
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  background-color: #14110E;
+  color: #E5C86B;
+  text-transform: uppercase;
+  font-size: 11.5px;
+}
+
+.uzm-dual-switch-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.uzm-dual-switch-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(200, 168, 64, 0.45);
+  background: #1B2432;
+  color: #F8FAFC;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.uzm-dual-switch-btn.is-active,
+.uzm-dual-switch-btn[aria-pressed="true"] {
+  background: #C8A840;
+  color: #14110E;
+  border-color: #F3D87D;
+  box-shadow: 0 2px 10px rgba(200, 168, 64, 0.32);
+}
+
+html[data-tasarim="2"] .uzm-dual-switch-btn.is-active,
+html[data-tasarim="2"] .uzm-dual-switch-btn[aria-pressed="true"] {
+  background: #1D5B6B;
+  color: #F8FAFC;
+  border-color: #70B5C6;
+}
+
+.uzm-dual-design-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.uzm-gokhan-jump-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  border-radius: 6px;
+  background: #1A2418;
+  border: 1px solid #cfe0a8;
+  color: #eef5dc;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Souq × Kent Architectural Dental Atelier (data-tasarim="2") Görsel Sentezi */
+html[data-tasarim="2"] body.uzm-body {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+}
+
+html[data-tasarim="2"] .uzm-header {
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important;
+}
+
+html[data-tasarim="2"] .uzm-hero {
+  background: radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.10) 0%, transparent 60%), #FAFAFA !important;
+  border-bottom: 1px solid rgba(0, 153, 184, 0.14) !important;
+}
+
+html[data-tasarim="2"] .uzm-hero-title {
+  font-family: "Instrument Serif", Georgia, serif !important;
+  color: #0E1B2A !important;
+  letter-spacing: -0.01em;
+}
+
+html[data-tasarim="2"] .uzm-product-grid {
+  gap: 1px !important;
+  background-color: rgba(14, 27, 42, 0.14) !important;
+  border: 1px solid rgba(14, 27, 42, 0.14) !important;
+}
+
+html[data-tasarim="2"] .uzm-product-grid > * {
+  border-radius: 0 !important;
+  background-color: #F8FAFC !important;
+  color: #0E1B2A !important;
+}
+
+/* Düzeltme-2: Karşılaştırma Kutusu (.compare-card) — Sıcak Açık Yeşil (#eef5dc) */
+.compare-card,
+.uzm-compare-card {
+  background-color: #eef5dc !important;
+  color: #1A2418 !important;
+  border: 1px solid #cfe0a8 !important;
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 18px 0;
+  box-sizing: border-box;
+  box-shadow: 0 6px 18px rgba(26, 36, 24, 0.06);
+}
+
+.compare-card h3,
+.compare-card h4,
+.compare-card strong,
+.uzm-compare-card h3,
+.uzm-compare-card strong {
+  color: #131B11 !important;
+}
+
+.uzm-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.uzm-compare-item {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid #bfd492;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #1A2418;
+  font-size: 12.5px;
+}
+
+@media (max-width: 768px) {
+  .uzm-compare-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Halka 1 -> Halka 2 -> Halka 3 Kademeli Keşif Zinciri (Progressive Disclosure) */
+details.uzm-chain-ring {
+  margin: 16px 0;
+  border: 1px solid rgba(200, 157, 84, 0.38);
+  border-radius: 12px;
+  background: rgba(15, 22, 34, 0.45);
+  overflow: hidden;
+}
+
+html[data-tasarim="2"] details.uzm-chain-ring {
+  background: #F4F2EA;
+  border-color: rgba(14, 27, 42, 0.18);
+}
+
+details.uzm-chain-ring > summary.uzm-chain-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 18px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 800;
+  font-size: 14px;
+  color: #F6F2E9;
+  background: linear-gradient(90deg, #1b1f24 0%, #0f1726 100%);
+  user-select: none;
+}
+
+html[data-tasarim="2"] details.uzm-chain-ring > summary.uzm-chain-summary {
+  color: #0E1B2A;
+  background: linear-gradient(90deg, #e2ecee 0%, #f1ebe2 100%);
+}
+
+details.uzm-chain-ring > summary.uzm-chain-summary::-webkit-details-marker {
+  display: none;
+}
+
+.uzm-chain-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 5px;
+  background: #C8A840;
+  color: #14110E;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+html[data-tasarim="2"] .uzm-chain-badge {
+  background: #1D5B6B;
+  color: #FFFFFF;
+}
+
+.uzm-chain-cta {
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #0f1726;
+  color: #E5C86B;
+}
+
+html[data-tasarim="2"] .uzm-chain-cta {
+  background-color: #f1ebe2;
+  color: #1D5B6B;
+}
+
+.uzm-chain-body {
+  padding: 14px 16px;
+}
+
+/* ==========================================================================
+   UZM DENTAL — BEYAZ BLOK & FERAH GEÇİŞLİ TURKUAZ (CYAN-TEAL) OPTİK PALETİ
+   Zemin: #FFFFFF (Berrak Klinik Buzul Beyaz Zemin)
+   Kart Blokları: #FFFFFF (Tertemiz Parlak Beyaz Bloklar)
+   Aksan Gradyan: linear-gradient(90deg, #007791 0%, #0099B8 25%, #00B4D8 50%, #14B8A6 75%, #10B981 100%) (Ferah Geçişli Turkuaz & Spektrum)
+   Aksiyon Gradyan: linear-gradient(135deg, #007791 0%, #0099B8 48%, #00B4D8 100%) (Turkuaz-Teal Geçişli)
+   Metin: #0F172A (Berrak Arduvaz Lacivert, 15.8:1 AAA) / #334155 (8.5:1 AAA)
+   ========================================================================== */
+
+/* 1. Sıfır Yatay Taşma Kalkanı */
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box !important;
+}
+
+.container, .uzm-section, .uzm-topbar, header, main, footer {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-sku-table, table {
+  max-width: 100% !important;
+  display: block !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.uzm-h1, .uzm-brand, .uzm-brand-sub, .uzm-kicker, h1, h2, h3, h4, p {
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+img, svg, video {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* 2. Dokunma Hedefleri (WCAG 2.5.5 / 2.5.8 >= 44x44px Tam Uyum) */
+.uzm-lang-trigger,
+#uzmLangDropdownToggle {
+  min-height: 44px !important;
+  min-width: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px 14px !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-lang-option {
+  min-height: 44px !important;
+  min-width: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px 12px !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-nav-toggle {
+  min-width: 44px !important;
+  min-height: 44px !important;
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 10px !important;
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-nav-toggle-bar {
+  display: block !important;
+  width: 22px !important;
+  height: 2px !important;
+  background-color: currentColor !important;
+  margin: 2px 0 !important;
+  border-radius: 1px !important;
+}
+
+.uzm-contact-item,
+.uzm-pathway-link,
+.uzm-sticky-btn,
+.uzm-back-home-link,
+.uzm-studio-toggle-btn,
+.uzm-gokhan-jump-btn,
+.uzm-icon-btn,
+#acousticToggleBtn,
+.uzm-menu-toggle,
+.uzm-shimmer-menu-btn,
+.uzm-btn,
+.uzm-btn-hot,
+.uzm-tab-btn,
+.uzm-brochure-pdf-btn,
+.uzm-brochure-hd-btn,
+.uzm-studio40-filter-btn,
+.uzm-mega-brand-pill {
+  min-height: 44px !important;
+  min-width: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 768px) {
+  a.uzm-nav-link,
+  button.uzm-nav-link,
+  .uzm-nav-item a,
+  .uzm-menu-dropdown a,
+  .uzm-lang-menu a,
+  .uzm-lang-menu button {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* === WCAG 2.5.5 TEXTAREA 44PX YAMASI (GROK-0057) === */
+textarea,
+.uzm-textarea,
+textarea.uzm-textarea,
+textarea#clinicProduct,
+#clinicProduct {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 44px !important;
+  min-height: 48px !important;
+  padding: 10px 12px !important;
+  line-height: 1.45 !important;
+  box-sizing: border-box !important;
+  resize: vertical;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  textarea,
+  .uzm-textarea,
+  textarea.uzm-textarea,
+  textarea#clinicProduct,
+  #clinicProduct,
+  input.uzm-input,
+  select.uzm-select {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 44px !important;
+    min-height: 48px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Kırıntı (Breadcrumb) ve Anasayfa Dönüş Linki Yüksek Kontrast (#F8FAFC / #38BDF8) */
+.uzm-breadcrumb {
+  padding: 0.75rem 0 0.5rem 0;
+}
+.uzm-back-home-link {
+  color: #38BDF8 !important;
+  background-color: rgba(10, 20, 40, 0.85) !important;
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+  border-radius: 8px !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  padding: 8px 16px !important;
+  transition: all 0.18s ease !important;
+}
+.uzm-back-home-link:hover {
+  color: #F8FAFC !important;
+  background-color: rgba(14, 28, 56, 0.95) !important;
+  border-color: #38BDF8 !important;
+}
+
+/* === GROK-1115 UZM MOBIL AYRI TASARIM (YUSUF ONAYLI 11:15) === */
+.uzm-mobile-sticky-bar {
+  display: none;
+}
+.uzm-hamburger-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* 1. KISA HERO & ABOVE-THE-FOLD GERÇEK ZİRKONYA BLOK (YUSUF 21:02) */
+  .uzm-hero {
+    padding: 1rem 0 1.25rem 0 !important;
+  }
+  .uzm-hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  .uzm-hero-copy {
+    display: contents !important;
+  }
+  .uzm-eyebrow {
+    display: inline-flex !important;
+    order: 1 !important;
+    font-size: 0.62rem !important;
+    letter-spacing: 0.04em !important;
+    margin-bottom: 0.25rem !important;
+    color: #0099B8 !important;
+    gap: 6px !important;
+    align-items: center !important;
+  }
+  .uzm-eyebrow-line {
+    width: 18px !important;
+    height: 2px !important;
+  }
+  .uzm-hero-title {
+    order: 2 !important;
+    font-size: clamp(1.18rem, 4.8vw, 1.45rem) !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 0.4rem !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    max-width: 100% !important;
+  }
+  .uzm-h1,
+  h1.uzm-h1,
+  .uzm-studio40-heading,
+  h1.uzm-studio40-heading {
+    font-size: 20px !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.015em !important;
+    margin-bottom: 0.5rem !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    max-width: 100% !important;
+  }
+  .uzm-hero-lead {
+    order: 4 !important;
+    font-size: 0.88rem !important;
+    line-height: 1.45 !important;
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.75rem !important;
+    overflow-wrap: anywhere !important;
+    max-width: 100% !important;
+  }
+  .uzm-hero-cta-row {
+    order: 5 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    width: 100% !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .uzm-hero-cta-row a.uzm-btn-primary {
+    display: flex !important;
+    width: 100% !important;
+    min-height: 44px !important;
+    font-size: 0.88rem !important;
+    font-weight: 700 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    padding: 10px 16px !important;
+  }
+  .uzm-hero-cta-row button.uzm-btn-outline {
+    display: none !important;
+  }
+  .uzm-hero-metrics {
+    order: 6 !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 6px !important;
+    padding-top: 0.6rem !important;
+    border-top: 1px solid rgba(0, 153, 184, 0.15) !important;
+  }
+  .uzm-metric-lbl {
+    font-size: 0.58rem !important;
+  }
+  .uzm-metric-val {
+    font-size: 0.82rem !important;
+  }
+  .uzm-metric-note {
+    display: none !important;
+  }
+
+  /* 2. HAMBURGER MENÜ */
+  .uzm-header-inner {
+    position: relative !important;
+    padding: 8px 16px !important;
+  }
+  .uzm-brand-title {
+    font-size: 1.15rem !important;
+  }
+  .uzm-brand-sub {
+    font-size: 0.62rem !important;
+  }
+  .uzm-header-actions #uzmQuoteTrayBtn {
+    display: none !important;
+  }
+  .uzm-hamburger-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    background: #FFFFFF !important;
+    border: 1px solid rgba(0, 153, 184, 0.25) !important;
+    border-radius: 8px !important;
+    font-size: 1.4rem !important;
+    color: #0F172A !important;
+    cursor: pointer !important;
+    box-shadow: 0 2px 8px rgba(0, 153, 184, 0.08) !important;
+    flex-shrink: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .uzm-nav {
+    display: none;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-bottom: 1px solid rgba(0, 153, 184, 0.18) !important;
+    padding: 12px 16px !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 6px !important;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12) !important;
+    z-index: 1100 !important;
+  }
+  .uzm-nav.is-open {
+    display: flex !important;
+  }
+  .uzm-nav-link {
+    width: 100% !important;
+    min-height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 12px 16px !important;
+    font-size: 0.98rem !important;
+    font-weight: 600 !important;
+    color: #0F172A !important;
+    border-radius: 8px !important;
+    background: #F8FAFD !important;
+    border: 1px solid rgba(0, 153, 184, 0.08) !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 3. BÜYÜK DOKUNMATİK BUTONLAR (>=48px) */
+  .uzm-btn,
+  .uzm-btn-primary,
+  .uzm-btn-outline,
+  .uzm-btn-ghost,
+  .uzm-filter-btn,
+  .uzm-table-btn,
+  .uzm-link-btn,
+  .lang-dropdown > summary,
+  #uzmThemeToggleBtn,
+  .uzm-drawer-summary,
+  .uzm-foy-summary {
+    min-height: 48px !important;
+    min-width: 48px !important;
+    box-sizing: border-box !important;
+  }
+  .uzm-filter-pills {
+    display: flex !important;
+    overflow-x: auto !important;
+    gap: 8px !important;
+    padding-bottom: 8px !important;
+    -webkit-overflow-scrolling: touch !important;
+    flex-wrap: nowrap !important;
+    max-width: 100% !important;
+  }
+  .uzm-filter-btn {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+    padding: 10px 16px !important;
+    font-size: 0.88rem !important;
+    border-radius: 8px !important;
+  }
+
+  /* 4. ÜRÜNLER İÇİN YATAY KAYDIRMALI KART ŞERİDİ */
+  .uzm-cards-grid,
+  .uzm-vitrin-grid {
+    display: flex !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    gap: 16px !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding-bottom: 20px !important;
+    padding-inline: 8px !important;
+    scroll-padding: 8px !important;
+    margin-inline: -8px !important;
+    align-items: flex-start !important;
+  }
+  .uzm-cards-grid {
+    align-items: flex-start !important;
+  }
+  .uzm-cards-grid > .uzm-block-card,
+  .uzm-cards-grid > article,
+  .uzm-vitrin-grid > .uzm-product-card {
+    flex: 0 0 85% !important;
+    max-width: 85% !important;
+    min-width: 280px !important;
+    scroll-snap-align: start !important;
+    box-sizing: border-box !important;
+    background: #FFFFFF !important;
+    padding: 1.1rem 1rem !important;
+    gap: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-self: flex-start !important;
+  }
+  .uzm-block-card .uzm-card-top {
+    margin-bottom: 0.35rem !important;
+  }
+  .uzm-block-card .uzm-card-title {
+    font-size: 1.22rem !important;
+    margin: 0.2rem 0 !important;
+    line-height: 1.25 !important;
+  }
+  .uzm-block-card .uzm-card-sub {
+    font-size: 0.82rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 0.4rem !important;
+    margin-top: 0 !important;
+  }
+  .uzm-block-card .uzm-card-oem-stage {
+    margin: 0.35rem 0 0.5rem 0 !important;
+    padding: 0.45rem 0.35rem !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  .uzm-block-card .uzm-card-oem-stage img,
+  .uzm-block-card .uzm-card-disc-img {
+    max-width: 175px !important;
+    height: 110px !important;
+    object-fit: contain !important;
+  }
+  .uzm-block-card .uzm-card-metrics {
+    padding: 0.4rem 0 !important;
+    margin: 0.35rem 0 0.5rem 0 !important;
+    gap: 0.5rem !important;
+  }
+  .uzm-block-card .uzm-metric-lbl {
+    font-size: 0.68rem !important;
+  }
+  .uzm-block-card .uzm-card-metrics strong {
+    font-size: 0.88rem !important;
+  }
+  .uzm-block-card details.uzm-card-foy {
+    margin: 0.35rem 0 0.5rem 0 !important;
+  }
+  .uzm-block-card .uzm-foy-summary {
+    min-height: 40px !important;
+    padding: 8px 10px !important;
+    font-size: 0.78rem !important;
+  }
+  .uzm-cards-grid > .uzm-block-card .uzm-card-actions,
+  .uzm-block-card .uzm-card-actions {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0 !important;
+    gap: 6px !important;
+    align-self: stretch !important;
+  }
+  .uzm-block-card .uzm-card-actions button,
+  .uzm-block-card .uzm-card-actions a {
+    min-height: 44px !important;
+    padding: 8px 10px !important;
+    font-size: 0.82rem !important;
+  }
+
+  /* 5. TEKNİK TABLOLAR VE SİNTERLEME EĞRİSİ AKORDİYON (<details>) */
+  .uzm-drawers-stack {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+  .uzm-home-drawer {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(0, 153, 184, 0.16) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+  }
+  .uzm-table-wrap {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    max-width: 100% !important;
+  }
+  .uzm-tech-table {
+    min-width: 580px !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* 6. OPTİK SİMÜLATÖR MOBİLDE SADELEŞTİRİLMİŞ KOMPAKT GÖRÜNÜM & GERÇEK ZİRKON DİSK */
+  .uzm-hero-prism-wrap {
+    order: 3 !important;
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .uzm-prism-card {
+    padding: 10px 12px !important;
+    border-radius: 14px !important;
+    background: #FFFFFF !important;
+    border: 1px solid rgba(0, 153, 184, 0.22) !important;
+    box-shadow: 0 4px 18px -2px rgba(0, 153, 184, 0.12) !important;
+  }
+  .uzm-prism-head {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 6px !important;
+  }
+  .uzm-prism-title {
+    font-size: 1.05rem !important;
+    margin: 0 !important;
+  }
+
+  .uzm-prism-pills {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 4px !important;
+    width: 100% !important;
+    overflow-x: visible !important;
+    padding-bottom: 0 !important;
+  }
+  .uzm-prism-pill {
+    min-height: 44px !important;
+    padding: 6px 2px !important;
+    font-size: 0.72rem !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .uzm-prism-stage {
+    grid-template-columns: 1fr !important;
+    padding: 6px 8px !important;
+    gap: 6px !important;
+  }
+  .uzm-hero-mode-pills {
+    gap: 4px !important;
+    margin: 6px 0 8px !important;
+    justify-content: center !important;
+  }
+  .uzm-hero-mode-pill {
+    font-size: 0.68rem !important;
+    padding: 3px 8px !important;
+  }
+  .uzm-hero-wide-img {
+    max-width: 210px !important;
+    max-height: 130px !important;
+  }
+  .uzm-prism-svg-holder {
+    max-height: 160px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .uzm-hero-disc-display {
+    padding: 4px 0 !important;
+  }
+  .uzm-hero-real-disc-img {
+    max-width: 200px !important;
+    max-height: 125px !important;
+  }
+  .uzm-hero-disc-glow {
+    width: 160px !important;
+    height: 160px !important;
+  }
+  .uzm-hero-disc-badge {
+    font-size: 0.68rem !important;
+    padding: 2px 8px !important;
+    margin-top: 4px !important;
+  }
+  .uzm-prism-stats {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 6px !important;
+  }
+  .uzm-prism-stat-row {
+    padding: 4px 6px !important;
+  }
+  .uzm-prism-stat-val {
+    font-size: 0.85rem !important;
+  }
+  .uzm-prism-foot {
+    display: none !important;
+  }
+
+  /* 7. ALTA SABİT 'NUMUNE & TEKLİF' ÇUBUĞU */
+  body {
+    padding-bottom: 84px !important;
+  }
+  .uzm-mobile-sticky-bar {
+    display: flex !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1200 !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-top: 1px solid rgba(0, 153, 184, 0.18) !important;
+    padding: 8px 12px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+    box-shadow: 0 -4px 20px rgba(15, 23, 42, 0.08) !important;
+    box-sizing: border-box !important;
+  }
+  .uzm-msb-text {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1px !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+  .uzm-msb-text strong {
+    font-size: clamp(0.72rem, 3.2vw, 0.78rem) !important;
+    font-weight: 700 !important;
+    color: #0F172A !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.25 !important;
+  }
+  .uzm-msb-text span {
+    font-size: clamp(0.62rem, 2.7vw, 0.68rem) !important;
+    color: #475569 !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.2 !important;
+  }
+  .uzm-msb-btn {
+    flex-shrink: 0 !important;
+    min-height: 44px !important;
+    min-width: auto !important;
+    padding: 8px 12px !important;
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    background: linear-gradient(135deg, #007791 0%, #0099B8 50%, #00B4D8 100%) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 14px rgba(0, 153, 184, 0.35) !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* CSP INLINE STYLE TEMİZLEME VE MODAL YARDIMCILARI */
+.uzm-display-contents {
+  display: contents !important;
+}
+.uzm-mt-10 {
+  margin-top: 10px !important;
+}
+.uzm-mt-075 {
+  margin-top: 0.75rem !important;
+}
+.uzm-mt-1rem {
+  margin-top: 1rem !important;
+}
+.uzm-mb-125 {
+  margin-bottom: 1.25rem !important;
+}
+.uzm-drawer-action-row {
+  margin-top: 1rem !important;
+  display: flex !important;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+}
+.uzm-btn-drawer-cta {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  min-height: 48px !important;
+}
+.uzm-btn-studio-cta {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  min-height: 44px !important;
+}
+.uzm-stage-sub-img-170 {
+  height: 170px !important;
+  object-fit: cover !important;
+}
+.uzm-btn-row-24 {
+  margin-top: 24px !important;
+  display: flex !important;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+}
+.uzm-sim-table-card {
+  background: #FFFFFF !important;
+  border-radius: 12px !important;
+  padding: 16px !important;
+}
+.uzm-eyebrow-line-pmma {
+  background: linear-gradient(90deg, #0284C7, #00B4D8) !important;
+}
+.uzm-tag-indigo {
+  color: #005f73 !important;
+}
+.uzm-stage-center-220 {
+  min-height: 220px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.uzm-img-rounded-8 {
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 8px !important;
+}
+.uzm-badge-indigo {
+  color: #005f73 !important;
+  border-color: rgba(0, 153, 184, 0.3) !important;
+}
+.uzm-oem-badge-indigo {
+  color: #005f73 !important;
+  border-color: #B2EBF2 !important;
+  background: #E0F7FA !important;
+}
+.uzm-btn-pmma-grad {
+  text-decoration: none !important;
+  background: linear-gradient(135deg, #0284C7 0%, #0099B8 50%, #00B4D8 100%) !important;
+}
+.uzm-link-nodecor {
+  text-decoration: none !important;
+}
+.uzm-footer-clean {
+  padding: 2.5rem 0 !important;
+  border-top: 1px solid rgba(0, 153, 184, 0.14) !important;
+  background: #FFFFFF !important;
+  text-align: center !important;
+}
+.uzm-footer-copy {
+  margin: 0 !important;
+  color: #334155 !important;
+  font-size: 0.88rem !important;
+}
+.uzm-back-home-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: #007791 !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(0, 153, 184, 0.25) !important;
+  box-shadow: 0 2px 8px rgba(0, 153, 184, 0.08) !important;
+  transition: all 0.18s ease !important;
+}
+.uzm-bc-home {
+  color: #0F172A !important;
+}
+.uzm-bc-sep {
+  color: #94A3B8 !important;
+}
+.uzm-bc-current {
+  color: #007791 !important;
+}
+
+/* Lightbox Caption & Badge Styling (Rev1 21:28 Yusuf Mührü) */
+.uzm-studio40-lightbox-caption {
+  margin-top: 10px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+.uzm-studio40-lightbox-caption .uzm-studio40-plaque-pill,
+#uzmStudio40LightboxBadge {
+  position: static !important;
+  font-size: 0.72rem !important;
+  padding: 3px 10px !important;
+  border-radius: 6px !important;
+  display: inline-block !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  background: linear-gradient(135deg, #007791 0%, #0099B8 48%, #00B4D8 100%) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(0, 180, 216, 0.4) !important;
+  box-shadow: 0 2px 8px rgba(0, 119, 145, 0.3) !important;
+}
+.uzm-studio40-lightbox-caption h3,
+#uzmStudio40LightboxTitle,
+.uzm-studio40-lightbox-dialog h3 {
+  color: #F1F5F9 !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+  letter-spacing: -0.01em !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* ───────────── PMMA DÜZENLEYİCİ KUTU (SIFIR CSP İNLİNE STYLE) ───────────── */
+.uzm-reg-pmma-box {
+  background: #FFFFFF;
+  border: 1px solid rgba(13, 148, 136, 0.14);
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+.uzm-reg-pmma-box .uzm-mono-tag {
+  color: #0D9488;
+}
+.uzm-reg-pmma-title {
+  display: block;
+  margin: 6px 0 4px;
+  font-size: 1rem;
+  color: #0F172A;
+}
+.uzm-reg-pmma-desc {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #334155;
+}
+video.uzm-hero-real-disc-img {
+  border-radius: 8px;
+  outline: none;
+  background: transparent;
+}
+
+
+/* Flow Önizleme Laboratuvarı Sayfa Stilleri (Sıfır Satır-İçi Stil / Zero CSP Violation) */
+.uzm-flow-card {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.uzm-flow-video-stage {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #070E1C;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+}
+.uzm-flow-video-player {
+  display: block;
+  border-radius: 12px;
+  max-height: 540px;
+  width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+.uzm-flow-info-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+  gap: 1rem;
+}
+.uzm-flow-info-title {
+  margin-left: 8px;
+  color: #0F172A;
+}
+.uzm-flow-info-sub {
+  color: #334155;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+.uzm-flow-info-actions {
+  display: flex;
+  gap: 8px;
+}
+.uzm-flow-head-gap {
+  margin-top: 3rem;
+}
+.uzm-flow-thumb-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  height: 200px;
+  background: #0B192C;
+}
+.uzm-flow-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.uzm-flow-card-body {
+  padding: 1rem;
+}
+.uzm-flow-card-title {
+  font-size: 1rem;
+  margin: 6px 0;
+  color: #0F172A;
+}
+.uzm-flow-card-desc {
+  font-size: 0.85rem;
+  color: #334155;
+  margin: 0;
+}
+.uzm-flow-footer {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  text-align: center;
+  color: #334155;
+  font-size: 0.85rem;
+}
+.uzm-flow-footer-link {
+  color: #007791;
+  text-decoration: none;
+}
+
+
+/* ========================================================================== */
+/* ETIKET & ROZET TEMİZLİĞİ + SAF HERO PRİZM DÜZENİ */
+/* ========================================================================== */
+.uzm-hero-disc-badge,
+.uzm-hero-mode-pills,
+.uzm-studio-badge {
+  display: none !important;
+}
+.uzm-studio40-plaque-pill {
+  display: inline-block !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  padding: 3px 8px !important;
+  border-radius: 6px !important;
+  background: linear-gradient(135deg, rgba(13, 31, 60, 0.94), rgba(24, 56, 112, 0.94)) !important;
+  border: 1px solid rgba(120, 192, 200, 0.5) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ========================================================================== */
+/* LIGHTBOX VE STÜDYO RESTORASYON TIKLAMA İLE BÜYÜTME (ZOOM) */
+/* ========================================================================== */
+.uzm-studio-visual {
+  position: relative !important;
+  cursor: pointer !important;
+  overflow: hidden !important;
+  border-radius: 8px !important;
+}
+.uzm-studio-visual::after {
+  content: "🔍 Büyüt" !important;
+  position: absolute !important;
+  bottom: 8px !important;
+  right: 8px !important;
+  background: rgba(13, 31, 60, 0.85) !important;
+  color: #78C0C8 !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  padding: 3px 8px !important;
+  border-radius: 4px !important;
+  border: 1px solid rgba(120, 192, 200, 0.35) !important;
+  pointer-events: none !important;
+  opacity: 0.9 !important;
+  transition: opacity 0.2s ease, transform 0.2s ease !important;
+}
+.uzm-studio-visual:hover::after {
+  opacity: 1 !important;
+  transform: scale(1.05) !important;
+}
+.uzm-studio-img {
+  cursor: pointer !important;
+  transition: transform 0.25s ease !important;
+}
+.uzm-studio-visual:hover .uzm-studio-img {
+  transform: scale(1.03) !important;
+}
+.uzm-studio40-card {
+  cursor: pointer !important;
+}
+.uzm-studio40-img-wrap {
+  position: relative !important;
+  cursor: pointer !important;
+}
+
+/* Lightbox Dialog */
+.uzm-studio40-lightbox {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 999999 !important;
+  display: none;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 16px !important;
+  box-sizing: border-box !important;
+}
+.uzm-studio40-lightbox.open {
+  display: flex !important;
+}
+.uzm-studio40-lightbox-backdrop {
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(5, 12, 24, 0.88) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+.uzm-studio40-lightbox-dialog {
+  position: relative !important;
+  z-index: 2 !important;
+  max-width: 92vw !important;
+  max-height: 90vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  background: #0D1B2A !important;
+  border: 1px solid rgba(120, 192, 200, 0.35) !important;
+  border-radius: 14px !important;
+  padding: 14px !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6) !important;
+  animation: uzmZoomIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+@keyframes uzmZoomIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+.uzm-studio40-lightbox-dialog img {
+  max-width: 88vw !important;
+  max-height: 72vh !important;
+  object-fit: contain !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5) !important;
+}
+.uzm-studio40-lightbox-close {
+  position: absolute !important;
+  top: -14px !important;
+  right: -14px !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: #1E293B !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: #FFFFFF !important;
+  font-size: 20px !important;
+  line-height: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+.uzm-studio40-lightbox-caption {
+  margin-top: 10px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 6px !important;
+  text-align: center !important;
+}
+.uzm-studio40-lightbox-caption h3 {
+  color: #F1F5F9 !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+}
+.uzm-prism-head {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-bottom: 0.85rem !important;
+}
+.uzm-prism-pills {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+}
+
+
+/* HERO BEYAZ GRUP VİTRİN GÖRSELİ (UZMDENTAL.COM HAM AYNA MİMARİSİ) */
+.uzm-hero-stage-card {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1.25rem 1rem !important;
+  background-color: #F8FAFC !important;
+  background-image: radial-gradient(circle at 50% 45%, #FFFFFF 0%, #F1F5F9 60%, #E2E8F0 100%) !important;
+  border: 1px solid rgba(0, 153, 184, 0.22) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08) !important;
+}
+.uzm-hero-group-display {
+  display: block !important;
+  width: 100% !important;
+  max-width: 580px !important;
+  height: auto !important;
+  max-height: 320px !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  filter: drop-shadow(0 14px 28px rgba(13, 148, 136, 0.16)) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.uzm-hero-stage-card:hover .uzm-hero-group-display {
+  transform: scale(1.025) !important;
+}
+@media (max-width: 768px) {
+  .uzm-hero-stage-card {
+    padding: 0.75rem 0.5rem !important;
+    border-radius: 12px !important;
+  }
+  .uzm-hero-group-display {
+    max-width: 100% !important;
+    max-height: 195px !important;
+  }
+}
+
+/* === UZM DENTAL · GÖKHAN BEY CANLI İNCELEME & GERİ BİLDİRİM BİLEŞENLERİ (2026-11-03) === */
+.uzm-nav-feedback {
+  position: relative !important;
+  color: #0099B8 !important;
+  font-weight: 700 !important;
+}
+.uzm-nav-feedback::after {
+  content: "" !important;
+  display: inline-block !important;
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 50% !important;
+  background-color: #10B981 !important;
+  margin-left: 5px !important;
+  vertical-align: middle !important;
+  box-shadow: 0 0 6px #10B981 !important;
+}
+.uzm-header-feedback-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 44px !important;
+  min-width: 44px !important;
+  padding: 8px 14px !important;
+  border-radius: 8px !important;
+  background: rgba(0, 153, 184, 0.1) !important;
+  color: #007791 !important;
+  border: 1px solid rgba(0, 153, 184, 0.28) !important;
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+.uzm-header-feedback-btn:hover {
+  background: rgba(0, 153, 184, 0.18) !important;
+  border-color: #0099B8 !important;
+  color: #005F73 !important;
+  transform: translateY(-1px) !important;
+}
+.uzm-floating-feedback-btn {
+  position: fixed !important;
+  right: 24px !important;
+  bottom: 28px !important;
+  z-index: 1050 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  min-height: 46px !important;
+  padding: 10px 18px !important;
+  border-radius: 9999px !important;
+  background: rgba(15, 23, 42, 0.94) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  color: #F8FAFC !important;
+  border: 1.5px solid rgba(0, 180, 216, 0.7) !important;
+  box-shadow: 0 8px 24px rgba(0, 153, 184, 0.3), 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+  font-size: 0.86rem !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  letter-spacing: 0.01em !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.uzm-floating-feedback-btn:hover {
+  background: #0F172A !important;
+  border-color: #38BDF8 !important;
+  box-shadow: 0 12px 30px rgba(0, 180, 216, 0.45) !important;
+  transform: translateY(-2px) scale(1.02) !important;
+}
+.uzm-feedback-float-icon {
+  font-size: 1.1rem !important;
+  line-height: 1 !important;
+}
+.uzm-msb-feedback-btn {
+  flex-shrink: 0 !important;
+  min-height: 44px !important;
+  padding: 6px 12px !important;
+  font-size: 0.76rem !important;
+  font-weight: 700 !important;
+  border-radius: 8px !important;
+  background: rgba(0, 153, 184, 0.1) !important;
+  color: #007791 !important;
+  border: 1px solid rgba(0, 153, 184, 0.25) !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.18s ease !important;
+}
+.uzm-msb-feedback-btn:hover {
+  background: rgba(0, 153, 184, 0.18) !important;
+  border-color: #0099B8 !important;
+}
+.uzm-feedback-drawer {
+  width: min(560px, 100vw) !important;
+}
+.uzm-feedback-drawer-body {
+  padding: 1.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.25rem !important;
+}
+.uzm-feedback-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  background: #FFFFFF !important;
+  padding: 1.25rem !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04) !important;
+}
+.uzm-form-group {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.35rem !important;
+}
+.uzm-form-label {
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  color: #1E293B !important;
+  letter-spacing: 0.01em !important;
+}
+.uzm-select, .uzm-input, .uzm-textarea {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 10px 14px !important;
+  border-radius: 8px !important;
+  border: 1px solid #CBD5E1 !important;
+  background: #F8FAFC !important;
+  color: #0F172A !important;
+  font-size: 0.9rem !important;
+  font-family: inherit !important;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease !important;
+}
+.uzm-select:focus, .uzm-input:focus, .uzm-textarea:focus {
+  border-color: #0099B8 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(0, 153, 184, 0.18) !important;
+  background: #FFFFFF !important;
+}
+.uzm-textarea {
+  min-height: 96px !important;
+  resize: vertical !important;
+  line-height: 1.5 !important;
+}
+.uzm-btn-full {
+  width: 100% !important;
+  min-height: 46px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 0.92rem !important;
+  font-weight: 700 !important;
+}
+.uzm-feedback-status {
+  padding: 12px 14px !important;
+  border-radius: 8px !important;
+  font-size: 0.84rem !important;
+  line-height: 1.4 !important;
+}
+.uzm-feedback-success {
+  background: rgba(16, 185, 129, 0.1) !important;
+  border: 1px solid rgba(16, 185, 129, 0.35) !important;
+  color: #065F46 !important;
+}
+.uzm-feedback-error {
+  background: rgba(239, 68, 68, 0.1) !important;
+  border: 1px solid rgba(239, 68, 68, 0.35) !important;
+  color: #991B1B !important;
+}
+.uzm-feedback-history-section {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.75rem !important;
+  border-top: 1px solid rgba(226, 232, 240, 0.9) !important;
+  padding-top: 1.25rem !important;
+}
+.uzm-section-header-compact {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.uzm-link-subtle {
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  color: #0099B8 !important;
+  text-decoration: none !important;
+}
+.uzm-link-subtle:hover {
+  text-decoration: underline !important;
+}
+.uzm-saved-notes-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.75rem !important;
+  max-height: 320px !important;
+  overflow-y: auto !important;
+  padding-right: 4px !important;
+}
+.uzm-feedback-card {
+  padding: 12px 14px !important;
+  border-radius: 10px !important;
+  background: #F8FAFC !important;
+  border: 1px solid #E2E8F0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+  transition: all 0.18s ease !important;
+}
+.uzm-feedback-card:hover {
+  border-color: rgba(0, 153, 184, 0.35) !important;
+  background: #FFFFFF !important;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05) !important;
+}
+.uzm-feedback-card-head {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-wrap: wrap !important;
+}
+.uzm-badge-section {
+  padding: 3px 8px !important;
+  border-radius: 6px !important;
+  background: rgba(0, 153, 184, 0.12) !important;
+  color: #007791 !important;
+  font-weight: 700 !important;
+  font-size: 0.72rem !important;
+}
+.uzm-feedback-author {
+  font-size: 0.76rem !important;
+  font-weight: 600 !important;
+  color: #334155 !important;
+}
+.uzm-feedback-time {
+  margin-left: auto !important;
+  font-size: 0.7rem !important;
+  color: #94A3B8 !important;
+}
+.uzm-feedback-card-text {
+  font-size: 0.86rem !important;
+  color: #1E293B !important;
+  line-height: 1.45 !important;
+  word-break: break-word !important;
+}
+.uzm-notes-empty {
+  padding: 18px 12px !important;
+  text-align: center !important;
+  color: #334155 !important;
+  font-size: 0.82rem !important;
+  border: 1px dashed #CBD5E1 !important;
+  border-radius: 8px !important;
+  background: #F8FAFC !important;
+}
+
+/* Standalone Page Styles */
+.uzm-feedback-page-shell {
+  padding: 2.5rem 0 4rem 0 !important;
+  background: #F8FAFC !important;
+  min-height: calc(100vh - 160px) !important;
+}
+.uzm-feedback-page-grid {
+  display: grid !important;
+  grid-template-columns: 1.15fr 0.85fr !important;
+  gap: 2rem !important;
+  align-items: start !important;
+  margin-top: 1.5rem !important;
+}
+.uzm-feedback-panel-card {
+  background: #FFFFFF !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  padding: 1.75rem !important;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.05) !important;
+}
+.uzm-feedback-quick-nav {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 0.75rem !important;
+  margin-top: 1rem !important;
+}
+.uzm-quick-nav-card {
+  padding: 12px 14px !important;
+  border-radius: 10px !important;
+  background: #F8FAFC !important;
+  border: 1px solid #E2E8F0 !important;
+  text-decoration: none !important;
+  color: #0F172A !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 3px !important;
+  transition: all 0.18s ease !important;
+}
+.uzm-quick-nav-card:hover {
+  background: #FFFFFF !important;
+  border-color: #0099B8 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(0, 153, 184, 0.1) !important;
+}
+.uzm-quick-nav-card strong {
+  font-size: 0.82rem !important;
+  color: #007791 !important;
+}
+.uzm-quick-nav-card small {
+  font-size: 0.72rem !important;
+  color: #334155 !important;
+}
+
+@media (max-width: 900px) {
+  .uzm-feedback-page-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .uzm-floating-feedback-btn {
+    bottom: 74px !important;
+    right: 12px !important;
+    padding: 8px 14px !important;
+    font-size: 0.76rem !important;
+  }
+  .uzm-feedback-page-shell {
+    padding: 1.25rem 0 3rem 0 !important;
+  }
+  .uzm-feedback-panel-card {
+    padding: 1.25rem !important;
+    border-radius: 12px !important;
+  }
+  .uzm-feedback-quick-nav {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* GROK-1103 WCAG 44PX VE 412PX KALICI DOKUNMA/TAŞMA KALKANI */
+.uzm-removed-header-fb,
+.uzm-header-feedback-btn,
+button.uzm-removed-header-fb {
+  min-height: 44px !important;
+  min-width: 44px !important;
+  height: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-card-actions button,
+.uzm-card-actions a,
+.uzm-block-card .uzm-card-actions button,
+.uzm-block-card .uzm-card-actions a,
+article.uzm-block-card .uzm-card-actions button,
+article.uzm-block-card .uzm-card-actions a,
+.uzm-cards-grid .uzm-card-actions button,
+.uzm-cards-grid .uzm-card-actions a,
+.uzm-card-spec-row .uzm-btn-primary,
+.uzm-card-spec-row .uzm-btn-outline,
+.uzm-card-spec-row a,
+.uzm-card-spec-row button,
+.uzm-btn-primary.uzm-link-nodecor,
+.uzm-btn-outline.uzm-link-nodecor {
+  min-height: 44px !important;
+  min-width: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+label.uzm-label,
+.uzm-field label,
+.uzm-form-box label,
+.uzm-form-group label,
+label[for] {
+  min-height: 44px !important;
+  min-width: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+a.btn,
+button.btn,
+.btn {
+  min-height: 44px !important;
+  min-width: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+/* === UZM DENTAL 5 SORULUK VERI TEYIT & ONAY CEKMECESI (WCAG AAA & >=44PX DOKUNMA HEDEFI) === */
+.uzm-header-onay-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background-color: #1e3a8a;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.uzm-onay-bolumu {
+  margin: 0 0 1.35rem 0;
+  padding: 1.1rem 1rem;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+  box-sizing: border-box;
+}
+
+.uzm-onay-bolum-ust {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.55rem;
+}
+
+.uzm-onay-etiket {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  background: #eff6ff;
+  border: 1px solid rgba(30, 58, 138, 0.35);
+  color: #1e3a8a;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.uzm-onay-sayac {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.uzm-onay-bolum-baslik {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.uzm-onay-bolum-aciklama {
+  margin: 0 0 0.9rem 0;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: #1e293b;
+}
+
+.uzm-onay-soru-listesi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.uzm-onay-kart {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0.85rem 0.85rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.uzm-onay-kart.is-answered {
+  border-color: #1e3a8a;
+  box-shadow: 0 2px 10px rgba(30, 58, 138, 0.08);
+}
+
+.uzm-onay-soru-ust {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.uzm-onay-soru-no {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #1e3a8a;
+}
+
+.uzm-onay-soru-durum {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #0f766e;
+}
+
+.uzm-onay-soru-baslik {
+  margin: 0 0 0.35rem 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #0f172a;
+}
+
+.uzm-onay-soru-metin {
+  margin: 0 0 0.65rem 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: #1e293b;
+}
+
+.uzm-onay-secenekler {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.uzm-onay-secenek-btn {
+  width: 100%;
+  min-height: 46px !important;
+  min-width: 46px !important;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #94a3b8;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 0.83rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: left;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 0.5rem;
+  cursor: pointer;
+  box-sizing: border-box !important;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.uzm-onay-secenek-btn:hover {
+  background: #f1f5f9;
+  border-color: #1e3a8a;
+}
+
+.uzm-onay-secenek-btn.is-selected {
+  background: #1e3a8a !important;
+  border-color: #172554 !important;
+  color: #ffffff !important;
+}
+
+.uzm-onay-secenek-harf {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: #eff6ff;
+  color: #1e3a8a;
+  font-size: 0.74rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.uzm-onay-secenek-btn.is-selected .uzm-onay-secenek-harf {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.uzm-onay-secenek-etiket {
+  flex: 1;
+}
+
+.uzm-onay-secenek-onay-ikon {
+  font-size: 0.82rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.uzm-onay-alt-aksiyonlar {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.uzm-onay-toplu-btn {
+  width: 100%;
+  min-height: 48px !important;
+  min-width: 48px !important;
+  padding: 0.65rem 1rem;
+  border-radius: 9px;
+  border: 1px solid #172554;
+  background: #1e3a8a;
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.45rem;
+  cursor: pointer;
+  box-sizing: border-box !important;
+}
+
+.uzm-onay-toplu-btn:hover {
+  background: #172554;
+}
+
+.uzm-onay-durum-kutu {
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.uzm-onay-durum-kutu.is-success {
+  background: #ecfdf5;
+  border: 1px solid #059669;
+  color: #065f46;
+}
+
+.uzm-onay-durum-kutu.is-error {
+  background: #fef2f2;
+  border: 1px solid #dc2626;
+  color: #991b1b;
+}
+
+.uzm-drawer-header-logos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.uzm-drawer-logo-dark {
+  height: 24px;
+  width: auto;
+  background: #0b1528;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.uzm-drawer-logo-light {
+  height: 18px;
+  width: auto;
+  background: #ffffff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+}
+
+#uzmCloseFeedbackDrawerBtn,
+.uzm-icon-close,
+.uzm-removed-float-fb,
+.uzm-floating-feedback-btn,
+#uzmDrawerFeedbackSubmitBtn {
+  min-height: 44px !important;
+  min-width: 44px !important;
+}
+
+/* ==========================================================================
+   10-KATMAN İNTERAKTİF OPTİK MERCEK (#uzmInteractive10LayerLens)
+   & SİNEMATİK SAHNE (#uzmCinematicHeroStage) & WORD BİLİMSEL MİRAS KARTLARI
+   ========================================================================== */
+#uzmCinematicHeroStage {
+  position: relative;
+  background: linear-gradient(135deg, #0b1528 0%, #0f172a 60%, #007791 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 40px 28px;
+  overflow: hidden;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+}
+#uzmCinematicHeroStage[hidden] {
+  display: none !important;
+}
+.uzm-cinematic-glow {
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 180%;
+  height: 180%;
+  background: radial-gradient(circle, rgba(0, 180, 216, 0.16) 0%, rgba(20, 184, 166, 0.06) 45%, transparent 70%);
+  pointer-events: none;
+}
+.uzm-cinematic-content {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+}
+.uzm-cinematic-badge {
+  display: inline-block;
+  background: rgba(0, 180, 216, 0.18);
+  color: #22d3ee;
+  border: 1px solid rgba(34, 211, 238, 0.4);
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+}
+.uzm-cinematic-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 3.6vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 14px;
+  color: #ffffff;
+}
+.uzm-cinematic-desc {
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin: 0 0 26px;
+}
+.uzm-cinematic-doors {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.uzm-door-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+.uzm-door-btn-lab {
+  background: linear-gradient(135deg, #007791 0%, #0099B8 50%, #00B4D8 100%);
+  color: #ffffff;
+  border: 1px solid #0099B8;
+}
+.uzm-door-btn-clinic {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#uzmInteractive10LayerLens {
+  background: #ffffff;
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 16px;
+  padding: 28px 22px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+  margin-top: 1.5rem;
+}
+#uzmInteractive10LayerLens[hidden] {
+  display: none !important;
+}
+.uzm-lens-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.uzm-lens-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.5vw, 1.85rem);
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 8px;
+}
+.uzm-lens-sub {
+  font-size: 0.94rem;
+  color: #475569;
+  margin: 0 auto;
+  max-width: 68ch;
+}
+.uzm-series-selector {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 18px 0 8px;
+}
+.uzm-series-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  border: 1px solid var(--border-color, #cbd5e1);
+  background: #f8fafc;
+  color: #334155;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+.uzm-series-btn:hover {
+  border-color: #005f73;
+  color: #007791;
+}
+.uzm-series-btn.active {
+  background: linear-gradient(135deg, #007791 0%, #0099B8 50%, #00B4D8 100%);
+  color: #ffffff;
+  border-color: #007791;
+}
+.uzm-lens-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .uzm-lens-grid {
+    grid-template-columns: 1.05fr 1fr;
+  }
+}
+.uzm-lens-visual {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f8fafc;
+  border: 1px solid var(--border-color, #e2e8f0);
+  padding: 12px;
+  box-sizing: border-box;
+}
+.uzm-lens-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  max-height: 420px;
+  border-radius: 8px;
+}
+.uzm-layers-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.uzm-layer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  min-height: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  flex-wrap: wrap;
+}
+.uzm-layer-incisal {
+  background: #e0f7fa;
+  color: #006075;
+  border-inline-start: 4px solid #0099B8;
+}
+.uzm-layer-transition {
+  background: #f8fafc;
+  color: #334155;
+  border-inline-start: 4px solid #0d9488;
+}
+.uzm-layer-cervical {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-inline-start: 4px solid #007791;
+}
+.uzm-layer-spec {
+  font-size: 0.78rem;
+  font-family: var(--font-mono, monospace);
+  font-weight: 700;
+  color: #0f172a;
+}
+.uzm-lens-metrics-card {
+  background: #f8fafc;
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 20px;
+}
+.uzm-lens-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+.uzm-lens-metric-item {
+  text-align: center;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid var(--border-color, #e2e8f0);
+}
+.uzm-lens-metric-val {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #007791;
+  margin-bottom: 4px;
+}
+.uzm-lens-metric-lbl {
+  font-size: 0.76rem;
+  color: #475569;
+  font-weight: 600;
+}
+.uzm-ab-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px 80px;
+  box-sizing: border-box;
+}
+.uzm-ab-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+  border-bottom: 2px solid var(--border-color, #e2e8f0);
+  padding-bottom: 12px;
+}
+.uzm-ab-tab-btn {
+  padding: 10px 20px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  border: 1px solid var(--border-color, #cbd5e1);
+  background: #f8fafc;
+  color: #334155;
+  border-radius: 8px;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 140px;
+  transition: all 0.2s ease;
+}
+.uzm-ab-tab-btn.active {
+  background: linear-gradient(135deg, #007791 0%, #0099B8 50%, #00B4D8 100%);
+  color: #ffffff;
+  border-color: #007791;
+}
+.uzm-word-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 14px;
+  margin-top: 1rem;
+}
+.uzm-word-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 12px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.uzm-word-card strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.96rem;
+  color: #0f172a;
+  margin: 4px 0 8px;
+}
+.uzm-word-card p {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.58;
+  color: #334155;
+}
+@media (max-width: 560px) {
+  #uzmInteractive10LayerLens {
+    padding: 18px 14px;
+  }
+  .uzm-series-btn {
+    flex: 1 1 calc(50% - 8px);
+    text-align: center;
+  }
+}
+
+
+
+/* === UZM 1104-1810 KART METİN TAŞMASI SIFIRLAMA YAMASI (412px / 768px / 1440px) === */
+@media (max-width: 1024px) {
+  .uzm-cards-grid,
+  #uzmBlockCardsGrid,
+  #uzmPmmaCardsGrid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    scroll-snap-type: none !important;
+    gap: 1.25rem !important;
+    padding-inline: 0 !important;
+    margin-inline: 0 !important;
+    padding-bottom: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .uzm-cards-grid > .uzm-block-card,
+  .uzm-cards-grid > article,
+  #uzmBlockCardsGrid > .uzm-block-card,
+  #uzmBlockCardsGrid > article,
+  #uzmPmmaCardsGrid > .uzm-block-card,
+  #uzmPmmaCardsGrid > article {
+    flex: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+  .uzm-cards-grid,
+  #uzmBlockCardsGrid,
+  #uzmPmmaCardsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+.uzm-table-wrap {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 153, 184, 0.16);
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 30px -5px rgba(0, 153, 184, 0.08);
+  box-sizing: border-box;
+}
+
+/* === GROK-1104-1954-UZM-V2-OTONOM-OLCUM 4 KALEM ONARIMI (YEDEKLİ V2) === */
+/* 1) removed-feedback 3 kart taşması (section.uzm-feedback-panel-card -> .uzm-saved-notes-list) cardOv=0 */
+.uzm-saved-notes-list,
+#uzmSavedNotesList,
+#uzmFeedbackPageList,
+#uzmFeedbackHistoryList,
+.uzm-feedback-panel-card,
+.uzm-feedback-card,
+.uzm-review-card,
+.uzm-testimonial-card,
+.uzm-card,
+.bento-card,
+[class*="geri-bildirim"] .card,
+main article {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  word-break: break-word !important;
+}
+
+/* 4a) 412px ekranda Hero 'Canlı Katman & MPa Analizi' sekmesi görünür ve tıklanabilir */
+.uzm-hero-cta-row button.uzm-btn-outline,
+.uzm-hero-cta-row a.uzm-btn-outline {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 100% !important;
+  min-height: 44px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  pointer-events: auto !important;
+  box-sizing: border-box !important;
+}
+
+/* 4b) 412px ve 1440px ekranlarda .uzm-slide-drawer ve .uzm-slide-tab / .uzm-studio40-tab görünür ve tıklanabilir */
+#uzmDrawerBackdrop,
+.uzm-backdrop {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+#uzmSlideOverDrawer,
+.uzm-slide-drawer {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  max-width: 1140px !important;
+  height: auto !important;
+  margin: 2rem auto !important;
+  transform: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  z-index: 45 !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-hero-tabs,
+.uzm-slide-tabs,
+.uzm-studio40-tabs,
+.uzm-studio40-filters,
+.uzm-studio40-filter-bar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 45 !important;
+  pointer-events: auto !important;
+  gap: 8px !important;
+}
+
+.uzm-slide-tab:not([hidden]),
+.uzm-studio40-tab,
+.uzm-studio40-filter-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  min-height: 44px !important;
+  position: relative !important;
+  z-index: 46 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+.uzm-hero-overlay,
+.uzm-hero-prism-overlay,
+.uzm-hero-bg-layer {
+  pointer-events: none !important;
+}
+
+
+/* === UZM-0LLM-YAMA-2043: KART TASMASI SIFIRLAMA & 412PX SEKME GORUNURLUGU === */
+.uzm-feedback-card,
+.uzm-review-card,
+.uzm-testimonial-card,
+.uzm-card,
+.bento-card,
+[class*="geri-bildirim"] .card,
+main article {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  word-break: break-word !important;
+}
+
+.uzm-hero-tabs,
+.uzm-slide-tabs,
+.uzm-studio40-tabs,
+.uzm-studio40-filter-bar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 45 !important;
+  pointer-events: auto !important;
+  gap: 8px !important;
+}
+
+.uzm-slide-tab:not([hidden]),
+.uzm-studio40-tab,
+.uzm-studio40-filter-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  min-height: 44px !important;
+  position: relative !important;
+  z-index: 46 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+.uzm-hero-overlay,
+.uzm-hero-prism-overlay,
+.uzm-hero-bg-layer {
+  pointer-events: none !important;
+}
+
+/* === ATLAS-WEB-1105-UZM-0017: 412PX MONO-TAG RTL/LTR & SLIDE-TAB HIDDEN FIX === */
+.uzm-slide-tab[hidden],
+[hidden] {
+  display: none !important;
+}
+
+.uzm-mono-tag {
+  max-width: 100% !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-drawer-header-logos,
+.uzm-inl-942d178a,
+.uzm-inl-aca7bfad,
+.uzm-slide-header {
+  flex-wrap: wrap !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-slide-drawer {
+  overflow-x: hidden !important;
+}
+
+
+/* === UZM 1105 ALT KISIM, BLOG VITRINI, HAKKIMIZDA KARTLARI VE YUKSEK KONTRAST FOOTER ONARIMI === */
+#uzmSlideDrawer, .uzm-slide-drawer, #uzmDrawerBackdrop, .uzm-drawer-backdrop {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* 3 Sütunlu Hakkımızda / Belgeler / İletişim Grid (Yayvan tam genişlik hatasını önler) */
+#hakkimizdaIletisimSection .uzm-card-grid-3 {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 1.5rem !important;
+  align-items: stretch !important;
+}
+@media (max-width: 960px) {
+  #hakkimizdaIletisimSection .uzm-card-grid-3 {
+    grid-template-columns: 1fr !important;
+  }
+}
+#hakkimizdaIletisimSection .uzm-brochure-card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 1.75rem !important;
+  border-radius: 16px !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(15, 23, 42, 0.1) !important;
+  box-shadow: 0 10px 28px -10px rgba(15, 23, 42, 0.07) !important;
+  gap: 0.85rem !important;
+}
+#hakkimizdaIletisimSection .uzm-brochure-card strong {
+  font-size: 1.18rem !important;
+  color: #0f172a !important;
+  line-height: 1.35 !important;
+}
+#hakkimizdaIletisimSection .uzm-brochure-card p {
+  font-size: 0.94rem !important;
+  color: #334155 !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+  flex-grow: 1 !important;
+}
+#hakkimizdaIletisimSection .uzm-brochure-card .uzm-btn-outline {
+  width: fit-content !important;
+  align-self: flex-start !important;
+  padding: 0.65rem 1.25rem !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  margin-top: 0.5rem !important;
+  background: #f8fafc !important;
+  color: #0b4f6c !important;
+  border: 1.5px solid #0b4f6c !important;
+}
+#hakkimizdaIletisimSection .uzm-brochure-card .uzm-btn-outline:hover {
+  background: #0b4f6c !important;
+  color: #ffffff !important;
+}
+
+/* Ana Sayfa 6 Orijinal Blog Vitrini */
+.uzm-blog-vitrin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 960px) {
+  .uzm-blog-vitrin-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .uzm-blog-vitrin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.uzm-blog-vitrin-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.09);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px -8px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.uzm-blog-vitrin-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px -8px rgba(15, 23, 42, 0.12);
+}
+.uzm-blog-vitrin-media {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+.uzm-blog-vitrin-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.uzm-blog-vitrin-body {
+  padding: 1.35rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex-grow: 1;
+}
+.uzm-blog-vitrin-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0284c7;
+}
+.uzm-blog-vitrin-body h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.4;
+}
+.uzm-blog-vitrin-body h3 a {
+  color: #0f172a;
+  text-decoration: none;
+}
+.uzm-blog-vitrin-body h3 a:hover {
+  color: #0284c7;
+}
+.uzm-blog-vitrin-body p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #475569;
+  flex-grow: 1;
+}
+.uzm-blog-vitrin-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #0b4f6c;
+  text-decoration: none;
+  margin-top: 0.35rem;
+}
+.uzm-blog-vitrin-link:hover {
+  color: #0284c7;
+}
+
+/* Yüksek Kontrastlı Lacivert Kurumsal Footer (WCAG AAA) */
+footer.uzm-footer, footer.uzm-sql-footer {
+  background: linear-gradient(180deg, #0a2540 0%, #07192e 100%) !important;
+  color: #f8fafc !important;
+  padding: 3.5rem 0 2rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+.uzm-sql-footer-grid {
+  display: grid !important;
+  grid-template-columns: 1.5fr 1fr 1fr 1.1fr !important;
+  gap: 2.25rem !important;
+  align-items: start !important;
+}
+@media (max-width: 960px) {
+  .uzm-sql-footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media (max-width: 600px) {
+  .uzm-sql-footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+.uzm-footer-brand-heading,
+.uzm-footer-col-title,
+.uzm-sql-footer-col strong,
+footer.uzm-footer strong {
+  display: block !important;
+  color: #ffffff !important;
+  font-size: 1.02rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  margin-bottom: 0.85rem !important;
+}
+footer.uzm-footer p,
+footer.uzm-footer .uzm-footer-desc,
+footer.uzm-footer .uzm-footer-address,
+.uzm-sql-footer-brand p {
+  color: #e2e8f0 !important;
+  font-size: 0.92rem !important;
+  line-height: 1.65 !important;
+  margin: 0 0 0.6rem 0 !important;
+}
+.uzm-sql-footer-col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.55rem !important;
+}
+footer.uzm-footer a,
+.uzm-sql-footer-col a,
+.uzm-footer-links a {
+  color: #e2e8f0 !important;
+  text-decoration: none !important;
+  font-size: 0.92rem !important;
+  line-height: 1.5 !important;
+  transition: color 0.15s ease !important;
+}
+footer.uzm-footer a:hover,
+.uzm-sql-footer-col a:hover,
+.uzm-footer-links a:hover {
+  color: #38bdf8 !important;
+  text-decoration: underline !important;
+}
+.uzm-footer-contact-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+  padding: 0.45rem 0.85rem !important;
+  border-radius: 8px !important;
+  background: rgba(255, 255, 255, 0.09) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  width: fit-content !important;
+}
+.uzm-footer-bottom-bar {
+  margin-top: 2.5rem !important;
+  padding-top: 1.25rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+  text-align: center !important;
+}
+footer.uzm-footer .uzm-sql-copy {
+  color: #cbd5e1 !important;
+  font-size: 0.85rem !important;
+  margin: 0 !important;
+}
+
+/* === UZM_1100_BLOG_ESTETIK_CSS_BASLANGIC (Marka Renkleri: #0f172a, #0284c7, #f8fafc, #e2e8f0) === */
+#blogVitrinSection,
+.uzm-blog-vitrin-section {
+  padding: 3.5rem 1.25rem;
+  max-width: 1240px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.uzm-blog-sec-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1.15rem;
+}
+.uzm-blog-sec-eyebrow {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0284c7;
+  background: rgba(2, 132, 199, 0.09);
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
+.uzm-blog-sec-title {
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.25;
+}
+.uzm-blog-sec-subtitle {
+  font-size: 0.95rem;
+  color: #475569;
+  margin: 0.35rem 0 0 0;
+  max-width: 65ch;
+  line-height: 1.55;
+}
+.uzm-blog-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+.uzm-blog-all-btn:hover {
+  border-color: #0284c7;
+  color: #0284c7;
+}
+.uzm-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 1024px) {
+  .uzm-blog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+}
+@media (max-width: 640px) {
+  #blogVitrinSection,
+  .uzm-blog-vitrin-section {
+    padding: 2.25rem 1rem;
+  }
+  .uzm-blog-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.1rem;
+  }
+}
+.uzm-blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  box-sizing: border-box;
+}
+.uzm-blog-card:hover {
+  transform: translateY(-2px);
+  border-color: #94a3b8;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+.uzm-blog-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: #f1f5f9;
+  overflow: hidden;
+  border-bottom: 1px solid #f1f5f9;
+  display: block;
+}
+.uzm-blog-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.uzm-blog-card-body {
+  padding: 1.2rem 1.25rem 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.uzm-blog-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+  flex-wrap: wrap;
+}
+.uzm-blog-cat-badge {
+  display: inline-block;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #0f172a;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+}
+.uzm-blog-readtime {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: #334155;
+}
+.uzm-blog-card-title {
+  font-size: 1.06rem;
+  font-weight: 700;
+  line-height: 1.38;
+  color: #0f172a;
+  margin: 0 0 0.55rem 0;
+}
+.uzm-blog-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.uzm-blog-card-title a:hover {
+  color: #0284c7;
+}
+.uzm-blog-card-excerpt {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #475569;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 2.8em;
+}
+.uzm-blog-card-footer {
+  padding: 0.85rem 1.25rem;
+  border-top: 1px solid #f1f5f9;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+.uzm-blog-read-link {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-decoration: none;
+}
+.uzm-blog-read-link:hover {
+  color: #0284c7;
+}
+.uzm-blog-prod-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #0284c7;
+  background: rgba(2, 132, 199, 0.08);
+  padding: 0.24rem 0.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.uzm-blog-prod-link:hover {
+  background: rgba(2, 132, 199, 0.16);
+}
+
+/* Tekil Blog / Bilgi Bankasi Yazi Sayfasi Okunakli Sutun (65-75 karakter = 68ch) */
+.uzm-blog-article-shell {
+  max-width: 70ch;
+  width: 100%;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+}
+.uzm-blog-article-prose {
+  max-width: 68ch;
+  margin: 0 auto;
+  font-size: 1.04rem;
+  line-height: 1.76;
+  color: #1e293b;
+}
+.uzm-blog-article-prose h1 {
+  font-size: clamp(1.55rem, 2.6vw, 2.15rem);
+  line-height: 1.26;
+  color: #0f172a;
+  margin: 0.5rem 0 1rem 0;
+}
+.uzm-blog-article-prose h2,
+.uzm-blog-article-prose h3,
+.uzm-article-subhead {
+  font-size: 1.22rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #0f172a;
+  margin: 1.85rem 0 0.65rem 0;
+  padding-left: 0.75rem;
+  border-left: 3px solid #0284c7;
+}
+.uzm-blog-article-prose p {
+  margin: 0 0 1.15rem 0;
+  color: #334155;
+}
+.uzm-related-product-box {
+  margin-top: 2.25rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-left: 4px solid #0f172a;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.uzm-related-product-info {
+  flex: 1;
+  min-width: 220px;
+}
+.uzm-related-product-label {
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0284c7;
+  margin-bottom: 0.25rem;
+}
+.uzm-related-product-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+.uzm-related-product-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1.05rem;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #ffffff !important;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.uzm-related-product-cta:hover {
+  background: #0284c7;
+}
+/* === UZM_1100_BLOG_ESTETIK_CSS_BITIS === */
+
+
+/* === UZM 1231 TARAYICI TIKLAMA TESTI KESIN ONARIM CSS === */
+/* 1. zirkonya.html UTS basligi kartlara yapisik olmasin */
+.uzm-uts-section, #utsSection, .uzm-sql-section + .uzm-sql-section, .uzm-section-head {
+  margin-top: 2rem !important;
+  padding-top: 0.75rem !important;
+}
+h2 + .uzm-card-grid-3, h2 + .uzm-sql-grid, .uzm-section-sub + .uzm-card-grid-3 {
+  margin-top: 1.5rem !important;
+}
+/* 2. 3D-PRO ve tum urun kart gorselleri esit boyut ve oranti */
+.uzm-product-card img, .uzm-sql-card-media img, .uzm-vitrin-card img {
+  aspect-ratio: 4 / 3 !important;
+  object-fit: contain !important;
+  width: 100% !important;
+  max-height: 220px !important;
+  padding: 0.5rem !important;
+  background: #f8fafc !important;
+}
+/* 3. Iletisimde e-posta ortadan kirilmasin */
+a[href^="mailto:"], .uzm-mail-link {
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+}
+/* 4. Footer copyright son linke yapisik olmasin */
+.uzm-footer-bottom-bar, .uzm-sql-copy, footer .uzm-sql-copy {
+  margin-top: 2.25rem !important;
+  padding-top: 1.35rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.14) !important;
+  display: block !important;
+  clear: both !important;
+}
+/* 5. Header menusu tek satirda kalsin (ZH/DE/RU tasma onleme) */
+.uzm-main-nav, .uzm-sql-nav-inner {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  gap: 0.85rem !important;
+  white-space: nowrap !important;
+}
+.uzm-nav-link {
+  white-space: nowrap !important;
+  font-size: 0.92rem !important;
+}
+
+
+/* === UZM 1305: INLINE DRAWER, GUTTA TABLO VE CSP SIFIR-INLINE-STYLE KURALLARI === */
+#uzmDrawerInlineSection #uzmSlideOverDrawer,
+aside#uzmSlideOverDrawer.uzm-inline-drawer {
+  display: block !important;
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 2 !important;
+  margin: 0 auto !important;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+}
+#uzmDrawerInlineSection .uzm-slide-tabs {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+}
+#uzmDrawerInlineSection .uzm-slide-tab {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.5rem 1rem;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+#uzmDrawerInlineSection #uzmCloseDrawerBtn {
+  display: none !important;
+}
+.uzm-product-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+.uzm-product-detail-media {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+}
+.uzm-product-detail-media img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.uzm-product-detail-info h1 {
+  font-size: 1.85rem;
+  color: #0f172a;
+  margin: 0.5rem 0 1rem;
+}
+.uzm-product-detail-info p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 1.5rem;
+}
+.uzm-spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.uzm-spec-table tr {
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+.uzm-spec-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: #f8fafc;
+  color: #0f172a;
+  width: 40%;
+}
+.uzm-spec-table td {
+  padding: 0.75rem 1rem;
+  color: #334155;
+}
+.uzm-blog-article-shell {
+  max-width: 68ch;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+  line-height: 1.75;
+}
+.uzm-sql-word-summary h3[data-i18n="reg_title"] {
+  margin-top: 2.5rem !important;
+  padding-top: 1.25rem !important;
+}
+a[href^="mailto:"] {
+  white-space: nowrap !important;
+}
+
+
+/* === UZM 1402 TIKLAMA-2: HEADER ZIRCROWN LOGO TASMASI VE ZH TEK SATIR GARANTISI === */
+header.uzm-header .uzm-header-inner {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: nowrap !important;
+  gap: 0.5rem !important;
+  min-height: 70px !important;
+}
+header.uzm-header .uzm-brand {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  flex-shrink: 0 !important;
+  max-height: 54px !important;
+  overflow: hidden !important;
+  text-decoration: none !important;
+}
+header.uzm-header .uzm-brand-mark {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  flex-shrink: 0 !important;
+}
+header.uzm-header .uzm-brand-text {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  line-height: 1.1 !important;
+}
+header.uzm-header .uzm-brand-title {
+  font-size: 1.15rem !important;
+  white-space: nowrap !important;
+  line-height: 1.1 !important;
+}
+header.uzm-header .uzm-brand-sub {
+  font-size: 0.62rem !important;
+  white-space: nowrap !important;
+  line-height: 1.1 !important;
+}
+header.uzm-header .uzm-brand-zircrown-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 24px !important;
+  max-height: 24px !important;
+  padding: 2px 6px !important;
+  margin-left: 4px !important;
+  border-radius: 6px !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(203, 213, 225, 0.85) !important;
+  flex-shrink: 0 !important;
+  overflow: hidden !important;
+}
+header.uzm-header .uzm-brand-zircrown-badge img {
+  height: 16px !important;
+  max-height: 16px !important;
+  width: auto !important;
+  max-width: 64px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+@media (min-width: 1025px) {
+  header.uzm-header .uzm-nav,
+  header.uzm-header #uzmMainNav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 0.15rem !important;
+    white-space: nowrap !important;
+    min-width: 0 !important;
+  }
+  header.uzm-header .uzm-nav-link {
+    padding: 0.4rem 0.5rem !important;
+    font-size: 0.82rem !important;
+    white-space: nowrap !important;
+    min-height: 40px !important;
+  }
+  header.uzm-header .uzm-header-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+    header.uzm-header #uzmThemeToggleBtn,
+    header.uzm-header #uzmQuoteTrayBtn,
+    header.uzm-header .uzm-header-actions .uzm-btn-primary {
+      padding: 0.4rem 0.65rem !important;
+      font-size: 0.8rem !important;
+      white-space: nowrap !important;
+      min-height: 40px !important;
+    }
+}
+@media (max-width: 1024px) {
+  header.uzm-header .uzm-header-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0.3rem !important;
+    min-height: 60px !important;
+    padding: 0.35rem 0.6rem !important;
+  }
+  header.uzm-header .uzm-brand {
+    gap: 0.3rem !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+  }
+  header.uzm-header .uzm-brand-mark {
+    width: 28px !important;
+    height: 28px !important;
+    flex-shrink: 0 !important;
+  }
+  header.uzm-header .uzm-brand-title {
+    font-size: 0.86rem !important;
+    white-space: nowrap !important;
+  }
+  header.uzm-header .uzm-brand-sub {
+    display: none !important;
+  }
+  header.uzm-header .uzm-brand-zircrown-badge {
+    height: 20px !important;
+    max-height: 20px !important;
+    padding: 1px 4px !important;
+    margin-left: 2px !important;
+  }
+  header.uzm-header .uzm-brand-zircrown-badge img {
+    height: 13px !important;
+    max-height: 13px !important;
+    max-width: 46px !important;
+  }
+  header.uzm-header .uzm-header-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 0.25rem !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+  header.uzm-header .lang-dropdown summary,
+  header.uzm-header #uzmThemeToggleBtn,
+  header.uzm-header .uzm-header-actions .uzm-btn-primary {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    padding: 0.25rem 0.45rem !important;
+    font-size: 0.73rem !important;
+    min-height: 36px !important;
+    height: 36px !important;
+    line-height: 1 !important;
+  }
+  header.uzm-header #uzmHamburgerBtn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 36px !important;
+    height: 36px !important;
+    min-height: 36px !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* === GROK-1105-1513 & ATLAS-WEB-1105-1547: DİL SEÇİCİ MENÜSÜ VE TÜM SEÇENEKLER (TR/EN/DE/AR/RU/ZH) SOL HİZA & LTR KİLİDİ === */
+details.lang-dropdown,
+.uzm-sql-lang,
+.lang-dropdown-menu,
+.uzm-lang-menu,
+html[dir="rtl"] details.lang-dropdown,
+html[dir="rtl"] .uzm-sql-lang,
+html[dir="rtl"] .lang-dropdown-menu,
+html[dir="rtl"] .uzm-lang-menu {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  text-align: left !important;
+}
+.lang-dropdown-menu a,
+.lang-dropdown-menu [data-lang-switch],
+.uzm-lang-menu a,
+.uzm-lang-menu button,
+.uzm-lang-option,
+a[data-lang-switch],
+html[dir="rtl"] .lang-dropdown-menu a,
+html[dir="rtl"] .lang-dropdown-menu [data-lang-switch],
+html[dir="rtl"] .uzm-lang-menu a,
+html[dir="rtl"] .uzm-lang-menu button,
+html[dir="rtl"] .uzm-lang-option,
+html[dir="rtl"] a[data-lang-switch] {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  text-align: left !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* === ATLAS-WEB-1105-1551: LOT VE QR İLE ÜRÜN & Parti İzlenebilirlik DOĞRULAMA BÖLÜMÜ (#uzm-lot-dogrulama) === */
+.uzm-lot-verify-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.uzm-lot-verify-card {
+  background: var(--bg-surface, #FFFFFF);
+  border: 1px solid rgba(0, 153, 184, 0.28);
+  border-radius: 16px;
+  padding: 1.75rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1.75rem;
+  box-shadow: 0 10px 28px -8px rgba(0, 153, 184, 0.10), 0 2px 8px -2px rgba(15, 23, 42, 0.04);
+}
+html[data-theme="obsidian"] .uzm-lot-verify-card {
+  background: rgba(15, 23, 42, 0.85);
+  border-color: rgba(0, 180, 216, 0.35);
+}
+.uzm-lot-verify-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.uzm-lot-verify-title {
+  margin: 0.15rem 0 0.25rem;
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  line-height: 1.28;
+}
+.uzm-lot-verify-lead {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.6;
+  color: var(--text-main, #0F172A);
+  font-weight: 500;
+}
+.uzm-lot-verify-note {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-secondary, #334155);
+}
+.uzm-lot-verify-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.35rem;
+}
+.uzm-lot-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: rgba(0, 153, 184, 0.08);
+  border: 1px solid rgba(0, 153, 184, 0.24);
+  color: var(--text-main, #0F172A);
+}
+html[data-theme="obsidian"] .uzm-lot-pill {
+  background: rgba(0, 180, 216, 0.14);
+  border-color: rgba(0, 180, 216, 0.32);
+  color: #F8FAFC;
+}
+.uzm-lot-verify-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-width: 280px;
+}
+.uzm-lot-action-btn {
+  min-height: 44px;
+  padding: 0.65rem 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .uzm-lot-verify-card {
+    grid-template-columns: 1fr;
+    padding: 1.25rem 1.15rem;
+    gap: 1.15rem;
+  }
+  .uzm-lot-verify-actions {
+    min-width: 0;
+    width: 100%;
+  }
+  .uzm-lot-action-btn {
+    width: 100%;
+  }
+}
+/* === REV1-1105-2333: K4 MOBIL RTL TASMA & K5 KONTRAST 24/24 KESIN ONARIM === */
+:root,
+html,
+html[data-theme="luminous"] {
+  --text-muted: #334155 !important;
+  --accent-primary: #005f73 !important;
+  --uzm-accent-primary: #005f73 !important;
+  --accent-text: #005f73 !important;
+}
+
+html,
+body {
+  max-width: 100% !important;
+  overflow-x: clip !important;
+  box-sizing: border-box !important;
+}
+
+header.uzm-header,
+main,
+section,
+footer,
+.uzm-container,
+.uzm-header-inner,
+.uzm-lot-verify-card,
+.uzm-lot-verify-body,
+.uzm-lot-verify-actions,
+.uzm-lot-action-btn,
+.uzm-card-grid-3,
+.uzm-brochure-card {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+#uzmLotMailBtn,
+#uzmLotWaBtn,
+.uzm-lot-action-btn,
+.uzm-lot-verify-actions a[href^="mailto:"],
+.uzm-brochure-card a[href^="mailto:"] {
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 640px) {
+  a[href^="mailto:"],
+  .uzm-mail-link {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+    max-width: 100% !important;
+  }
+  header.uzm-header .uzm-header-inner {
+    padding: 0.3rem 0.45rem !important;
+    gap: 0.2rem !important;
+    max-width: 100vw !important;
+    overflow-x: clip !important;
+  }
+  header.uzm-header .uzm-brand {
+    gap: 0.25rem !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+  }
+  header.uzm-header .uzm-brand-mark {
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+  }
+  header.uzm-header .uzm-brand-title {
+    font-size: 0.78rem !important;
+  }
+  header.uzm-header .uzm-brand-zircrown-badge {
+    display: none !important;
+  }
+  header.uzm-header .uzm-header-actions {
+    gap: 0.2rem !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+  }
+  header.uzm-header .lang-dropdown summary,
+  header.uzm-header #uzmThemeToggleBtn,
+  header.uzm-header #uzmQuoteTrayBtn,
+  header.uzm-header .uzm-header-actions .uzm-btn-primary {
+    padding: 0.2rem 0.38rem !important;
+    font-size: 0.68rem !important;
+    min-width: 0 !important;
+    height: 34px !important;
+    min-height: 34px !important;
+  }
+  header.uzm-header #uzmHamburgerBtn {
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    min-height: 34px !important;
+  }
+}
+
+/* K5 Kontrast: .uzm-btn-primary solid background-color fallback (#005f73 -> 7.54:1 AAA beyaz metinle) */
+.uzm-btn-primary,
+button.uzm-btn-primary,
+a.uzm-btn-primary,
+#uzmQuoteTrayBtn,
+header.uzm-header .uzm-header-actions .uzm-btn-primary {
+  background-color: #005f73 !important;
+  background-image: linear-gradient(135deg, #005f73 0%, #007791 48%, #0099b8 100%) !important;
+  color: #ffffff !important;
+}
+
+.uzm-btn-primary:hover,
+button.uzm-btn-primary:hover,
+a.uzm-btn-primary:hover,
+#uzmQuoteTrayBtn:hover {
+  background-color: #0f172a !important;
+  background-image: linear-gradient(135deg, #0f172a 0%, #005f73 50%, #007791 100%) !important;
+  color: #ffffff !important;
+}
+
+/* K5 Kontrast (1-2): footer ve koyu kapsayıcılar için solid background-color: #0f172a fallback (#e2e8f0 -> 14.33:1, #cbd5e1 -> 11.58:1 AAA) */
+footer.uzm-footer,
+footer.uzm-sql-footer,
+.uzm-footer,
+.uzm-sql-footer,
+.uzm-sql-footer-grid,
+.uzm-sql-footer-brand,
+.uzm-sql-footer-col,
+.uzm-footer-bottom-bar,
+footer.uzm-footer p,
+footer.uzm-sql-footer p,
+.uzm-sql-footer-brand p,
+footer.uzm-footer .uzm-sql-copy,
+footer.uzm-sql-footer .uzm-sql-copy,
+.uzm-sql-copy,
+#uzmCinematicHeroStage,
+.uzm-dual-design-bar,
+.uzm-official-brochures-bar {
+  background-color: #0f172a !important;
+}
+
+footer.uzm-footer,
+footer.uzm-sql-footer,
+.uzm-footer,
+.uzm-sql-footer {
+  background-image: linear-gradient(180deg, #0a2540 0%, #07192e 100%) !important;
+  color: #f8fafc !important;
+}
+
+footer.uzm-footer p,
+footer.uzm-sql-footer p,
+.uzm-sql-footer-brand p,
+footer.uzm-footer a,
+footer.uzm-sql-footer a,
+.uzm-sql-footer-col a,
+.uzm-footer-links a {
+  color: #e2e8f0 !important;
+}
+
+footer.uzm-footer .uzm-sql-copy,
+footer.uzm-sql-footer .uzm-sql-copy,
+.uzm-sql-copy {
+  color: #cbd5e1 !important;
+}
+
+/* K5 Kontrast (3-4): lagoon-teal -> #005f73 (beyaz üzerinde 7.54:1 AAA, #fafafa üzerinde 7.22:1 AAA) */
+.uzm-mono-tag,
+label.uzm-mono-tag,
+label[for="drawerCompareRange"],
+.uzm-nav-link.is-active,
+.uzm-sql-nav .uzm-nav-link.is-active,
+.uzm-sql-nav .uzm-nav-link:hover,
+body.uzm-sql-page .uzm-sql-nav .uzm-nav-link.is-active,
+.uzm-sql-lead a,
+.uzm-sql-prose a,
+.uzm-sql-eyebrow,
+.uzm-sql-note a,
+.uzm-sql-step,
+.uzm-sql-contact a,
+.uzm-tag-indigo,
+.uzm-badge-indigo,
+.uzm-oem-badge-indigo,
+.uzm-inl-2cf68baf {
+  color: #005f73 !important;
+}
+
+/* K5 Kontrast: th (rgb(100,116,139) 4.41 -> #0f172a on #f1f5f9 16.29:1 AAA) */
+th,
+table th,
+.uzm-foy-table th,
+.uzm-tech-table th,
+.uzm-spec-table th,
+.uzm-sql-spec th {
+  color: #0f172a !important;
+  background-color: #f1f5f9 !important;
+}
+
+html[data-theme="obsidian"] th,
+html[data-theme="obsidian"] table th,
+html[data-theme="obsidian"] .uzm-foy-table th,
+html[data-theme="obsidian"] .uzm-tech-table th,
+html[data-theme="obsidian"] .uzm-spec-table th,
+html[data-theme="obsidian"] .uzm-sql-spec th {
+  color: #f8fafc !important;
+  background-color: #1e293b !important;
+}
+
+.text-slate-400,
+.text-slate-500,
+.uzm-blog-readtime,
+.uzm-sql-crumb ol,
+.uzm-sql-crumb li + li::before,
+.uzm-sql-chips dt,
+.uzm-sql-subgroup .uzm-sql-count,
+.uzm-sql-meta dt,
+.uzm-sql-note {
+  color: #334155 !important;
+}
+/* === REV1-1105-2333 SONU === */
+
+/* === GOKHAN-1106: SINTERLEME EGRISI VE QR ENTEGRASYONU === */
+.uzm-sinter-curve-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px 12px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+.uzm-sinter-curve-toggle-btn:hover {
+  background: #e2e8f0;
+  border-color: #94a3b8;
+}
+.uzm-sinter-curve-toggle-btn.is-curve-active {
+  background: #0ea5e9;
+  color: #ffffff;
+  border-color: #0284c7;
+}
+.uzm-sinter-curve-toggle-btn.is-spec-active {
+  background: #10b981;
+  color: #ffffff;
+  border-color: #059669;
+}
+.uzm-qr-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+.uzm-qr-box img, .uzm-qr-box svg {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  background: #ffffff;
+  padding: 4px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+.uzm-qr-content {
+  flex: 1;
+}
+.uzm-qr-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+}
+.uzm-qr-desc {
+  font-size: 0.82rem;
+  color: #475569;
+  margin: 0;
+  line-height: 1.4;
+}
+html[data-theme="obsidian"] .uzm-sinter-curve-toggle-btn {
+  background: #1e293b;
+  color: #f1f5f9;
+  border-color: #334155;
+}
+html[data-theme="obsidian"] .uzm-qr-box {
+  background: #1e293b;
+  border-color: #334155;
+}
+html[data-theme="obsidian"] .uzm-qr-title {
+  color: #f8fafc;
+}
+html[data-theme="obsidian"] .uzm-qr-desc {
+  color: #94a3b8;
+}
+/* === UZM WEB (DESKTOP >= 769px) DEDICATED STYLESHEET (20261106-1422) === */
+@media (min-width: 769px) {
+  /* 1. Container & Header Bar: Clean 1280px centered layout, zero nav overlap */
+  html body .uzm-container,
+  html body .uzm-UtilityBar-inner {
+    max-width: 1240px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1.75rem !important;
+    padding-right: 1.75rem !important;
+  }
+  html body header.uzm-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    background: rgba(255, 255, 255, 0.96) !important;
+    backdrop-filter: blur(10px) !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important;
+  }
+  html body .uzm-header-inner {
+    max-width: 1340px !important;
+    width: 100% !important;
+    height: 72px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1.75rem !important;
+    padding-right: 1.75rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 1.25rem !important;
+    position: relative !important;
+  }
+  html body .uzm-header-inner .uzm-nav,
+  html body nav.uzm-nav {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1.25rem !important;
+    flex: 1 1 auto !important;
+    margin: 0 1rem !important;
+  }
+  html body .uzm-nav a {
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    padding: 0.35rem 0.5rem !important;
+  }
+  html body .uzm-header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.6rem !important;
+    flex: 0 0 auto !important;
+  }
+
+  /* 2. Hero Section: Fix clipped italic 'ı', fix 100% button bar, snug showcase card */
+  html body .uzm-hero {
+    padding: 2.25rem 0 2.5rem !important;
+  }
+  html body .uzm-hero-grid {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: grid !important;
+    grid-template-columns: 1.12fr 0.88fr !important;
+    gap: 2.5rem !important;
+    align-items: center !important;
+  }
+  html body .uzm-hero-title,
+  html body .uzm-hero h1 {
+    font-size: clamp(2.1rem, 2.8vw, 2.75rem) !important;
+    line-height: 1.18 !important;
+    letter-spacing: -0.02em !important;
+    margin: 0.5rem 0 1rem 0 !important;
+    max-width: 620px !important;
+  }
+  html body .uzm-hero-title em,
+  html body .uzm-hero h1 em,
+  html body .uzm-gradient-text {
+    padding-right: 0.2em !important;
+    margin-right: -0.05em !important;
+    display: inline-block !important;
+    overflow: visible !important;
+  }
+  html body .uzm-hero-lead,
+  html body .uzm-hero p {
+    font-size: 0.98rem !important;
+    line-height: 1.6 !important;
+    max-width: 580px !important;
+    margin-bottom: 1.25rem !important;
+  }
+  html body .uzm-hero-cta-row {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 0.85rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  html body .uzm-hero-cta-row a,
+  html body .uzm-hero-cta-row button,
+  html body .uzm-hero-cta-row a.uzm-btn-outline,
+  html body .uzm-hero-cta-row button.uzm-btn-outline,
+  html body .uzm-hero-cta-row a.uzm-btn-primary {
+    width: auto !important;
+    max-width: none !important;
+    flex: 0 0 auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.72rem 1.35rem !important;
+    font-size: 0.9rem !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+  }
+  html body .uzm-hero-stats,
+  html body .uzm-hero-metrics {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1.25rem !important;
+    padding-top: 1.1rem !important;
+    max-width: 580px !important;
+  }
+  html body .uzm-hero-stage-card {
+    max-width: 500px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    padding: 0.85rem !important;
+    border-radius: 18px !important;
+    background: #ffffff !important;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08) !important;
+    border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  }
+  html body .uzm-hero-disc-stage {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    padding: 0.25rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  html body .uzm-hero-group-display,
+  html body .uzm-hero-disc-stage img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 310px !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    border-radius: 12px !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  /* 3. Desktop Card Grids & Large Crisp Product Photos Inside Compact Card Windows */
+  html body .uzm-cards-grid,
+  html body #uzmBlockCardsGrid,
+  html body .uzm-endo-grid,
+  html body .uzm-blog-grid,
+  html body .uzm-sql-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1.25rem !important;
+    max-width: 1180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: stretch !important;
+  }
+  html body #uzmPmmaCardsGrid,
+  html body .uzm-studio40-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 1.1rem !important;
+    max-width: 1180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: stretch !important;
+  }
+  html body .uzm-block-card,
+  html body .uzm-endo-card,
+  html body .uzm-blog-card,
+  html body .uzm-sql-card {
+    padding: 1rem 1.1rem !important;
+    border-radius: 14px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    gap: 0.5rem !important;
+  }
+  html body .uzm-block-card .uzm-card-oem-stage {
+    height: 220px !important;
+    min-height: 220px !important;
+    max-height: 220px !important;
+    padding: 0.4rem !important;
+    margin: 0.2rem 0 !important;
+    border-radius: 10px !important;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef2f6 100%) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+  }
+  html body .uzm-block-card .uzm-card-disc-img,
+  html body .uzm-card-oem-stage img.uzm-card-disc-img {
+    height: 202px !important;
+    max-height: 202px !important;
+    width: auto !important;
+    max-width: 96% !important;
+    border-radius: 8px !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  html body #uzmPmmaCardsGrid .uzm-block-card .uzm-card-oem-stage {
+    height: 195px !important;
+    min-height: 195px !important;
+    max-height: 195px !important;
+  }
+  html body #uzmPmmaCardsGrid .uzm-block-card .uzm-card-disc-img {
+    height: 180px !important;
+    max-height: 180px !important;
+  }
+  html body .uzm-endo-card .uzm-endo-visual,
+  html body .uzm-blog-card-media,
+  html body .uzm-sql-card-media {
+    height: 215px !important;
+    min-height: 215px !important;
+    max-height: 215px !important;
+    padding: 0.45rem !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+  }
+  html body .uzm-endo-card .uzm-endo-img,
+  html body .uzm-blog-card-img,
+  html body .uzm-sql-card-media img {
+    height: 196px !important;
+    max-height: 196px !important;
+    width: auto !important;
+    max-width: 96% !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* === UZM MOBIL (<= 768px) DEDICATED STYLESHEET (20261106-1422) === */
+@media (max-width: 768px) {
+  html body .uzm-hero {
+    padding: 1.25rem 0 1.5rem !important;
+  }
+  html body .uzm-hero-title em,
+  html body .uzm-hero h1 em {
+    padding-right: 0.18em !important;
+    display: inline-block !important;
+  }
+  html body .uzm-hero-stage-card {
+    max-width: 100% !important;
+    padding: 0.75rem !important;
+  }
+  html body .uzm-hero-disc-stage {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: 220px !important;
+  }
+  html body .uzm-hero-group-display,
+  html body .uzm-hero-disc-stage img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 200px !important;
+    object-fit: contain !important;
+  }
+  html body .uzm-cards-grid,
+  html body #uzmBlockCardsGrid,
+  html body #uzmPmmaCardsGrid,
+  html body .uzm-endo-grid,
+  html body .uzm-blog-grid,
+  html body .uzm-sql-grid,
+  html body .uzm-studio40-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 0.8rem !important;
+    padding: 0.4rem 0.75rem 1rem 0.75rem !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+  }
+  html body #uzmBlockCardsGrid > .uzm-block-card,
+  html body #uzmPmmaCardsGrid > .uzm-block-card,
+  html body .uzm-cards-grid > .uzm-block-card,
+  html body .uzm-endo-grid > .uzm-endo-card,
+  html body .uzm-blog-grid > .uzm-blog-card,
+  html body .uzm-sql-grid > .uzm-sql-card,
+  html body .uzm-studio40-grid > .uzm-studio40-card,
+  html body .uzm-cards-grid > *,
+  html body #uzmBlockCardsGrid > *,
+  html body #uzmPmmaCardsGrid > *,
+  html body .uzm-endo-grid > *,
+  html body .uzm-blog-grid > *,
+  html body .uzm-sql-grid > *,
+  html body .uzm-studio40-grid > * {
+    flex: 0 0 258px !important;
+    width: 258px !important;
+    min-width: 244px !important;
+    max-width: 75vw !important;
+    scroll-snap-align: start !important;
+    margin: 0 !important;
+    padding: 0.8rem 0.9rem !important;
+  }
+  html body .uzm-block-card .uzm-card-oem-stage,
+  html body .uzm-endo-card .uzm-endo-visual,
+  html body .uzm-blog-card-media,
+  html body .uzm-sql-card-media {
+    height: 170px !important;
+    min-height: 170px !important;
+    max-height: 170px !important;
+  }
+  html body .uzm-block-card .uzm-card-disc-img,
+  html body .uzm-endo-card .uzm-endo-img,
+  html body .uzm-blog-card-img,
+  html body .uzm-sql-card-media img {
+    height: 154px !important;
+    max-height: 154px !important;
+    width: auto !important;
+    max-width: 95% !important;
+    border-radius: 8px !important;
+    object-fit: contain !important;
+  }
+}
+
+/* === SHARED MODAL & STUDIO-40 RULES (20261106-1422) === */
+html body .uzm-studio40-img-wrap {
+  aspect-ratio: 3 / 4 !important;
+  height: auto !important;
+  max-height: 310px !important;
+  width: 100% !important;
+  background: #050a14 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  padding: 0.25rem !important;
+}
+html body .uzm-studio40-img-wrap img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  border-radius: 8px !important;
+}
+html body #uzmDrawerInlineSection {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 9995 !important;
+  background: rgba(15, 23, 42, 0.72) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  display: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1.25rem !important;
+  margin: 0 !important;
+  overflow-y: auto !important;
+}
+html body #uzmDrawerInlineSection.is-modal-open {
+  display: flex !important;
+}
+html body #uzmDrawerInlineSection > .uzm-container {
+  max-width: 900px !important;
+  width: 100% !important;
+  margin: auto !important;
+  padding: 0 !important;
+}
+html body #uzmDrawerInlineSection > .uzm-container > .uzm-section-head {
+  display: none !important;
+}
+html body #uzmDrawerInlineSection #uzmSlideOverDrawer,
+html body aside#uzmSlideOverDrawer.uzm-inline-drawer {
+  position: relative !important;
+  max-width: 880px !important;
+  width: 100% !important;
+  max-height: 88vh !important;
+  overflow-y: auto !important;
+  margin: 0 auto !important;
+  padding: 1.35rem 1.5rem !important;
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-radius: 16px !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45) !important;
+  border: 1px solid rgba(14, 165, 233, 0.35) !important;
+  display: block !important;
+  transform: none !important;
+}
+html body #uzmDrawerCloseBtn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 10px !important;
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+}
+
+
+  /* Button & Metric No-Break Polish */
+  html body .uzm-card-actions {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.45rem !important;
+  }
+  html body .uzm-card-actions button,
+  html body .uzm-card-actions a {
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+    line-height: 1.25 !important;
+    padding: 0.5rem 0.65rem !important;
+    font-size: 0.78rem !important;
+    text-align: center !important;
+    justify-content: center !important;
+    flex: 1 1 auto !important;
+  }
+  html body .uzm-hero-stats strong,
+  html body .uzm-hero-metrics strong,
+  html body .uzm-metric-val {
+    white-space: nowrap !important;
+  }
+
+
+/* === ATLAS-WEB #uzmUniversalModal STYLES === */
+html body #uzmUniversalModal.uzm-modal-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 99999 !important;
+  background: rgba(15, 23, 42, 0.72) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  display: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1.25rem !important;
+}
+html body #uzmUniversalModal.uzm-modal-overlay.is-open {
+  display: flex !important;
+}
+html body #uzmUniversalModal .uzm-modal-window {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  max-width: 680px !important;
+  width: 100% !important;
+  max-height: 86vh !important;
+  overflow-y: auto !important;
+  border-radius: 16px !important;
+  padding: 1.35rem 1.5rem !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45) !important;
+  border: 1px solid rgba(14, 165, 233, 0.35) !important;
+}
+html body #uzmUniversalModal .uzm-modal-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  gap: 1rem !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  padding-bottom: 0.85rem !important;
+  margin-bottom: 1rem !important;
+}
+html body #uzmUniversalModal .uzm-modal-kicker {
+  display: inline-block !important;
+  font-size: 0.74rem !important;
+  font-weight: 700 !important;
+  color: #0284c7 !important;
+  background: #e0f2fe !important;
+  padding: 0.22rem 0.6rem !important;
+  border-radius: 6px !important;
+  margin-bottom: 0.35rem !important;
+}
+html body #uzmUniversalModal .uzm-modal-title {
+  margin: 0 !important;
+  font-size: 1.18rem !important;
+  line-height: 1.3 !important;
+  color: #0f172a !important;
+}
+html body #uzmUniversalModal .uzm-modal-close-btn {
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  border-radius: 10px !important;
+  border: 1px solid #cbd5e1 !important;
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+html body #uzmUniversalModal .uzm-modal-close-btn:hover {
+  background: #ef4444 !important;
+  color: #ffffff !important;
+  border-color: #ef4444 !important;
+}
+html body #uzmUniversalModal .uzm-modal-spec-table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  font-size: 0.88rem !important;
+}
+html body #uzmUniversalModal .uzm-modal-spec-table th,
+html body #uzmUniversalModal .uzm-modal-spec-table td {
+  padding: 0.65rem 0.75rem !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  text-align: left !important;
+  vertical-align: top !important;
+}
+html body #uzmUniversalModal .uzm-modal-spec-table th {
+  width: 36% !important;
+  color: #475569 !important;
+  font-weight: 600 !important;
+  background: #f8fafc !important;
+}
+html body #uzmUniversalModal .uzm-modal-spec-table td {
+  color: #0f172a !important;
+  font-weight: 500 !important;
+}
+html body #uzmUniversalModal .uzm-modal-footer {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  margin-top: 1rem !important;
+  padding-top: 0.85rem !important;
+  border-top: 1px solid #e2e8f0 !important;
+}
+
+/* === SAGEMAX / IVOCLAR INSPIRED CARD & 4-TAB MODAL DESIGN === */
+html body .uzm-block-card,
+html body .uzm-endo-card,
+html body .uzm-sql-card,
+html body .uzm-product-card {
+  background: #ffffff !important;
+  border: 1.5px solid #0095c8 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 6px 20px rgba(0, 149, 200, 0.06) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease !important;
+}
+html body .uzm-block-card:hover,
+html body .uzm-endo-card:hover,
+html body .uzm-sql-card:hover,
+html body .uzm-product-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 14px 32px rgba(0, 149, 200, 0.14) !important;
+  border-color: #0077a3 !important;
+}
+html body .uzm-sagemax-card-meta {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 0.5rem !important;
+  margin-bottom: 0.2rem !important;
+}
+html body .uzm-sagemax-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: #45a287 !important;
+  color: #ffffff !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  padding: 0.18rem 0.65rem !important;
+  border-radius: 999px !important;
+  letter-spacing: 0.02em !important;
+}
+html body .uzm-sagemax-sku {
+  font-size: 0.73rem !important;
+  font-weight: 600 !important;
+  color: #64748b !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace !important;
+}
+html body .uzm-block-card .uzm-card-oem-stage,
+html body .uzm-endo-card .uzm-endo-visual,
+html body .uzm-sql-card-media {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+/* Sagemax 4-Tab Interactive Modal Window */
+html body #uzmUniversalModal .uzm-modal-window {
+  max-width: 780px !important;
+  width: 100% !important;
+  padding: 1.35rem 1.6rem !important;
+  border-radius: 16px !important;
+  border: 2px solid #0095c8 !important;
+}
+html body #uzmUniversalModal .uzm-modal-header-main {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1.15rem !important;
+  flex: 1 1 auto !important;
+}
+html body #uzmUniversalModal .uzm-modal-thumb-box {
+  width: 110px !important;
+  height: 110px !important;
+  min-width: 110px !important;
+  border-radius: 12px !important;
+  border: 1px solid #cbd5e1 !important;
+  background: #ffffff !important;
+  padding: 0.35rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+html body #uzmUniversalModal .uzm-modal-thumb-box img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+html body #uzmUniversalModal .uzm-modal-badges-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  flex-wrap: wrap !important;
+  margin-bottom: 0.35rem !important;
+}
+html body #uzmUniversalModal .uzm-modal-kpi-strip {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 0.6rem !important;
+  margin-top: 0.55rem !important;
+}
+html body #uzmUniversalModal .uzm-modal-kpi-box {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  padding: 0.35rem 0.6rem !important;
+}
+html body #uzmUniversalModal .uzm-modal-kpi-box small {
+  display: block !important;
+  font-size: 0.65rem !important;
+  color: #64748b !important;
+  font-weight: 700 !important;
+}
+html body #uzmUniversalModal .uzm-modal-kpi-box strong {
+  font-size: 0.86rem !important;
+  color: #003d6a !important;
+}
+html body #uzmUniversalModal .uzm-modal-tabbar {
+  display: flex !important;
+  gap: 0.45rem !important;
+  flex-wrap: wrap !important;
+  margin-bottom: 1rem !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  padding-bottom: 0.65rem !important;
+}
+html body #uzmUniversalModal .uzm-modal-tab-btn {
+  padding: 0.48rem 0.85rem !important;
+  border-radius: 999px !important;
+  border: 1px solid #cbd5e1 !important;
+  background: #f8fafc !important;
+  color: #334155 !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.18s ease !important;
+}
+html body #uzmUniversalModal .uzm-modal-tab-btn.is-active {
+  background: #003d6a !important;
+  color: #ffffff !important;
+  border-color: #003d6a !important;
+}
+html body #uzmUniversalModal .uzm-sagemax-selector-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  gap: 0.75rem !important;
+  margin-bottom: 0.75rem !important;
+}
+html body #uzmUniversalModal .uzm-sagemax-selector-box {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 10px !important;
+  padding: 0.65rem 0.8rem !important;
+}
+html body #uzmUniversalModal .uzm-sagemax-selector-label {
+  font-size: 0.78rem !important;
+  color: #334155 !important;
+  margin-bottom: 0.4rem !important;
+}
+html body #uzmUniversalModal .uzm-variant-chip-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.35rem !important;
+}
+html body #uzmUniversalModal .uzm-variant-chip {
+  padding: 0.25rem 0.55rem !important;
+  border-radius: 6px !important;
+  border: 1px solid #cbd5e1 !important;
+  background: #ffffff !important;
+  color: #0f172a !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+}
+html body #uzmUniversalModal .uzm-variant-chip.is-selected {
+  background: #0095c8 !important;
+  color: #ffffff !important;
+  border-color: #0095c8 !important;
+}

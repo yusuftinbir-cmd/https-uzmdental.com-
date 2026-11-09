@@ -1,0 +1,506 @@
+/* ==========================================================================
+   UZM DENTAL — ATLAS MİMARİ RİTİM, NEGATİF BOŞLUK VE BAŞPARMAK ERGONOMİSİ
+   Dosya: v2_vitrin/uzm-architectural-rhythm.css
+   Kaynak: Gemini Web (Argon Yüksek · Atlas Modu) BÖLÜM 1.2
+   Kapsam: #interactiveSinteringLab, #catalogSection,
+           #techMatrixSection, #productDetailDrawer ve 38x38 / 46x46 Üst Bar
+   ========================================================================== */
+
+:root {
+  /* Ritmik Soluklanma & Endüstriyel Cetvel Değişkenleri */
+  --uzm-rhythm-section-y: clamp(3.5rem, 7vw, 6.5rem);
+  --uzm-rhythm-block-gap: clamp(1.75rem, 3.5vw, 3rem);
+  --uzm-hairline: 1px solid #d1d5dc;
+  --uzm-hairline-Accent: 1px solid rgba(15, 118, 110, 0.28);
+  --uzm-font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --uzm-studio-pure: #FFFFFF;
+}
+
+/* 1. SAYISAL METRİK KARARLILIĞI (Sekme Değişimlerinde Titreme = 0) */
+.sinter-metric-v,
+.sinter-peak-pill,
+.uzm-metric-box__v,
+.uzm-prod-code,
+.uzm-tech-table td,
+.editorial-nav-index,
+.editorial-nav-count,
+[data-tabular] {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1, "zero" 1;
+}
+
+/* 2. BÖLÜMLER ARASI RİTMİK NEGATİF BOŞLUK & ENDÜSTRİYEL CETVEL ÇİZGİLERİ */
+main {
+  counter-reset: uzm-section-counter;
+}
+
+main > section[id] {
+  position: relative;
+  padding-top: var(--uzm-rhythm-section-y) !important;
+  padding-bottom: var(--uzm-rhythm-section-y) !important;
+  border-bottom: var(--uzm-hairline);
+}
+
+/* Endüstriyel Bölüm Cetvel İndisi (01 // 02 // 03 ...) */
+main > section[id]::before {
+  counter-increment: uzm-section-counter;
+  content: "0" counter(uzm-section-counter) " // UZM-CAD/CAM-SPEC";
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto 16px auto;
+  padding-left: var(--spacing-x-container, clamp(1rem, 2.75vw, 3.25rem));
+  padding-right: var(--spacing-x-container, clamp(1rem, 2.75vw, 3.25rem));
+  font-family: var(--uzm-font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #525866;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Bölüm Başlığı ve Açıklama Arası Bilişsel Soluklanma */
+.rev35-section-head,
+.rev35-sec-header,
+.catalog-toolbar {
+  margin-bottom: var(--uzm-rhythm-block-gap) !important;
+  padding-bottom: 20px;
+  border-bottom: var(--uzm-hairline);
+}
+
+/* 3. SAF #FFFFFF STÜDYO GÖRSEL KUYUSU VE KART İÇİ TİPOGRAFİK HİYERARŞİ */
+.uzm-prod-card .prod-visual,
+.uzm-prod-card .ac-img-box,
+.passport-hero-thumb {
+  background: var(--uzm-studio-pure) !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+  transition: border-color 0.22s ease, transform 0.22s ease;
+}
+
+.uzm-prod-card:hover .prod-visual {
+  border-color: rgba(15, 118, 110, 0.45) !important;
+}
+
+.uzm-prod-card__title {
+  letter-spacing: -0.015em;
+  color: #090b10;
+}
+
+.uzm-prod-code {
+  font-family: var(--uzm-font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: -0.02em;
+}
+
+/* 4. ÜST BAR 38x38px / 46x46px SVG EKOLAYZIR KAPSÜLÜ HASSAS AYARI */
+#btnAcousticToggle {
+  min-height: 38px;
+  height: 38px;
+  border-radius: 9999px;
+  background: #F7F5F0;
+  border: 1px solid rgba(15, 118, 110, 0.26);
+  color: #0F766E;
+}
+
+/* 5. #productDetailDrawer (Genel Bakış | 800–1200 MPa | LOT & Belgeler) MİMARİSİ */
+#productDetailDrawer,
+#passportDrawer {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+#productDetailDrawer .uzm-drawer-sheet,
+#passportDrawer .passport-drawer__sheet {
+  box-shadow: -20px 0 48px rgba(9, 11, 16, 0.18);
+}
+
+.drawer-lot-verify-box {
+  background: #F7F5F0;
+  border: 1px solid #d1d5dc;
+  border-left: 4px solid #0F766E;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.drawer-lot-input-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.drawer-lot-input-row input {
+  flex: 1;
+  min-height: 46px;
+  padding: 0 12px;
+  border: 1px solid #d1d5dc;
+  border-radius: 8px;
+  font-family: var(--uzm-font-mono);
+  font-size: 0.875rem;
+  color: #090b10;
+  background: #FFFFFF;
+}
+
+/* ==========================================================================
+   6. MOBİL BAŞPARMAK ERGONOMİSİ (THUMB-ZONE) KAPISI (@media max-width: 768px)
+   S25 FE (412x915) & iPhone (390x844) Odaklı
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --uzm-rhythm-section-y: 3.25rem;
+    --uzm-rhythm-block-gap: 1.25rem;
+  }
+
+  main > section[id]::before {
+    font-size: 0.875rem !important;
+    margin-bottom: 10px;
+  }
+
+  /* 6.2. Sinterleme Lab (#interactiveSinteringLab):
+     4 zirkonya sekmesi 2x2 başparmak ızgarasında, SVG grafik tam genişlikte */
+  #interactiveSinteringLab .sinter-tabs-bar {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    background: #FFFFFF;
+    padding: 6px 0;
+  }
+
+  #interactiveSinteringLab .sinter-tab-btn {
+    min-height: 46px !important;
+    font-size: 0.875rem !important;
+    padding: 0 8px !important;
+  }
+
+  /* 6.3. Teknik Mukavemet Matrisi (#techMatrixSection):
+     Kategori filtreleri yatay taşmasız 2x2 Bento sekme düzeninde */
+  #techMatrixSection .matrix-tabs-bar {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+
+  #techMatrixSection .matrix-tab-btn {
+    width: 100% !important;
+    min-height: 46px !important;
+  }
+
+  /* 6.4. Ürün Detay Çekmecesi (#productDetailDrawer / #passportDrawer):
+     3 sekme (Genel Bakış | 800–1200 MPa | LOT & Belgeler) yan yana tek satırda
+     başparmakla tek dokunuşta erişilebilir */
+  #productDetailDrawer .passport-tabs-nav,
+  #passportDrawer .passport-tabs-nav {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+    background: var(--bg-card, #FFFFFF);
+    padding: 8px 0;
+  }
+
+  #productDetailDrawer .drawer-tab-btn,
+  #passportDrawer .drawer-tab-btn {
+    min-height: 46px !important;
+    padding: 6px 4px !important;
+    font-size: 0.875rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .drawer-lot-input-row {
+    flex-direction: column;
+  }
+}
+
+
+/* === UZM 1105 ALT KISIM, BLOG VITRINI, HAKKIMIZDA KARTLARI VE YUKSEK KONTRAST FOOTER ONARIMI === */
+#uzmSlideDrawer, .uzm-slide-drawer, #uzmDrawerBackdrop, .uzm-drawer-backdrop {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* 3 Sütunlu Hakkımızda / Belgeler / İletişim Grid (Yayvan tam genişlik hatasını önler) */
+#hakkimizdaIletisimSection .uzm-card-grid-3 {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 1.5rem !important;
+  align-items: stretch !important;
+}
+@media (max-width: 960px) {
+  #hakkimizdaIletisimSection .uzm-card-grid-3 {
+    grid-template-columns: 1fr !important;
+  }
+}
+#hakkimizdaIletisimSection .uzm-brochure-card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 1.75rem !important;
+  border-radius: 16px !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(15, 23, 42, 0.1) !important;
+  box-shadow: 0 10px 28px -10px rgba(15, 23, 42, 0.07) !important;
+  gap: 0.85rem !important;
+}
+#hakkimizdaIletisimSection .uzm-brochure-card strong {
+  font-size: 1.18rem !important;
+  color: #0f172a !important;
+  line-height: 1.35 !important;
+}
+#hakkimizdaIletisimSection .uzm-brochure-card p {
+  font-size: 0.94rem !important;
+  color: #334155 !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+  flex-grow: 1 !important;
+}
+#hakkimizdaIletisimSection .uzm-brochure-card .uzm-btn-outline {
+  width: fit-content !important;
+  align-self: flex-start !important;
+  padding: 0.65rem 1.25rem !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  margin-top: 0.5rem !important;
+  background: #f8fafc !important;
+  color: #0b4f6c !important;
+  border: 1.5px solid #0b4f6c !important;
+}
+#hakkimizdaIletisimSection .uzm-brochure-card .uzm-btn-outline:hover {
+  background: #0b4f6c !important;
+  color: #ffffff !important;
+}
+
+/* Ana Sayfa 6 Orijinal Blog Vitrini */
+.uzm-blog-vitrin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 960px) {
+  .uzm-blog-vitrin-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .uzm-blog-vitrin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.uzm-blog-vitrin-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.09);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px -8px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.uzm-blog-vitrin-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px -8px rgba(15, 23, 42, 0.12);
+}
+.uzm-blog-vitrin-media {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+.uzm-blog-vitrin-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.uzm-blog-vitrin-body {
+  padding: 1.35rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex-grow: 1;
+}
+.uzm-blog-vitrin-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0284c7;
+}
+.uzm-blog-vitrin-body h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.4;
+}
+.uzm-blog-vitrin-body h3 a {
+  color: #0f172a;
+  text-decoration: none;
+}
+.uzm-blog-vitrin-body h3 a:hover {
+  color: #0284c7;
+}
+.uzm-blog-vitrin-body p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #475569;
+  flex-grow: 1;
+}
+.uzm-blog-vitrin-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #0b4f6c;
+  text-decoration: none;
+  margin-top: 0.35rem;
+}
+.uzm-blog-vitrin-link:hover {
+  color: #0284c7;
+}
+
+/* Yüksek Kontrastlı Lacivert Kurumsal Footer (WCAG AAA) */
+footer.uzm-footer, footer.uzm-sql-footer {
+  background: linear-gradient(180deg, #0a2540 0%, #07192e 100%) !important;
+  color: #f8fafc !important;
+  padding: 3.5rem 0 2rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+.uzm-sql-footer-grid {
+  display: grid !important;
+  grid-template-columns: 1.5fr 1fr 1fr 1.1fr !important;
+  gap: 2.25rem !important;
+  align-items: start !important;
+}
+@media (max-width: 960px) {
+  .uzm-sql-footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media (max-width: 600px) {
+  .uzm-sql-footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+.uzm-footer-brand-heading,
+.uzm-footer-col-title,
+.uzm-sql-footer-col strong,
+footer.uzm-footer strong {
+  display: block !important;
+  color: #ffffff !important;
+  font-size: 1.02rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  margin-bottom: 0.85rem !important;
+}
+footer.uzm-footer p,
+footer.uzm-footer .uzm-footer-desc,
+footer.uzm-footer .uzm-footer-address,
+.uzm-sql-footer-brand p {
+  color: #e2e8f0 !important;
+  font-size: 0.92rem !important;
+  line-height: 1.65 !important;
+  margin: 0 0 0.6rem 0 !important;
+}
+.uzm-sql-footer-col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.55rem !important;
+}
+footer.uzm-footer a,
+.uzm-sql-footer-col a,
+.uzm-footer-links a {
+  color: #e2e8f0 !important;
+  text-decoration: none !important;
+  font-size: 0.92rem !important;
+  line-height: 1.5 !important;
+  transition: color 0.15s ease !important;
+}
+footer.uzm-footer a:hover,
+.uzm-sql-footer-col a:hover,
+.uzm-footer-links a:hover {
+  color: #38bdf8 !important;
+  text-decoration: underline !important;
+}
+.uzm-footer-contact-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+  padding: 0.45rem 0.85rem !important;
+  border-radius: 8px !important;
+  background: rgba(255, 255, 255, 0.09) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  width: fit-content !important;
+}
+.uzm-footer-bottom-bar {
+  margin-top: 2.5rem !important;
+  padding-top: 1.25rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+  text-align: center !important;
+}
+footer.uzm-footer .uzm-sql-copy {
+  color: #cbd5e1 !important;
+  font-size: 0.85rem !important;
+  margin: 0 !important;
+}
+
+
+/* === UZM 1231 TARAYICI TIKLAMA TESTI KESIN ONARIM CSS === */
+/* 1. zirkonya.html UTS basligi kartlara yapisik olmasin */
+.uzm-uts-section, #utsSection, .uzm-sql-section + .uzm-sql-section, .uzm-section-head {
+  margin-top: 2rem !important;
+  padding-top: 0.75rem !important;
+}
+h2 + .uzm-card-grid-3, h2 + .uzm-sql-grid, .uzm-section-sub + .uzm-card-grid-3 {
+  margin-top: 1.5rem !important;
+}
+/* 2. 3D-PRO ve tum urun kart gorselleri esit boyut ve oranti */
+.uzm-product-card img, .uzm-sql-card-media img, .uzm-vitrin-card img {
+  aspect-ratio: 4 / 3 !important;
+  object-fit: contain !important;
+  width: 100% !important;
+  max-height: 220px !important;
+  padding: 0.5rem !important;
+  background: #f8fafc !important;
+}
+/* 3. Iletisimde e-posta ortadan kirilmasin */
+a[href^="mailto:"], .uzm-mail-link {
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+}
+/* 4. Footer copyright son linke yapisik olmasin */
+.uzm-footer-bottom-bar, .uzm-sql-copy, footer .uzm-sql-copy {
+  margin-top: 2.25rem !important;
+  padding-top: 1.35rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.14) !important;
+  display: block !important;
+  clear: both !important;
+}
+/* 5. Header menusu tek satirda kalsin (ZH/DE/RU tasma onleme) */
+.uzm-main-nav, .uzm-sql-nav-inner {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  gap: 0.85rem !important;
+  white-space: nowrap !important;
+}
+.uzm-nav-link {
+  white-space: nowrap !important;
+  font-size: 0.92rem !important;
+}

@@ -1,0 +1,2 @@
+/* UZM Dental · SQL katalog sayfa sözlüğü (otomatik — uret_sql_katalog_1103.py; elle düzenlemeyin) */
+(function(E,D){for(var l in D){E[l]=E[l]||{};for(var k in D[l])E[l][k]=D[l][k];}})(window.UZM_I18N_EXTRA=window.UZM_I18N_EXTRA||{},{"en": {"sqt_ab81cb37cdb5": "Zirkonya Disk Seçerken Nelere Dikkat Edilmeli? · UZM Dental Blog"}, "ar": {"sqt_ab81cb37cdb5": "Zirkonya Disk Seçerken Nelere Dikkat Edilmeli? · UZM Dental Blog"}, "zh": {"sqt_ab81cb37cdb5": "Zirkonya Disk Seçerken Nelere Dikkat Edilmeli? · UZM Dental Blog"}});

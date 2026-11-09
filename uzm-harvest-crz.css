@@ -1,0 +1,5421 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/inter-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/inter-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/inter-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/inter-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/inter-tight-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/inter-tight-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/inter-tight-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/inter-tight-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/assets/fonts/inter-tight-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/assets/fonts/inter-tight-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/jetbrains-mono-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/jetbrains-mono-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/jetbrains-mono-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/jetbrains-mono-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/jetbrains-mono-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/jetbrains-mono-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/plus-jakarta-sans-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/plus-jakarta-sans-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/plus-jakarta-sans-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/plus-jakarta-sans-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/plus-jakarta-sans-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/plus-jakarta-sans-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/plus-jakarta-sans-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/plus-jakarta-sans-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/assets/fonts/plus-jakarta-sans-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/assets/fonts/plus-jakarta-sans-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/space-grotesk-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/space-grotesk-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/space-grotesk-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/space-grotesk-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/instrument-serif-italic-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/instrument-serif-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/instrument-serif-normal-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/instrument-serif-normal-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* ==========================================================================
+   1. YÜKSEK DOYGUNLUKLU (HIGH-CHROMA) 4 CAN ALICI RENK TEMASI
+   Pastel, kirli bej ve soluk gri tonlar tamamen kaldırılmıştır.
+   ========================================================================== */
+
+
+/* KATEGORİ BAZLI CANLI RENK KODLARI (HER KARTTA VE ROZETTE DİRİ VURGU) */
+:root {
+  --cat-zirconia: #0D9488;    /* Elektrik Kobalt */
+  --cat-endo: #FF5500;        /* Ateş Kehribarı / Molten Orange */
+  --cat-obturation: #00B862;  /* Canlı Zümrüt */
+  --cat-devices: #0D9488;     /* Lazer Viyole */
+}
+
+/* YAZI KARAKTERİ SİSTEMLERİ */
+:root,
+html[data-font="swiss"] {
+  --font-display: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+}
+
+html[data-font="editorial"] {
+  --font-display: 'Instrument Serif', 'Inter Tight', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+html[data-font="industrial"] {
+  --font-display: 'Space Grotesk', 'Inter Tight', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 56px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body.uzm-body {
+  background-color: var(--bg-canvas);
+  color: var(--ink-primary);
+  font-family: var(--font-body);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+.uzm-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.uzm-container {
+  width: 100%;
+  max-width: 1360px;
+  margin-inline: auto;
+  padding-inline: var(--space-3);
+}
+
+/* ÜST ŞERİT & CANLI TASARIM STÜDYOSU */
+.uzm-topbar {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding-block: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.uzm-topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.uzm-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.uzm-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #00E676;
+  box-shadow: 0 0 10px #00E676;
+}
+
+.uzm-studio-toggle-btn {
+  background: var(--accent-primary);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.uzm-studio-bar {
+  background-color: #1E293B;
+  color: #FFFFFF;
+  border-bottom: 2px solid var(--accent-primary);
+  padding-block: 10px;
+  font-size: 0.75rem;
+}
+
+.uzm-studio-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.uzm-studio-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.uzm-studio-label {
+  font-weight: 800;
+  background-color: #183870;
+  color: #FFFFFF;
+  letter-spacing: 0.05em;
+}
+
+.uzm-studio-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.uzm-studio-pill {
+  background: #111827;
+  color: #F8FAFC;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 5px 11px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.uzm-studio-pill.is-active {
+  background: var(--accent-hot);
+  color: #FFFFFF;
+  border-color: var(--accent-hot);
+}
+
+/* HEADER */
+.uzm-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background-color: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.uzm-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 74px;
+  gap: var(--space-2);
+}
+
+.uzm-brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--ink-primary);
+}
+
+.uzm-brand-mark {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.uzm-brand-dot {
+  color: var(--accent-hot);
+}
+
+.uzm-brand-sub {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--accent-primary);
+  margin-top: 3px;
+}
+
+/* legacy nav1 neutralized for uzm-kurumsal parity */
+
+.uzm-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* CAN ALICI BUTONLAR */
+.uzm-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 20px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.uzm-btn-hot {
+  background-color: var(--accent-hot);
+  color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(255, 46, 0, 0.35);
+}
+
+.uzm-btn-hot:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 22px rgba(255, 46, 0, 0.5);
+}
+
+.uzm-btn-full {
+  width: 100%;
+}
+
+.uzm-icon-btn, .uzm-menu-toggle {
+  background: #FFFFFF;
+  color: var(--ink-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* KATEGORİ ROZETLERİ */
+.uzm-cat-pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: #183870;
+  color: #FFFFFF;
+}
+
+.uzm-cat-zir { background-color: var(--cat-zirconia); }
+.uzm-cat-endo { background-color: var(--cat-endo); }
+.uzm-cat-obt { background-color: var(--cat-obturation); }
+.uzm-cat-dev { background-color: var(--cat-devices); }
+
+/* MEGA MENU */
+.uzm-mega-overlay {
+  background-color: #FFFFFF;
+  border-bottom: 3px solid var(--accent-primary);
+  padding-block: var(--space-4);
+}
+
+.uzm-mega-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.uzm-mega-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-block: 10px;
+}
+
+.uzm-mega-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.uzm-mega-list a {
+  color: var(--ink-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   HERO SAHNESİ (YÜKSEK VOLTAJLI KONTRAST & CAN ALICI VURGULAR)
+   ========================================================================== */
+.uzm-hero {
+  background-color: #0D1F40;
+  background-image: radial-gradient(circle at 82% 22%, var(--hero-glow) 0%, transparent 48%);
+  color: #FFFFFF;
+  padding-block: var(--space-6);
+  border-bottom: 4px solid var(--accent-primary);
+}
+
+.uzm-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.uzm-hero-kicker-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.uzm-kicker-tag {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  padding: 5px 12px;
+  border-radius: 4px;
+}
+
+.uzm-kicker-hot {
+  background-color: var(--accent-hot);
+  color: #FFFFFF;
+}
+
+.uzm-kicker-cyan {
+  background-color: var(--accent-cyan);
+  color: #F8FAFC;
+}
+
+.uzm-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-2);
+  color: var(--ink-primary);
+}
+
+.uzm-highlight-text {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+
+.uzm-highlight-hot {
+  color: var(--accent-hot);
+}
+
+.uzm-hero-lead {
+  font-size: 1.05rem;
+  color: var(--ink-secondary);
+  margin-bottom: var(--space-3);
+  max-width: 60ch;
+}
+
+.uzm-hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: var(--space-3);
+}
+
+.uzm-pill-btn {
+  background: #132C58;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-sm);
+  padding: 9px 15px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.uzm-pill-btn.is-active,
+.uzm-pill-btn:hover {
+  background: var(--accent-hot);
+  color: #FFFFFF;
+  border-color: var(--accent-hot);
+}
+
+.uzm-hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+  padding-top: var(--space-2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.uzm-metric-item dt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+}
+
+.uzm-metric-item dd {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--ink-primary);
+  margin-top: 2px;
+}
+
+/* HERO SAĞ SÜTUN: MERCEK KARTI */
+.uzm-lens-card {
+  background: #FFFFFF;
+  color: var(--ink-primary);
+  border: 3px solid var(--accent-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-2);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.uzm-lens-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.uzm-lens-badge {
+  background: var(--ink-primary);
+  color: #FFFFFF;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.uzm-lens-tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.uzm-lens-tab {
+  background: #F1F5F9;
+  color: var(--ink-primary);
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.uzm-lens-tab.is-active {
+  background: var(--accent-primary);
+  color: #FFFFFF;
+  border-color: var(--accent-primary);
+}
+
+.uzm-hero-stage-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-sm);
+  padding: 6px;
+}
+
+.uzm-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #FFFFFF;
+}
+
+.uzm-lens-selector-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.uzm-chip-btn {
+  background: #F1F5F9;
+  color: var(--ink-primary);
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  padding: 7px 12px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.uzm-chip-btn.is-active {
+  background: var(--accent-hot);
+  color: #FFFFFF;
+  border-color: var(--accent-hot);
+}
+
+.uzm-gradient-readout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  background: #1E293B;
+  color: #FFFFFF;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+}
+
+.uzm-readout-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.uzm-readout-label {
+  font-size: 0.66rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+}
+
+.uzm-readout-cell strong {
+  font-size: 0.8rem;
+  color: var(--ink-primary);
+}
+
+/* HERO MOD 2 & 3 */
+.uzm-story-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.uzm-story-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+  padding: 12px;
+  background: #F8FAFC;
+  border: 2px solid var(--border-hairline);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.uzm-story-step.is-active {
+  border-color: var(--accent-primary);
+  background: #FFFFFF;
+}
+
+.uzm-story-num {
+  font-family: var(--font-mono);
+  font-weight: 900;
+  font-size: 0.95rem;
+  color: var(--accent-hot);
+}
+
+.uzm-cockpit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.uzm-cockpit-box {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.uzm-cockpit-box:hover {
+  border-color: var(--accent-hot);
+}
+
+/* CANLI ISO ENDODONTİ RENK ŞERİDİ & MARQUEE */
+.uzm-marquee-bar {
+  background: var(--accent-primary);
+  color: #FFFFFF;
+  padding-block: 10px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.uzm-marquee-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.uzm-iso-strip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.uzm-iso-dot {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 900;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.uzm-iso-15 { background: #FFFFFF; color: #1E293B; }
+.uzm-iso-20 { background: #FFD600; color: #1E293B; }
+.uzm-iso-25 { background: #B71C1C; color: #FFFFFF; }
+.uzm-iso-30 { background: #0891B2; color: #1E293B; }
+.uzm-iso-35 { background: #00E676; color: #1E293B; }
+.uzm-iso-40 { background: #1E293B; color: #FFFFFF; }
+
+/* KATEGORİ SEKMELERİ & 22 ÜRÜN IZGARASI */
+.uzm-section {
+  padding-block: var(--space-6);
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.uzm-section-alt {
+  background-color: var(--bg-alt);
+}
+
+.uzm-section-dark {
+  background-color: #050811;
+  color: #FFFFFF;
+}
+
+.uzm-text-white {
+  background-color: #050811;
+  color: #FFFFFF !important;
+}
+
+.uzm-section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.uzm-section-kicker {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.uzm-section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.4vw, 2.2rem);
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  color: var(--ink-primary);
+}
+
+.uzm-filter-bar, .uzm-matrix-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.uzm-tab-btn {
+  background: #FFFFFF;
+  color: var(--ink-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8px 15px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.uzm-tab-btn.is-active {
+  background: var(--accent-primary);
+  color: #FFFFFF;
+  border-color: var(--accent-primary);
+}
+
+.uzm-product-grid, .uzm-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.uzm-partner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+/* CAN ALICI ÜRÜN KARTI (ÜSTTE 4PX ENERJİ ŞERİDİ + SAF #FFFFFF STÜDYO YÜZEYİ) */
+.uzm-card {
+  background: #FFFFFF;
+  border: 2px solid var(--border-hairline);
+  border-top: 5px solid var(--accent-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.uzm-card[data-cat="zirconia"] { border-top-color: var(--cat-zirconia); }
+.uzm-card[data-cat="endo"] { border-top-color: var(--cat-endo); }
+.uzm-card[data-cat="obturation"] { border-top-color: var(--cat-obturation); }
+.uzm-card[data-cat="devices"] { border-top-color: var(--cat-devices); }
+
+.uzm-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 14px 32px rgba(5, 8, 17, 0.1);
+}
+
+.uzm-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.uzm-card-cat {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.uzm-card[data-cat="zirconia"] .uzm-card-cat { background: var(--cat-zirconia); }
+.uzm-card[data-cat="endo"] .uzm-card-cat { background: var(--cat-endo); }
+.uzm-card[data-cat="obturation"] .uzm-card-cat { background: var(--cat-obturation); }
+.uzm-card[data-cat="devices"] .uzm-card-cat { background: var(--cat-devices); }
+
+.uzm-card-spec {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  background: #1E293B;
+  color: #FFFFFF;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.uzm-card-media {
+  background: #FFFFFF;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  aspect-ratio: 640 / 460;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uzm-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.uzm-card-title {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: var(--ink-primary);
+  line-height: 1.3;
+}
+
+.uzm-card-sub {
+  font-size: 0.84rem;
+  color: var(--ink-secondary);
+}
+
+.uzm-card-cta {
+  width: 100%;
+  background: var(--ink-primary);
+  color: #FFFFFF;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.uzm-card-cta:hover {
+  background: var(--accent-hot);
+}
+
+/* TABLO, FORM & ÇEKMECE */
+.uzm-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  background: #FFFFFF;
+  color: var(--ink-primary);
+  border: 2px solid var(--accent-primary);
+  border-radius: var(--radius-md);
+}
+
+.uzm-tech-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  min-width: 720px;
+}
+
+.uzm-tech-table th, .uzm-tech-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.uzm-tech-table th {
+  background: var(--accent-primary);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.uzm-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.uzm-contact-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
+
+.uzm-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.uzm-form-row, .uzm-form-row-2 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.uzm-form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.uzm-form input, .uzm-form textarea {
+  padding: 10px 12px;
+  border: 2px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+/* ÇEKMECE */
+.uzm-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.uzm-drawer[aria-hidden="false"] {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.uzm-drawer-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 7, 18, 0.65);
+}
+
+.uzm-drawer-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(560px, 100vw);
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid var(--accent-primary);
+}
+
+.uzm-drawer-header {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--border-hairline);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.uzm-drawer-body {
+  padding: var(--space-3);
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.uzm-drawer-main-stage {
+  background: #FFFFFF;
+  border: 2px solid var(--border-hairline);
+  border-radius: var(--radius-sm);
+  aspect-ratio: 640 / 460;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uzm-drawer-main-stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.uzm-drawer-thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.uzm-thumb-btn {
+  background: #FFFFFF;
+  border: 2px solid var(--border-hairline);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  cursor: pointer;
+  aspect-ratio: 640 / 460;
+}
+
+.uzm-thumb-btn.is-active {
+  border-color: var(--accent-hot);
+}
+
+.uzm-thumb-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.uzm-spec-dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+  background: #1E293B;
+  color: #FFFFFF;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.84rem;
+}
+
+.uzm-spec-dl dt {
+  color: var(--accent-cyan);
+}
+
+.uzm-spec-dl dd {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-align: right;
+}
+
+.uzm-drawer-footer {
+  padding: var(--space-2) var(--space-3);
+  border-top: 1px solid var(--border-hairline);
+}
+
+.uzm-footer {
+  padding-block: var(--space-3);
+  background: #0d1f3c;
+  color: #FFFFFF;
+  font-size: 0.82rem;
+}
+
+.uzm-footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 960px) {
+  .uzm-nav { display: none; }
+  .uzm-hero-grid, .uzm-contact-grid, .uzm-mega-grid { grid-template-columns: 1fr; }
+  .uzm-product-grid, .uzm-blog-grid, .uzm-partner-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 560px) {
+  .uzm-container { padding-inline: 16px; }
+  .uzm-product-grid, .uzm-blog-grid, .uzm-partner-grid, .uzm-form-row-2, .uzm-gradient-readout, .uzm-cockpit-grid, .uzm-hero-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   REV51 — ZIRCROWN 5D-ML & 3D-PRO ZİRKON BLOKLARIN GERÇEK OPTİK SPEKTRUM MİMARİSİ:
+   Sitenin tüm gradyanları, ışık halkaları ve kurumsal omurgası doğrudan ZirCrown
+   zirkon blok fotoğraflarındaki gerçek piksel renklerinden türetildi:
+   - ZirCrown Marka Safiri: #183870 / #132C58
+   - Üst Yarı Saydam Optik Halkalar (Lagün Turkuaz & Su Yeşili): #30849C -> #3888A0 -> #40A8C8 -> #21687e + #B4C0D8
+   - 5D ML / 600-1200 MPa | 40-49% Translucency Spektrum Çubuğu:
+     #D87830 (Sıcak Terracotta/Kehribar) -> #C8A840 (Şampanya Altın) -> #529884 (Optik Adaçayı)
+     -> #30849C / #38A8C8 (Lagün Turkuazı) -> #183870 (ZirCrown Safiri)
+   ========================================================================== */
+:root,
+html,
+html[data-theme="luminous"],
+html[data-theme="ivory"],
+html[data-theme="light"],
+html[data-theme="zircrown-5d"],
+html[data-uzm-palette="zircrown-5d"],
+html[data-theme="cobalt-corporate"],
+html[data-uzm-palette="cobalt-corporate"],
+html[data-theme="electric-cobalt"],
+html[data-theme="obsidian"] {
+  --bg-canvas: #FAFAFA;
+  --bg-alt: #FFFFFF;
+  --bg-surface: #FFFFFF;
+  --hero-grad-top: #FAFAFA;
+  --mesh-glow-1: rgba(236, 72, 153, 0.12);
+  --mesh-glow-2: rgba(0, 153, 184, 0.10);
+  --mesh-glow-3: rgba(245, 158, 11, 0.10);
+  --topbar-grad: rgba(255, 255, 255, 0.94);
+  --studio-grad: #FFFFFF;
+  --zircrown-spectrum-bar: linear-gradient(90deg, #0F766E 0%, #0D9488 25%, #0891B2 50%, #06B6D4 75%, #14B8A6 100%);
+  --grad-primary: linear-gradient(135deg, #0F766E 0%, #0D9488 45%, #06B6D4 100%);
+  --grad-hot: linear-gradient(135deg, #FF6B00 0%, #FFA800 100%);
+  --grad-text: linear-gradient(135deg, #0F766E 0%, #0D9488 45%, #06B6D4 100%);
+  --badge-grad: linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 100%);
+  --badge-border: #7DD3FC;
+  --glow-primary: rgba(0, 153, 184, 0.15);
+  --topbar-bg: rgba(255, 255, 255, 0.94);
+  --topbar-ink: #0F172A;
+  --studio-bg: #FFFFFF;
+  --ink-primary: #0F172A;
+  --ink-secondary: #334155;
+  --accent-primary: #0D9488;
+  --accent-primary-ink: #FFFFFF;
+  --accent-text: #0D9488;
+  --accent-hot: #C2410C;
+  --accent-hot-ink: #FFFFFF;
+  --accent-hot-text: #C2410C;
+  --accent-cyan: #10B981;
+  --accent-trust: #059669;
+  --border-subtle: rgba(0, 153, 184, 0.12);
+  --border-hairline: rgba(226, 232, 240, 0.9);
+  --border-strong: rgba(0, 153, 184, 0.25);
+}
+
+html[data-theme="zircrown-aqua"],
+html[data-uzm-palette="zircrown-aqua"],
+html[data-theme="hepsiburada"],
+html[data-theme="trendyol"],
+html[data-theme="commercial-orange"],
+html[data-uzm-palette="hepsiburada"],
+html[data-theme="crimson-pulse"] {
+  --bg-canvas: #FFFFFF;
+  --bg-alt: #F0F8FA;
+  --bg-surface: #FFFFFF;
+  --hero-grad-top: #E6F6F9;
+  --mesh-glow-1: rgba(64, 168, 200, 0.26);
+  --mesh-glow-2: rgba(82, 152, 132, 0.20);
+  --mesh-glow-3: rgba(33, 104, 126, 0.28);
+  --topbar-grad: linear-gradient(135deg, #0D263B 0%, #164E63 52%, #1E637A 100%);
+  --studio-grad: linear-gradient(135deg, #11354D 0%, #164E63 52%, #21687E 100%);
+  --zircrown-spectrum-bar: linear-gradient(90deg, #38A8C8 0%, #529884 35%, #C8A840 70%, #183870 100%);
+  --grad-primary: linear-gradient(135deg, #164E63 0%, #1B5A70 52%, #21687E 100%);
+  --grad-hot: linear-gradient(135deg, #183870 0%, #1C4D6B 50%, #21687E 100%);
+  --grad-text: linear-gradient(120deg, #183870 0%, #21687E 48%, #529884 100%);
+  --badge-grad: linear-gradient(135deg, #FFFFFF 0%, #ECFEFF 52%, #D5F3F8 100%);
+  --badge-border: #99D9E6;
+  --glow-primary: rgba(22, 78, 99, 0.34);
+  --topbar-bg: #11354D;
+  --topbar-ink: #F8FAFC;
+  --studio-bg: #164E63;
+  --ink-primary: #0D1F40;
+  --ink-secondary: #2C4668;
+  --accent-primary: #164E63;
+  --accent-primary-ink: #FFFFFF;
+  --accent-text: #164E63;
+  --accent-hot: #183870;
+  --accent-hot-ink: #FFFFFF;
+  --accent-hot-text: #183870;
+  --accent-cyan: #21687E;
+  --accent-trust: #2A6F62;
+  --border-subtle: #D5E8EE;
+  --border-hairline: #D5E8EE;
+  --border-strong: #B4D4E0;
+}
+
+html[data-theme="zircrown-amber"],
+html[data-uzm-palette="zircrown-amber"],
+html[data-theme="vatan"],
+html[data-theme="medical-navy"],
+html[data-uzm-palette="vatan"],
+html[data-theme="emerald-laser"] {
+  --bg-canvas: #FFFFFF;
+  --bg-alt: #F9F6F0;
+  --bg-surface: #FFFFFF;
+  --hero-grad-top: #FBF4E6;
+  --mesh-glow-1: rgba(216, 120, 48, 0.22);
+  --mesh-glow-2: rgba(200, 168, 64, 0.20);
+  --mesh-glow-3: rgba(48, 132, 156, 0.18);
+  --topbar-grad: linear-gradient(135deg, #132C58 0%, #183870 55%, #4A3525 100%);
+  --studio-grad: linear-gradient(135deg, #183870 0%, #2A3B5C 55%, #5C3A21 100%);
+  --zircrown-spectrum-bar: linear-gradient(90deg, #D87830 0%, #C8A840 35%, #529884 70%, #183870 100%);
+  --grad-primary: linear-gradient(135deg, #9A4412 0%, #9E4710 50%, #183870 100%);
+  --grad-hot: linear-gradient(135deg, #9E4710 0%, #8A3B0E 52%, #183870 100%);
+  --grad-text: linear-gradient(120deg, #9A4412 0%, #B87D18 45%, #183870 100%);
+  --badge-grad: linear-gradient(135deg, #FFFFFF 0%, #FEF9EE 52%, #F9E8CE 100%);
+  --badge-border: #E8C79B;
+  --glow-primary: rgba(154, 68, 18, 0.32);
+  --topbar-bg: #132C58;
+  --topbar-ink: #F8FAFC;
+  --studio-bg: #183870;
+  --ink-primary: #0D1F40;
+  --ink-secondary: #334155;
+  --accent-primary: #9A4412;
+  --accent-primary-ink: #FFFFFF;
+  --accent-text: #9A4412;
+  --accent-hot: #183870;
+  --accent-hot-ink: #FFFFFF;
+  --accent-hot-text: #183870;
+  --accent-cyan: #9E4710;
+  --accent-trust: #2A6F62;
+  --border-subtle: #E6DFD3;
+  --border-hairline: #E6DFD3;
+  --border-strong: #D4C8B4;
+}
+
+html[data-theme="zircrown-st"],
+html[data-uzm-palette="zircrown-st"],
+html[data-theme="emerald-clinical"],
+html[data-theme="hb-vatan-hibrit"],
+html[data-theme="hybrid-b2b"],
+html[data-uzm-palette="emerald-clinical"],
+html[data-theme="high-voltage"] {
+  --bg-canvas: #FFFFFF;
+  --bg-alt: #F3F6FA;
+  --bg-surface: #FFFFFF;
+  --hero-grad-top: #EBF1FA;
+  --mesh-glow-1: rgba(24, 60, 120, 0.22);
+  --mesh-glow-2: rgba(60, 96, 144, 0.18);
+  --mesh-glow-3: rgba(168, 75, 20, 0.14);
+  --topbar-grad: linear-gradient(135deg, #0A1936 0%, #132C58 52%, #284678 100%);
+  --studio-grad: linear-gradient(135deg, #132C58 0%, #183C78 55%, #2C5084 100%);
+  --zircrown-spectrum-bar: linear-gradient(90deg, #132C58 0%, #183C78 40%, #3C6090 72%, #a84b14 100%);
+  --grad-primary: linear-gradient(135deg, #132C58 0%, #183C78 50%, #2B4C7E 100%);
+  --grad-hot: linear-gradient(135deg, #9E4710 0%, #183C78 55%, #132C58 100%);
+  --grad-text: linear-gradient(120deg, #132C58 0%, #183C78 48%, #a84b14 100%);
+  --badge-grad: linear-gradient(135deg, #FFFFFF 0%, #EFF4FB 52%, #DCE7F7 100%);
+  --badge-border: #B4C8E8;
+  --glow-primary: rgba(24, 60, 120, 0.34);
+  --topbar-bg: #0A1936;
+  --topbar-ink: #F8FAFC;
+  --studio-bg: #132C58;
+  --ink-primary: #0D1F40;
+  --ink-secondary: #2C4668;
+  --accent-primary: #183C78;
+  --accent-primary-ink: #FFFFFF;
+  --accent-text: #183C78;
+  --accent-hot: #a84b14;
+  --accent-hot-ink: #FFFFFF;
+  --accent-hot-text: #9A4412;
+  --accent-cyan: #21687E;
+  --accent-trust: #2A6F62;
+  --border-subtle: #D8E2F0;
+  --border-hairline: #D8E2F0;
+  --border-strong: #B8C9E2;
+}
+
+/* 4 ÜRÜN KATEGORİSİ RENK DEĞİŞKENLERİ (ZirCrown Disk Spektrumundan) */
+:root {
+  --cat-zirconia: #183870;
+  --cat-endo: #a84b14;
+  --cat-obturation: #30849C;
+  --cat-devices: #132C58;
+}
+
+html, body {
+  overflow-x: clip !important;
+  max-width: 100% !important;
+  background-color: var(--bg-canvas) !important;
+  color: var(--ink-primary) !important;
+}
+
+/* ZIRCROWN SAFİR KURUMSAL OMURGA: TOPBAR & 5-KATMANLI SPEKTRUM ŞERİDİ */
+.uzm-topbar {
+  position: relative !important;
+  background-color: #132C58 !important;
+  background-image: var(--topbar-grad) !important;
+  color: var(--topbar-ink) !important;
+  border-top: 4px solid transparent !important;
+  border-image: var(--zircrown-spectrum-bar) 1 !important;
+  border-bottom: 1px solid rgba(33, 104, 126, 0.25) !important;
+}
+
+.uzm-topbar-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: #132C58;
+  color: #E2EEF4 !important;
+}
+
+.uzm-studio-toggle-btn {
+  background-color: var(--accent-primary) !important;
+  background-image: var(--grad-primary) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 5px 12px !important;
+  font-weight: 700 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.42), inset 0 -1px 0 rgba(0, 0, 0, 0.18), 0 4px 14px -2px var(--glow-primary) !important;
+}
+
+.uzm-gokhan-jump-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #B85D1E !important;
+  background-image: var(--grad-hot) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  font-weight: 700 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 4px 12px rgba(13, 31, 64, 0.28) !important;
+}
+
+.uzm-studio-bar {
+  background-color: #183870 !important;
+  background-image: var(--studio-grad) !important;
+  color: #F8FAFC !important;
+  border-bottom: 3px solid transparent !important;
+  border-image: var(--zircrown-spectrum-bar) 1 !important;
+  box-shadow: 0 6px 20px rgba(19, 44, 88, 0.18) !important;
+}
+
+.uzm-studio-label {
+  background-color: #183870;
+  color: #E2F1F5 !important;
+  font-weight: 700 !important;
+}
+
+.uzm-studio-pill {
+  background-color: #0D1F40 !important;
+  background-image: linear-gradient(180deg, rgba(24, 56, 112, 0.92) 0%, rgba(13, 31, 64, 0.96) 100%) !important;
+  color: #E6F2F7 !important;
+  border: 1px solid rgba(33, 104, 126, 0.35) !important;
+  font-weight: 600 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+}
+
+.uzm-studio-pill.is-active {
+  background-color: var(--accent-primary) !important;
+  background-image: var(--grad-hot) !important;
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.48), inset 0 -1px 0 rgba(0, 0, 0, 0.20), 0 6px 18px -3px rgba(13, 31, 64, 0.42) !important;
+}
+
+/* HEADER & NAVİGASYON (GERÇEK UZM LOGO + PARILDAYAN CAM-OPTİK ÜST MENÜ) */
+.uzm-header {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  background-image: none !important;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important;
+  box-shadow: 0 4px 20px rgba(0, 153, 184, 0.06) !important;
+}
+
+.uzm-brand {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+  flex-shrink: 0 !important;
+}
+
+.uzm-brand-logo-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 44px !important;
+  height: 40px !important;
+  border-radius: 10px !important;
+  background-color: #183870 !important;
+  background-image: linear-gradient(135deg, #0D1F40 0%, #183870 52%, #21687E 100%) !important;
+  border: 1px solid rgba(33, 104, 126, 0.48) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 4px 12px rgba(13, 31, 64, 0.22) !important;
+  padding: 5px !important;
+  flex-shrink: 0 !important;
+}
+
+.uzm-brand-logo-img {
+  width: 32px !important;
+  height: 28px !important;
+  object-fit: contain !important;
+  filter: brightness(0) invert(1) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35)) !important;
+  display: block !important;
+}
+
+.uzm-brand-copy {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.uzm-brand-mark {
+  color: #132C58 !important;
+}
+
+.uzm-brand-sub,
+.uzm-section-kicker,
+.uzm-story-num {
+  color: var(--accent-text) !important;
+  font-weight: 800 !important;
+}
+
+@keyframes uzmMenuShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* shimmer nav neutralized for uzm-kurumsal parity */
+
+.uzm-shimmer-menu-btn {
+  background-color: #183870 !important;
+  background-image:
+    linear-gradient(110deg, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0) 65%),
+    var(--grad-primary) !important;
+  background-size: 240% 100%, 100% 100% !important;
+  animation: uzmMenuShimmer 5s ease-in-out infinite !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(180, 224, 238, 0.55) !important;
+  border-radius: 999px !important;
+  padding: 8px 14px !important;
+  font-weight: 800 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.42), 0 6px 16px -3px var(--glow-primary) !important;
+}
+
+.uzm-shimmer-menu-btn[aria-expanded="true"] {
+  background-color: #9E4710 !important;
+  background-image: var(--grad-hot) !important;
+}
+
+.uzm-mega-topbar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  padding-bottom: 12px !important;
+  margin-bottom: 14px !important;
+  border-bottom: 1px solid var(--border-subtle) !important;
+}
+
+.uzm-mega-topbar-title {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 0.86rem !important;
+  color: var(--ink-primary) !important;
+}
+
+.uzm-mega-close-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background-color: #9E4710 !important;
+  background-image: var(--grad-hot) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 999px !important;
+  padding: 6px 14px !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 12px rgba(158, 71, 16, 0.28) !important;
+}
+
+.uzm-mega-brands-row {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+  margin-bottom: 16px !important;
+  padding-bottom: 14px !important;
+  border-bottom: 1px solid var(--border-subtle) !important;
+}
+
+.uzm-mega-brand-pill {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 8px 12px !important;
+  border-radius: 999px !important;
+  background: linear-gradient(180deg, #F7F9FB 0%, #EEF3F7 100%) !important;
+  border: 1px solid var(--border-strong) !important;
+  text-decoration: none !important;
+  color: var(--ink-primary) !important;
+  font-size: 0.76rem !important;
+  font-weight: 600 !important;
+}
+
+.uzm-mega-brand-logo-wrap {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #FFFFFF !important;
+  border: 1px solid #D8E6EE !important;
+  border-radius: 999px !important;
+  padding: 4px 10px !important;
+  flex-shrink: 0 !important;
+}
+
+.uzm-mega-brand-logo-wrap img {
+  height: 22px !important;
+  width: auto !important;
+  max-width: 82px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+/* 4 RESMİ OEM PARTNER OVAL STÜDYO LOGO HAPLARI (Yusuf'un Gönderdiği Görseldeki Birebir Oval Kapsüller) */
+.uzm-brand-filter-pills {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+}
+
+.uzm-oval-brand-row {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  margin-top: 16px !important;
+}
+
+.uzm-oval-brand-pill {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  text-align: center !important;
+}
+
+.uzm-oval-logo-capsule {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 102px !important;
+  border-radius: 999px !important;
+  background: linear-gradient(180deg, #F7F9FB 0%, #EEF3F7 100%) !important;
+  border: 1px solid #D5E2EC !important;
+  padding: 18px 32px !important;
+  box-shadow: inset 0 1px 0 #FFFFFF, 0 6px 18px -4px rgba(19, 44, 88, 0.08) !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease !important;
+}
+
+.uzm-oval-brand-pill:hover .uzm-oval-logo-capsule,
+.uzm-oval-brand-pill.is-active .uzm-oval-logo-capsule {
+  background: linear-gradient(180deg, #FFFFFF 0%, #E8F3F8 100%) !important;
+  border-color: #183870 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: inset 0 1px 0 #FFFFFF, 0 12px 26px -6px rgba(24, 56, 112, 0.22) !important;
+}
+
+.uzm-oval-brand-img {
+  max-height: 58px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.uzm-oval-brand-caption {
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  color: var(--ink-secondary) !important;
+  line-height: 1.35 !important;
+}
+
+.uzm-oval-brand-caption strong {
+  color: var(--ink-primary) !important;
+  font-weight: 800 !important;
+}
+
+/* 17 RESMİ SIKÇA SORULAN SORU (#sss) KARTLARI */
+.uzm-faq-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  margin-top: 16px !important;
+}
+
+.uzm-faq-card {
+  background-color: #FFFFFF !important;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #F7FAFC 100%) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-left: 4px solid #183870 !important;
+  border-radius: 10px !important;
+  padding: 14px 16px !important;
+  box-shadow: 0 4px 12px rgba(24, 56, 112, 0.05) !important;
+}
+
+.uzm-faq-q-row {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+  margin-bottom: 6px !important;
+}
+
+.uzm-faq-num {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 26px !important;
+  height: 24px !important;
+  border-radius: 6px !important;
+  background-color: #183870 !important;
+  background-image: var(--grad-primary) !important;
+  color: #FFFFFF !important;
+  font-family: var(--font-mono) !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  flex-shrink: 0 !important;
+}
+
+.uzm-faq-q {
+  font-size: 0.94rem !important;
+  font-weight: 800 !important;
+  color: var(--ink-primary) !important;
+  line-height: 1.35 !important;
+  margin: 0 !important;
+}
+
+.uzm-faq-a {
+  font-size: 0.84rem !important;
+  color: var(--ink-secondary) !important;
+  line-height: 1.48 !important;
+  margin: 0 !important;
+}
+
+.uzm-tab-btn,
+.uzm-brochure-pdf-btn,
+#drawerPmmaBrochureLink {
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+}
+
+.uzm-brochure-pdf-btn {
+  background-color: #FFFBEB !important;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #FDF6E2 100%) !important;
+  border-color: #D4B46A !important;
+  color: #132C58 !important;
+  font-weight: 800 !important;
+}
+
+.uzm-icon-btn,
+.uzm-menu-toggle,
+.uzm-btn-ghost {
+  background-color: #FFFFFF !important;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #F4F9FB 55%, #E8F2F6 100%) !important;
+  color: var(--ink-primary) !important;
+  border: 1px solid var(--border-strong) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 1px 3px rgba(24, 56, 112, 0.06) !important;
+}
+
+.uzm-btn-primary,
+.uzm-chip-btn.is-active {
+  background-color: var(--accent-primary) !important;
+  background-image: var(--grad-primary) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  font-weight: 700 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.42), inset 0 -1px 0 rgba(0, 0, 0, 0.18), 0 8px 22px -4px var(--glow-primary) !important;
+}
+
+.uzm-btn-hot {
+  background-color: #B85D1E !important;
+  background-image: var(--grad-hot) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  font-weight: 700 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), inset 0 -1px 0 rgba(0, 0, 0, 0.20), 0 8px 22px -4px var(--glow-primary) !important;
+}
+
+/* ZIRCROWN OPTİK HALKALAR (LAGÜN TURKUAZ + DENTİN ŞAMPANYA + BUZ LAVANTASI) HERO SAHNESİ */
+.uzm-hero {
+  background-color: #FFFFFF !important;
+  background-image:
+    radial-gradient(ellipse 62% 55% at 82% 24%, var(--mesh-glow-1) 0%, transparent 65%),
+    radial-gradient(ellipse 52% 48% at 14% 84%, var(--mesh-glow-2) 0%, transparent 65%),
+    radial-gradient(ellipse 48% 42% at 62% 72%, var(--mesh-glow-3) 0%, transparent 65%),
+    linear-gradient(180deg, var(--hero-grad-top) 0%, #FFFFFF 54%, #F0F7FA 100%) !important;
+  color: var(--ink-primary) !important;
+  border-bottom: 1px solid var(--border-subtle) !important;
+}
+
+.uzm-hero-title {
+  color: var(--ink-primary) !important;
+  line-height: 1.22 !important;
+}
+
+.uzm-highlight-text {
+  background-image: var(--grad-text) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: var(--accent-primary) !important;
+  text-decoration: none !important;
+}
+
+.uzm-highlight-hot {
+  color: var(--ink-primary) !important;
+  text-decoration: none !important;
+}
+
+.uzm-hero-lead {
+  color: var(--ink-secondary) !important;
+}
+
+.uzm-kicker-hot {
+  background-color: #B85D1E !important;
+  background-image: var(--grad-hot) !important;
+  color: #FFFFFF !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.40), 0 4px 12px -2px var(--glow-primary) !important;
+}
+
+.uzm-kicker-cyan {
+  background-color: #183870 !important;
+  background-image: var(--grad-primary) !important;
+  color: #FFFFFF !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 4px 12px -2px rgba(24, 56, 112, 0.26) !important;
+}
+
+/* 3B OPTİK FİLTRE HAPLARI */
+.uzm-pill-btn,
+.uzm-tab-btn,
+.uzm-lens-tab,
+.uzm-chip-btn {
+  background-color: #FFFFFF !important;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #F4F9FB 55%, #E8F2F6 100%) !important;
+  color: #1E3A5F !important;
+  border: 1px solid var(--border-strong) !important;
+  font-weight: 600 !important;
+  box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(24, 56, 112, 0.05) !important;
+}
+
+.uzm-pill-btn.is-active,
+.uzm-pill-btn:hover,
+.uzm-tab-btn.is-active,
+.uzm-lens-tab.is-active {
+  background-color: var(--accent-primary) !important;
+  background-image: var(--grad-primary) !important;
+  color: #FFFFFF !important;
+  border-color: transparent !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.42), inset 0 -1px 0 rgba(0, 0, 0, 0.18), 0 6px 18px -3px var(--glow-primary) !important;
+}
+
+.uzm-marquee-bar,
+.uzm-tech-table th {
+  background-color: #132C58 !important;
+  background-image: var(--topbar-grad) !important;
+  color: #FFFFFF !important;
+}
+
+.uzm-hero-metrics {
+  border-top: 1px solid var(--border-subtle) !important;
+}
+
+.uzm-metric-item {
+  background-color: #FFFFFF !important;
+  background-image: linear-gradient(135deg, #FFFFFF 0%, #F5FAFC 60%, #EBF4F8 100%) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-left: 4px solid #30849C !important;
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  box-shadow: 0 4px 12px rgba(24, 56, 112, 0.05) !important;
+}
+
+.uzm-metric-item dt {
+  color: #30607A !important;
+  font-weight: 700 !important;
+}
+
+.uzm-metric-item dd {
+  color: var(--ink-primary) !important;
+}
+
+/* HERO SAĞ VİTRİN KARTI & ZIRCROWN DİSK MERCEK YUVASI */
+.uzm-lens-card {
+  background-color: #FFFFFF !important;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #F4F9FB 100%) !important;
+  color: var(--ink-primary) !important;
+  border: 1px solid var(--border-strong) !important;
+  border-top: 4px solid transparent !important;
+  border-image: var(--zircrown-spectrum-bar) 1 !important;
+  box-shadow: 0 14px 36px -6px rgba(24, 56, 112, 0.12), inset 0 1px 0 #FFFFFF !important;
+}
+
+.uzm-lens-badge {
+  background-color: var(--accent-primary) !important;
+  background-image: var(--grad-hot) !important;
+  color: #FFFFFF !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.42) !important;
+}
+
+.uzm-hero-stage-card {
+  background-color: #F2F9FA !important;
+  background-image: radial-gradient(circle at 50% 45%, #FFFFFF 0%, #F2F9FA 62%, #E3F1F4 100%) !important;
+  border: 1px solid #C8E2EA !important;
+  border-radius: 10px !important;
+  box-shadow: inset 0 1px 3px rgba(24, 56, 112, 0.06) !important;
+}
+
+.uzm-gradient-readout {
+  background-color: #F4F9FB !important;
+  background-image: linear-gradient(135deg, #FFFFFF 0%, #F4F9FB 55%, #E6F2F6 100%) !important;
+  color: var(--ink-primary) !important;
+  border: 1px solid var(--border-subtle) !important;
+}
+
+.uzm-readout-label {
+  color: #30607A !important;
+}
+
+.uzm-readout-cell strong {
+  color: var(--ink-primary) !important;
+}
+
+/* ÜRÜN KARTLARINDA ZİRKON DİSK HALKALARIYLA (%100 DOĞAL) BÜTÜNLEŞME */
+.uzm-card {
+  position: relative !important;
+  overflow: hidden !important;
+  justify-content: flex-start !important;
+  background-color: #FFFFFF !important;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #FAFCFD 65%, #F2F8FA 100%) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-top: none !important;
+  border-radius: 12px !important;
+  padding-top: 16px !important;
+  box-shadow: 0 4px 16px -2px rgba(24, 56, 112, 0.06) !important;
+}
+
+.uzm-card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+}
+
+.uzm-card-title,
+.uzm-card-sub,
+.uzm-card-desc {
+  display: block !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  -webkit-line-clamp: unset !important;
+  line-clamp: unset !important;
+}
+
+.uzm-card-sub {
+  margin-bottom: auto !important;
+}
+
+.uzm-card::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 4px !important;
+  background-image: var(--zircrown-spectrum-bar) !important;
+}
+
+/* Zirkonyum kartlarında doğrudan diskin üzerindeki "600-1200 MPa | 40-49% Translucency" şeridinin birebir gradyanı */
+.uzm-card[data-cat="zirconia"]::before {
+  background-image: linear-gradient(90deg, #D87830 0%, #C8A840 30%, #38A8C8 70%, #183870 100%) !important;
+}
+.uzm-card[data-cat="pmma"]::before {
+  background-image: linear-gradient(90deg, #21687E 0%, #38A8C8 50%, #183870 100%) !important;
+}
+.uzm-card[data-cat="endo"]::before {
+  background-image: linear-gradient(90deg, #B85D1E 0%, #D87830 50%, #C8A840 100%) !important;
+}
+.uzm-card[data-cat="obturation"]::before {
+  background-image: linear-gradient(90deg, #164E63 0%, #21687E 50%, #21687e 100%) !important;
+}
+.uzm-card[data-cat="devices"]::before {
+  background-image: linear-gradient(90deg, #132C58 0%, #183870 50%, #21687E 100%) !important;
+}
+
+.uzm-card:hover {
+  border-color: var(--border-strong) !important;
+  box-shadow: 0 16px 32px -6px var(--glow-primary) !important;
+}
+
+.uzm-card-cat,
+.uzm-card[data-cat="zirconia"] .uzm-card-cat,
+.uzm-card[data-cat="pmma"] .uzm-card-cat,
+.uzm-card[data-cat="endo"] .uzm-card-cat,
+.uzm-card[data-cat="obturation"] .uzm-card-cat,
+.uzm-card[data-cat="devices"] .uzm-card-cat {
+  background-color: #F4F9FB !important;
+  background-image: var(--badge-grad) !important;
+  color: var(--accent-text) !important;
+  border: 1px solid var(--badge-border) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.68rem !important;
+  font-weight: 800 !important;
+  padding: 4px 8px !important;
+  border-radius: 6px !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* ÜRÜN KARTI QR KODLU PASAPORT ŞERİDİ & ÇEKMECE IFU/SERTİFİKA/QR KUTUSU */
+.uzm-card-qr-strip {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 8px !important;
+  padding: 6px 8px !important;
+  border-radius: 8px !important;
+  background-color: #F4F9FB !important;
+  background-image: linear-gradient(135deg, #FFFFFF 0%, #F0F7FA 100%) !important;
+  border: 1px dashed #9AC5D6 !important;
+  margin-top: 4px !important;
+}
+
+.uzm-card-qr-thumb {
+  width: 38px !important;
+  height: 38px !important;
+  flex-shrink: 0 !important;
+  background: #FFFFFF !important;
+  border: 1px solid #CBE4EC !important;
+  border-radius: 6px !important;
+  padding: 2px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.uzm-card-qr-thumb svg {
+  width: 32px !important;
+  height: 32px !important;
+  display: block !important;
+}
+
+.uzm-card-qr-meta {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2px !important;
+  min-width: 112px !important;
+  flex: 1 1 auto !important;
+}
+
+.uzm-card-qr-lot {
+  font-family: var(--font-mono) !important;
+  font-size: 0.64rem !important;
+  font-weight: 700 !important;
+  color: #183870 !important;
+  line-height: 1.2 !important;
+}
+
+.uzm-card-qr-link {
+  font-size: 0.68rem !important;
+  font-weight: 800 !important;
+  color: #21687E !important;
+  text-decoration: none !important;
+  line-height: 1.2 !important;
+}
+
+.uzm-card-qr-link:hover {
+  color: #9E4710 !important;
+}
+
+.uzm-drawer-ifu-box {
+  margin-top: 14px !important;
+  padding: 12px 14px !important;
+  border-radius: 10px !important;
+  background-color: #F4F9FB !important;
+  background-image: linear-gradient(135deg, #FFFFFF 0%, #EEF7FA 100%) !important;
+  border: 1px solid var(--border-strong) !important;
+}
+
+.uzm-drawer-ifu-text {
+  font-size: 0.82rem !important;
+  color: var(--ink-secondary) !important;
+  line-height: 1.45 !important;
+  margin: 6px 0 10px 0 !important;
+}
+
+.uzm-drawer-cert-badges {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+}
+
+.uzm-cert-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 4px 9px !important;
+  border-radius: 6px !important;
+  background-color: #183870 !important;
+  background-image: var(--grad-primary) !important;
+  color: #FFFFFF !important;
+  font-family: var(--font-mono) !important;
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+}
+
+.uzm-drawer-qr-passport {
+  margin-top: 14px !important;
+  padding: 14px !important;
+  border-radius: 12px !important;
+  background-color: #F2F9FA !important;
+  background-image: linear-gradient(135deg, #FFFFFF 0%, #EDF7FA 60%, #E0F1F6 100%) !important;
+  border: 1px solid #9AC5D6 !important;
+  box-shadow: 0 6px 18px rgba(24, 56, 112, 0.08) !important;
+}
+
+.uzm-drawer-qr-head {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.uzm-drawer-qr-svg-wrap {
+  width: 96px !important;
+  height: 96px !important;
+  flex-shrink: 0 !important;
+  background: #FFFFFF !important;
+  border: 1px solid #B4D4E2 !important;
+  border-radius: 10px !important;
+  padding: 6px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.uzm-drawer-qr-info {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4px !important;
+  min-width: 0 !important;
+}
+
+.uzm-drawer-qr-title {
+  font-size: 0.95rem !important;
+  font-weight: 800 !important;
+  color: var(--ink-primary) !important;
+}
+
+.uzm-drawer-qr-url {
+  font-family: var(--font-mono) !important;
+  font-size: 0.72rem !important;
+  color: #183870 !important;
+  background: #FFFFFF !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 6px !important;
+  padding: 3px 6px !important;
+  word-break: break-all !important;
+}
+
+.uzm-drawer-qr-lot {
+  font-size: 0.74rem !important;
+  font-weight: 700 !important;
+  color: #21687E !important;
+}
+
+.uzm-drawer-qr-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin-top: 12px !important;
+}
+
+.uzm-footer-brand {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.uzm-footer-logo-badge {
+  width: 38px !important;
+  height: 34px !important;
+}
+
+.uzm-card-spec {
+  background-color: #F4F9FB !important;
+  background-image: linear-gradient(135deg, #FFFFFF 0%, #0A1428 55%, #E3EEF3 100%) !important;
+  color: #244766 !important;
+  border: 1px solid #C5DAE6 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.68rem !important;
+  font-weight: 600 !important;
+  padding: 4px 8px !important;
+  border-radius: 6px !important;
+}
+
+/* ZirCrown disklerinin üzerindeki #21687e (lagün turkuaz) ve #E4D8C0 (fildişi) halkalarıyla bütünleşen ürün görsel yuvası */
+.uzm-card-media {
+  background-color: #F2F9FA !important;
+  background-image: radial-gradient(circle at 50% 45%, #FFFFFF 0%, #F2F9FA 62%, #E3F1F4 100%) !important;
+  border: 1px solid #CBE4EC !important;
+  border-radius: 10px !important;
+  padding: 14px !important;
+  box-shadow: inset 0 1px 3px rgba(24, 56, 112, 0.06) !important;
+}
+
+/* ZirCrown Safir -> Lagün Turkuaz 3-Duraklı Ürün Kartı Aksiyon Butonu */
+.uzm-card-cta {
+  background-color: #183870 !important;
+  background-image: var(--grad-primary) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 6px 16px -3px rgba(24, 56, 112, 0.26) !important;
+}
+
+.uzm-card-cta:hover {
+  background-color: #B85D1E !important;
+  background-image: var(--grad-hot) !important;
+  color: #FFFFFF !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), 0 8px 20px -3px var(--glow-primary) !important;
+}
+
+.uzm-editorial-card::before {
+  background-image: linear-gradient(90deg, #183870 0%, #30849C 55%, #C8A840 100%) !important;
+}
+
+/* SİNTERLEME MATRİSİ, ÇEKMECE, FORMLAR & ZIRCROWN SAFİR KURUMSAL FOOTER */
+.uzm-section-dark {
+  background-color: var(--bg-alt) !important;
+  background-image: linear-gradient(180deg, #F4F9FB 0%, #EAF3F7 100%) !important;
+  color: var(--ink-primary) !important;
+}
+
+.uzm-text-white {
+  color: var(--ink-primary) !important;
+}
+
+.uzm-drawer-main-stage,
+.uzm-thumb-btn {
+  background-color: #F2F9FA !important;
+  background-image: radial-gradient(circle at 50% 45%, #FFFFFF 0%, #F2F9FA 62%, #E3F1F4 100%) !important;
+  border: 1px solid var(--border-subtle) !important;
+}
+
+.uzm-spec-dl {
+  background-color: #F4F9FB !important;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #F4F9FB 100%) !important;
+  color: var(--ink-primary) !important;
+  border: 1px solid var(--border-subtle) !important;
+}
+
+.uzm-spec-dl dt {
+  color: #244766 !important;
+  font-weight: 700 !important;
+}
+
+.uzm-spec-dl dd {
+  color: var(--ink-primary) !important;
+}
+
+.uzm-contact-card {
+  background-color: #FFFFFF !important;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #F6FAFC 100%) !important;
+  border: 1px solid var(--border-strong) !important;
+  box-shadow: 0 10px 28px -4px rgba(24, 56, 112, 0.07) !important;
+}
+
+.uzm-form-row input,
+.uzm-form-row select,
+.uzm-form-row textarea {
+  border: 1px solid var(--border-strong) !important;
+  background: #FFFFFF !important;
+  color: var(--ink-primary) !important;
+}
+
+.uzm-footer {
+  background-color: #132C58 !important;
+  background-image: var(--topbar-grad) !important;
+  color: #F8FAFC !important;
+  border-top: 4px solid transparent !important;
+  border-image: var(--zircrown-spectrum-bar) 1 !important;
+}
+
+.uzm-check-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.uzm-check-item {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: #FFFFFF;
+  font-size: 0.85rem;
+  font-weight: 600 !important;
+  color: var(--ink-primary);
+  cursor: pointer;
+}
+
+.uzm-summary-stack {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 4px !important;
+}
+
+.uzm-summary-lbl {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--accent-text);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.uzm-summary-val {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--ink-primary);
+}
+
+.uzm-check-item input[type="checkbox"],
+.uzm-check-item input[type="radio"] {
+  width: 18px !important;
+  height: 18px !important;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.crz-marquee-track {
+  white-space: normal !important;
+  display: block !important;
+  line-height: 1.45 !important;
+}
+
+.uzm-drawer-panel {
+  display: block !important;
+  overflow-y: auto !important;
+}
+
+.uzm-drawer-body {
+  overflow: visible !important;
+  flex: none !important;
+}
+
+.uzm-footer-inner,
+.uzm-footer-meta {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 8px !important;
+}
+
+.uzm-footer-inner > span,
+.uzm-footer-meta > span {
+  display: block !important;
+  width: 100% !important;
+  line-height: 1.45 !important;
+}
+
+@media (max-width: 960px) {
+  .uzm-container {
+    padding-inline: 14px !important;
+  }
+  .uzm-header-inner {
+    flex-wrap: wrap !important;
+    min-height: 60px !important;
+    padding-block: 8px !important;
+    gap: 8px !important;
+  }
+  .uzm-brand-mark {
+    font-size: 1.15rem !important;
+  }
+  .uzm-brand-sub {
+    font-size: 0.52rem !important;
+    letter-spacing: 0.06em !important;
+  }
+  /* mobile nav grid neutralized for uzm-kurumsal parity */
+  .uzm-header-actions {
+    gap: 6px !important;
+    flex-wrap: wrap !important;
+  }
+  .uzm-header-actions .uzm-btn {
+    padding: 7px 10px !important;
+    font-size: 0.72rem !important;
+  }
+  .uzm-header-actions .uzm-menu-toggle,
+  .uzm-header-actions .uzm-icon-btn {
+    padding: 6px 10px !important;
+    font-size: 0.72rem !important;
+  }
+  .uzm-topbar-inner,
+  .uzm-topbar-meta,
+  .uzm-lens-header,
+  .uzm-marquee-flex {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+  /* Grok Rev51 ŞERH-2: Mobil Stüdyo Seçici kompakt açık şerit (ekranın yarısını kaplamaz, yatay taşma yapmaz) */
+  .uzm-studio-bar {
+    padding-block: 6px !important;
+  }
+  .uzm-studio-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 5px !important;
+  }
+  .uzm-studio-group {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 4px !important;
+    width: 100% !important;
+  }
+  .uzm-studio-label {
+    font-size: 0.64rem !important;
+    margin-right: 2px !important;
+  }
+  .uzm-studio-pills {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 4px !important;
+    width: 100% !important;
+  }
+  .uzm-studio-pill {
+    padding: 3px 7px !important;
+    font-size: 0.63rem !important;
+    line-height: 1.2 !important;
+  }
+  .uzm-lens-tabs,
+  .uzm-iso-strip {
+    width: 100% !important;
+    flex-wrap: wrap !important;
+  }
+  .uzm-oval-brand-row,
+  .uzm-mega-brands-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+  .uzm-oval-logo-capsule {
+    height: 78px !important;
+    padding: 12px 16px !important;
+  }
+  .uzm-oval-brand-img {
+    max-height: 44px !important;
+  }
+  .uzm-oval-brand-caption {
+    font-size: 0.7rem !important;
+  }
+  .uzm-mega-grid,
+  .uzm-faq-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .uzm-gradient-readout,
+  .uzm-cockpit-grid,
+  .uzm-hero-metrics {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+  .uzm-product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+  .uzm-blog-grid,
+  .uzm-partner-grid,
+  .uzm-form-row-2 {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .uzm-card {
+    padding: 12px !important;
+    gap: 8px !important;
+  }
+  .uzm-card-top {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    min-height: 52px !important;
+    gap: 4px !important;
+  }
+  .uzm-card-cat,
+  .uzm-card-spec {
+    display: block !important;
+    width: 100% !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.25 !important;
+    font-size: 0.64rem !important;
+    padding: 3px 6px !important;
+  }
+  .uzm-card-media {
+    padding: 10px !important;
+  }
+  .uzm-card-title {
+    font-size: 0.86rem !important;
+    min-height: 2.6em !important;
+    height: auto !important;
+    line-height: 1.3 !important;
+    display: block !important;
+    -webkit-line-clamp: unset !important;
+    overflow: visible !important;
+  }
+  .uzm-card-sub {
+    font-size: 0.76rem !important;
+    min-height: 4.2em !important;
+    height: auto !important;
+    line-height: 1.38 !important;
+    display: block !important;
+    -webkit-line-clamp: unset !important;
+    overflow: visible !important;
+  }
+  .uzm-card-qr-strip {
+    padding: 5px 6px !important;
+    gap: 6px !important;
+  }
+  .uzm-card-qr-thumb {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  .uzm-card-qr-thumb svg {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .uzm-card-qr-meta {
+    min-width: 102px !important;
+  }
+  .uzm-drawer-qr-head {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .uzm-partner-grid .uzm-card-title,
+  .uzm-partner-grid .uzm-card-sub,
+  .uzm-blog-grid .uzm-card-title,
+  .uzm-blog-grid .uzm-card-sub {
+    height: auto !important;
+    -webkit-line-clamp: unset !important;
+  }
+  .uzm-table-wrap {
+    overflow-x: hidden !important;
+  }
+  .uzm-tech-table,
+  .uzm-tech-table tbody,
+  .uzm-tech-table tr,
+  .uzm-tech-table td {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  .uzm-tech-table thead {
+    display: none !important;
+  }
+  .uzm-tech-table tr {
+    border: 1px solid var(--border-subtle) !important;
+    border-radius: 10px !important;
+    margin-bottom: 10px !important;
+    padding: 8px !important;
+    background: #FFFFFF !important;
+  }
+  .uzm-tech-table td {
+    padding: 6px 8px !important;
+  }
+}
+
+/* ZirCrown® & Hangzhou IVISTA Ar-Ge Hikayesi (Dr. Yao Cheng · MedPath GmbH · Parti İzlenebilirlik & Sinterleme) */
+.uzm-arge-story-card {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(13, 31, 64, 0.12);
+  box-shadow: 0 10px 28px rgba(13, 31, 64, 0.05);
+}
+.uzm-arge-story-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.uzm-arge-story-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0D1F40;
+  margin: 6px 0 12px;
+  line-height: 1.28;
+}
+.uzm-arge-story-text {
+  font-size: 14px;
+  line-height: 1.62;
+  color: #334155;
+  margin: 0 0 10px;
+}
+.uzm-arge-chem-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0 14px;
+}
+.uzm-arge-pdf-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.uzm-arge-story-visuals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.uzm-arge-figure {
+  margin: 0;
+  background: #F8FAFC;
+  border: 1px solid rgba(13, 31, 64, 0.09);
+  border-radius: 14px;
+  padding: 10px;
+  text-align: center;
+}
+.uzm-arge-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+.uzm-arge-caption {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #1E293B;
+  margin-top: 8px;
+  line-height: 1.35;
+}
+@media (max-width: 900px) {
+  .uzm-arge-story-card {
+    padding: 16px;
+    margin-top: 16px;
+  }
+  .uzm-arge-story-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .uzm-arge-story-visuals {
+    grid-template-columns: 1fr;
+  }
+  .uzm-arge-story-title {
+    font-size: 18px;
+  }
+  .uzm-arge-pdf-row .uzm-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 12.5px;
+    padding: 10px 12px;
+  }
+}
+
+
+/* === UZM_REV54_STYLES === */
+.uzm-official-brochures-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 0 0 24px 0;
+  padding: 16px 22px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0d1f3c 0%, #183870 100%);
+  border: 1px solid rgba(33, 104, 126, 0.42);
+  color: #ffffff;
+}
+.uzm-official-brochures-title {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.uzm-official-brochures-title strong {
+  font-size: 1rem;
+  background-color: #0d1f3c;
+  color: #ffffff;
+}
+.uzm-official-brochures-title span {
+  font-size: 0.84rem;
+  background-color: #0d1f3c;
+  color: #e2f1f5;
+}
+.uzm-official-brochures-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.uzm-brochure-dl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 15px;
+  border-radius: 999px;
+  background: #132c58;
+  border: 1px solid rgba(33, 104, 126, 0.55);
+  color: #ffffff !important;
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+.uzm-brochure-dl-btn:hover {
+  background: #56a8b8;
+  color: #0d1f3c !important;
+}
+
+/* 40 Stüdyo Galerisi */
+.uzm-studio40-section {
+  padding: 64px 0;
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+  border-top: 1px solid rgba(0, 153, 184, 0.1);
+  border-bottom: 1px solid rgba(0, 153, 184, 0.1);
+}
+.uzm-studio40-header {
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto 32px auto;
+}
+.uzm-studio40-eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  background-color: transparent !important;
+  color: #0D9488 !important;
+  margin-bottom: 10px;
+}
+.uzm-studio40-heading {
+  font-size: clamp(1.5rem, 2.5vw, 2.15rem);
+  font-weight: 800;
+  background-color: transparent !important;
+  color: #0F172A !important;
+  margin: 0 0 12px 0;
+}
+.uzm-studio40-sub {
+  font-size: 0.96rem;
+  line-height: 1.65;
+  background-color: transparent !important;
+  color: #334155 !important;
+  margin: 0 0 22px 0;
+}
+.uzm-studio40-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.uzm-studio40-filter-btn {
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 153, 184, 0.2) !important;
+  background: #FFFFFF !important;
+  color: #334155 !important;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 153, 184, 0.05);
+}
+.uzm-studio40-filter-btn.active,
+.uzm-studio40-filter-btn:hover {
+  background: linear-gradient(135deg, #0F766E 0%, #0D9488 45%, #06B6D4 100%) !important;
+  color: #FFFFFF !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 14px rgba(0, 153, 184, 0.35) !important;
+}
+.uzm-studio40-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 18px;
+}
+.uzm-studio40-card {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(0, 153, 184, 0.12) !important;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+  box-shadow: 0 10px 30px -5px rgba(0, 153, 184, 0.07), 0 2px 10px -2px rgba(15, 23, 42, 0.04), 0 0 0 1px rgba(226, 232, 240, 0.9) !important;
+}
+.uzm-studio40-card:hover {
+  transform: translateY(-4px);
+  border-color: #00B4D8 !important;
+  box-shadow: 0 20px 42px -10px rgba(0, 180, 216, 0.22), 0 0 0 2px rgba(0, 153, 184, 0.35) !important;
+}
+.uzm-studio40-img-wrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: #F8FAFC !important;
+  overflow: hidden;
+}
+.uzm-studio40-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.uzm-studio40-plaque-pill {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  top: auto;
+  left: auto;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: rgba(13, 148, 136, 0.92) !important;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+.uzm-studio40-meta {
+  padding: 12px 14px;
+  background: #FFFFFF !important;
+}
+.uzm-studio40-code {
+  display: block;
+  font-size: 0.74rem;
+  background-color: transparent !important;
+  color: #0D9488 !important;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.uzm-studio40-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  background-color: transparent !important;
+  color: #0F172A !important;
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* Lightbox */
+.uzm-studio40-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.uzm-studio40-lightbox.open {
+  display: flex;
+}
+.uzm-studio40-lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 10, 22, 0.88);
+}
+.uzm-studio40-lightbox-dialog {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+  width: 100%;
+  background: #0d1f3c;
+  border: 1px solid #21687e;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+}
+.uzm-studio40-lightbox-dialog img {
+  max-height: 76vh;
+  width: auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.uzm-studio40-lightbox-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #21687e;
+  background: #0d1f3c;
+  color: #ffffff;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.uzm-studio40-lightbox-caption {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+#uzmStudio40LightboxTitle {
+  color: #F1F5F9 !important;
+  font-size: 1.02rem !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  letter-spacing: -0.01em;
+}
+#uzmStudio40LightboxBadge {
+  position: static !important;
+  display: inline-block !important;
+  padding: 3px 8px !important;
+  font-size: 0.70rem !important;
+  font-weight: 600 !important;
+  background: rgba(13, 148, 136, 0.9) !important;
+  color: #FFFFFF !important;
+  border-radius: 4px !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Sayfa Altı Partnerlerimiz Oval Kapsül Şeridi */
+.uzm-partners-bottom-section {
+  padding: 44px 0;
+  background: #f4f7fb;
+  border-top: 1px solid rgba(13, 31, 60, 0.1);
+}
+.uzm-partners-bottom-head {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.uzm-partners-bottom-eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #183870;
+  margin-bottom: 6px;
+}
+.uzm-partners-bottom-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #0d1f3c;
+  margin: 0;
+}
+.uzm-partners-oval-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.uzm-partner-oval-capsule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  height: 74px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid rgba(13, 31, 60, 0.12);
+  box-shadow: 0 6px 18px rgba(13, 31, 60, 0.06);
+}
+.uzm-partner-oval-capsule img {
+  max-width: 130px;
+  max-height: 44px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Studio 40 pill non-overlapping layout */
+.uzm-studio40-media { display: flex !important; flex-direction: column !important; position: relative !important; }
+.uzm-studio40-plaque-pill { position: static !important; align-self: flex-start !important; margin: 6px 8px 0 8px !important; }
+.uzm-studio40-badges { position: static !important; display: flex !important; flex-wrap: wrap !important; gap: 6px !important; padding: 6px 10px !important; background: #0b1930 !important; }
+
+/* ==========================================================================
+   UZM DENTAL — S25 FE (412px) ZERO-OVERFLOW & WCAG 2.5.5 MIN 44px DOKUNMA HEDEFİ
+   ========================================================================== */
+
+/* 1. Sıfır Yatay Taşma Kalkanı */
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box !important;
+}
+
+.container, .uzm-section, .uzm-topbar, header, main, footer {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-sku-table, table {
+  max-width: 100% !important;
+  display: block !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.uzm-h1, .uzm-brand, .uzm-brand-sub, .uzm-kicker, h1, h2, h3, h4, p {
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+img, svg, video {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* 2. Dokunma Hedefleri (WCAG 2.5.5 / 2.5.8 >= 44x44px Tam Uyum) */
+.uzm-lang-trigger,
+#uzmLangDropdownToggle {
+  min-height: 44px !important;
+  min-width: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px 14px !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-lang-option {
+  min-height: 44px !important;
+  min-width: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px 12px !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-nav-toggle {
+  min-width: 44px !important;
+  min-height: 44px !important;
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 10px !important;
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-nav-toggle-bar {
+  display: block !important;
+  width: 22px !important;
+  height: 2px !important;
+  background-color: currentColor !important;
+  margin: 2px 0 !important;
+  border-radius: 1px !important;
+}
+
+.uzm-contact-item,
+.uzm-pathway-link,
+.uzm-sticky-btn,
+.uzm-back-home-link,
+.uzm-studio-toggle-btn,
+.uzm-gokhan-jump-btn,
+.uzm-icon-btn,
+#acousticToggleBtn,
+.uzm-menu-toggle,
+.uzm-shimmer-menu-btn,
+.uzm-btn,
+.uzm-btn-hot,
+.uzm-tab-btn,
+.uzm-brochure-pdf-btn,
+.uzm-brochure-hd-btn,
+.uzm-studio40-filter-btn,
+.uzm-mega-brand-pill {
+  min-height: 44px !important;
+  min-width: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 768px) {
+  a.uzm-nav-link,
+  button.uzm-nav-link,
+  .uzm-nav-item a,
+  .uzm-menu-dropdown a,
+  .uzm-lang-menu a,
+  .uzm-lang-menu button {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* === WCAG 2.5.5 TEXTAREA 44PX YAMASI (GROK-0057) === */
+textarea,
+.uzm-textarea,
+textarea.uzm-textarea,
+textarea#clinicProduct,
+#clinicProduct {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 44px !important;
+  min-height: 48px !important;
+  padding: 10px 12px !important;
+  line-height: 1.45 !important;
+  box-sizing: border-box !important;
+  resize: vertical;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  textarea,
+  .uzm-textarea,
+  textarea.uzm-textarea,
+  textarea#clinicProduct,
+  #clinicProduct,
+  input.uzm-input,
+  select.uzm-select {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 44px !important;
+    min-height: 48px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Lightbox Caption & Badge Styling (Rev1 21:28 Yusuf Mührü) */
+.uzm-studio40-lightbox-caption {
+  margin-top: 10px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+.uzm-studio40-lightbox-caption .uzm-studio40-plaque-pill,
+#uzmStudio40LightboxBadge {
+  position: static !important;
+  font-size: 0.72rem !important;
+  padding: 3px 10px !important;
+  border-radius: 6px !important;
+  display: inline-block !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  background: linear-gradient(135deg, #007791 0%, #0099B8 48%, #00B4D8 100%) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(0, 180, 216, 0.4) !important;
+  box-shadow: 0 2px 8px rgba(0, 119, 145, 0.3) !important;
+}
+.uzm-studio40-lightbox-caption h3,
+#uzmStudio40LightboxTitle,
+.uzm-studio40-lightbox-dialog h3 {
+  color: #F1F5F9 !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+  letter-spacing: -0.01em !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) !important;
+}
+
+
+/* === GROK-1104-1900-UZM-ADIM-1-2-3-ONAY CSS BASLANGIC === */
+/* ==========================================================================
+   GROK-1104-1900-UZM-ADIM-1-2-3-ONAY:
+   ADIM 2 (KART TAŞMA KİLİTLERİ + STUDIO-40 IS-CURATED-COMPACT)
+   ADIM 3 (OPTİK MERCEK SAHNESİ + SENARYO 1 VEKTÖREL 3 SVG QR YUVASI)
+   CSP: style-src 'self' (%100 Uyumlu — Sıfır Inline Style) 'nonce-uzm2026'
+   ========================================================================== */
+
+.uzm-product-grid,
+.uzm-studio40-grid,
+.uzm-qr-b2b-grid,
+.uzm-optical-stage-grid {
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.uzm-card,
+.uzm-product-card,
+.uzm-studio40-card,
+.uzm-partner-bento,
+.uzm-editorial-row,
+.uzm-qr-card,
+.uzm-optical-card {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.uzm-card *,
+.uzm-product-card *,
+.uzm-studio40-card *,
+.uzm-qr-card *,
+.uzm-optical-card * {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.uzm-card-title,
+.uzm-product-card h3,
+.uzm-studio40-card h3,
+.uzm-studio40-card h4,
+.uzm-qr-title {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  line-height: 1.35 !important;
+  margin: 0 0 0.5rem 0 !important;
+}
+
+.uzm-card-specs,
+.uzm-spec-pills,
+.uzm-card-badges,
+.uzm-card-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 0.45rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.uzm-spec-pill,
+.uzm-badge {
+  white-space: normal !important;
+  max-width: 100% !important;
+  line-height: 1.3 !important;
+}
+
+.uzm-studio40-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+#uzmStudio40Grid.is-curated-compact .uzm-studio40-card[data-curated="0"],
+.uzm-studio40-grid.is-curated-compact .uzm-studio40-card[data-curated="0"] {
+  display: none !important;
+}
+
+.uzm-studio40-card.is-tab-hidden,
+.uzm-product-card.is-tab-hidden,
+.uzm-card.is-tab-hidden {
+  display: none !important;
+}
+
+.uzm-studio40-more-wrap {
+  margin-top: 1.5rem;
+  padding: 1.15rem 1.5rem;
+  background: #FBFBF9;
+  border: 1px solid #E2DDD3;
+  border-left: 4px solid #8C6239;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.uzm-studio40-more-info {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #141413;
+}
+
+.uzm-filter-btn,
+.uzm-studio40-tab,
+.uzm-hero-chip,
+.uzm-optical-chip,
+.uzm-studio-jump-btn,
+#uzmStudio40ExpandBtn,
+.uzm-qr-action-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  padding: 0.55rem 1rem !important;
+  border-radius: 8px !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  line-height: 1.25 !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+  transition: background-color 0.16s ease, color 0.16s ease, border-color 0.16s ease;
+  border: 1px solid #D5CFC4;
+  background: #F7F5F0;
+  color: #141413;
+}
+
+.uzm-filter-btn.is-active,
+.uzm-filter-btn[aria-selected="true"],
+.uzm-studio40-tab.is-active,
+.uzm-studio40-tab[aria-selected="true"],
+.uzm-hero-chip.is-active,
+.uzm-hero-chip[aria-pressed="true"],
+.uzm-optical-chip.is-active,
+.uzm-optical-chip[aria-selected="true"],
+.uzm-optical-chip[aria-pressed="true"] {
+  background: #141413 !important;
+  color: #F7F5F0 !important;
+  border-color: #8C6239 !important;
+}
+
+.uzm-studio-jump-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+  background: #F4F1EA;
+  border: 1px solid #C8A97E;
+  color: #141413;
+}
+
+.uzm-studio-jump-btn:hover,
+#uzmStudio40ExpandBtn:hover,
+.uzm-qr-action-btn:hover {
+  background: #141413 !important;
+  color: #DFB882 !important;
+  border-color: #141413 !important;
+}
+
+.uzm-optical-card {
+  background: linear-gradient(165deg, #FBFBF9 0%, #F4F1EA 100%);
+  border: 1px solid #E2DDD3;
+  border-left: 4px solid #8C6239;
+  border-radius: 16px;
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  gap: 1.25rem;
+  max-height: none !important;
+}
+
+.uzm-optical-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-bottom: 1px solid #E2DDD3;
+  padding-bottom: 0.75rem;
+}
+
+.uzm-optical-source-tag {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #8C6239;
+  background: rgba(140, 98, 57, 0.08);
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.uzm-optical-chips-bar,
+.uzm-optical-mode-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.uzm-optical-viewport {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.uzm-optical-figure {
+  position: relative;
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #141413;
+  border: 1px solid #D5CFC4;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uzm-optical-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.uzm-optical-readout-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  background: #FFFFFF;
+  border: 1px solid #E2DDD3;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+.uzm-optical-direction-pill {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #141413;
+  background: #F4F1EA;
+  border-left: 3px solid #8C6239;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+}
+
+.uzm-qr-b2b-section {
+  margin-top: 2rem;
+  padding: 1.75rem;
+  background: #FBFBF9;
+  border: 1px solid #E2DDD3;
+  border-radius: 16px;
+}
+
+.uzm-qr-b2b-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.uzm-qr-card {
+  background: #FFFFFF;
+  border: 1px solid #E2DDD3;
+  border-top: 4px solid #141413;
+  border-radius: 12px;
+  padding: 1.25rem;
+  gap: 0.85rem;
+}
+
+.uzm-qr-card-top {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.uzm-qr-svg-slot {
+  width: 96px;
+  height: 96px;
+  padding: 6px;
+  background: #FFFFFF;
+  border: 1px solid #D5CFC4;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uzm-qr-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.uzm-qr-code-badge {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #8C6239;
+  letter-spacing: 0.05em;
+  display: inline-block;
+}
+
+.uzm-qr-desc {
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: #36332F;
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+  .uzm-studio40-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .uzm-qr-b2b-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .uzm-optical-viewport {
+    grid-template-columns: 1fr;
+  }
+  .uzm-optical-card {
+    max-height: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .uzm-product-grid,
+  .uzm-product-grid[data-grid-mode="featured"],
+  .uzm-studio40-grid,
+  .uzm-qr-b2b-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .uzm-qr-card-top {
+    grid-template-columns: 84px 1fr;
+  }
+  .uzm-qr-svg-slot {
+    width: 84px;
+    height: 84px;
+  }
+}
+
+
+
+/* === UZM_CSP_INLINE_STYLE_CLASSES === */
+.uzm-inl-022d3132 { min-height:44px; font-size:0.82rem; font-weight:700; }
+.uzm-inl-106c9c6d { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.uzm-inl-1d529083 { display:inline-flex; align-items:center; gap:8px; }
+.uzm-inl-2239d6d5 { margin-top:1rem; }
+.uzm-inl-2716c8d4 { margin-top:2rem; margin-bottom:2rem; padding:2.5rem; background:#FFFFFF; border:2px solid #0099B8; border-radius:16px; text-align:center; }
+.uzm-inl-2cf68baf { color: #005f73; }
+.uzm-inl-3181f043 { height:32px; width:auto; background:#0b1528; padding:3px 6px; border-radius:6px; border:1px solid rgba(45,212,191,0.4); }
+.uzm-inl-363cdaa2 { margin-bottom:1rem; }
+.uzm-inl-39e097b3 { font-size:0.75rem; color:#334155; }
+.uzm-inl-3b94bc80 { display:flex; align-items:center; gap:12px; }
+.uzm-inl-42e4acca { display:flex; align-items:center; gap:8px; }
+.uzm-inl-45f7e348 { display:flex; flex-direction:column; align-items:center; gap:12px; }
+.uzm-inl-48494d08 { min-height: 220px; display: flex; align-items:center; justify-content:center; }
+.uzm-inl-4f5e46ea { margin-top:1.5rem; padding-top:1.25rem; border-top:1px solid #E2E8F0; }
+.uzm-inl-54c5af29 { font-size:0.88rem; color:#334155; margin:0 0 1.25rem 0; }
+.uzm-inl-5623204f { height:28px; width:auto; background:#ffffff; padding:3px 8px; border-radius:6px; border:1px solid #cbd5e1; }
+.uzm-inl-6503b1af { max-width:100%; height:auto; border-radius:8px; }
+.uzm-inl-68631d9b { height:24px; width:auto; background:#0b1528; padding:2px 4px; border-radius:4px; }
+.uzm-inl-6989db53 { height:34px; width:auto; background:#0b1528; padding:3px 6px; border-radius:6px; border:1px solid rgba(45,212,191,0.4); }
+.uzm-inl-6a2af8db { padding:12px 24px; }
+.uzm-inl-6c699b28 { font-size:0.75rem; color:#10B981; font-weight:700; }
+.uzm-inl-71d64165 { min-height:38px; font-size:0.82rem; font-weight:700; }
+.uzm-inl-8a77e5a3 { margin-top:8px; }
+.uzm-inl-8b883156 { padding:2.5rem 0; border-top:1px solid #E2E8F0; text-align:center; }
+.uzm-inl-8c02ee8e { background:#E6F6F9; color:#007791; font-size:0.8rem; }
+.uzm-inl-942d178a { display:flex; align-items:center; gap:8px; margin-bottom:4px; }
+.uzm-inl-9b7f3bd7 { color:#334155; font-size:0.85rem; }
+.uzm-inl-9e80e6d5 { max-height:560px; }
+.uzm-inl-a178bdcd { padding: 2.5rem 0; border-top: 1px solid rgba(0,136,168,0.16); background: #FFFFFF; text-align: center; }
+.uzm-inl-a221165a { max-width:760px; color:#475569; margin-top:0.5rem; font-size:clamp(0.92rem, 2vw, 1.05rem); }
+.uzm-inl-a50aa0d3 { height:36px; width:auto; background:#0b1528; padding:3px 6px; border-radius:6px; border:1px solid rgba(45,212,191,0.4); }
+.uzm-inl-a9f66eeb { max-width:640px; margin:0 auto 1.5rem auto; font-size:0.92rem; color:#334155; line-height:1.6; }
+.uzm-inl-aca7bfad { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+.uzm-inl-b441e98e { margin-top:0.5rem; font-size:clamp(1.5rem, 3.5vw, 2.2rem); }
+.uzm-inl-b4ea18d2 { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
+.uzm-inl-bb7bc542 { margin: 0; color: #334155; font-size: 0.88rem; }
+.uzm-inl-bc9945b2 { margin:0 0 0.5rem 0; font-size:1.15rem; color:#0F172A; }
+.uzm-inl-c341d867 { height:26px; width:auto; background:#ffffff; padding:3px 8px; border-radius:6px; border:1px solid #cbd5e1; }
+.uzm-inl-c37fd574 { padding:12px 24px; font-weight:700; }
+.uzm-inl-c4869560 { font-size:1.35rem; margin-top:2px; }
+.uzm-inl-cd9ad464 { margin:1rem 0 0.5rem 0; font-size:1.35rem; color:#0F172A; }
+.uzm-inl-cdc78b9a { height:24px; width:auto; background:#ffffff; padding:3px 8px; border-radius:6px; border:1px solid #cbd5e1; }
+.uzm-inl-d7eeeccd { height:18px; width:auto; background:#ffffff; padding:2px 6px; border-radius:4px; border:1px solid #cbd5e1; }
+.uzm-inl-d88f1c70 { font-size:0.84rem; color:#334155; margin-top:0; margin-bottom:1rem; line-height:1.4; }
+.uzm-inl-d9af79b1 { margin-top:2.5rem; text-align:center; padding:2rem; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:16px; }
+.uzm-inl-e30a1e18 { margin-top:8px;padding:6px 10px;border-radius:6px;font-size:12px;background:rgba(15,23,42,0.06);color:#334155;text-align:center; }
+.uzm-inl-e4adb43c { display:flex; justify-content:center; align-items:center; gap:12px; margin-bottom:12px; }
+
+/* === GROK-1104-1954-UZM-V2-OTONOM-OLCUM 4 KALEM ONARIMI (YEDEKLİ V2) === */
+/* 1) removed-feedback 3 kart taşması (section.uzm-feedback-panel-card -> .uzm-saved-notes-list) cardOv=0 */
+.uzm-saved-notes-list,
+#uzmSavedNotesList,
+#uzmFeedbackPageList,
+#uzmFeedbackHistoryList,
+.uzm-feedback-panel-card,
+.uzm-feedback-card,
+.uzm-review-card,
+.uzm-testimonial-card,
+.uzm-card,
+.bento-card,
+[class*="geri-bildirim"] .card,
+main article {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  word-break: break-word !important;
+}
+
+/* 4a) 412px ekranda Hero 'Canlı Katman & MPa Analizi' sekmesi görünür ve tıklanabilir */
+.uzm-hero-cta-row button.uzm-btn-outline,
+.uzm-hero-cta-row a.uzm-btn-outline {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 100% !important;
+  min-height: 44px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  pointer-events: auto !important;
+  box-sizing: border-box !important;
+}
+
+/* 4b) 412px ve 1440px ekranlarda .uzm-slide-drawer ve .uzm-slide-tab / .uzm-studio40-tab görünür ve tıklanabilir */
+#uzmDrawerBackdrop,
+.uzm-backdrop {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+#uzmSlideOverDrawer,
+.uzm-slide-drawer {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  max-width: 1140px !important;
+  height: auto !important;
+  margin: 2rem auto !important;
+  transform: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  z-index: 45 !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-hero-tabs,
+.uzm-slide-tabs,
+.uzm-studio40-tabs,
+.uzm-studio40-filters,
+.uzm-studio40-filter-bar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 45 !important;
+  pointer-events: auto !important;
+  gap: 8px !important;
+}
+
+.uzm-slide-tab:not([hidden]),
+.uzm-studio40-tab,
+.uzm-studio40-filter-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  min-height: 44px !important;
+  position: relative !important;
+  z-index: 46 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+.uzm-hero-overlay,
+.uzm-hero-prism-overlay,
+.uzm-hero-bg-layer {
+  pointer-events: none !important;
+}
+
+
+/* === UZM-0LLM-YAMA-2043: KART TASMASI SIFIRLAMA & 412PX SEKME GORUNURLUGU === */
+.uzm-feedback-card,
+.uzm-review-card,
+.uzm-testimonial-card,
+.uzm-card,
+.bento-card,
+[class*="geri-bildirim"] .card,
+main article {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  word-break: break-word !important;
+}
+
+.uzm-hero-tabs,
+.uzm-slide-tabs,
+.uzm-studio40-tabs,
+.uzm-studio40-filter-bar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 45 !important;
+  pointer-events: auto !important;
+  gap: 8px !important;
+}
+
+.uzm-slide-tab:not([hidden]),
+.uzm-studio40-tab,
+.uzm-studio40-filter-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  min-height: 44px !important;
+  position: relative !important;
+  z-index: 46 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+.uzm-hero-overlay,
+.uzm-hero-prism-overlay,
+.uzm-hero-bg-layer {
+  pointer-events: none !important;
+}
+
+/* === ATLAS-WEB-1105-UZM-0017: 412PX MONO-TAG RTL/LTR & SLIDE-TAB HIDDEN FIX === */
+.uzm-slide-tab[hidden],
+[hidden] {
+  display: none !important;
+}
+
+.uzm-mono-tag {
+  max-width: 100% !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-drawer-header-logos,
+.uzm-inl-942d178a,
+.uzm-inl-aca7bfad,
+.uzm-slide-header {
+  flex-wrap: wrap !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.uzm-slide-drawer {
+  overflow-x: hidden !important;
+}
+
+
+/* === UZM 1105 ALT KISIM, BLOG VITRINI, HAKKIMIZDA KARTLARI VE YUKSEK KONTRAST FOOTER ONARIMI === */
+#uzmSlideDrawer, .uzm-slide-drawer, #uzmDrawerBackdrop, .uzm-drawer-backdrop {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* 3 Sütunlu Hakkımızda / Belgeler / İletişim Grid (Yayvan tam genişlik hatasını önler) */
+#hakkimizdaIletisimSection .uzm-card-grid-3 {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 1.5rem !important;
+  align-items: stretch !important;
+}
+@media (max-width: 960px) {
+  #hakkimizdaIletisimSection .uzm-card-grid-3 {
+    grid-template-columns: 1fr !important;
+  }
+}
+#hakkimizdaIletisimSection .uzm-brochure-card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 1.75rem !important;
+  border-radius: 16px !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(15, 23, 42, 0.1) !important;
+  box-shadow: 0 10px 28px -10px rgba(15, 23, 42, 0.07) !important;
+  gap: 0.85rem !important;
+}
+#hakkimizdaIletisimSection .uzm-brochure-card strong {
+  font-size: 1.18rem !important;
+  color: #0f172a !important;
+  line-height: 1.35 !important;
+}
+#hakkimizdaIletisimSection .uzm-brochure-card p {
+  font-size: 0.94rem !important;
+  color: #334155 !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+  flex-grow: 1 !important;
+}
+#hakkimizdaIletisimSection .uzm-brochure-card .uzm-btn-outline {
+  width: fit-content !important;
+  align-self: flex-start !important;
+  padding: 0.65rem 1.25rem !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  margin-top: 0.5rem !important;
+  background: #f8fafc !important;
+  color: #0b4f6c !important;
+  border: 1.5px solid #0b4f6c !important;
+}
+#hakkimizdaIletisimSection .uzm-brochure-card .uzm-btn-outline:hover {
+  background: #0b4f6c !important;
+  color: #ffffff !important;
+}
+
+/* Ana Sayfa 6 Orijinal Blog Vitrini */
+.uzm-blog-vitrin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 960px) {
+  .uzm-blog-vitrin-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .uzm-blog-vitrin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.uzm-blog-vitrin-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.09);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px -8px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.uzm-blog-vitrin-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px -8px rgba(15, 23, 42, 0.12);
+}
+.uzm-blog-vitrin-media {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+.uzm-blog-vitrin-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.uzm-blog-vitrin-body {
+  padding: 1.35rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex-grow: 1;
+}
+.uzm-blog-vitrin-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0284c7;
+}
+.uzm-blog-vitrin-body h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.4;
+}
+.uzm-blog-vitrin-body h3 a {
+  color: #0f172a;
+  text-decoration: none;
+}
+.uzm-blog-vitrin-body h3 a:hover {
+  color: #0284c7;
+}
+.uzm-blog-vitrin-body p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #475569;
+  flex-grow: 1;
+}
+.uzm-blog-vitrin-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #0b4f6c;
+  text-decoration: none;
+  margin-top: 0.35rem;
+}
+.uzm-blog-vitrin-link:hover {
+  color: #0284c7;
+}
+
+/* Yüksek Kontrastlı Lacivert Kurumsal Footer (WCAG AAA) */
+footer.uzm-footer, footer.uzm-sql-footer {
+  background: linear-gradient(180deg, #0a2540 0%, #07192e 100%) !important;
+  color: #f8fafc !important;
+  padding: 3.5rem 0 2rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+.uzm-sql-footer-grid {
+  display: grid !important;
+  grid-template-columns: 1.5fr 1fr 1fr 1.1fr !important;
+  gap: 2.25rem !important;
+  align-items: start !important;
+}
+@media (max-width: 960px) {
+  .uzm-sql-footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media (max-width: 600px) {
+  .uzm-sql-footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+.uzm-footer-brand-heading,
+.uzm-footer-col-title,
+.uzm-sql-footer-col strong,
+footer.uzm-footer strong {
+  display: block !important;
+  color: #ffffff !important;
+  font-size: 1.02rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  margin-bottom: 0.85rem !important;
+}
+footer.uzm-footer p,
+footer.uzm-footer .uzm-footer-desc,
+footer.uzm-footer .uzm-footer-address,
+.uzm-sql-footer-brand p {
+  color: #e2e8f0 !important;
+  font-size: 0.92rem !important;
+  line-height: 1.65 !important;
+  margin: 0 0 0.6rem 0 !important;
+}
+.uzm-sql-footer-col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.55rem !important;
+}
+footer.uzm-footer a,
+.uzm-sql-footer-col a,
+.uzm-footer-links a {
+  color: #e2e8f0 !important;
+  text-decoration: none !important;
+  font-size: 0.92rem !important;
+  line-height: 1.5 !important;
+  transition: color 0.15s ease !important;
+}
+footer.uzm-footer a:hover,
+.uzm-sql-footer-col a:hover,
+.uzm-footer-links a:hover {
+  color: #38bdf8 !important;
+  text-decoration: underline !important;
+}
+.uzm-footer-contact-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+  padding: 0.45rem 0.85rem !important;
+  border-radius: 8px !important;
+  background: rgba(255, 255, 255, 0.09) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  width: fit-content !important;
+}
+.uzm-footer-bottom-bar {
+  margin-top: 2.5rem !important;
+  padding-top: 1.25rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+  text-align: center !important;
+}
+footer.uzm-footer .uzm-sql-copy {
+  color: #cbd5e1 !important;
+  font-size: 0.85rem !important;
+  margin: 0 !important;
+}
+
+/* === UZM_1100_BLOG_ESTETIK_CSS_BASLANGIC (Marka Renkleri: #0f172a, #0284c7, #f8fafc, #e2e8f0) === */
+#blogVitrinSection,
+.uzm-blog-vitrin-section {
+  padding: 3.5rem 1.25rem;
+  max-width: 1240px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.uzm-blog-sec-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1.15rem;
+}
+.uzm-blog-sec-eyebrow {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0284c7;
+  background: rgba(2, 132, 199, 0.09);
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
+.uzm-blog-sec-title {
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.25;
+}
+.uzm-blog-sec-subtitle {
+  font-size: 0.95rem;
+  color: #475569;
+  margin: 0.35rem 0 0 0;
+  max-width: 65ch;
+  line-height: 1.55;
+}
+.uzm-blog-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+.uzm-blog-all-btn:hover {
+  border-color: #0284c7;
+  color: #0284c7;
+}
+.uzm-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 1024px) {
+  .uzm-blog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+}
+@media (max-width: 640px) {
+  #blogVitrinSection,
+  .uzm-blog-vitrin-section {
+    padding: 2.25rem 1rem;
+  }
+  .uzm-blog-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.1rem;
+  }
+}
+.uzm-blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  box-sizing: border-box;
+}
+.uzm-blog-card:hover {
+  transform: translateY(-2px);
+  border-color: #94a3b8;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+.uzm-blog-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: #f1f5f9;
+  overflow: hidden;
+  border-bottom: 1px solid #f1f5f9;
+  display: block;
+}
+.uzm-blog-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.uzm-blog-card-body {
+  padding: 1.2rem 1.25rem 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.uzm-blog-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+  flex-wrap: wrap;
+}
+.uzm-blog-cat-badge {
+  display: inline-block;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #0f172a;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+}
+.uzm-blog-readtime {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: #334155;
+}
+.uzm-blog-card-title {
+  font-size: 1.06rem;
+  font-weight: 700;
+  line-height: 1.38;
+  color: #0f172a;
+  margin: 0 0 0.55rem 0;
+}
+.uzm-blog-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.uzm-blog-card-title a:hover {
+  color: #0284c7;
+}
+.uzm-blog-card-excerpt {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #475569;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 2.8em;
+}
+.uzm-blog-card-footer {
+  padding: 0.85rem 1.25rem;
+  border-top: 1px solid #f1f5f9;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+.uzm-blog-read-link {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-decoration: none;
+}
+.uzm-blog-read-link:hover {
+  color: #0284c7;
+}
+.uzm-blog-prod-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #0284c7;
+  background: rgba(2, 132, 199, 0.08);
+  padding: 0.24rem 0.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.uzm-blog-prod-link:hover {
+  background: rgba(2, 132, 199, 0.16);
+}
+
+/* Tekil Blog / Bilgi Bankasi Yazi Sayfasi Okunakli Sutun (65-75 karakter = 68ch) */
+.uzm-blog-article-shell {
+  max-width: 70ch;
+  width: 100%;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+}
+.uzm-blog-article-prose {
+  max-width: 68ch;
+  margin: 0 auto;
+  font-size: 1.04rem;
+  line-height: 1.76;
+  color: #1e293b;
+}
+.uzm-blog-article-prose h1 {
+  font-size: clamp(1.55rem, 2.6vw, 2.15rem);
+  line-height: 1.26;
+  color: #0f172a;
+  margin: 0.5rem 0 1rem 0;
+}
+.uzm-blog-article-prose h2,
+.uzm-blog-article-prose h3,
+.uzm-article-subhead {
+  font-size: 1.22rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #0f172a;
+  margin: 1.85rem 0 0.65rem 0;
+  padding-left: 0.75rem;
+  border-left: 3px solid #0284c7;
+}
+.uzm-blog-article-prose p {
+  margin: 0 0 1.15rem 0;
+  color: #334155;
+}
+.uzm-related-product-box {
+  margin-top: 2.25rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-left: 4px solid #0f172a;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.uzm-related-product-info {
+  flex: 1;
+  min-width: 220px;
+}
+.uzm-related-product-label {
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0284c7;
+  margin-bottom: 0.25rem;
+}
+.uzm-related-product-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+.uzm-related-product-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1.05rem;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #ffffff !important;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.uzm-related-product-cta:hover {
+  background: #0284c7;
+}
+/* === UZM_1100_BLOG_ESTETIK_CSS_BITIS === */
+
+
+/* === UZM 1231 TARAYICI TIKLAMA TESTI KESIN ONARIM CSS === */
+/* 1. zirkonya.html UTS basligi kartlara yapisik olmasin */
+.uzm-uts-section, #utsSection, .uzm-sql-section + .uzm-sql-section, .uzm-section-head {
+  margin-top: 2rem !important;
+  padding-top: 0.75rem !important;
+}
+h2 + .uzm-card-grid-3, h2 + .uzm-sql-grid, .uzm-section-sub + .uzm-card-grid-3 {
+  margin-top: 1.5rem !important;
+}
+/* 2. 3D-PRO ve tum urun kart gorselleri esit boyut ve oranti */
+.uzm-product-card img, .uzm-sql-card-media img, .uzm-vitrin-card img {
+  aspect-ratio: 4 / 3 !important;
+  object-fit: contain !important;
+  width: 100% !important;
+  max-height: 220px !important;
+  padding: 0.5rem !important;
+  background: #f8fafc !important;
+}
+/* 3. Iletisimde e-posta ortadan kirilmasin */
+a[href^="mailto:"], .uzm-mail-link {
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+}
+/* 4. Footer copyright son linke yapisik olmasin */
+.uzm-footer-bottom-bar, .uzm-sql-copy, footer .uzm-sql-copy {
+  margin-top: 2.25rem !important;
+  padding-top: 1.35rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.14) !important;
+  display: block !important;
+  clear: both !important;
+}
+/* 5. Header menusu tek satirda kalsin (ZH/DE/RU tasma onleme) */
+.uzm-main-nav, .uzm-sql-nav-inner {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  gap: 0.85rem !important;
+  white-space: nowrap !important;
+}
+.uzm-nav-link {
+  white-space: nowrap !important;
+  font-size: 0.92rem !important;
+}
+
+
+/* === UZM 1402 TIKLAMA-2: HEADER ZIRCROWN LOGO TASMASI VE ZH TEK SATIR GARANTISI === */
+header.uzm-header .uzm-header-inner {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: nowrap !important;
+  gap: 0.5rem !important;
+  min-height: 70px !important;
+}
+header.uzm-header .uzm-brand {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  flex-shrink: 0 !important;
+  max-height: 54px !important;
+  overflow: hidden !important;
+  text-decoration: none !important;
+}
+header.uzm-header .uzm-brand-mark {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  flex-shrink: 0 !important;
+}
+header.uzm-header .uzm-brand-text {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  line-height: 1.1 !important;
+}
+header.uzm-header .uzm-brand-title {
+  font-size: 1.15rem !important;
+  white-space: nowrap !important;
+  line-height: 1.1 !important;
+}
+header.uzm-header .uzm-brand-sub {
+  font-size: 0.62rem !important;
+  white-space: nowrap !important;
+  line-height: 1.1 !important;
+}
+header.uzm-header .uzm-brand-zircrown-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 24px !important;
+  max-height: 24px !important;
+  padding: 2px 6px !important;
+  margin-left: 4px !important;
+  border-radius: 6px !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(203, 213, 225, 0.85) !important;
+  flex-shrink: 0 !important;
+  overflow: hidden !important;
+}
+header.uzm-header .uzm-brand-zircrown-badge img {
+  height: 16px !important;
+  max-height: 16px !important;
+  width: auto !important;
+  max-width: 64px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+@media (min-width: 1025px) {
+  header.uzm-header .uzm-nav,
+  header.uzm-header #uzmMainNav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 0.15rem !important;
+    white-space: nowrap !important;
+    min-width: 0 !important;
+  }
+  header.uzm-header .uzm-nav-link {
+    padding: 0.4rem 0.5rem !important;
+    font-size: 0.82rem !important;
+    white-space: nowrap !important;
+    min-height: 40px !important;
+  }
+  header.uzm-header .uzm-header-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+    header.uzm-header #uzmThemeToggleBtn,
+    header.uzm-header #uzmQuoteTrayBtn,
+    header.uzm-header .uzm-header-actions .uzm-btn-primary {
+      padding: 0.4rem 0.65rem !important;
+      font-size: 0.8rem !important;
+      white-space: nowrap !important;
+      min-height: 40px !important;
+    }
+}
+@media (max-width: 1024px) {
+  header.uzm-header .uzm-header-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0.3rem !important;
+    min-height: 60px !important;
+    padding: 0.35rem 0.6rem !important;
+  }
+  header.uzm-header .uzm-brand {
+    gap: 0.3rem !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+  }
+  header.uzm-header .uzm-brand-mark {
+    width: 28px !important;
+    height: 28px !important;
+    flex-shrink: 0 !important;
+  }
+  header.uzm-header .uzm-brand-title {
+    font-size: 0.86rem !important;
+    white-space: nowrap !important;
+  }
+  header.uzm-header .uzm-brand-sub {
+    display: none !important;
+  }
+  header.uzm-header .uzm-brand-zircrown-badge {
+    height: 20px !important;
+    max-height: 20px !important;
+    padding: 1px 4px !important;
+    margin-left: 2px !important;
+  }
+  header.uzm-header .uzm-brand-zircrown-badge img {
+    height: 13px !important;
+    max-height: 13px !important;
+    max-width: 46px !important;
+  }
+  header.uzm-header .uzm-header-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 0.25rem !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+  header.uzm-header .lang-dropdown summary,
+  header.uzm-header #uzmThemeToggleBtn,
+  header.uzm-header .uzm-header-actions .uzm-btn-primary {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    padding: 0.25rem 0.45rem !important;
+    font-size: 0.73rem !important;
+    min-height: 36px !important;
+    height: 36px !important;
+    line-height: 1 !important;
+  }
+  header.uzm-header #uzmHamburgerBtn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 36px !important;
+    height: 36px !important;
+    min-height: 36px !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* === GROK-1105-1513 & ATLAS-WEB-1105-1547: DİL SEÇİCİ MENÜSÜ VE TÜM SEÇENEKLER (TR/EN/DE/AR/RU/ZH) SOL HİZA & LTR KİLİDİ === */
+details.lang-dropdown,
+.uzm-sql-lang,
+.lang-dropdown-menu,
+.uzm-lang-menu,
+html[dir="rtl"] details.lang-dropdown,
+html[dir="rtl"] .uzm-sql-lang,
+html[dir="rtl"] .lang-dropdown-menu,
+html[dir="rtl"] .uzm-lang-menu {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  text-align: left !important;
+}
+.lang-dropdown-menu a,
+.lang-dropdown-menu [data-lang-switch],
+.uzm-lang-menu a,
+.uzm-lang-menu button,
+.uzm-lang-option,
+a[data-lang-switch],
+html[dir="rtl"] .lang-dropdown-menu a,
+html[dir="rtl"] .lang-dropdown-menu [data-lang-switch],
+html[dir="rtl"] .uzm-lang-menu a,
+html[dir="rtl"] .uzm-lang-menu button,
+html[dir="rtl"] .uzm-lang-option,
+html[dir="rtl"] a[data-lang-switch] {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  text-align: left !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+/* === REV1-1105-2333: K4 MOBIL RTL TASMA & K5 KONTRAST 24/24 KESIN ONARIM === */
+:root,
+html,
+html[data-theme="luminous"] {
+  --text-muted: #334155 !important;
+  --accent-primary: #005f73 !important;
+  --uzm-accent-primary: #005f73 !important;
+  --accent-text: #005f73 !important;
+}
+
+html,
+body {
+  max-width: 100% !important;
+  overflow-x: clip !important;
+  box-sizing: border-box !important;
+}
+
+header.uzm-header,
+main,
+section,
+footer,
+.uzm-container,
+.uzm-header-inner,
+.uzm-lot-verify-card,
+.uzm-lot-verify-body,
+.uzm-lot-verify-actions,
+.uzm-lot-action-btn,
+.uzm-card-grid-3,
+.uzm-brochure-card {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+#uzmLotMailBtn,
+#uzmLotWaBtn,
+.uzm-lot-action-btn,
+.uzm-lot-verify-actions a[href^="mailto:"],
+.uzm-brochure-card a[href^="mailto:"] {
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 640px) {
+  a[href^="mailto:"],
+  .uzm-mail-link {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+    max-width: 100% !important;
+  }
+  header.uzm-header .uzm-header-inner {
+    padding: 0.3rem 0.45rem !important;
+    gap: 0.2rem !important;
+    max-width: 100vw !important;
+    overflow-x: clip !important;
+  }
+  header.uzm-header .uzm-brand {
+    gap: 0.25rem !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+  }
+  header.uzm-header .uzm-brand-mark {
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+  }
+  header.uzm-header .uzm-brand-title {
+    font-size: 0.78rem !important;
+  }
+  header.uzm-header .uzm-brand-zircrown-badge {
+    display: none !important;
+  }
+  header.uzm-header .uzm-header-actions {
+    gap: 0.2rem !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+  }
+  header.uzm-header .lang-dropdown summary,
+  header.uzm-header #uzmThemeToggleBtn,
+  header.uzm-header #uzmQuoteTrayBtn,
+  header.uzm-header .uzm-header-actions .uzm-btn-primary {
+    padding: 0.2rem 0.38rem !important;
+    font-size: 0.68rem !important;
+    min-width: 0 !important;
+    height: 34px !important;
+    min-height: 34px !important;
+  }
+  header.uzm-header #uzmHamburgerBtn {
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    min-height: 34px !important;
+  }
+}
+
+/* K5 Kontrast: .uzm-btn-primary solid background-color fallback (#005f73 -> 7.54:1 AAA beyaz metinle) */
+.uzm-btn-primary,
+button.uzm-btn-primary,
+a.uzm-btn-primary,
+#uzmQuoteTrayBtn,
+header.uzm-header .uzm-header-actions .uzm-btn-primary {
+  background-color: #005f73 !important;
+  background-image: linear-gradient(135deg, #005f73 0%, #007791 48%, #0099b8 100%) !important;
+  color: #ffffff !important;
+}
+
+.uzm-btn-primary:hover,
+button.uzm-btn-primary:hover,
+a.uzm-btn-primary:hover,
+#uzmQuoteTrayBtn:hover {
+  background-color: #0f172a !important;
+  background-image: linear-gradient(135deg, #0f172a 0%, #005f73 50%, #007791 100%) !important;
+  color: #ffffff !important;
+}
+
+/* K5 Kontrast (1-2): footer ve koyu kapsayıcılar için solid background-color: #0f172a fallback (#e2e8f0 -> 14.33:1, #cbd5e1 -> 11.58:1 AAA) */
+footer.uzm-footer,
+footer.uzm-sql-footer,
+.uzm-footer,
+.uzm-sql-footer,
+.uzm-sql-footer-grid,
+.uzm-sql-footer-brand,
+.uzm-sql-footer-col,
+.uzm-footer-bottom-bar,
+footer.uzm-footer p,
+footer.uzm-sql-footer p,
+.uzm-sql-footer-brand p,
+footer.uzm-footer .uzm-sql-copy,
+footer.uzm-sql-footer .uzm-sql-copy,
+.uzm-sql-copy,
+#uzmCinematicHeroStage,
+.uzm-dual-design-bar,
+.uzm-official-brochures-bar {
+  background-color: #0f172a !important;
+}
+
+footer.uzm-footer,
+footer.uzm-sql-footer,
+.uzm-footer,
+.uzm-sql-footer {
+  background-image: linear-gradient(180deg, #0a2540 0%, #07192e 100%) !important;
+  color: #f8fafc !important;
+}
+
+footer.uzm-footer p,
+footer.uzm-sql-footer p,
+.uzm-sql-footer-brand p,
+footer.uzm-footer a,
+footer.uzm-sql-footer a,
+.uzm-sql-footer-col a,
+.uzm-footer-links a {
+  color: #e2e8f0 !important;
+}
+
+footer.uzm-footer .uzm-sql-copy,
+footer.uzm-sql-footer .uzm-sql-copy,
+.uzm-sql-copy {
+  color: #cbd5e1 !important;
+}
+
+/* K5 Kontrast (3-4): lagoon-teal -> #005f73 (beyaz üzerinde 7.54:1 AAA, #fafafa üzerinde 7.22:1 AAA) */
+.uzm-mono-tag,
+label.uzm-mono-tag,
+label[for="drawerCompareRange"],
+.uzm-nav-link.is-active,
+.uzm-sql-nav .uzm-nav-link.is-active,
+.uzm-sql-nav .uzm-nav-link:hover,
+body.uzm-sql-page .uzm-sql-nav .uzm-nav-link.is-active,
+.uzm-sql-lead a,
+.uzm-sql-prose a,
+.uzm-sql-eyebrow,
+.uzm-sql-note a,
+.uzm-sql-step,
+.uzm-sql-contact a,
+.uzm-tag-indigo,
+.uzm-badge-indigo,
+.uzm-oem-badge-indigo,
+.uzm-inl-2cf68baf {
+  color: #005f73 !important;
+}
+
+/* K5 Kontrast: th (rgb(100,116,139) 4.41 -> #0f172a on #f1f5f9 16.29:1 AAA) */
+th,
+table th,
+.uzm-foy-table th,
+.uzm-tech-table th,
+.uzm-spec-table th,
+.uzm-sql-spec th {
+  color: #0f172a !important;
+  background-color: #f1f5f9 !important;
+}
+
+html[data-theme="obsidian"] th,
+html[data-theme="obsidian"] table th,
+html[data-theme="obsidian"] .uzm-foy-table th,
+html[data-theme="obsidian"] .uzm-tech-table th,
+html[data-theme="obsidian"] .uzm-spec-table th,
+html[data-theme="obsidian"] .uzm-sql-spec th {
+  color: #f8fafc !important;
+  background-color: #1e293b !important;
+}
+
+.text-slate-400,
+.text-slate-500,
+.uzm-blog-readtime,
+.uzm-sql-crumb ol,
+.uzm-sql-crumb li + li::before,
+.uzm-sql-chips dt,
+.uzm-sql-subgroup .uzm-sql-count,
+.uzm-sql-meta dt,
+.uzm-sql-note {
+  color: #334155 !important;
+}
+/* === REV1-1105-2333 SONU === */
+/* === UZM WEB (DESKTOP >= 769px) DEDICATED STYLESHEET (20261106-1422) === */
+@media (min-width: 769px) {
+  /* 1. Container & Header Bar: Clean 1280px centered layout, zero nav overlap */
+  html body .uzm-container,
+  html body .uzm-UtilityBar-inner {
+    max-width: 1240px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1.75rem !important;
+    padding-right: 1.75rem !important;
+  }
+  html body header.uzm-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    background: rgba(255, 255, 255, 0.96) !important;
+    backdrop-filter: blur(10px) !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important;
+  }
+  html body .uzm-header-inner {
+    max-width: 1340px !important;
+    width: 100% !important;
+    height: 72px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1.75rem !important;
+    padding-right: 1.75rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 1.25rem !important;
+    position: relative !important;
+  }
+  html body .uzm-header-inner .uzm-nav,
+  html body nav.uzm-nav {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1.25rem !important;
+    flex: 1 1 auto !important;
+    margin: 0 1rem !important;
+  }
+  html body .uzm-nav a {
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    padding: 0.35rem 0.5rem !important;
+  }
+  html body .uzm-header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.6rem !important;
+    flex: 0 0 auto !important;
+  }
+
+  /* 2. Hero Section: Fix clipped italic 'ı', fix 100% button bar, snug showcase card */
+  html body .uzm-hero {
+    padding: 2.25rem 0 2.5rem !important;
+  }
+  html body .uzm-hero-grid {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: grid !important;
+    grid-template-columns: 1.12fr 0.88fr !important;
+    gap: 2.5rem !important;
+    align-items: center !important;
+  }
+  html body .uzm-hero-title,
+  html body .uzm-hero h1 {
+    font-size: clamp(2.1rem, 2.8vw, 2.75rem) !important;
+    line-height: 1.18 !important;
+    letter-spacing: -0.02em !important;
+    margin: 0.5rem 0 1rem 0 !important;
+    max-width: 620px !important;
+  }
+  html body .uzm-hero-title em,
+  html body .uzm-hero h1 em,
+  html body .uzm-gradient-text {
+    padding-right: 0.2em !important;
+    margin-right: -0.05em !important;
+    display: inline-block !important;
+    overflow: visible !important;
+  }
+  html body .uzm-hero-lead,
+  html body .uzm-hero p {
+    font-size: 0.98rem !important;
+    line-height: 1.6 !important;
+    max-width: 580px !important;
+    margin-bottom: 1.25rem !important;
+  }
+  html body .uzm-hero-cta-row {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 0.85rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  html body .uzm-hero-cta-row a,
+  html body .uzm-hero-cta-row button,
+  html body .uzm-hero-cta-row a.uzm-btn-outline,
+  html body .uzm-hero-cta-row button.uzm-btn-outline,
+  html body .uzm-hero-cta-row a.uzm-btn-primary {
+    width: auto !important;
+    max-width: none !important;
+    flex: 0 0 auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.72rem 1.35rem !important;
+    font-size: 0.9rem !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+  }
+  html body .uzm-hero-stats,
+  html body .uzm-hero-metrics {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1.25rem !important;
+    padding-top: 1.1rem !important;
+    max-width: 580px !important;
+  }
+  html body .uzm-hero-stage-card {
+    max-width: 500px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    padding: 0.85rem !important;
+    border-radius: 18px !important;
+    background: #ffffff !important;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08) !important;
+    border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  }
+  html body .uzm-hero-disc-stage {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    padding: 0.25rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  html body .uzm-hero-group-display,
+  html body .uzm-hero-disc-stage img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 310px !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    border-radius: 12px !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  /* 3. Desktop Card Grids & Large Crisp Product Photos Inside Compact Card Windows */
+  html body .uzm-cards-grid,
+  html body #uzmBlockCardsGrid,
+  html body .uzm-endo-grid,
+  html body .uzm-blog-grid,
+  html body .uzm-sql-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1.25rem !important;
+    max-width: 1180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: stretch !important;
+  }
+  html body #uzmPmmaCardsGrid,
+  html body .uzm-studio40-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 1.1rem !important;
+    max-width: 1180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: stretch !important;
+  }
+  html body .uzm-block-card,
+  html body .uzm-endo-card,
+  html body .uzm-blog-card,
+  html body .uzm-sql-card {
+    padding: 1rem 1.1rem !important;
+    border-radius: 14px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    gap: 0.5rem !important;
+  }
+  html body .uzm-block-card .uzm-card-oem-stage {
+    height: 220px !important;
+    min-height: 220px !important;
+    max-height: 220px !important;
+    padding: 0.4rem !important;
+    margin: 0.2rem 0 !important;
+    border-radius: 10px !important;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef2f6 100%) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+  }
+  html body .uzm-block-card .uzm-card-disc-img,
+  html body .uzm-card-oem-stage img.uzm-card-disc-img {
+    height: 202px !important;
+    max-height: 202px !important;
+    width: auto !important;
+    max-width: 96% !important;
+    border-radius: 8px !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  html body #uzmPmmaCardsGrid .uzm-block-card .uzm-card-oem-stage {
+    height: 195px !important;
+    min-height: 195px !important;
+    max-height: 195px !important;
+  }
+  html body #uzmPmmaCardsGrid .uzm-block-card .uzm-card-disc-img {
+    height: 180px !important;
+    max-height: 180px !important;
+  }
+  html body .uzm-endo-card .uzm-endo-visual,
+  html body .uzm-blog-card-media,
+  html body .uzm-sql-card-media {
+    height: 215px !important;
+    min-height: 215px !important;
+    max-height: 215px !important;
+    padding: 0.45rem !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+  }
+  html body .uzm-endo-card .uzm-endo-img,
+  html body .uzm-blog-card-img,
+  html body .uzm-sql-card-media img {
+    height: 196px !important;
+    max-height: 196px !important;
+    width: auto !important;
+    max-width: 96% !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* === UZM MOBIL (<= 768px) DEDICATED STYLESHEET (20261106-1422) === */
+@media (max-width: 768px) {
+  html body .uzm-hero {
+    padding: 1.25rem 0 1.5rem !important;
+  }
+  html body .uzm-hero-title em,
+  html body .uzm-hero h1 em {
+    padding-right: 0.18em !important;
+    display: inline-block !important;
+  }
+  html body .uzm-hero-stage-card {
+    max-width: 100% !important;
+    padding: 0.75rem !important;
+  }
+  html body .uzm-hero-disc-stage {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: 220px !important;
+  }
+  html body .uzm-hero-group-display,
+  html body .uzm-hero-disc-stage img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 200px !important;
+    object-fit: contain !important;
+  }
+  html body .uzm-cards-grid,
+  html body #uzmBlockCardsGrid,
+  html body #uzmPmmaCardsGrid,
+  html body .uzm-endo-grid,
+  html body .uzm-blog-grid,
+  html body .uzm-sql-grid,
+  html body .uzm-studio40-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 0.8rem !important;
+    padding: 0.4rem 0.75rem 1rem 0.75rem !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+  }
+  html body #uzmBlockCardsGrid > .uzm-block-card,
+  html body #uzmPmmaCardsGrid > .uzm-block-card,
+  html body .uzm-cards-grid > .uzm-block-card,
+  html body .uzm-endo-grid > .uzm-endo-card,
+  html body .uzm-blog-grid > .uzm-blog-card,
+  html body .uzm-sql-grid > .uzm-sql-card,
+  html body .uzm-studio40-grid > .uzm-studio40-card,
+  html body .uzm-cards-grid > *,
+  html body #uzmBlockCardsGrid > *,
+  html body #uzmPmmaCardsGrid > *,
+  html body .uzm-endo-grid > *,
+  html body .uzm-blog-grid > *,
+  html body .uzm-sql-grid > *,
+  html body .uzm-studio40-grid > * {
+    flex: 0 0 258px !important;
+    width: 258px !important;
+    min-width: 244px !important;
+    max-width: 75vw !important;
+    scroll-snap-align: start !important;
+    margin: 0 !important;
+    padding: 0.8rem 0.9rem !important;
+  }
+  html body .uzm-block-card .uzm-card-oem-stage,
+  html body .uzm-endo-card .uzm-endo-visual,
+  html body .uzm-blog-card-media,
+  html body .uzm-sql-card-media {
+    height: 170px !important;
+    min-height: 170px !important;
+    max-height: 170px !important;
+  }
+  html body .uzm-block-card .uzm-card-disc-img,
+  html body .uzm-endo-card .uzm-endo-img,
+  html body .uzm-blog-card-img,
+  html body .uzm-sql-card-media img {
+    height: 154px !important;
+    max-height: 154px !important;
+    width: auto !important;
+    max-width: 95% !important;
+    border-radius: 8px !important;
+    object-fit: contain !important;
+  }
+}
+
+/* === SHARED MODAL & STUDIO-40 RULES (20261106-1422) === */
+html body .uzm-studio40-img-wrap {
+  aspect-ratio: 3 / 4 !important;
+  height: auto !important;
+  max-height: 310px !important;
+  width: 100% !important;
+  background: #050a14 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  padding: 0.25rem !important;
+}
+html body .uzm-studio40-img-wrap img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  border-radius: 8px !important;
+}
+html body #uzmDrawerInlineSection {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 9995 !important;
+  background: rgba(15, 23, 42, 0.72) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  display: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1.25rem !important;
+  margin: 0 !important;
+  overflow-y: auto !important;
+}
+html body #uzmDrawerInlineSection.is-modal-open {
+  display: flex !important;
+}
+html body #uzmDrawerInlineSection > .uzm-container {
+  max-width: 900px !important;
+  width: 100% !important;
+  margin: auto !important;
+  padding: 0 !important;
+}
+html body #uzmDrawerInlineSection > .uzm-container > .uzm-section-head {
+  display: none !important;
+}
+html body #uzmDrawerInlineSection #uzmSlideOverDrawer,
+html body aside#uzmSlideOverDrawer.uzm-inline-drawer {
+  position: relative !important;
+  max-width: 880px !important;
+  width: 100% !important;
+  max-height: 88vh !important;
+  overflow-y: auto !important;
+  margin: 0 auto !important;
+  padding: 1.35rem 1.5rem !important;
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-radius: 16px !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45) !important;
+  border: 1px solid rgba(14, 165, 233, 0.35) !important;
+  display: block !important;
+  transform: none !important;
+}
+html body #uzmDrawerCloseBtn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 10px !important;
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+}

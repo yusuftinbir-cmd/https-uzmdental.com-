@@ -1,0 +1,28 @@
+{
+  "name": "UZM Dental — CAD/CAM Zirkonyum & Dental Materyal Sistemleri",
+  "short_name": "UZM Dental",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b2239",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/uzm-logo.png",
+      "sizes": "119x112",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

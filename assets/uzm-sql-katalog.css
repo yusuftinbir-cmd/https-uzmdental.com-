@@ -1,0 +1,1416 @@
+/* UZM Dental · SQL katalog katmanı (1103 · 5 dil) — uzm-kurumsal.css değişkenlerini kullanır; inline stil yok (CSP).
+   Mantıksal özellikler (inline-start/end) → AR (dir=rtl) aynası otomatik. */
+.uzm-sql-page{background:var(--bg-page,#fff);color:var(--text-main,#0f172a);overflow-x:hidden}
+.uzm-sql-skip{position:absolute;top:0;inset-inline-start:12px;z-index:100;background:#0f172a;color:#fff;padding:12px 16px;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.uzm-sql-skip:focus{width:auto;height:auto;clip-path:none;top:12px}
+.uzm-sql-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--border-color,#e2e8f0)}
+.uzm-sql-header .uzm-header-actions{display:flex;align-items:center;gap:8px;min-width:0}
+.uzm-sql-header .uzm-header-actions .uzm-btn-primary{min-height:44px;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;white-space:nowrap}
+.uzm-sql-lang summary{min-height:44px!important;min-width:44px!important;box-sizing:border-box}
+.uzm-sql-lang .lang-dropdown-menu a{min-height:44px;box-sizing:border-box}
+.uzm-sql-lang .lang-dropdown-menu a[aria-current]{background:var(--bg-subtle,#edf4fc);font-weight:700}
+html[dir=rtl] .lang-dropdown-menu{right:auto;left:0}
+.uzm-sql-nav{border-top:1px solid var(--border-color,#e2e8f0)}
+.uzm-sql-nav-inner{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.uzm-sql-nav-inner::-webkit-scrollbar{display:none}
+.uzm-sql-nav .uzm-nav-link{display:inline-flex!important;align-items:center;min-height:44px;padding:0 14px;white-space:nowrap;font-weight:600;font-size:.92rem;color:var(--text-secondary,#334155);text-decoration:none;border-bottom:2px solid transparent;box-sizing:border-box}
+.uzm-sql-nav .uzm-nav-link:hover,.uzm-sql-nav .uzm-nav-link.is-active{color:var(--accent-primary,#005f73);border-bottom-color:var(--accent-primary,#005f73)}
+@media (max-width:1024px){
+  body.uzm-sql-page .uzm-sql-nav .uzm-nav-link{width:auto!important;flex:0 0 auto!important;min-height:44px!important;padding:0 14px!important;font-size:.9rem!important;background:transparent!important;border:0!important;border-bottom:2px solid transparent!important;border-radius:0!important;white-space:nowrap!important}
+  body.uzm-sql-page .uzm-sql-nav .uzm-nav-link.is-active{color:var(--accent-primary,#005f73)!important;border-bottom-color:var(--accent-primary,#005f73)!important}
+}
+.uzm-sql-crumb ol{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:14px 0 0;font-size:.85rem;color:var(--text-muted,#334155)}
+.uzm-sql-crumb li+li::before{content:"›";margin-inline-end:6px;color:var(--text-muted,#334155)}
+html[dir=rtl] .uzm-sql-crumb li+li::before{content:"‹"}
+.uzm-sql-crumb a{color:var(--text-secondary,#334155);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+.uzm-sql-crumb li[aria-current]{display:inline-flex;align-items:center;min-height:44px}
+.uzm-sql-hero{padding:28px 0 36px;background:linear-gradient(180deg,var(--bg-subtle,#edf4fc) 0%,var(--bg-page,#fff) 100%)}
+.uzm-sql-h1{font-family:var(--font-display,inherit);font-size:clamp(1.9rem,4.2vw,3rem);line-height:1.1;letter-spacing:-.02em;margin:10px 0 12px;color:var(--text-main,#0f172a);overflow-wrap:anywhere;hyphens:auto}
+.uzm-sql-lead{font-size:1.05rem;line-height:1.65;color:var(--text-secondary,#334155);max-width:72ch;margin:0 0 8px}
+.uzm-sql-section{padding:40px 0}
+.uzm-sql-head{margin-bottom:22px}
+.uzm-sql-head .uzm-section-title{margin:8px 0 8px;overflow-wrap:anywhere;hyphens:auto}
+.uzm-sql-band{background:var(--bg-subtle,#edf4fc)}
+.uzm-sql-narrow{max-width:860px}
+.uzm-sql-pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.uzm-sql-pill{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--border-color,#e2e8f0);background:#fff;color:var(--text-main,#0f172a);text-decoration:none;font-weight:600;font-size:.9rem;box-sizing:border-box}
+.uzm-sql-pill:hover{border-color:var(--accent-primary,#005f73);color:var(--accent-primary,#005f73)}
+.uzm-sql-tabs{position:sticky;top:104px;z-index:5;background:var(--bg-page,#fff);padding:8px 0;margin:0}
+.uzm-sql-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;margin-bottom:26px}
+.uzm-sql-card{display:flex;flex-direction:column;background:var(--bg-surface,#fff);border-radius:16px;box-shadow:var(--shadow-card);overflow:hidden;transition:box-shadow .2s,transform .2s}
+.uzm-sql-card:hover{box-shadow:var(--shadow-card-hover);transform:translateY(-2px)}
+.uzm-sql-card-media{display:block;aspect-ratio:4/3;background:#fff;border-bottom:1px solid var(--border-color,#e2e8f0)}
+.uzm-sql-card-media img{width:100%;height:100%;object-fit:contain;padding:10px;box-sizing:border-box}
+.uzm-sql-blog-card .uzm-sql-card-media img{object-fit:cover;padding:0}
+.uzm-sql-card-body{display:flex;flex-direction:column;gap:8px;padding:16px 18px 18px;flex:1}
+.uzm-sql-card-body h3{margin:0;font-size:1.12rem;line-height:1.3}
+.uzm-sql-card-body h3 a{color:var(--text-main,#0f172a);text-decoration:none;display:flex;align-items:center;min-height:44px}
+.uzm-sql-lead a,.uzm-sql-prose a{display:inline-flex;align-items:center;min-height:44px;color:var(--accent-primary,#005f73)}
+.uzm-sql-card-body p{margin:0;color:var(--text-secondary,#334155);font-size:.93rem;line-height:1.55}
+.uzm-sql-card-btn{margin-top:auto;align-self:flex-start;min-height:44px!important;display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box}
+.uzm-sql-eyebrow{font-family:var(--font-mono,monospace);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-primary,#005f73)}
+.uzm-sql-chips{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0}
+.uzm-sql-chips div{background:var(--bg-subtle,#edf4fc);border-radius:10px;padding:6px 10px;min-width:0}
+.uzm-sql-chips dt{font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted,#334155)}
+.uzm-sql-chips dd{margin:0;font-weight:700;font-size:.9rem;color:var(--text-main,#0f172a);overflow-wrap:anywhere}
+.uzm-sql-subgroup{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;font-size:1.25rem;margin:24px 0 12px}
+.uzm-sql-subgroup .uzm-sql-count{font-size:.8rem;font-weight:600;color:var(--text-muted,#334155)}
+.uzm-sql-empty{padding:18px;border:1px dashed var(--border-color,#e2e8f0);border-radius:12px;color:var(--text-secondary,#334155)}
+.uzm-sql-empty a{display:inline-flex;align-items:center;min-height:44px}
+.uzm-sql-table-wrap{overflow-x:auto;border-radius:14px;box-shadow:var(--shadow-card);background:#fff;margin:6px 0 14px}
+.uzm-sql-spec{width:100%;border-collapse:collapse;font-size:.95rem}
+.uzm-sql-spec th,.uzm-sql-spec td{padding:12px 16px;text-align:start;border-bottom:1px solid var(--border-color,#e2e8f0);vertical-align:top}
+.uzm-sql-spec thead th{background:var(--bg-obsidian,#0f172a);color:#fff;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+.uzm-sql-spec thead th a{color:#fff;display:inline-flex;align-items:center;min-height:44px}
+.uzm-sql-spec tbody th{width:42%;color:var(--text-secondary,#334155);font-weight:600;background:var(--bg-subtle,#edf4fc)}
+.uzm-sql-spec td{font-weight:600;color:var(--text-main,#0f172a);overflow-wrap:anywhere}
+.uzm-sql-spec sub{font-size:.72em}
+.uzm-sql-compare{min-width:640px}
+.uzm-sql-compare tbody th{width:auto}
+.uzm-sql-terms{margin:4px 0 6px;border:1px solid var(--border-color,#e2e8f0);border-radius:14px;background:var(--bg-subtle,#edf4fc)}
+.uzm-sql-terms summary{cursor:pointer;min-height:44px;display:flex;align-items:center;padding:0 16px;font-weight:700;color:var(--text-main,#0f172a);box-sizing:border-box}
+.uzm-sql-terms-list{margin:0;padding:4px 16px 14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px 18px}
+.uzm-sql-terms-list dt{font-weight:700;color:var(--text-main,#0f172a);font-size:.9rem}
+.uzm-sql-terms-list dd{margin:2px 0 0;color:var(--text-secondary,#334155);font-size:.88rem;line-height:1.55}
+.uzm-sql-brand-row{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.uzm-sql-brand-row li{display:flex;align-items:center;justify-content:center;min-height:96px;background:#fff;border-radius:14px;box-shadow:var(--shadow-card);padding:14px}
+.uzm-sql-brand-row img{max-width:100%;max-height:52px;width:auto;height:auto;object-fit:contain}
+.uzm-sql-product-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:36px;align-items:start}
+.uzm-sql-gallery-main{margin:0;background:#fff;border-radius:18px;box-shadow:var(--shadow-card);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.uzm-sql-gallery-main img{width:100%;height:100%;object-fit:contain;padding:16px;box-sizing:border-box}
+.uzm-sql-thumbs{list-style:none;padding:0;margin:12px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:10px}
+.uzm-sql-thumbs a{display:block;min-height:66px;border-radius:10px;overflow:hidden;background:#fff;box-shadow:var(--shadow-card)}
+.uzm-sql-thumbs img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.uzm-sql-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:14px 0}
+.uzm-sql-meta div{border-inline-start:3px solid var(--accent-primary,#005f73);padding:4px 10px}
+.uzm-sql-meta dt{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted,#334155)}
+.uzm-sql-meta dd{margin:2px 0 0;font-weight:700}
+.uzm-sql-cta-row{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 8px}
+.uzm-sql-cta-row a{min-height:44px!important;display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;padding-left:18px;padding-right:18px;text-align:center}
+.uzm-sql-note{font-size:.88rem;color:var(--text-muted,#334155)}
+.uzm-sql-note a{display:inline-flex;align-items:center;min-height:44px;color:var(--accent-primary,#005f73)}
+.uzm-sql-panels{display:grid;gap:18px;padding:10px 0 20px}
+.uzm-sql-panel{background:#fff;border-radius:18px;box-shadow:var(--shadow-card);padding:22px 24px;scroll-margin-top:170px;min-width:0}
+.uzm-sql-panel h2{font-size:1.3rem;margin:0 0 12px}
+.uzm-sql-prose{line-height:1.72;color:var(--text-secondary,#334155);font-size:1rem;overflow-wrap:anywhere}
+.uzm-sql-prose p{margin:0 0 12px}
+.uzm-sql-prose ul{padding:0;padding-inline-start:1.2em;margin:0 0 12px}
+.uzm-sql-prose li{margin:4px 0}
+.uzm-sql-prose h3{color:var(--text-main,#0f172a);margin:22px 0 8px;font-size:1.15rem;scroll-margin-top:170px}
+.uzm-sql-prose strong{color:var(--text-main,#0f172a)}
+.uzm-sql-prose a{color:var(--accent-primary,#005f73)}
+.uzm-sql-fig{margin:14px 0}
+.uzm-sql-fig img{max-width:100%;height:auto;border-radius:14px;display:block}
+.uzm-sql-cover img{width:100%;max-height:420px;object-fit:cover}
+.uzm-sql-photo-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.uzm-sql-photo-grid a{display:block;border-radius:14px;overflow:hidden;box-shadow:var(--shadow-card)}
+.uzm-sql-photo-grid img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
+.uzm-sql-faq{background:#fff;border-radius:14px;box-shadow:var(--shadow-card);margin:0 0 10px;overflow:hidden}
+.uzm-sql-faq summary{cursor:pointer;list-style:none;min-height:56px;display:flex;align-items:center;gap:12px;padding:12px 20px;font-weight:700;color:var(--text-main,#0f172a);box-sizing:border-box}
+.uzm-sql-faq summary::-webkit-details-marker{display:none}
+.uzm-sql-faq summary::after{content:"+";margin-inline-start:auto;font-size:1.4rem;color:var(--accent-primary,#005f73);flex:none}
+.uzm-sql-faq[open] summary::after{content:"–"}
+.uzm-sql-faq .uzm-sql-prose{padding:0 20px 16px}
+.uzm-sql-seg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.uzm-sql-seg{background:#fff;border-radius:16px;box-shadow:var(--shadow-card);padding:20px}
+.uzm-sql-seg h3{margin:0 0 6px;font-size:1.15rem}
+.uzm-sql-seg p{margin:0 0 10px;color:var(--text-secondary,#334155)}
+.uzm-sql-seg ul,.uzm-sql-ticks{list-style:none;padding:0;margin:0}
+.uzm-sql-seg li,.uzm-sql-ticks li{position:relative;padding-block:5px;padding-inline:26px 0}
+.uzm-sql-seg li::before,.uzm-sql-ticks li::before{content:"✓";position:absolute;inset-inline-start:0;top:5px;color:var(--accent-primary,#005f73);font-weight:800}
+.uzm-sql-ticks{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:6px 18px;font-weight:600}
+.uzm-sql-steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.uzm-sql-steps li{display:flex;gap:12px;background:#fff;border-radius:16px;box-shadow:var(--shadow-card);padding:18px}
+.uzm-sql-steps p{margin:4px 0 0;color:var(--text-secondary,#334155);font-size:.93rem}
+.uzm-sql-step{font-family:var(--font-mono,monospace);font-weight:800;color:var(--accent-primary,#005f73)}
+.uzm-sql-fields{columns:2;gap:24px;padding:0;padding-inline-start:1.1em;color:var(--text-secondary,#334155)}
+.uzm-sql-docs,.uzm-sql-contact{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.uzm-sql-docs li,.uzm-sql-contact li{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:16px;box-shadow:var(--shadow-card);padding:18px}
+.uzm-sql-docs p{margin:4px 0 0;color:var(--text-secondary,#334155)}
+.uzm-sql-contact div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.uzm-sql-contact a{display:inline-flex;align-items:center;min-height:44px;color:var(--accent-primary,#005f73);font-weight:600;word-break:break-word}
+.uzm-sql-footer{padding:36px 0 18px;border-top:1px solid var(--border-color,#e2e8f0);background:#fff}
+.uzm-sql-footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:24px}
+.uzm-sql-footer-brand p{color:var(--text-secondary,#334155);font-size:.92rem;line-height:1.6}
+.uzm-sql-footer-col{display:flex;flex-direction:column;min-width:0}
+.uzm-sql-footer-col strong{margin-bottom:4px}
+.uzm-sql-footer-col a{display:inline-flex;align-items:center;min-height:44px;color:var(--text-secondary,#334155);text-decoration:none;font-size:.93rem;word-break:break-word}
+.uzm-sql-footer-col a:hover{color:var(--accent-primary,#005f73)}
+.uzm-sql-copy{text-align:center;color:var(--text-muted,#334155);font-size:.82rem;margin:18px 0 0}
+/* AR: Arapça bitişik yazımda harf aralığı bağları koparır → sıfırla */
+html[dir=rtl] body.uzm-sql-page *,html[dir=rtl] .uzm-sql-section *{letter-spacing:0!important}
+html[dir=rtl] .uzm-sql-page,html[dir=rtl] .uzm-sql-section{font-family:var(--font-body),"Geeza Pro","Noto Sans Arabic","Segoe UI",Tahoma,sans-serif}
+/* ana sayfa bağlantı bölümü */
+.uzm-sql-home-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:18px}
+.uzm-sql-home-links a{display:flex;flex-direction:column;gap:4px;min-height:44px;padding:18px;border-radius:16px;background:#fff;box-shadow:var(--shadow-card);text-decoration:none;color:var(--text-main,#0f172a)}
+.uzm-sql-home-links a span{color:var(--text-secondary,#334155);font-size:.9rem}
+.uzm-sql-home-links a:hover{box-shadow:var(--shadow-card-hover)}
+@media (max-width:900px){
+  .uzm-sql-product-grid{grid-template-columns:1fr;gap:20px}
+  .uzm-sql-footer-grid{grid-template-columns:1fr 1fr}
+  .uzm-sql-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .uzm-sql-tabs{top:96px}
+}
+@media (max-width:560px){
+  .uzm-sql-brand-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .uzm-sql-footer-grid{grid-template-columns:1fr}
+  .uzm-sql-fields{columns:1}
+  .uzm-sql-panel{padding:18px 16px}
+  .uzm-sql-spec th,.uzm-sql-spec td{padding:10px 12px}
+  .uzm-sql-header .uzm-brand-sub{display:none}
+  .uzm-sql-header .uzm-header-inner{gap:8px}
+  .uzm-sql-header .uzm-header-actions .uzm-btn-primary{padding:0 12px;font-size:.82rem}
+  .uzm-sql-header .uzm-sql-lang summary{padding:0 10px}
+  .uzm-sql-cta-row a{flex:1 1 100%}
+  .uzm-sql-tabs{position:static}
+}
+@media (max-width:400px){
+  .uzm-sql-header .uzm-brand-title{font-size:.95rem}
+}
+
+
+/* === UZM 1231 TARAYICI TIKLAMA TESTI KESIN ONARIM CSS === */
+/* 1. zirkonya.html UTS basligi kartlara yapisik olmasin */
+.uzm-uts-section, #utsSection, .uzm-sql-section + .uzm-sql-section, .uzm-section-head {
+  margin-top: 2rem !important;
+  padding-top: 0.75rem !important;
+}
+h2 + .uzm-card-grid-3, h2 + .uzm-sql-grid, .uzm-section-sub + .uzm-card-grid-3 {
+  margin-top: 1.5rem !important;
+}
+/* 2. 3D-PRO ve tum urun kart gorselleri esit boyut ve oranti */
+.uzm-product-card img, .uzm-sql-card-media img, .uzm-vitrin-card img {
+  aspect-ratio: 4 / 3 !important;
+  object-fit: contain !important;
+  width: 100% !important;
+  max-height: 220px !important;
+  padding: 0.5rem !important;
+  background: #f8fafc !important;
+}
+/* 3. Iletisimde e-posta ortadan kirilmasin */
+a[href^="mailto:"], .uzm-mail-link {
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+}
+/* 4. Footer copyright son linke yapisik olmasin */
+.uzm-footer-bottom-bar, .uzm-sql-copy, footer .uzm-sql-copy {
+  margin-top: 2.25rem !important;
+  padding-top: 1.35rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.14) !important;
+  display: block !important;
+  clear: both !important;
+}
+/* 5. Header menusu tek satirda kalsin (ZH/DE/RU tasma onleme) */
+.uzm-main-nav, .uzm-sql-nav-inner {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  gap: 0.85rem !important;
+  white-space: nowrap !important;
+}
+.uzm-nav-link {
+  white-space: nowrap !important;
+  font-size: 0.92rem !important;
+}
+
+
+/* === UZM 1402 TIKLAMA-2: HEADER ZIRCROWN LOGO TASMASI VE ZH TEK SATIR GARANTISI === */
+header.uzm-header .uzm-header-inner {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: nowrap !important;
+  gap: 0.5rem !important;
+  min-height: 70px !important;
+}
+header.uzm-header .uzm-brand {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  flex-shrink: 0 !important;
+  max-height: 54px !important;
+  overflow: hidden !important;
+  text-decoration: none !important;
+}
+header.uzm-header .uzm-brand-mark {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  flex-shrink: 0 !important;
+}
+header.uzm-header .uzm-brand-text {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  line-height: 1.1 !important;
+}
+header.uzm-header .uzm-brand-title {
+  font-size: 1.15rem !important;
+  white-space: nowrap !important;
+  line-height: 1.1 !important;
+}
+header.uzm-header .uzm-brand-sub {
+  font-size: 0.62rem !important;
+  white-space: nowrap !important;
+  line-height: 1.1 !important;
+}
+header.uzm-header .uzm-brand-zircrown-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 24px !important;
+  max-height: 24px !important;
+  padding: 2px 6px !important;
+  margin-left: 4px !important;
+  border-radius: 6px !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(203, 213, 225, 0.85) !important;
+  flex-shrink: 0 !important;
+  overflow: hidden !important;
+}
+header.uzm-header .uzm-brand-zircrown-badge img {
+  height: 16px !important;
+  max-height: 16px !important;
+  width: auto !important;
+  max-width: 64px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+@media (min-width: 1025px) {
+  header.uzm-header .uzm-nav,
+  header.uzm-header #uzmMainNav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 0.15rem !important;
+    white-space: nowrap !important;
+    min-width: 0 !important;
+  }
+  header.uzm-header .uzm-nav-link {
+    padding: 0.4rem 0.5rem !important;
+    font-size: 0.82rem !important;
+    white-space: nowrap !important;
+    min-height: 40px !important;
+  }
+  header.uzm-header .uzm-header-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+    header.uzm-header #uzmThemeToggleBtn,
+    header.uzm-header #uzmQuoteTrayBtn,
+    header.uzm-header .uzm-header-actions .uzm-btn-primary {
+      padding: 0.4rem 0.65rem !important;
+      font-size: 0.8rem !important;
+      white-space: nowrap !important;
+      min-height: 40px !important;
+    }
+}
+@media (max-width: 1024px) {
+  header.uzm-header .uzm-header-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0.3rem !important;
+    min-height: 60px !important;
+    padding: 0.35rem 0.6rem !important;
+  }
+  header.uzm-header .uzm-brand {
+    gap: 0.3rem !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+  }
+  header.uzm-header .uzm-brand-mark {
+    width: 28px !important;
+    height: 28px !important;
+    flex-shrink: 0 !important;
+  }
+  header.uzm-header .uzm-brand-title {
+    font-size: 0.86rem !important;
+    white-space: nowrap !important;
+  }
+  header.uzm-header .uzm-brand-sub {
+    display: none !important;
+  }
+  header.uzm-header .uzm-brand-zircrown-badge {
+    height: 20px !important;
+    max-height: 20px !important;
+    padding: 1px 4px !important;
+    margin-left: 2px !important;
+  }
+  header.uzm-header .uzm-brand-zircrown-badge img {
+    height: 13px !important;
+    max-height: 13px !important;
+    max-width: 46px !important;
+  }
+  header.uzm-header .uzm-header-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 0.25rem !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+  header.uzm-header .lang-dropdown summary,
+  header.uzm-header #uzmThemeToggleBtn,
+  header.uzm-header .uzm-header-actions .uzm-btn-primary {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    padding: 0.25rem 0.45rem !important;
+    font-size: 0.73rem !important;
+    min-height: 36px !important;
+    height: 36px !important;
+    line-height: 1 !important;
+  }
+  header.uzm-header #uzmHamburgerBtn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 36px !important;
+    height: 36px !important;
+    min-height: 36px !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* === GROK-1105-1513 & ATLAS-WEB-1105-1547: DİL SEÇİCİ MENÜSÜ VE TÜM SEÇENEKLER (TR/EN/DE/AR/RU/ZH) SOL HİZA & LTR KİLİDİ === */
+details.lang-dropdown,
+.uzm-sql-lang,
+.lang-dropdown-menu,
+.uzm-lang-menu,
+html[dir="rtl"] details.lang-dropdown,
+html[dir="rtl"] .uzm-sql-lang,
+html[dir="rtl"] .lang-dropdown-menu,
+html[dir="rtl"] .uzm-lang-menu {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  text-align: left !important;
+}
+.lang-dropdown-menu a,
+.lang-dropdown-menu [data-lang-switch],
+.uzm-lang-menu a,
+.uzm-lang-menu button,
+.uzm-lang-option,
+a[data-lang-switch],
+html[dir="rtl"] .lang-dropdown-menu a,
+html[dir="rtl"] .lang-dropdown-menu [data-lang-switch],
+html[dir="rtl"] .uzm-lang-menu a,
+html[dir="rtl"] .uzm-lang-menu button,
+html[dir="rtl"] .uzm-lang-option,
+html[dir="rtl"] a[data-lang-switch] {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  text-align: left !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+/* === REV1-1105-2333: K4 MOBIL RTL TASMA & K5 KONTRAST 24/24 KESIN ONARIM === */
+:root,
+html,
+html[data-theme="luminous"] {
+  --text-muted: #334155 !important;
+  --accent-primary: #005f73 !important;
+  --uzm-accent-primary: #005f73 !important;
+  --accent-text: #005f73 !important;
+}
+
+html,
+body {
+  max-width: 100% !important;
+  overflow-x: clip !important;
+  box-sizing: border-box !important;
+}
+
+header.uzm-header,
+main,
+section,
+footer,
+.uzm-container,
+.uzm-header-inner,
+.uzm-lot-verify-card,
+.uzm-lot-verify-body,
+.uzm-lot-verify-actions,
+.uzm-lot-action-btn,
+.uzm-card-grid-3,
+.uzm-brochure-card {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+#uzmLotMailBtn,
+#uzmLotWaBtn,
+.uzm-lot-action-btn,
+.uzm-lot-verify-actions a[href^="mailto:"],
+.uzm-brochure-card a[href^="mailto:"] {
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 640px) {
+  a[href^="mailto:"],
+  .uzm-mail-link {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+    max-width: 100% !important;
+  }
+  header.uzm-header .uzm-header-inner {
+    padding: 0.3rem 0.45rem !important;
+    gap: 0.2rem !important;
+    max-width: 100vw !important;
+    overflow-x: clip !important;
+  }
+  header.uzm-header .uzm-brand {
+    gap: 0.25rem !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+  }
+  header.uzm-header .uzm-brand-mark {
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+  }
+  header.uzm-header .uzm-brand-title {
+    font-size: 0.78rem !important;
+  }
+  header.uzm-header .uzm-brand-zircrown-badge {
+    display: none !important;
+  }
+  header.uzm-header .uzm-header-actions {
+    gap: 0.2rem !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+  }
+  header.uzm-header .lang-dropdown summary,
+  header.uzm-header #uzmThemeToggleBtn,
+  header.uzm-header #uzmQuoteTrayBtn,
+  header.uzm-header .uzm-header-actions .uzm-btn-primary {
+    padding: 0.2rem 0.38rem !important;
+    font-size: 0.68rem !important;
+    min-width: 0 !important;
+    height: 34px !important;
+    min-height: 34px !important;
+  }
+  header.uzm-header #uzmHamburgerBtn {
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    min-height: 34px !important;
+  }
+}
+
+/* K5 Kontrast: .uzm-btn-primary solid background-color fallback (#005f73 -> 7.54:1 AAA beyaz metinle) */
+.uzm-btn-primary,
+button.uzm-btn-primary,
+a.uzm-btn-primary,
+#uzmQuoteTrayBtn,
+header.uzm-header .uzm-header-actions .uzm-btn-primary {
+  background-color: #005f73 !important;
+  background-image: linear-gradient(135deg, #005f73 0%, #007791 48%, #0099b8 100%) !important;
+  color: #ffffff !important;
+}
+
+.uzm-btn-primary:hover,
+button.uzm-btn-primary:hover,
+a.uzm-btn-primary:hover,
+#uzmQuoteTrayBtn:hover {
+  background-color: #0f172a !important;
+  background-image: linear-gradient(135deg, #0f172a 0%, #005f73 50%, #007791 100%) !important;
+  color: #ffffff !important;
+}
+
+/* K5 Kontrast (1-2): footer ve koyu kapsayıcılar için solid background-color: #0f172a fallback (#e2e8f0 -> 14.33:1, #cbd5e1 -> 11.58:1 AAA) */
+footer.uzm-footer,
+footer.uzm-sql-footer,
+.uzm-footer,
+.uzm-sql-footer,
+.uzm-sql-footer-grid,
+.uzm-sql-footer-brand,
+.uzm-sql-footer-col,
+.uzm-footer-bottom-bar,
+footer.uzm-footer p,
+footer.uzm-sql-footer p,
+.uzm-sql-footer-brand p,
+footer.uzm-footer .uzm-sql-copy,
+footer.uzm-sql-footer .uzm-sql-copy,
+.uzm-sql-copy,
+#uzmCinematicHeroStage,
+.uzm-dual-design-bar,
+.uzm-official-brochures-bar {
+  background-color: #0f172a !important;
+}
+
+footer.uzm-footer,
+footer.uzm-sql-footer,
+.uzm-footer,
+.uzm-sql-footer {
+  background-image: linear-gradient(180deg, #0a2540 0%, #07192e 100%) !important;
+  color: #f8fafc !important;
+}
+
+footer.uzm-footer p,
+footer.uzm-sql-footer p,
+.uzm-sql-footer-brand p,
+footer.uzm-footer a,
+footer.uzm-sql-footer a,
+.uzm-sql-footer-col a,
+.uzm-footer-links a {
+  color: #e2e8f0 !important;
+}
+
+footer.uzm-footer .uzm-sql-copy,
+footer.uzm-sql-footer .uzm-sql-copy,
+.uzm-sql-copy {
+  color: #cbd5e1 !important;
+}
+
+/* K5 Kontrast (3-4): lagoon-teal -> #005f73 (beyaz üzerinde 7.54:1 AAA, #fafafa üzerinde 7.22:1 AAA) */
+.uzm-mono-tag,
+label.uzm-mono-tag,
+label[for="drawerCompareRange"],
+.uzm-nav-link.is-active,
+.uzm-sql-nav .uzm-nav-link.is-active,
+.uzm-sql-nav .uzm-nav-link:hover,
+body.uzm-sql-page .uzm-sql-nav .uzm-nav-link.is-active,
+.uzm-sql-lead a,
+.uzm-sql-prose a,
+.uzm-sql-eyebrow,
+.uzm-sql-note a,
+.uzm-sql-step,
+.uzm-sql-contact a,
+.uzm-tag-indigo,
+.uzm-badge-indigo,
+.uzm-oem-badge-indigo,
+.uzm-inl-2cf68baf {
+  color: #005f73 !important;
+}
+
+/* K5 Kontrast: th (rgb(100,116,139) 4.41 -> #0f172a on #f1f5f9 16.29:1 AAA) */
+th,
+table th,
+.uzm-foy-table th,
+.uzm-tech-table th,
+.uzm-spec-table th,
+.uzm-sql-spec th {
+  color: #0f172a !important;
+  background-color: #f1f5f9 !important;
+}
+
+html[data-theme="obsidian"] th,
+html[data-theme="obsidian"] table th,
+html[data-theme="obsidian"] .uzm-foy-table th,
+html[data-theme="obsidian"] .uzm-tech-table th,
+html[data-theme="obsidian"] .uzm-spec-table th,
+html[data-theme="obsidian"] .uzm-sql-spec th {
+  color: #f8fafc !important;
+  background-color: #1e293b !important;
+}
+
+.text-slate-400,
+.text-slate-500,
+.uzm-blog-readtime,
+.uzm-sql-crumb ol,
+.uzm-sql-crumb li + li::before,
+.uzm-sql-chips dt,
+.uzm-sql-subgroup .uzm-sql-count,
+.uzm-sql-meta dt,
+.uzm-sql-note {
+  color: #334155 !important;
+}
+/* === REV1-1105-2333 SONU === */
+
+/* === 2026-11-06 KOK-NEDEN KOMPAKT PENCERE (KART KUTUSU) VE MOBIL YATAY KAYDIRMA ZIRHI (v1332) === */
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 1. MASAUSTU (>=1024px) 4 SUTUN KOMPAKT GRID & TABLET (769px-1023px) 3 SUTUN GRID */
+@media (min-width: 1024px) {
+  .uzm-blog-grid,
+  .uzm-cards-grid,
+  #uzmBlockCardsGrid,
+  #uzmPmmaCardsGrid,
+  .uzm-sql-grid,
+  .uzm-endo-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 0.9rem !important;
+    overflow-x: visible !important;
+  }
+  .uzm-sql-product-grid {
+    display: grid !important;
+    grid-template-columns: minmax(240px, 320px) minmax(0, 1fr) !important;
+    gap: 22px !important;
+    align-items: start !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+  .uzm-blog-grid,
+  .uzm-cards-grid,
+  #uzmBlockCardsGrid,
+  #uzmPmmaCardsGrid,
+  .uzm-sql-grid,
+  .uzm-endo-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 0.85rem !important;
+    overflow-x: visible !important;
+  }
+}
+@media (min-width: 769px) {
+  .uzm-cards-grid > *,
+  #uzmBlockCardsGrid > *,
+  #uzmPmmaCardsGrid > *,
+  .uzm-blog-grid > *,
+  .uzm-sql-grid > *,
+  .uzm-endo-grid > * {
+    flex: initial !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+}
+
+/* 2. MOBIL (<=768px): KOMPAKT PENCERELI YATAY KAYDIRMA SERIDI (EKRANDA ~1.8 KART YAN YANA GORUNUR) */
+@media (max-width: 768px) {
+  .uzm-cards-grid,
+  #uzmBlockCardsGrid,
+  #uzmPmmaCardsGrid,
+  .uzm-vitrin-grid,
+  .uzm-blog-grid,
+  .uzm-sql-grid,
+  .uzm-endo-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 10px !important;
+    padding-bottom: 12px !important;
+    padding-inline: 6px !important;
+    scroll-padding: 6px !important;
+    margin-inline: -4px !important;
+    align-items: stretch !important;
+  }
+  .uzm-cards-grid > *,
+  #uzmBlockCardsGrid > *,
+  #uzmPmmaCardsGrid > *,
+  .uzm-vitrin-grid > *,
+  .uzm-blog-grid > *,
+  .uzm-sql-grid > *,
+  .uzm-endo-grid > * {
+    flex: 0 0 212px !important;
+    width: 212px !important;
+    max-width: 60vw !important;
+    min-width: 192px !important;
+    scroll-snap-align: start !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* 3. PENCERE (KART KUTUSU) BOYUTLARINI KOMPAKTLASTIRMA (HEM MOBIL HEM MASAUSTU) */
+.uzm-block-card {
+  padding: 0.7rem 0.75rem !important;
+  border-radius: 12px !important;
+  gap: 0.2rem !important;
+}
+.uzm-block-card .uzm-card-top {
+  margin-bottom: 0.15rem !important;
+  gap: 0.25rem !important;
+}
+.uzm-block-card .uzm-card-tag,
+.uzm-block-card .uzm-card-sku {
+  font-size: 0.62rem !important;
+  padding: 0.12rem 0.38rem !important;
+  line-height: 1.2 !important;
+}
+.uzm-block-card .uzm-card-title {
+  font-size: 0.9rem !important;
+  line-height: 1.22 !important;
+  margin: 0.1rem 0 !important;
+}
+.uzm-block-card .uzm-card-sub {
+  font-size: 0.72rem !important;
+  line-height: 1.28 !important;
+  margin: 0 0 0.2rem 0 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+.uzm-block-card .uzm-card-oem-stage {
+  padding: 0.2rem !important;
+  margin: 0.15rem 0 !important;
+  height: 102px !important;
+  max-height: 102px !important;
+  min-height: 198px !important;
+  border-radius: 8px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.uzm-block-card .uzm-card-disc-img,
+.uzm-vitrin-card img {
+  max-height: 198px !important;
+  max-width: 90% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+.uzm-block-card .uzm-card-metrics {
+  padding: 0.2rem 0 !important;
+  margin: 0.1rem 0 !important;
+  gap: 0.3rem !important;
+}
+.uzm-block-card .uzm-metric-lbl {
+  font-size: 0.58rem !important;
+}
+.uzm-block-card .uzm-metric-val {
+  font-size: 0.74rem !important;
+}
+.uzm-block-card .uzm-card-foy {
+  margin: 0.15rem 0 !important;
+}
+.uzm-block-card .uzm-foy-summary {
+  min-height: 26px !important;
+  padding: 3px 7px !important;
+  font-size: 0.66rem !important;
+}
+.uzm-block-card .uzm-card-actions {
+  gap: 0.3rem !important;
+  margin-top: 0.2rem !important;
+  grid-template-columns: 1fr 1fr !important;
+}
+.uzm-block-card .uzm-card-actions button,
+.uzm-block-card .uzm-btn-card-Inspect,
+.uzm-block-card .uzm-btn-card-sinter {
+  min-height: 28px !important;
+  padding: 0.2rem 0.35rem !important;
+  font-size: 0.66rem !important;
+  border-radius: 6px !important;
+}
+
+/* 4. BLOG, SQL KATALOG VE ENDO KART PENCERELERI */
+.uzm-blog-card,
+.uzm-sql-card {
+  border-radius: 12px !important;
+}
+.uzm-blog-card-media,
+.uzm-sql-card-media {
+  height: 112px !important;
+  max-height: 112px !important;
+  aspect-ratio: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #f8fafc !important;
+  padding: 6px !important;
+  box-sizing: border-box !important;
+}
+.uzm-blog-card-img,
+.uzm-sql-card-media img {
+  max-height: 98px !important;
+  max-width: 90% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+.uzm-blog-card-body {
+  padding: 0.6rem 0.7rem !important;
+}
+.uzm-blog-card-cat {
+  font-size: 0.62rem !important;
+  margin-bottom: 0.15rem !important;
+}
+.uzm-blog-card-title {
+  font-size: 0.85rem !important;
+  line-height: 1.24 !important;
+  margin-bottom: 0.2rem !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+.uzm-blog-card-excerpt {
+  font-size: 0.72rem !important;
+  line-height: 1.28 !important;
+  -webkit-line-clamp: 2 !important;
+  min-height: 0 !important;
+  margin-bottom: 0 !important;
+}
+.uzm-blog-card-footer {
+  padding: 0.4rem 0.7rem !important;
+  font-size: 0.68rem !important;
+}
+
+.uzm-sql-card-body {
+  padding: 0.6rem 0.7rem !important;
+  gap: 3px !important;
+}
+.uzm-sql-card-body h3 {
+  font-size: 0.85rem !important;
+  line-height: 1.24 !important;
+  margin: 0 !important;
+}
+.uzm-sql-card-body p {
+  font-size: 0.72rem !important;
+  line-height: 1.28 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+}
+.uzm-sql-card-cta {
+  font-size: 0.7rem !important;
+  margin-top: 3px !important;
+  padding-top: 3px !important;
+}
+
+.uzm-endo-card {
+  padding: 0.65rem 0.75rem !important;
+  border-radius: 12px !important;
+}
+.uzm-endo-media {
+  height: 198px !important;
+  max-height: 198px !important;
+  margin: 0.2rem 0 !important;
+  padding: 4px !important;
+}
+.uzm-endo-img {
+  max-height: 82px !important;
+  max-width: 88% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+}
+.uzm-endo-title {
+  font-size: 0.88rem !important;
+  margin: 0.15rem 0 !important;
+}
+.uzm-endo-sub {
+  font-size: 0.72rem !important;
+  line-height: 1.28 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+/* 5. HERO STAGE, INLINE DRAWER VE DIGER PENCERELER */
+.uzm-hero-stage-card {
+  max-width: 320px !important;
+  padding: 0.55rem !important;
+  margin: 0 auto !important;
+  border-radius: 14px !important;
+}
+.uzm-hero-group-display {
+  max-height: 175px !important;
+  max-width: 290px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+}
+#uzmDrawerInlineSection .uzm-inline-drawer,
+#uzmSlideOverDrawer {
+  max-width: 740px !important;
+  padding: 0.75rem 0.9rem !important;
+  margin: 0.4rem auto !important;
+  border-radius: 14px !important;
+}
+.uzm-lot-verify-card,
+.uzm-brochure-card {
+  padding: 0.85rem 1rem !important;
+  border-radius: 12px !important;
+}
+
+/* 6. URUN DETAY GALERISI VE PROSE GORSELLERI */
+.uzm-sql-gallery-main {
+  max-height: 210px !important;
+  max-width: 310px !important;
+  aspect-ratio: 4 / 3 !important;
+  margin: 0 auto !important;
+  padding: 8px !important;
+  box-sizing: border-box !important;
+}
+.uzm-sql-gallery-main img {
+  max-height: 185px !important;
+  max-width: 90% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+}
+.uzm-sql-thumbs {
+  grid-template-columns: repeat(auto-fill, minmax(60px, 74px)) !important;
+  gap: 6px !important;
+}
+.uzm-sql-thumbs img {
+  max-height: 54px !important;
+  width: 100% !important;
+  object-fit: contain !important;
+}
+.uzm-sql-fig {
+  max-width: 440px !important;
+  margin: 10px auto !important;
+  text-align: center !important;
+}
+.uzm-sql-fig img,
+.uzm-sql-prose img,
+.uzm-sql-panel img:not(.uzm-qr-svg) {
+  max-height: 210px !important;
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+.uzm-sql-photo-grid {
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)) !important;
+  gap: 10px !important;
+}
+.uzm-sql-photo-grid img {
+  max-height: 140px !important;
+  width: 100% !important;
+  height: 140px !important;
+  object-fit: cover !important;
+}
+.uzm-qr-box img,
+img[src*="/qr/"] {
+  max-width: 76px !important;
+  max-height: 76px !important;
+  width: 72px !important;
+  height: 72px !important;
+  object-fit: contain !important;
+}
+
+/* === UZM VITRIN DESKTOP & MOBILE HOTFIX (20261106-1415) === */
+
+/* 1. FULL-SCREEN CONTAINER: Centered 1160px on desktop (overrides un-scoped 100% rule) */
+@media (min-width: 769px) {
+  html body .uzm-container,
+  html body .uzm-header-inner,
+  html body .uzm-UtilityBar-inner {
+    max-width: 1160px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+/* 2. HERO SECTION: Large crisp showcase image on right + side-by-side CTA buttons */
+html body .uzm-hero {
+  padding: 2rem 0 2.5rem !important;
+}
+html body .uzm-hero-grid {
+  max-width: 1130px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  gap: 2rem !important;
+  align-items: center !important;
+}
+html body .uzm-hero-stage-card {
+  max-width: 540px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 1.15rem 1.25rem !important;
+  border-radius: 16px !important;
+}
+html body .uzm-hero-disc-stage {
+  min-height: 290px !important;
+  max-height: 340px !important;
+  height: 310px !important;
+  padding: 0.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+html body .uzm-hero-group-display,
+html body .uzm-hero-disc-stage img {
+  height: 295px !important;
+  max-height: 310px !important;
+  max-width: 100% !important;
+  width: auto !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+}
+@media (min-width: 641px) {
+  html body .uzm-hero-cta-row {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 0.85rem !important;
+  }
+  html body .uzm-hero-cta-row a,
+  html body .uzm-hero-cta-row button,
+  html body .uzm-hero-cta-row a.uzm-btn-outline,
+  html body .uzm-hero-cta-row button.uzm-btn-outline {
+    width: auto !important;
+    max-width: none !important;
+    flex: 0 0 auto !important;
+    display: inline-flex !important;
+    padding: 0.72rem 1.3rem !important;
+    font-size: 0.9rem !important;
+    cursor: pointer !important;
+  }
+}
+
+/* 3. DESKTOP CARD GRIDS: Clean 3-column & 4-column card windows */
+@media (min-width: 1024px) {
+  html body .uzm-cards-grid,
+  html body #uzmBlockCardsGrid,
+  html body .uzm-endo-grid,
+  html body .uzm-blog-grid,
+  html body .uzm-sql-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1.25rem !important;
+    max-width: 1120px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: stretch !important;
+  }
+  html body #uzmPmmaCardsGrid,
+  html body .uzm-studio40-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 1.1rem !important;
+    max-width: 1120px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: stretch !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  html body .uzm-cards-grid,
+  html body #uzmBlockCardsGrid,
+  html body #uzmPmmaCardsGrid,
+  html body .uzm-endo-grid,
+  html body .uzm-blog-grid,
+  html body .uzm-sql-grid,
+  html body .uzm-studio40-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1rem !important;
+  }
+}
+
+/* 4. CARD WINDOWS & LARGE, PROMINENT PRODUCT IMAGES INSIDE CARDS */
+html body .uzm-block-card,
+html body .uzm-endo-card,
+html body .uzm-blog-card,
+html body .uzm-sql-card {
+  padding: 1rem 1.1rem !important;
+  border-radius: 14px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  gap: 0.5rem !important;
+  box-sizing: border-box !important;
+}
+html body .uzm-block-card h3,
+html body .uzm-endo-card h3,
+html body .uzm-blog-card h3,
+html body .uzm-sql-card h3 {
+  font-size: 1rem !important;
+  line-height: 1.3 !important;
+  margin: 0.1rem 0 !important;
+}
+html body .uzm-card-tagline,
+html body .uzm-endo-desc,
+html body .uzm-blog-card p {
+  font-size: 0.8rem !important;
+  line-height: 1.4 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  margin: 0 0 0.2rem 0 !important;
+  min-height: 2.2rem !important;
+}
+
+/* Large, clear product images inside card windows (200px height, no circular crop!) */
+html body .uzm-block-card .uzm-card-oem-stage {
+  height: 215px !important;
+  min-height: 215px !important;
+  max-height: 215px !important;
+  padding: 0.4rem !important;
+  margin: 0.2rem 0 !important;
+  border-radius: 10px !important;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f6 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+html body .uzm-block-card .uzm-card-disc-img,
+html body .uzm-card-oem-stage img.uzm-card-disc-img {
+  height: 198px !important;
+  max-height: 198px !important;
+  width: auto !important;
+  max-width: 96% !important;
+  border-radius: 8px !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  display: block !important;
+  transition: transform 0.25s ease !important;
+}
+html body #uzmPmmaCardsGrid .uzm-block-card .uzm-card-oem-stage {
+  height: 190px !important;
+  min-height: 190px !important;
+  max-height: 190px !important;
+}
+html body #uzmPmmaCardsGrid .uzm-block-card .uzm-card-disc-img {
+  height: 174px !important;
+  max-height: 174px !important;
+}
+html body .uzm-block-card:hover .uzm-card-disc-img {
+  transform: scale(1.05) !important;
+}
+
+/* Endo cards: large clear image */
+html body .uzm-endo-card .uzm-endo-visual {
+  height: 210px !important;
+  min-height: 210px !important;
+  max-height: 210px !important;
+  padding: 0.45rem !important;
+  border-radius: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+html body .uzm-endo-card .uzm-endo-img {
+  height: 192px !important;
+  max-height: 192px !important;
+  width: auto !important;
+  max-width: 96% !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+}
+
+/* Blog & SQL Catalog cards: large clear image */
+html body .uzm-blog-card-media,
+html body .uzm-sql-card-media {
+  height: 210px !important;
+  min-height: 210px !important;
+  max-height: 210px !important;
+  padding: 0.45rem !important;
+  border-radius: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+html body .uzm-blog-card-img,
+html body .uzm-sql-card-media img {
+  height: 192px !important;
+  max-height: 192px !important;
+  width: auto !important;
+  max-width: 96% !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+}
+
+/* 5. STUDIO-40 GALLERY FIX: Un-cropped 3:4 crown photos & intact badges */
+html body .uzm-studio40-card {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  background: #0b1324 !important;
+  border: 1px solid rgba(56, 189, 248, 0.18) !important;
+}
+html body .uzm-studio40-img-wrap {
+  aspect-ratio: 3 / 4 !important;
+  height: auto !important;
+  max-height: 310px !important;
+  width: 100% !important;
+  background: #050a14 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  padding: 0.25rem !important;
+}
+html body .uzm-studio40-img-wrap img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  border-radius: 8px !important;
+}
+html body #uzmStudio40LightboxImg {
+  max-height: 82vh !important;
+  max-width: 90vw !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: 10px !important;
+}
+
+/* 6. TECHNICAL PANEL AS SEPARATE OVERLAY MODAL WINDOW ON TOP OF SCREEN */
+html body #uzmDrawerInlineSection {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 9995 !important;
+  background: rgba(15, 23, 42, 0.72) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  display: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1.25rem !important;
+  margin: 0 !important;
+  overflow-y: auto !important;
+}
+html body #uzmDrawerInlineSection.is-modal-open {
+  display: flex !important;
+}
+html body #uzmDrawerInlineSection > .uzm-container {
+  max-width: 900px !important;
+  width: 100% !important;
+  margin: auto !important;
+  padding: 0 !important;
+}
+html body #uzmDrawerInlineSection > .uzm-container > .uzm-section-head {
+  display: none !important;
+}
+html body #uzmDrawerInlineSection #uzmSlideOverDrawer,
+html body aside#uzmSlideOverDrawer.uzm-inline-drawer {
+  position: relative !important;
+  max-width: 880px !important;
+  width: 100% !important;
+  max-height: 88vh !important;
+  overflow-y: auto !important;
+  margin: 0 auto !important;
+  padding: 1.35rem 1.5rem !important;
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-radius: 16px !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45) !important;
+  border: 1px solid rgba(14, 165, 233, 0.35) !important;
+  display: block !important;
+  transform: none !important;
+  right: auto !important;
+  top: auto !important;
+}
+html body #uzmDrawerCloseBtn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 10px !important;
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+html body #uzmDrawerCloseBtn:hover {
+  background: #ef4444 !important;
+  color: #ffffff !important;
+  border-color: #ef4444 !important;
+}
+
+/* 7. MOBILE HORIZONTAL SWIPE CAROUSEL (<=768px) */
+@media (max-width: 768px) {
+  html body .uzm-cards-grid,
+  html body #uzmBlockCardsGrid,
+  html body #uzmPmmaCardsGrid,
+  html body .uzm-endo-grid,
+  html body .uzm-blog-grid,
+  html body .uzm-sql-grid,
+  html body .uzm-studio40-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 0.8rem !important;
+    padding: 0.4rem 0.75rem 1rem 0.75rem !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+  }
+  html body #uzmBlockCardsGrid > .uzm-block-card,
+  html body #uzmPmmaCardsGrid > .uzm-block-card,
+  html body .uzm-cards-grid > .uzm-block-card,
+  html body .uzm-endo-grid > .uzm-endo-card,
+  html body .uzm-blog-grid > .uzm-blog-card,
+  html body .uzm-sql-grid > .uzm-sql-card,
+  html body .uzm-studio40-grid > .uzm-studio40-card,
+  html body .uzm-cards-grid > *,
+  html body #uzmBlockCardsGrid > *,
+  html body #uzmPmmaCardsGrid > *,
+  html body .uzm-endo-grid > *,
+  html body .uzm-blog-grid > *,
+  html body .uzm-sql-grid > *,
+  html body .uzm-studio40-grid > * {
+    flex: 0 0 256px !important;
+    width: 256px !important;
+    min-width: 242px !important;
+    max-width: 74vw !important;
+    scroll-snap-align: start !important;
+    margin: 0 !important;
+    padding: 0.8rem 0.9rem !important;
+  }
+  html body .uzm-block-card .uzm-card-oem-stage,
+  html body .uzm-endo-card .uzm-endo-visual,
+  html body .uzm-blog-card-media,
+  html body .uzm-sql-card-media {
+    height: 165px !important;
+    min-height: 165px !important;
+    max-height: 165px !important;
+  }
+  html body .uzm-block-card .uzm-card-disc-img,
+  html body .uzm-endo-card .uzm-endo-img,
+  html body .uzm-blog-card-img,
+  html body .uzm-sql-card-media img {
+    height: 150px !important;
+    max-height: 150px !important;
+  }
+}

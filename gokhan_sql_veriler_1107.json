@@ -1,0 +1,524 @@
+{
+  "blog_posts": [
+    {
+      "id": "1",
+      "title": "Zirkonya Disk Seçerken Nelere Dikkat Edilmeli?",
+      "slug": "zirkonya-disk-secerken-nelere-dikkat-edilmeli",
+      "category": "Zirkonya Diskler",
+      "excerpt": "Dayanım, translüsensi ve restorasyon türüne göre doğru zirkonya seçiminin temel kriterleri.",
+      "cover_image": "/images/blog.png",
+      "content": "<p>Zirkonya diskler, güçlü mekanik dayanımı ve estetik görünümü bir arada sunması sebebiyle günümüz protetik diş hekimliğinde en çok tercih edilen restorasyon materyallerinden biri haline geldi. Ancak piyasada yer alan onlarca farklı disk seçeneği arasından doğru ürünü belirlemek, restorasyonun ömrünü ve hasta memnuniyetini doğrudan etkiliyor.</p>\n<h2>Translüsensi ve Dayanım Dengesi</h2>\n<p>Yüksek translüsensiye sahip diskler doğal diş görünümüne daha yakın sonuçlar verirken, mekanik dayanımları standart zirkonyaya kıyasla daha düşük olabilir. Bu nedenle restorasyonun ön veya arka bölgede uygulanacak olması, disk seçiminde belirleyici kriterlerden biridir.</p>\n<h2>Restorasyon Türüne Göre Seçim</h2>\n<p>Kron, köprü veya implant üstü protezlerde kullanılacak zirkonyanın kalınlığı ve katman yapısı farklılık gösterir. Multilayer diskler, tek bir blok içerisinde hem dayanım hem estetik ihtiyacını karşılayacak şekilde tasarlanır ve laboratuvar iş akışını kısaltır.</p>\n<ul>\n<li>Restorasyonun uygulanacağı bölge (ön/arka diş)</li>\n<li>İstenen translüsensi ve renk geçiş kalitesi</li>\n<li>Disk kalınlığı ve katman sayısı</li>\n<li>Üretici firmanın kalite ve sertifikasyon süreçleri</li>\n</ul>\n<h2>Sonuç</h2>\n<p>Zirkonya disk seçimi; klinik ihtiyaç, hasta beklentisi ve laboratuvar iş akışının birlikte değerlendirildiği bir süreçtir. UZM Dental olarak, farklı translüsensi ve katman seçenekleri sunan zirkonya disklerimiz hakkında teknik destek almak için satış ekibimizle iletişime geçebilirsiniz.</p>",
+      "published_at": "2026-08-16 19:29:16"
+    },
+    {
+      "id": "2",
+      "title": "Paper Point Seçiminde ISO Renk Kodlarının Önemi",
+      "slug": "paper-point-seciminde-iso-renk-kodlarinin-onemi",
+      "category": "Endodontik Ürünler",
+      "excerpt": "Kanal ölçüsüne uygun paper point seçimi, tedavi başarısını doğrudan etkiler.",
+      "cover_image": "/images/blog.png",
+      "content": "<p>ISO renk kodlama sistemi, endodontik enstrümanlar ile paper point boyutlarının hızlı ve hatasız eşleştirilmesini sağlar. Her renk, belirli bir kanal genişliğine karşılık gelir ve klinik işlem hızını artırır.</p><p>Doğru boyut seçimi, kanalın etkin şekilde kurutulmasını ve tedavi başarısını doğrudan etkiler. UZM Dental olarak hem standart hem milimetre işaretli paper point seçeneklerini sunuyoruz.</p>",
+      "published_at": "2026-08-07 19:29:16"
+    },
+    {
+      "id": "3",
+      "title": "PMMA Disklerde Katman Yapısı Ne Anlama Gelir?",
+      "slug": "pmma-disklerde-katman-yapisi-ne-anlama-gelir",
+      "category": "PMMA Diskler",
+      "excerpt": "Multilayer PMMA disklerin estetik ve dayanıklılık açısından sunduğu avantajlar.",
+      "cover_image": "/images/blog.png",
+      "content": "<p>Multilayer PMMA diskler, tek bir blok içerisinde farklı opasite ve renk geçişleri sunacak şekilde üretilir. Bu yapı, ölçü ve deneme restorasyonlarında daha doğal bir görünüm elde edilmesini sağlar.</p><p>Katman sayısı arttıkça renk geçişleri daha yumuşak olur, bu da özellikle ön bölge restorasyonlarında tercih edilmesinin başlıca nedenidir.</p>",
+      "published_at": "2026-07-31 19:29:16"
+    },
+    {
+      "id": "4",
+      "title": "UZM Dental Yeni Üretim Hattını Devreye Aldı",
+      "slug": "uzm-dental-yeni-uretim-hattini-devreye-aldi",
+      "category": "Şirket Haberleri",
+      "excerpt": "Artan talebe yanıt vermek için üretim kapasitemizi genişlettik.",
+      "cover_image": "/uploads/blog/blog_6a8225925f72a5.99660349.jpg",
+      "content": "<p>UZM Dental, artan ürün talebine yanıt vermek amacıyla tam otomatik robotik üretim hattını devreye aldı. Yeni hat, yüksek hassasiyetli ve kontrollü üretim süreçleriyle teslimat sürelerinin kısalmasına katkı sağlıyor.</p><p>Yatırım kapsamında kalite kontrol süreçleri de güçlendirilerek, ürünlerin sertifikasyon standartlarına tam uyumu garanti altına alındı.</p>",
+      "published_at": "2026-07-24 19:29:00"
+    },
+    {
+      "id": "5",
+      "title": "CE ve ISO Belgelerinin Dental Ürünlerdeki Rolü",
+      "slug": "ce-ve-iso-belgelerinin-dental-urunlerdeki-rolu",
+      "category": "Kalite & Sertifikasyon",
+      "excerpt": "Tıbbi cihaz kalite süreçlerinin klinik güvenilirliğe katkısı.",
+      "cover_image": "/images/blog.png",
+      "content": "<p>CE ve ISO sertifikasyonları, tıbbi cihazların üretim, test ve kalite kontrol süreçlerinin uluslararası standartlara uygunluğunu belgeler. Bu belgeler, klinik kullanımda güvenilirliğin temel göstergelerinden biridir.</p><p>UZM Dental olarak tüm ürünlerimiz, gerekli kayıt ve sertifikasyon süreçleri tamamlandıktan sonra satışa sunulmaktadır.</p>",
+      "published_at": "2026-07-17 19:29:16"
+    },
+    {
+      "id": "6",
+      "title": "Dental Depo ve Bayilerle İş Birliği Nasıl İşliyor?",
+      "slug": "dental-depo-ve-bayilerle-is-birligi-nasil-isliyor",
+      "category": "Distribütörlük",
+      "excerpt": "Bayilik ve distribütörlük süreçlerinde dikkat edilmesi gereken noktalar.",
+      "cover_image": "/images/blog.png",
+      "content": "<p>Dental depo ve bayilerle kurulan iş birlikleri; ürün eğitimi, pazarlama materyali desteği ve düzenli stok planlamasını kapsayan çok yönlü bir süreçtir.</p><p>Başvuru sürecinde faaliyet bölgesi, mevcut ürün portföyü ve hedef müşteri kitlesi değerlendirilerek en uygun iş birliği modeli belirlenir.</p>",
+      "published_at": "2026-07-10 19:29:16"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "1",
+      "question": "UZM Dental hangi ürün gruplarında faaliyet göstermektedir?",
+      "answer": "UZM Dental; CAD/CAM zirkonya diskleri, PMMA diskleri, gutta percha point ve absorbent paper point ürünlerinin ithalatı ve dağıtımını gerçekleştirmektedir.",
+      "sort_order": "1"
+    },
+    {
+      "id": "2",
+      "question": "Ürünleriniz Türkiye'de yasal olarak satılabilir mi?",
+      "answer": "Evet. Ürünlerimiz ilgili mevzuata uygun şekilde ithal edilmekte ve gerekli kayıt süreçleri tamamlanarak Türkiye pazarına sunulmaktadır.",
+      "sort_order": "2"
+    },
+    {
+      "id": "3",
+      "question": "Ürünleriniz ÜTS kayıtlı mı?",
+      "answer": "Evet. Satışa sunulan ürünler ÜTS süreçleri tamamlandıktan sonra kullanıcılarla buluşturulur.",
+      "sort_order": "3"
+    },
+    {
+      "id": "4",
+      "question": "Ürünleriniz hangi kalite belgelerine sahiptir?",
+      "answer": "Ürün grubuna göre; CE - ISO 13485 - Declaration of Conformity - IFU - MSDS gibi teknik dokümanlar sunulmaktadır.",
+      "sort_order": "4"
+    },
+    {
+      "id": "5",
+      "question": "QR kod ne işe yarıyor?",
+      "answer": "Her ürün üzerindeki QR kod okutulduğunda ilgili ürünün teknik bilgilerine, kullanım talimatlarına ve mevcut sertifikalarına ulaşabilirsiniz.",
+      "sort_order": "5"
+    },
+    {
+      "id": "6",
+      "question": "OEM üretim nedir?",
+      "answer": "OEM üretim, ürünlerin uzman üreticiler tarafından belirlenen kalite standartlarında üretilip UZM Dental markası altında kullanıcıya sunulmasını ifade eder.",
+      "sort_order": "6"
+    },
+    {
+      "id": "7",
+      "question": "Kimlere satış yapıyorsunuz?",
+      "answer": "Başta dental depolar, diş laboratuvarları, zincir klinikler ve kurumsal müşteriler olmak üzere profesyonel kullanıcılara hizmet vermekteyiz.",
+      "sort_order": "7"
+    },
+    {
+      "id": "8",
+      "question": "Bayilik veriyor musunuz?",
+      "answer": "Evet. Türkiye'nin farklı bölgelerinde uygun iş ortaklarıyla uzun vadeli distribütörlük ve bayilik anlaşmaları yapılmaktadır.",
+      "sort_order": "8"
+    },
+    {
+      "id": "9",
+      "question": "Minimum sipariş miktarı var mı?",
+      "answer": "Ürün grubuna göre minimum sipariş miktarları değişiklik gösterebilir. Detaylı bilgi için bizimle iletişime geçebilirsiniz.",
+      "sort_order": "9"
+    },
+    {
+      "id": "10",
+      "question": "Numune talep edebilir miyim?",
+      "answer": "Uygun ürün gruplarında değerlendirme amacıyla numune desteği sağlanabilmektedir.",
+      "sort_order": "10"
+    },
+    {
+      "id": "11",
+      "question": "Teknik dokümanlara nasıl ulaşabilirim?",
+      "answer": "Ürün sayfalarından veya ürün üzerindeki QR kodu okutarak teknik dokümanlara ulaşabilirsiniz.",
+      "sort_order": "11"
+    },
+    {
+      "id": "12",
+      "question": "Hangi CAD/CAM sistemleriyle uyumludur?",
+      "answer": "PMMA ve zirkonya disklerimiz 98 mm standart sistemler ve uygun modellerde Amann Girrbach uyumluluğu sunmaktadır. Uyum bilgileri ilgili ürün sayfalarında belirtilmektedir.",
+      "sort_order": "12"
+    },
+    {
+      "id": "13",
+      "question": "Ürünlerin renk ve kalınlık seçenekleri nelerdir?",
+      "answer": "Her ürün sayfasında mevcut renkler, kalınlıklar ve teknik özellikler detaylı olarak yer almaktadır.",
+      "sort_order": "13"
+    },
+    {
+      "id": "14",
+      "question": "Ürün stok durumu nasıl öğrenilir?",
+      "answer": "Stok bilgisi ve teslim süresi için satış ekibimizle iletişime geçebilirsiniz.",
+      "sort_order": "14"
+    },
+    {
+      "id": "15",
+      "question": "Teknik destek sağlıyor musunuz?",
+      "answer": "Evet. Ürün seçimi ve teknik konularla ilgili destek ekibimiz yardımcı olmaktadır.",
+      "sort_order": "15"
+    },
+    {
+      "id": "16",
+      "question": "İade veya değişim mümkün müdür?",
+      "answer": "İade ve değişim işlemleri yürürlükteki mevzuat ve satış koşulları çerçevesinde değerlendirilmektedir.",
+      "sort_order": "16"
+    },
+    {
+      "id": "17",
+      "question": "UZM Dental'i tercih etmek için en önemli nedenler nelerdir?",
+      "answer": "ÜTS süreçlerine uygun ürünler,\r\nGüvenilir OEM üretim,\r\nRekabetçi fiyatlandırma,\r\nTeknik doküman ve sertifika desteği,\r\nQR kod ile ürün doğrulama,\r\nSatış sonrası teknik destek",
+      "sort_order": "17"
+    }
+  ],
+  "products": {
+    "zircrown-ht-zirkonya-disk": {
+      "id": "1",
+      "name": "ZirCrown HT Zirkonya Disk",
+      "slug": "zircrown-ht-zirkonya-disk",
+      "sku": "ZC-HT-98",
+      "main_image": "/images/urun-1.png",
+      "gallery_images": [
+        "images/urun-1.png",
+        "images/uretim.png"
+      ],
+      "description_html": "<p>ZirCrown HT Zirkonya Disk, yüksek translüsensi ve mekanik dayanımı bir arada sunar.</p><p><img src=\"/uploads/content/content_6a8230067a1613.98815248.png\"></p>",
+      "specs_html": "",
+      "indication_html": "",
+      "colors_html": ""
+    },
+    "pmma-disk-95mm": {
+      "id": "3",
+      "name": "PMMA Disk .95mm",
+      "slug": "pmma-disk-95mm",
+      "sku": "PMMA-95",
+      "main_image": "/images/urun-1.png",
+      "gallery_images": [
+        "images/urun-1.png"
+      ],
+      "description_html": "<p>PMMA Disk .95mm, ölçü ve deneme restorasyonları için üretilmiştir.</p>",
+      "specs_html": "",
+      "indication_html": "",
+      "colors_html": ""
+    },
+    "st-ml": {
+      "id": "10",
+      "name": "ST-ML",
+      "slug": "st-ml",
+      "sku": "ST-ML",
+      "main_image": "/uploads/products/products_6ae11c06733cc7.37123135.png",
+      "gallery_images": [
+        "uploads/products/products_6ace0ce6a21b68.56481115.jpg",
+        "uploads/products/products_6ace0ce6a24d39.69898471.jpg",
+        "uploads/products/products_6ace0ce6a268c1.72335666.jpg",
+        "uploads/products/products_6ace0ce6a28650.59420191.jpg"
+      ],
+      "description_html": "<p><img src=\"/uploads/content/content_6a8d8ac772ce97.39804748.png\"></p><p><strong>Gücün her katmanda korunduğu, estetiğin doğal geçişlerle tamamlandığı zirkonya.</strong></p><p>ZirCrown ST-ML, dental laboratuvarların günlük üretim ihtiyaçlarına yönelik geliştirilmiş, %43 translüsensi değerine sahip multilayer zirkonya diskidir. Kontrollü ışık geçirgenliği sayesinde estetik görünüm ile maskeleme arasında dengeli bir optik yapı sunar.</p><p>Multilayer teknolojisi, disk boyunca doğal ve kademeli ton geçişleri oluştururken, katmanlar arasında dayanım farklılığı bulunmayan homojen yapısı sayesinde materyalin mekanik gücü disk boyunca korunur. Böylece teknisyen, restorasyonu disk içerisinde farklı seviyelerde konumlandırırken estetik geçişlerden yararlanabilir ve dayanım açısından daha öngörülebilir bir çalışma alanına sahip olur.</p><p>Bu özellik özellikle sınırlı preparasyon alanlarında veya ince tasarlanması gereken restorasyonlarda önemli bir avantaj sağlar. Materyalin farklı katmanlarında mekanik dayanımın korunması, ince kesitlerde dahi teknisyene tasarım açısından daha fazla güven ve esneklik sunar.</p><p>%43 kontrollü translüsensi, doğal ışık geçirgenliğini desteklerken aşırı şeffaflığın önüne geçerek günlük monolitik restorasyonlarda estetik ve fonksiyon arasında dengeli sonuçlar elde edilmesine yardımcı olur.</p><p><strong>ZirCrown ST-ML — Katmanlarda doğal geçiş, her seviyede aynı güç.</strong></p><p>Gerçekçi rengi ve dokusu sayesinde yapay dişler ile doğal dişler bir bütün hâline gelerek kusursuz bir uyum yakalar. Yüksek gerçeklik derecesi, ayırt edilmesini zorlaştırarak doğal, estetik, konforlu ve kolayca alışılabilen bir kullanım sunar. Tüm endikasyonlar için ihtiyaç duyduğunuz netlik ve dayanıklılığa sahip bu ürün, herkesin beklentisini karşılayacak çözümler sunuyor.</p>",
+      "specs_html": "<table class=\"uzm-spec-table\"Red Hat Display\", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\"><tbody><tr><td><p><span>Renk</span></p></td><td><p><span>Vita 16&BL1/BL2/BL3/BL4</span></p></td></tr><tr><td><p><span>Geçirgenlik</span></p></td><td><p><span>43%</span></p></td></tr><tr><td><p><span>Yoğunluk</span></p></td><td><p><span>≥6.0g/cm3</span></p></td></tr><tr><td><p><span>Bükülme Dayanımı</span></p></td><td><p><span>1200mpa</span></p></td></tr><tr><td><p><span>Kırılma Tokluğu</span></p></td><td><p><span>5Mpam½</span></p></td></tr><tr><td><p><span>Sertlik (Hv10)</span></p></td><td><p><span>1250</span></p></td></tr></tbody></table>",
+      "indication_html": "<p><img src=\"/uploads/content/content_6a8d8a7e746c35.74028647.png\"></p>",
+      "colors_html": "<p><img src=\"/uploads/content/content_6a8d8aa727a455.61067369.png\"></p>"
+    },
+    "3d-ml": {
+      "id": "11",
+      "name": "3D-ML",
+      "slug": "3d-ml",
+      "sku": "3D-ML",
+      "main_image": "/uploads/products/products_6ae11bc7cdd804.20317824.png",
+      "gallery_images": [
+        "uploads/products/products_6ae07c102fdca8.29993146.jpg",
+        "uploads/products/products_6ae07c10300994.91224135.jpg",
+        "uploads/products/products_6ae07c10302bb2.75136546.jpg"
+      ],
+      "description_html": "<p><span>Dayanımın ön planda olduğu, estetiğin multilayer yapıyla desteklendiği güçlü çözüm.</span></p><p><span>ZirCrown 3D-ML, </span><strong>%43–46 translüsensi</strong><span> aralığına sahip, estetik ve mekanik dayanım arasındaki dengede </span><strong>gücü önceliklendiren multilayer zirkonya</strong><span> seçeneğidir. Katmanlar boyunca değişen optik yapısı ve ton geçişleri, monolitik restorasyonlarda doğal bir görünüm elde edilmesine yardımcı olurken; yüksek mekanik direnç gerektiren vakalarda güvenilir bir altyapı sunmayı hedefler.</span></p><p><span>Dayanım odaklı yapısı nedeniyle 3D-ML, özellikle </span><strong>posterior restorasyonlar, köprüler ve yüksek çiğneme kuvvetlerine maruz kalan bölgeler</strong><span> için güçlü bir alternatiftir. Estetik beklentinin daha sınırlı olduğu vakalarda anterior ve </span><strong>full-arch restorasyonlarda</strong><span> da kullanılabilir.</span></p><p><span>3D-ML’nin mekanik özellikleri özellikle restorasyon için kullanılabilir dikey mesafenin sınırlı olduğu vakalarda önem kazanır. </span><strong>Kron boyunun düşük olduğu veya materyal kalınlığının sınırlı tutulması gereken restorasyonlarda</strong><span>, yüksek dayanım teknisyene tasarım açısından daha geniş bir çalışma alanı sağlar. Köprü restorasyonlarında ise mekanik stresin yoğunlaşabildiği </span><strong>pontik ve bağlantı bölgelerinde</strong><span> dayanımın ön planda olması, materyali uzun açıklıklı ve yüksek yük altında çalışacak restorasyonlar için güçlü bir seçenek haline getirir.</span></p><p><strong>%43–46 kontrollü translüsensi</strong><span>, restorasyona yeterli ışık geçirgenliği sağlarken materyalin dayanım odaklı karakterini korur. Böylece ZirCrown 3D-ML, maksimum translüsensiden ziyade </span><strong>güvenilir mekanik performansın öncelikli olduğu günlük laboratuvar çalışmalarında</strong><span> estetikten tamamen vazgeçmeden güçlü bir çözüm sunar.</span></p><p><strong>ZirCrown 3D-ML — Estetik geçişler. Güçlü altyapı. Daha fazla tasarım özgürlüğü.</strong></p><p><img src=\"/uploads/content/content_6a94149d50ab61.06933619.png\"></p>",
+      "specs_html": "<p><span>Dayanıklılığı birinci nesil ürünle karşılaştırılabilir düzeydedir ve aynı zamanda estetik etkilere sahiptir. Beş katmanlı kaplama, dokuz katmanlı gradyan, katmansız doğal renk geçişi. Hızlı sinterleme teknolojisine de uygundur.</span></p><table class=\"uzm-spec-table\"Red Hat Display\", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; width: 638.4px; border-collapse: collapse; margin: 4px 0px 14px; font-size: 13px;\"><tbody><tr><td><p><span>Renk</span></p></td><td><p><span>Vita 16 & BL1/BL2/BL3/BL4</span></p></td></tr><tr><td><p><span>Geçirgenlik</span></p></td><td><p><span>43-46%</span></p></td></tr><tr><td><p><span>Yoğunluk</span></p></td><td><p><span>≥6.0g/cm 3</span></p></td></tr><tr><td><p><span>Bükülme Dayanımı</span></p></td><td><p><span>900-1200mpa</span></p></td></tr><tr><td><p><span>Kırılma Tokluğu</span></p></td><td><p><span>5Mpam½</span></p></td></tr><tr><td><p><span>Sertlik (Hv10)</span></p></td><td><p><span>1250</span></p></td></tr></tbody></table>",
+      "indication_html": "<p><img src=\"/uploads/content/content_6a940efc6065d8.30081260.png\"></p>",
+      "colors_html": "<p><img src=\"/uploads/content/content_6a940f00862292.70599032.png\"></p>"
+    },
+    "3d-pro": {
+      "id": "12",
+      "name": "3D-PRO",
+      "slug": "3d-pro",
+      "sku": "3D-PRO",
+      "main_image": "/uploads/products/products_6a9414fb7ea196.71669873.png",
+      "gallery_images": [
+        "uploads/products/products_6ae119e2c938c4.47134936.jpg",
+        "uploads/products/products_6ae119e2c96388.67654177.jpg",
+        "uploads/products/products_6ae119e2c977f9.25489768.jpg"
+      ],
+      "description_html": "<p><strong>Gücün gerektiği yerde güçlü, estetiğin gerektiği yerde doğal.</strong></p><p><span>ZirCrown 3D-PRO, </span><strong>800–1200 MPa dayanım</strong><span> ve </span><strong>%43–57 arasında değişen translüsensi</strong><span> değerlerini aynı disk içerisinde buluşturan, estetik ve mekanik performans arasında güçlü bir denge sunmak üzere geliştirilmiş multilayer zirkonyadır.</span></p><p><span>3D-PRO’nun en önemli özelliği, restorasyonun farklı bölgelerindeki ihtiyaçlara uyum sağlayan </span><strong>kademeli yapısıdır</strong><span>. Servikal bölgede daha yüksek dayanım ve kontrollü translüsensi sunarken, insizal bölgeye doğru translüsensi artarak daha doğal bir ışık geçirgenliği ve estetik görünüm elde edilmesine yardımcı olur. Böylece materyal, </span><strong>dayanımın gerekli olduğu bölgelerde mekanik desteği, görünürlüğün arttığı bölgelerde ise estetik avantajı</strong><span> ön plana çıkarır.</span></p><p><strong>800–1200 MPa arasında değişen mekanik dayanımı</strong><span>, 3D-PRO’yu tek kronlardan posterior restorasyonlara, köprülerden full-arch çalışmalara kadar geniş bir kullanım alanı için güçlü bir seçenek haline getirir. Özellikle servikal bölge ve bağlantı alanlarında yüksek dayanım sağlarken, restorasyonun estetik bölgelerine doğru artan translüsensi daha canlı ve doğal bir görünüm oluşturulmasını destekler.</span></p><p><strong>%43’ten %57’ye uzanan translüsensi geçişi</strong><span> sayesinde servikalden insizale doğru ışık geçirgenliği kontrollü biçimde artar. Bu yapı, monolitik restorasyonlarda ilave işlemlere duyulan ihtiyacı azaltmaya yardımcı olurken doğal dişin optik karakterine daha yakın sonuçların elde edilmesini destekler.</span></p><p><span>ZirCrown 3D-PRO, estetik ile dayanım arasında seçim yapmak istemeyen laboratuvarlar için geliştirilmiş </span><strong>çok yönlü bir zirkonya çözümüdür.</strong></p><p><strong>ZirCrown 3D-PRO — Gücün başladığı, estetiğin yükseldiği katmanlı teknoloji.</strong></p><p><img src=\"/uploads/content/content_6a9414f94b4ee3.21864615.png\"></p>",
+      "specs_html": "<p>Doğal dişlerin farklı bölümleri farklı dokulardan oluşur ve farklı estetik ile fiziksel özellikler sunar. 3D Pro zirkonya materyalleri,ZirCrown tarafından yeni geliştirilen gradyan zirkonya malzemelerine dayanmaktadır. Doğal dişlerin özelliklerini hem estetik hem de fiziksel boyutlarda simüle ederek doğal geçiş ve mükemmel kalite sunar.</p><table class=\"uzm-spec-table\"Red Hat Display\", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\"><tbody><tr><td><p><span>Renk</span></p></td><td><p><span>Beyaz / Vita renkleri / BL renkleri</span></p></td></tr><tr><td><p><span>Geçirgenlik</span></p></td><td><p><span>43%-57%</span></p></td></tr><tr><td><p><span>Yoğunluk</span></p></td><td><p><span>≥6.0g/cm3</span></p></td></tr><tr><td><p><span>Bükülme Dayanımı</span></p></td><td><p><span>800-1200mpa</span></p></td></tr><tr><td><p><span>Kırılma Tokluğu</span></p></td><td><p><span>5Mpam½</span></p></td></tr><tr><td><p><span>Sertlik (Hv10)</span></p></td><td><p><span>1250</span></p></td></tr><tr><td height=\"24\"><p><span>Y2O3</span></p></td><td height=\"24\"><p><span>5.5wt%-9.5wt%</span></p></td></tr><tr><td height=\"24\"><p><span>AI2O3 SiO2</span></p></td><td height=\"24\"><p><span>0.05wt%</span></p></td></tr><tr><td height=\"24\"><p><span>Fe2O3</span></p></td><td height=\"24\"><p><span>≤0.002wt%</span></p></td></tr><tr><td height=\"24\"><p><span>Yaşlanma Özellikleri Kimyasal Çözünürlük</span></p></td><td height=\"24\"><p><span>≤0.002wt%</span></p></td></tr><tr><td height=\"24\"><p><span> </span></p></td><td height=\"24\"><p><span>Monoclinic Phase < 25%</span></p></td></tr><tr><td height=\"24\"><p><span> </span></p></td><td height=\"24\"><p><span>≤2000hg.cm -2</span></p></td></tr></tbody></table>",
+      "indication_html": "<p><img src=\"/uploads/content/content_6a94111ea4f5e3.20127088.png\"></p>",
+      "colors_html": ""
+    },
+    "4d-ml": {
+      "id": "13",
+      "name": "4D-ML",
+      "slug": "4d-ml",
+      "sku": "4D-ML",
+      "main_image": "/uploads/products/products_6a941567b60137.88912399.png",
+      "gallery_images": [],
+      "description_html": "<p><strong>Estetikten vazgeçmeden, ihtiyaç duyduğunuz ekstra güç.</strong></p><p><span>ZirCrown 4D-ML, </span><strong>%45–59 translüsensi</strong><span> ve </span><strong>700–1000 MPa dayanım</strong><span> aralığıyla, yüksek estetik beklentiler ile artırılmış mekanik gereksinimler arasında konumlanan multilayer zirkonya diskidir. Doğal ışık geçirgenliği ve kademeli ton geçişlerini güçlü mekanik yapıyla birleştirerek, özellikle estetik bölgede dayanım gereksiniminin arttığı restorasyonlar için geliştirilmiştir.</span></p><p><span>4D-ML’nin öne çıktığı nokta, </span><strong>anterior estetiği yalnızca tek kronlarla sınırlamamasıdır.</strong><span> Yüksek translüsensi sayesinde ön bölgede doğal ve canlı bir görünüm elde edilmesini desteklerken, </span><strong>700–1000 MPa arasında değişen dayanımı</strong><span> pontik ve bağlantı bölgelerinde daha fazla mekanik güven gerektiren restorasyonların planlanmasına olanak sağlar.</span></p><p><span>Bu nedenle 4D-ML; anterior kronların yanı sıra özellikle </span><strong>ön bölgede gövde içeren restorasyonlar ve üç üyeli köprüler</strong><span> için güçlü bir seçenektir. Estetik beklentinin yüksek olduğu ancak restorasyon tasarımının daha fazla mekanik dayanım gerektirdiği vakalarda, yüksek translüsensili estetik zirkonyalar ile yüksek dayanımlı zirkonyalar arasındaki boşluğu doldurur.</span></p><p><strong>%45’ten %59’a ulaşan translüsensi geçişi</strong><span>, servikal bölgeden insizale doğru doğal dişin optik karakterini desteklerken; kademeli mekanik yapısı restorasyonun ihtiyaç duyduğu bölgelerde daha yüksek dayanım sağlar. Böylece teknisyen, estetik bölgede daha fazla ışık geçirgenliği elde ederken mekanik gereksinimlerden ödün vermek zorunda kalmaz.</span></p><p><strong>ZirCrown 4D-ML — Estetiğin daha fazla güce ihtiyaç duyduğu yerde.</strong></p><p><img src=\"/uploads/content/content_6a94153e46f877.76159696.png\"></p>",
+      "specs_html": "<p>Ön dişler için popüler bir estetik restorasyon malzemesi; beş katman sıralı ve dokuz katman kademeli geçişli. Renk, herhangi bir katman çizgisi olmadan doğal bir şekilde geçiş yaparak, onu doğal dişlere rakip olabilecek düzeyde bir dental estetik restorasyon malzemesi haline getirir. Aynı zamanda hızlı sinterleme teknolojisi için de son derece uygundur. </p><table class=\"uzm-spec-table\"Red Hat Display\", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\"><tbody><tr><td><p><span>Renk</span></p></td><td><p><span>Vita 16 & BL1/BL2/BL3/BL4</span></p></td></tr><tr><td><p><span>Geçirgenlik</span></p></td><td><p><span>45%-59%</span></p></td></tr><tr><td><p><span>Yoğunluk</span></p></td><td><p><span>≥6.0g/cm3</span></p></td></tr><tr><td><p><span>Bükülme Dayanımı</span></p></td><td><p><span>700-1000mpa</span></p></td></tr><tr><td><p><span>Kırılma Tokluğu</span></p></td><td><p><span>5Mpam½</span></p></td></tr><tr><td><p><span>Sertlik (Hv10)</span></p></td><td><p><span>1250</span></p></td></tr></tbody></table>",
+      "indication_html": "<p><img src=\"/uploads/content/content_6a9411a6d142a6.33676136.png\"></p>",
+      "colors_html": "<p><img src=\"/uploads/content/content_6a9411aa5bf511.88461538.png\"></p>"
+    },
+    "5d-ml": {
+      "id": "14",
+      "name": "5D-ML",
+      "slug": "5d-ml",
+      "sku": "",
+      "main_image": "/uploads/products/products_6a9415abce40f4.28254795.png",
+      "gallery_images": [
+        "uploads/products/products_6ae11aa1cd0ce7.55036953.jpg",
+        "uploads/products/products_6ae11aa1cd3600.28716741.jpg",
+        "uploads/products/products_6ae11aa1cd4ac4.34825896.jpg",
+        "uploads/products/products_6ae11aa1cd60a7.80028261.jpg",
+        "uploads/products/products_6ae11aa1cd7668.31857249.jpg"
+      ],
+      "description_html": "<h3><strong>Daha fazla katman, daha doğal geçiş.</strong></h3><p><strong>Doğal geçişlerin ve yüksek estetiğin ön planda olduğu yeni nesil multilayer zirkonya.</strong></p><p><span>ZirCrown 5D-ML, </span><strong>%43–60 translüsensi</strong><span>, </span><strong>650–950 MPa dayanım</strong><span> ve </span><strong>10 katmanlı multilayer yapısıyla</strong><span>, ZirCrown ailesinin estetik beklentilerin ön plana çıktığı restorasyonlar için geliştirilmiş zirkonya diskidir.</span></p><p><span>5D-ML’nin en belirgin özelliği, restorasyon boyunca oluşturduğu </span><strong>kademeli renk, translüsensi ve doğal ton geçişidir</strong><span>. Servikal bölgeden insizale doğru değişen optik yapı, doğal dişte görülen renk derinliğini ve ışık geçirgenliğini monolitik restorasyona taşımaya yardımcı olur. </span><strong>10 katmanlı yapısı</strong><span>, katmanlar arasındaki geçişlerin daha yumuşak ve doğal algılanmasını sağlayarak restorasyonda belirgin renk sınırlarının oluşmasını azaltır.</span></p><p><span>İnsizal bölgeye doğru </span><strong>%60’a ulaşan translüsensi</strong><span>, özellikle anterior restorasyonlarda ışığın materyal içerisindeki doğal etkileşimini destekler. Böylece restorasyon yalnızca doğru renk tonuna değil; daha canlı, derinlikli ve doğal bir optik karaktere sahip olur.</span></p><p><strong>650–950 MPa arasında değişen mekanik dayanımı</strong><span>, estetik karakterini güçlü bir altyapıyla tamamlar. Bu özellikleriyle 5D-ML özellikle </span><strong>anterior kronlar, veneerler ve estetik beklentinin yüksek olduğu monolitik restorasyonlar</strong><span> için ideal bir seçenektir. Daha yüksek mekanik gereksinimin bulunduğu anterior köprü ve gövdeli restorasyonlarda ise ZirCrown 4D-ML daha dayanım odaklı bir alternatif sunar.</span></p><p><span>ZirCrown 5D-ML, yüksek estetiği yalnızca renkle değil; </span><strong>katman, translüsensi ve ışık geçişinin birlikte oluşturduğu doğal görünümle</strong><span> sunar.</span></p><p><img src=\"/uploads/content/content_6a94123fbe8bb8.89608560.png\"></p>",
+      "specs_html": "<p>Usta işi eserler, ustaların tercihi. Renksiz gradyan. %60 şeffaflıktan başlayıp boyun bölgesinde kademeli olarak %47 şeffaflığa geçiş yapan doğal kesimi, onu doğal dişlerle boy ölçüşebilecek düzeyde bir dental estetik restorasyon malzemesi haline getirir. Aynı zamanda hızlı sinterleme teknolojisi için de son derece uygundur. </p><table class=\"uzm-spec-table\"Red Hat Display\", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\"><tbody><tr><td><p><span>Renk</span></p></td><td><p><span>Vita 16&BL1/BL2/BL3/BL4</span></p></td></tr><tr><td><p><span>Geçirgenlik</span></p></td><td><p><span>47%-60%</span></p></td></tr><tr><td><p><span>Yoğunluk</span></p></td><td><p><span>≥6.0g/cm3</span></p></td></tr><tr><td><p><span>Bükülme Dayanımı</span></p></td><td><p><span>650-950mpa</span></p></td></tr><tr><td><p><span>Kırılma Tokluğu</span></p></td><td><p><span>5Mpam½</span></p></td></tr><tr><td><p><span>Sertlik (Hv10)</span></p></td><td><p><span>1250</span></p></td></tr></tbody></table>",
+      "indication_html": "<p><img src=\"/uploads/content/content_6a9411f9a9f7b6.60927252.png\"></p>",
+      "colors_html": ""
+    },
+    "monolayer": {
+      "id": "15",
+      "name": "Monolayer",
+      "slug": "monolayer",
+      "sku": "Monolayer",
+      "main_image": "/uploads/products/products_6a94179534c045.58228440.png",
+      "gallery_images": [],
+      "description_html": "<h1><span>UZM Dental Monolayer PMMA Disc</span></h1><h2><span>Günlük CAD/CAM Restorasyonları İçin Güvenilir Performans</span></h2><p><span>UZM Dental Monolayer PMMA Disc, CAD/CAM sistemleriyle uyumlu olarak geliştirilmiş, geçici kron ve köprü restorasyonlarının üretimi için yüksek hassasiyet sunan monokromatik PMMA diskidir. Homojen materyal yapısı, üstün işlenebilirliği ve doğal yüzey kalitesi sayesinde laboratuvarlarda güvenilir ve verimli üretim imkânı sağlar.</span></p><p><span>Yüksek boyutsal stabilitesi ve düşük büzülme oranı sayesinde estetik ve fonksiyonel geçici restorasyonların hazırlanmasına katkıda bulunur.</span></p><h1><span>Neden Monolayer PMMA?</span></h1><p><span>Monolayer PMMA diskler, tek renkli homojen yapıları sayesinde geçici restorasyonlarda uzun yıllardır güvenle kullanılmaktadır. Kolay frezlenebilir yapısı, yüksek yüzey kalitesi ve hızlı polisaj özelliği sayesinde günlük laboratuvar çalışmalarında en çok tercih edilen PMMA disk tiplerinden biridir.</span></p><h1><span>Neden UZM Dental PMMA Disc?</span></h1><h2><span>ÜTS Güvencesi</span></h2><p><span>UZM Dental PMMA diskleri, ilgili mevzuata uygun olarak ithal edilmekte ve ÜTS süreçleri tamamlanarak Türkiye pazarına sunulmaktadır. Böylece kullanıcılar güvenilir ve izlenebilir ürünlere kolaylıkla ulaşabilir.</span></p><h2><span>Estetik Restorasyonlar İçin BL Renk Seçeneği</span></h2><p><span>Standart A1 ve A2 renk seçeneklerinin yanı sıra BL3 (Bleach) PMMA disk seçeneği de sunuyoruz.</span></p><p><span>Özellikle yüksek estetik beklentisi olan hastalarda ve beyazlatılmış dişlere uygun geçici restorasyonlarda BL renkler daha doğal ve uyumlu sonuçlar elde edilmesine yardımcı olur.</span></p><h2><span>Tüm Yaygın CAD/CAM Sistemleriyle Uyum</span></h2><p><span>Farklı laboratuvarların kullandığı sistemlere uygun disk seçenekleri sunuyoruz.</span></p><ol><li><span>98 mm Standart Sistem&nbsp;</span></li><li><span>95 mm Sistem&nbsp;</span></li><li><span>Amann Girrbach (AG)&nbsp;</span></li></ol><p><span>Böylece laboratuvarlar mevcut üretim altyapılarını değiştirmeden ürünlerimizi güvenle kullanabilir.</span></p><h2><span>Clear PMMA ile Fonksiyonel Aparey Üretimi</span></h2><p><span>Şeffaf PMMA disklerimiz;</span></p><ol><li><span>Oklüzal splint&nbsp;</span></li><li><span>Gece plağı&nbsp;</span></li><li><span>Horlama apareyi&nbsp;</span></li><li><span>Koruyucu plak uygulamaları&nbsp;</span></li></ol><p><span>gibi şeffaf apareylerin üretimi için geliştirilmiştir.</span></p><p><span>Yüksek optik berraklığı ve işlenebilir yapısı sayesinde fonksiyonel ve estetik uygulamalarda güvenilir performans sunar.</span></p><h1><span>UZM Dental Avantajı</span></h1><p><span>✔ ÜTS kayıt süreçleri tamamlanmış ürünler</span></p><p><span>✔ CAD/CAM sistemleriyle geniş uyumluluk</span></p><p><span>✔ BL3 estetik renk seçeneği</span></p><p><span>✔ Şeffaf (Clear) PMMA ile splint ve horlama apareyi üretimi</span></p><p><span>✔ Güvenilir OEM üretim</span></p><p><span>✔ QR kod ile teknik dokümanlara hızlı erişim</span></p><h1><span>Mevcut Boyutlar</span></h1><p><span>Senin sipariş ettiğin ürünlere göre;</span></p><ol><li><span>98 × 16 mm&nbsp;</span></li><li><span>98 × 18 mm&nbsp;</span></li><li><span>98 × 20 mm&nbsp;</span></li><li><span>98 × 30 mm&nbsp;</span></li><li><span>95 × 18 mm&nbsp;</span></li><li><span>AG × 18 mm&nbsp;</span></li></ol><h1><span>Mevcut Renkler</span></h1><ol><li><span>A1&nbsp;</span></li><li><span>A2&nbsp;</span></li><li><span>BL3&nbsp;</span></li><li><span>Clear (Şeffaf)&nbsp;</span></li></ol><h1><span>Sistem Uyumluluğu</span></h1><ol><li><span>98 mm CAD/CAM Sistemleri&nbsp;</span></li><li><span>95 mm Sistemler&nbsp;</span></li><li><span>Amann Girrbach (AG)</span></li></ol>",
+      "specs_html": "<table class=\"uzm-spec-table\" border=\"1\"><colgroup><col><col></colgroup><tbody><tr><td><p><span>Özellikler</span></p></td><td><p><span>Değerler</span></p></td></tr><tr><td><p><span>Elastisite Modülü</span></p></td><td><p><span>100MPa</span></p></td></tr><tr><td><p><span>Yoğunluk</span></p></td><td><p><span>1.35-1.45g/cm³</span></p></td></tr><tr><td><p><span>Sertlik</span></p></td><td><p><span>85-90(Shore hardness)</span></p></td></tr><tr><td><p><span>Su Emme</span></p></td><td><p><span>&lt;0.04%</span></p></td></tr><tr><td height=\"44\"><p><span>Bileşen</span></p></td><td height=\"44\"><p><span>PMMA &gt;99%; Pigment &lt;1%</span></p></td></tr></tbody></table><p>Boyutlar;</p><ol><li><strong>98 × 16 mm</strong><span>&nbsp;</span></li><li><strong>98 × 18 mm</strong><span>&nbsp;</span></li><li><strong>98 × 20 mm</strong><span>&nbsp;</span></li><li><strong>98 × 30 mm</strong><span>&nbsp;</span></li><li><strong>95 × 18 mm</strong><span>&nbsp;</span></li><li><strong>AG × 18 mm</strong></li></ol>",
+      "indication_html": "",
+      "colors_html": "<p>A1, A2, BL3, Clear (Şeffaf)</p>"
+    },
+    "multilayer-pmma-disc": {
+      "id": "16",
+      "name": "Multilayer PMMA Disc",
+      "slug": "multilayer-pmma-disc",
+      "sku": "",
+      "main_image": "/uploads/products/products_6a9418b857ba00.20289798.jpeg",
+      "gallery_images": [],
+      "description_html": "<h1><span>UZM Dental Multilayer PMMA Disc</span></h1><h2><span>Premium Geçici Restorasyonlar İçin Doğal Estetik</span></h2><p><span>UZM Dental Multilayer PMMA Disc, yüksek estetik beklentisi olan geçici restorasyonlar için geliştirilmiş çok katmanlı CAD/CAM PMMA diskidir. Doğal dentin ve mine geçişlerini taklit eden katmanlı yapısı sayesinde tek renk PMMA disklerden daha estetik ve doğal bir görünüm sunar.</span></p><p><span>Özellikle dijital diş hekimliği uygulamalarında, uzun dönem geçici restorasyonlar ve estetik vakalarda laboratuvarlara yüksek kalite standartlarında üretim imkânı sağlar.</span></p><h1><span>Neden Multilayer PMMA?</span></h1><p><span>Geçici restorasyonlar artık yalnızca fonksiyon değil, estetik açıdan da büyük önem taşımaktadır. Çok katmanlı (Multilayer) PMMA diskler, doğal renk geçişleri sayesinde özellikle ön bölge restorasyonlarında daha gerçekçi ve estetik sonuçlar elde edilmesine yardımcı olur.</span></p><p><span>Premium klinikler ve dijital laboratuvarlar tarafından giderek daha fazla tercih edilen bu teknoloji, geçici restorasyonlarda doğal diş görünümüne en yakın çözümlerden biridir.</span></p><h1><span>Ürün Özellikleri</span></h1><ol><li><span>Çok katmanlı (Multilayer) yapı&nbsp;</span></li><li><span>Doğal renk geçişleri&nbsp;</span></li><li><span>CAD/CAM sistemleriyle tam uyumluluk&nbsp;</span></li><li><span>Yüksek işlenebilirlik&nbsp;</span></li><li><span>Kolay polisaj&nbsp;</span></li><li><span>Düşük büzülme oranı&nbsp;</span></li><li><span>Boyutsal stabilite&nbsp;</span></li><li><span>Uzun süreli renk stabilitesi&nbsp;</span></li><li><span>Homojen materyal yapısı&nbsp;</span></li></ol><h1><span>Kullanım Alanları</span></h1><ol><li><span>Premium geçici kronlar&nbsp;</span></li><li><span>Premium geçici köprüler&nbsp;</span></li><li><span>Estetik ön bölge restorasyonları&nbsp;</span></li><li><span>Dijital smile design vakaları&nbsp;</span></li><li><span>İmplant üstü geçici restorasyonlar&nbsp;</span></li><li><span>Uzun dönem geçici restorasyonlar&nbsp;</span></li></ol><h1><span>Teknik Özellikler</span></h1><table class=\"uzm-spec-table\"><colgroup><col width=\"140\"><col width=\"138\"></colgroup><thead><tr><th><p><span>Özellik</span></p></th><th><p><span>Değer</span></p></th></tr></thead><tbody><tr><td><p><span>Ürün Tipi</span></p></td><td><p><span>Multilayer PMMA Disc</span></p></td></tr><tr><td><p><span>Yapı</span></p></td><td><p><span>Çok Katmanlı</span></p></td></tr><tr><td><p><span>Çap</span></p></td><td><p><span>98 mm / 95 mm / AG</span></p></td></tr><tr><td><p><span>Materyal</span></p></td><td><p><span>PMMA</span></p></td></tr><tr><td><p><span>CAD/CAM Uyumluluğu</span></p></td><td><p><span>Açık Sistemler</span></p></td></tr><tr><td><p><span>Biyouyumluluk</span></p></td><td><p><span>Evet</span></p></td></tr></tbody></table><h1><span>Mevcut Kalınlıklar</span></h1><ol><li><span>98 × 18 mm&nbsp;</span></li><li><span>95 × 18 mm&nbsp;</span></li><li><span>AG × 18 mm&nbsp;</span></li></ol><h1><span>Mevcut Renkler</span></h1><ol><li><span>A2&nbsp;</span></li><li><span>BL3</span></li></ol><h1><span>Sistem Uyumluluğu</span></h1><ol><li><span>98 mm CAD/CAM Sistemleri&nbsp;</span></li><li><span>95 mm Sistemler&nbsp;</span></li><li><span>Amann Girrbach (AG)&nbsp;</span></li></ol><h1><span>Neden UZM Dental Multilayer PMMA?</span></h1><h3><span>Doğal Katman Geçişleri</span></h3><p><span>Çok katmanlı yapısı sayesinde dentin ve mine arasındaki doğal renk geçişlerini taklit ederek estetik restorasyonların hazırlanmasına yardımcı olur.</span></p><h3><span>Premium Estetik</span></h3><p><span>Özellikle ön bölge geçici restorasyonlarında tek renk PMMA disklere göre daha doğal ve estetik sonuçlar sunar.</span></p><h3><span>BL3 Seçeneği</span></h3><p><span>BL3 (Bleach) renk seçeneği, beyazlatılmış dişlere ve yüksek estetik beklentisi olan hastalara uygun geçici restorasyonların hazırlanmasına olanak tanır.</span></p><h3><span>Laboratuvar Verimliliği</span></h3><p><span>Yüksek işlenebilirliği sayesinde CAD/CAM frezeleme sırasında temiz kenarlar ve pürüzsüz yüzeyler elde edilmesine yardımcı olur.</span></p><h1><span>UZM Dental Avantajı</span></h1><h3><span>Premium Klinikler İçin Geliştirildi</span></h3><p><span>Multilayer PMMA disklerimiz, özellikle estetik odaklı çalışan klinikler ve dijital dental laboratuvarlar için seçilmiş ürünlerden oluşmaktadır.</span></p><h3><span>ÜTS Güvencesi</span></h3><p><span>Ürünlerimiz ilgili mevzuata uygun olarak ithal edilmekte ve ÜTS süreçleri tamamlanarak Türkiye pazarına sunulmaktadır.</span></p><h3><span>Başlıca CAD/CAM Sistemleriyle Uyum</span></h3><p><span>98 mm, 95 mm ve Amann Girrbach sistemlerine uygun seçenekler sayesinde farklı üretim altyapılarına sahip laboratuvarlarda güvenle kullanılabilir.</span></p>",
+      "specs_html": "<table class=\"uzm-spec-table\"><colgroup><col width=\"140\"><col width=\"138\"></colgroup><thead><tr><th><p><span>Özellik</span></p></th><th><p><span>Değer</span></p></th></tr></thead><tbody><tr><td><p><span>Ürün Tipi</span></p></td><td><p><span>Multilayer PMMA Disc</span></p></td></tr><tr><td><p><span>Yapı</span></p></td><td><p><span>Çok Katmanlı</span></p></td></tr><tr><td><p><span>Çap</span></p></td><td><p><span>98 mm / 95 mm / AG</span></p></td></tr><tr><td><p><span>Materyal</span></p></td><td><p><span>PMMA</span></p></td></tr><tr><td><p><span>CAD/CAM Uyumluluğu</span></p></td><td><p><span>Açık Sistemler</span></p></td></tr><tr><td><p><span>Biyouyumluluk</span></p></td><td><p><span>Evet</span></p></td></tr></tbody></table><p><span>Mevcut Kalınlıklar;</span></p><p><span>98 × 18 mm</span></p><p><span>95 × 18 mm</span></p><p><span>AG × 18 mm</span></p>",
+      "indication_html": "",
+      "colors_html": "<p>A2, BL3</p>"
+    },
+    "x-ray-pmma-disc": {
+      "id": "17",
+      "name": "X-Ray PMMA Disc",
+      "slug": "x-ray-pmma-disc",
+      "sku": "",
+      "main_image": "/uploads/products/products_6a941a808cc664.84814443.jpg",
+      "gallery_images": [],
+      "description_html": "<h1><span>UZM Dental X-Ray PMMA Disc</span></h1><h2><span>Geçici Restorasyonlarda Radyografik Görünürlük</span></h2><p><span>UZM Dental X-Ray PMMA Disc, radyografik olarak görüntülenebilir geçici restorasyonların üretimi için geliştirilmiş özel CAD/CAM PMMA diskidir. Radyoopak yapısı sayesinde geçici restorasyonların radyografik değerlendirilmesine olanak sağlayarak klinisyenlere tanı, kontrol ve takip süreçlerinde önemli avantajlar sunar.</span></p><p><span>Yüksek işlenebilirliği, boyutsal stabilitesi ve doğal estetik görünümü ile dijital diş hekimliği uygulamalarında güvenilir performans sağlar.</span></p><h1><span>Neden X-Ray PMMA?</span></h1><p><span>Standart PMMA diskler radyografilerde sınırlı görünürlük sağlayabilir. X-Ray PMMA, içerdiği radyoopak bileşenler sayesinde restorasyonun radyografik olarak ayırt edilebilmesini sağlayarak özellikle implant ve protetik tedavi süreçlerinde klinik değerlendirmeyi kolaylaştırır.</span></p><h1><span>Ürün Özellikleri</span></h1><ol><li><span>Radyoopak PMMA yapısı&nbsp;</span></li><li><span>Radyografik görünürlük&nbsp;</span></li><li><span>CAD/CAM sistemleriyle tam uyumluluk&nbsp;</span></li><li><span>Yüksek işlenebilirlik&nbsp;</span></li><li><span>Kolay polisaj&nbsp;</span></li><li><span>Boyutsal stabilite&nbsp;</span></li><li><span>Homojen materyal yapısı&nbsp;</span></li><li><span>Düşük su absorbsiyonu&nbsp;</span></li><li><span>Klinik kullanıma uygun kalite kontrolü&nbsp;</span></li></ol><h1><span>Kullanım Alanları</span></h1><ol><li><span>Geçici kronlar&nbsp;</span></li><li><span>Geçici köprüler&nbsp;</span></li><li><span>İmplant üstü geçici restorasyonlar&nbsp;</span></li><li><span>Uzun dönem geçici restorasyonlar&nbsp;</span></li><li><span>Radyografik takip gerektiren geçici restorasyonlar&nbsp;</span></li></ol><h1><span>Teknik Özellikler</span></h1><table class=\"uzm-spec-table\"><colgroup><col width=\"140\"><col width=\"116\"></colgroup><thead><tr><th><p><span>Özellik</span></p></th><th><p><span>Değer</span></p></th></tr></thead><tbody><tr><td><p><span>Ürün Tipi</span></p></td><td><p><span>X-Ray PMMA Disc</span></p></td></tr><tr><td><p><span>Çap</span></p></td><td><p><span>98 mm</span></p></td></tr><tr><td><p><span>Kalınlık</span></p></td><td><p><span>18 mm</span></p></td></tr><tr><td><p><span>Renk</span></p></td><td><p><span>A1</span></p></td></tr><tr><td><p><span>Materyal</span></p></td><td><p><span>Radyoopak PMMA</span></p></td></tr><tr><td><p><span>CAD/CAM Uyumluluğu</span></p></td><td><p><span>Açık Sistemler</span></p></td></tr><tr><td><p><span>Biyouyumluluk</span></p></td><td><p><span>Evet</span></p></td></tr></tbody></table><h1><span>UZM Dental X-Ray PMMA'nın Avantajları</span></h1><h3><span>Radyografik Görünürlük</span></h3><p><span>Restorasyonun radyografilerde daha kolay değerlendirilmesine yardımcı olur.</span></p><h3><span>Güvenilir Klinik Takip</span></h3><p><span>Tedavi sürecinde geçici restorasyonun konumu ve uyumu radyografik olarak kontrol edilebilir.</span></p><h3><span>Hassas Frezleme</span></h3><p><span>CAD/CAM sistemlerinde temiz frezeleme performansı ve yüksek yüzey kalitesi sunar.</span></p><h3><span>Boyutsal Stabilite</span></h3><p><span>Geçici restorasyonlarda güvenilir ölçüsel doğruluk sağlar.</span></p><h1><span>Mevcut Seçenek</span></h1><table class=\"uzm-spec-table\"><colgroup><col width=\"47\"><col width=\"49\"><col width=\"36\"></colgroup><thead><tr><th><p><span>Sistem</span></p></th><th><p><span>Kalınlık</span></p></th><th><p><span>Renk</span></p></th></tr></thead><tbody><tr><td><p><span>98 mm</span></p></td><td><p><span>18 mm</span></p></td><td><p><span>A1</span></p></td></tr></tbody></table>",
+      "specs_html": "<table class=\"uzm-spec-table\"><colgroup><col width=\"140\"><col width=\"116\"></colgroup><thead><tr><th><p><strong>Özellik</strong></p></th><th><p><strong>Değer</strong></p></th></tr></thead><tbody><tr><td><p><span>Ürün Tipi</span></p></td><td><p><span>X-Ray PMMA Disc</span></p></td></tr><tr><td><p><span>Çap</span></p></td><td><p><span>98 mm</span></p></td></tr><tr><td><p><span>Kalınlık</span></p></td><td><p><span>18 mm</span></p></td></tr><tr><td><p><span>Renk</span></p></td><td><p><span>A1</span></p></td></tr><tr><td><p><span>Materyal</span></p></td><td><p><span>Radyoopak PMMA</span></p></td></tr><tr><td><p><span>CAD/CAM Uyumluluğu</span></p></td><td><p><span>Açık Sistemler</span></p></td></tr><tr><td><p><span>Biyouyumluluk</span></p></td><td><p><span>Evet</span></p></td></tr></tbody></table>",
+      "indication_html": "",
+      "colors_html": ""
+    },
+    "02-taper": {
+      "id": "18",
+      "name": "02 Taper",
+      "slug": "02-taper",
+      "sku": "02-taper",
+      "main_image": "/uploads/products/products_6a941cee424278.98126665.png",
+      "gallery_images": [],
+      "description_html": "<p><strong>Hassas Uyum. Güvenilir Kanal Dolgusu.</strong></p><p><strong>UZM Dental ISO .02 Taper Gutta Percha Points</strong><span>, ISO standartlarına uygun olarak üretilmiş olup manuel kanal preparasyonları ve lateral kondensasyon tekniklerinde güvenilir obturasyon sağlamak üzere tasarlanmıştır. Boyutsal hassasiyeti, homojen yapısı ve standart taper geometrisi sayesinde kök kanalına uyumlu bir çalışma deneyimi sunar.</span></p><p><strong>Ürün Özellikleri</strong></p><ol><li><span>ISO standartlarına uygun boyutlandırma&nbsp;</span></li><li><span>Hassas .02 taper geometrisi&nbsp;</span></li><li><span>Homojen ve dengeli materyal yapısı&nbsp;</span></li><li><span>Yüksek boyutsal doğruluk&nbsp;</span></li><li><span>Kanal duvarına etkin adaptasyon&nbsp;</span></li><li><span>Yüksek radyoopasite&nbsp;</span></li><li><span>Esnek ve kontrollü çalışma&nbsp;</span></li><li><span>Kolay kesilebilir yapı&nbsp;</span></li><li><span>ISO renk kodlamasına uygun üretim&nbsp;</span></li></ol><p><strong>Kullanım Alanları</strong></p><ol><li><span>Manuel kanal preparasyonları&nbsp;</span></li><li><span>Lateral kondensasyon tekniği&nbsp;</span></li><li><span>Soğuk obturasyon teknikleri&nbsp;</span></li><li><span>Yardımcı gutta-perka olarak kullanım&nbsp;</span></li><li><span>Endodontik kanal dolgu işlemleri&nbsp;</span></li></ol><p><strong>Teknik Özellikler</strong></p><table class=\"uzm-spec-table\"><colgroup><col width=\"101\"><col width=\"126\"></colgroup></table><p><strong>Mevcut Boyutlar</strong></p><ol><li><span>#20&nbsp;</span></li><li><span>#25&nbsp;</span></li><li><span>#30&nbsp;</span></li><li><span>#15-40 (Assorted)</span></li><li><span>#45-80 (Assorted)</span></li></ol><p><strong>Avantajları</strong></p><p><strong>Hassas Üretim</strong></p><p><span>Standart çap ve taper toleransları sayesinde kanal preparasyonuna güvenilir uyum sağlar.</span></p><p><strong>Homojen Yapı</strong></p><p><span>Dengeli materyal dağılımı, kontrollü çalışma ve güvenilir obturasyona katkıda bulunur.</span></p><p><strong>Klinik Güvenilirlik</strong></p><p><span>Günlük endodontik uygulamalarda öngörülebilir performans sunar.</span></p><p><strong>Kolay Kullanım</strong></p><p><span>Esnek yapısı sayesinde kanal içinde kontrollü yerleştirme imkânı sağlar.</span></p><p><strong>Saklama Koşulları</strong></p><ol><li><span>Serin ve kuru ortamda saklayınız.&nbsp;</span></li><li><span>Doğrudan güneş ışığından koruyunuz.&nbsp;</span></li><li><span>Yüksek sıcaklık ve nemden uzak tutunuz.&nbsp;</span></li><li><span>Ambalajı kullanılıncaya kadar kapalı tutunuz</span></li></ol>",
+      "specs_html": "<table class=\"uzm-spec-table\"><thead><tr><th><p><strong>Özellik</strong></p></th><th><p><strong>Değer</strong></p></th></tr></thead><tbody><tr><td><p><span>Ürün Tipi</span></p></td><td><p><span>Gutta Percha Point</span></p></td></tr><tr><td><p><span>Taper</span></p></td><td><p><span>.02</span></p></td></tr><tr><td><p><span>Standart</span></p></td><td><p><span>ISO</span></p></td></tr><tr><td><p><span>Kullanım</span></p></td><td><p><span>Tek kullanımlık</span></p></td></tr><tr><td><p><span>Paket İçeriği</span></p></td><td><p><span>100 adet</span></p></td></tr><tr><td><p><span>Renk Kodlama</span></p></td><td><p><span>ISO Standardı</span></p></td></tr><tr><td><p><span>Radyoopasite</span></p></td><td><p><span>Yüksek</span></p></td></tr></tbody></table><p><strong>Mevcut Boyutlar</strong></p><ol><li><span>#20&nbsp;</span></li><li><span>#25&nbsp;</span></li><li><span>#30&nbsp;</span></li><li><span>#15-40 (Assorted)</span></li><li><span>#45-80 (Assorted)</span></li></ol>",
+      "indication_html": "",
+      "colors_html": ""
+    },
+    "03-taper": {
+      "id": "19",
+      "name": "03 Taper",
+      "slug": "03-taper",
+      "sku": "03-taper",
+      "main_image": "/uploads/products/products_6a9424bb5b2676.92982547.png",
+      "gallery_images": [],
+      "description_html": "<p><span>UZM Dental ISO .03 Taper Gutta Percha Points (Profosyoneller için)</span></p><p><strong>\"Her klinik yaklaşım aynı değildir. UZM Dental, farklı preparasyon tercihlerine uygun .03 taper gutta-perka seçeneğiyle klinisyenlere daha geniş bir ürün yelpazesi sunar.\"</strong></p><p><span>Profosyoneller için üretilmiş olan .03 taper bulması zor ve alternatif arayan hekimler için özel bir seçenektir.&nbsp;</span></p><p><strong><em><u>03 taper Gutta’lar ;</u></em></strong></p><p><strong><em><u>Özellikle eğimli ve dar kanallarda yeterli genişletme imkanı olmayan hekimlerin 04 taper’dan 02 taper’a dönüş yaptırmadan kullanabilecekleri bir kozdur.&nbsp;</u></em></strong></p><p><strong><em><u>Aynı zamanda özellikle manuel genişletme yapılan geniş kanallarda da 03 taper gutta’lar tug-back hissiyatını bozmadan ve koronal şişmeyi engellemek amaçlı kullanılacak olan ideal bir alternatiftir.&nbsp;&nbsp;</u></em></strong></p><p><strong>Gelenekselin Ötesinde Hassasiyet</strong></p><p><strong>UZM Dental ISO .03 Taper Gutta Percha Points</strong><span>, .03 taper kanal preparasyonlarıyla uyumlu olarak geliştirilmiş özel bir endodontik dolgu materyalidir. Standart .02 taper seçeneklerine alternatif olarak sunulan bu seri, daha kontrollü taper uyumu tercih eden klinisyenler için tasarlanmıştır.</span></p><p><span>Yüksek boyutsal hassasiyeti, homojen yapısı ve güvenilir adaptasyon özelliği sayesinde modern endodontik uygulamalarda öngörülebilir bir obturasyon deneyimi sunar.</span></p><p><strong>Neden .03 Taper?</strong></p><p><span>.03 taper gutta-perka, rutin klinik uygulamalarda .02 ve .04 taper kadar yaygın kullanılmasa da, belirli preparasyon tekniklerini tercih eden hekimler için önemli avantajlar sunabilir.</span></p><ol><li><span>.03 taper kanal preparasyonlarıyla daha uyumlu obturasyon&nbsp;</span></li><li><span>Kanal anatomisine daha dengeli adaptasyon&nbsp;</span></li><li><span>Kontrollü ve öngörülebilir yerleştirme&nbsp;</span></li><li><span>Modern preparasyon sistemleriyle uyumluluk&nbsp;</span></li><li><span>Manuel ve yardımcı obturasyon tekniklerinde kullanım&nbsp;</span></li></ol><p><strong>Ürün Özellikleri</strong></p><ol><li><span>ISO standartlarına uygun üretim&nbsp;</span></li><li><span>Hassas .03 taper geometrisi&nbsp;</span></li><li><span>Yüksek boyutsal doğruluk&nbsp;</span></li><li><span>Homojen materyal yapısı&nbsp;</span></li><li><span>Yüksek radyoopasite&nbsp;</span></li><li><span>Esnek çalışma karakteristiği&nbsp;</span></li><li><span>Kolay kesilebilir yapı&nbsp;</span></li><li><span>ISO renk kodlaması&nbsp;</span></li></ol><p><strong>Kullanım Alanları</strong></p><ol><li><span>.03 taper kanal preparasyonları&nbsp;</span></li><li><span>Soğuk lateral kondensasyon&nbsp;</span></li><li><span>Yardımcı obturasyon teknikleri&nbsp;</span></li><li><span>Endodontik kök kanal dolgusu&nbsp;</span></li><li><span>Klinik ve akademik kullanım&nbsp;</span></li></ol><p><strong>Teknik Özellikler</strong></p><table class=\"uzm-spec-table\"><colgroup><col width=\"92\"><col width=\"126\"></colgroup><thead><tr><th><p><strong>Özellik</strong></p></th><th><p><strong>Değer</strong></p></th></tr></thead><tbody><tr><td><p><span>Ürün Tipi</span></p></td><td><p><span>Gutta Percha Point</span></p></td></tr><tr><td><p><span>Taper</span></p></td><td><p><span>.03</span></p></td></tr><tr><td><p><span>Standart</span></p></td><td><p><span>ISO</span></p></td></tr><tr><td><p><span>Paket İçeriği</span></p></td><td><p><span>100 adet</span></p></td></tr><tr><td><p><span>Kullanım</span></p></td><td><p><span>Tek kullanımlık</span></p></td></tr><tr><td><p><span>Radyoopasite</span></p></td><td><p><span>Yüksek</span></p></td></tr></tbody></table><p><strong>Mevcut Boyutlar</strong></p><ol><li><span>#20&nbsp;</span></li><li><span>#25&nbsp;</span></li><li><span>#30&nbsp;</span></li><li><span>#15-40 (</span><strong>Assorted)</strong></li></ol><p><strong>UZM Dental Avantajı</strong></p><ol><li><span>Güvenilir OEM üretim&nbsp;</span></li><li><span>Boyutsal kalite kontrol&nbsp;</span></li><li><span>ÜTS kapsamında sunulan ürünler&nbsp;</span></li><li><span>QR kod ile teknik bilgiye hızlı erişim&nbsp;</span></li><li><span>Klinik kullanıma uygun standart üretim&nbsp;</span></li></ol>",
+      "specs_html": "<table class=\"uzm-spec-table\"><colgroup><col width=\"92\"><col width=\"126\"></colgroup><thead><tr><th><p><strong>Özellik</strong></p></th><th><p><strong>Değer</strong></p></th></tr></thead><tbody><tr><td><p><span>Ürün Tipi</span></p></td><td><p><span>Gutta Percha Point</span></p></td></tr><tr><td><p><span>Taper</span></p></td><td><p><span>.03</span></p></td></tr><tr><td><p><span>Standart</span></p></td><td><p><span>ISO</span></p></td></tr><tr><td><p><span>Paket İçeriği</span></p></td><td><p><span>100 adet</span></p></td></tr><tr><td><p><span>Kullanım</span></p></td><td><p><span>Tek kullanımlık</span></p></td></tr><tr><td><p><span>Radyoopasite</span></p></td><td><p><span>Yüksek</span></p></td></tr></tbody></table><p><strong>Mevcut Boyutlar</strong></p><ol><li><span>#20&nbsp;</span></li><li><span>#25&nbsp;</span></li><li><span>#30&nbsp;</span></li><li><span>#15-40 (</span><strong>Assorted)</strong></li></ol>",
+      "indication_html": "",
+      "colors_html": ""
+    },
+    "04-taper": {
+      "id": "20",
+      "name": "04 Taper",
+      "slug": "04-taper",
+      "sku": "04-taper",
+      "main_image": "/uploads/products/products_6a9424fe6d4f53.72393814.png",
+      "gallery_images": [],
+      "description_html": "<p><strong>UZM Dental ISO .04 Taper Gutta Percha Points</strong></p><p><strong>Endodontik Uygulamalarda Güvenilir Standart</strong></p><p><strong>UZM Dental ISO .04 Taper Gutta Percha Points</strong><span>, modern endodontik tedavilerde en yaygın kullanılan taper seçeneklerinden biri olarak geliştirilmiştir. ISO standartlarına uygun boyutsal hassasiyeti, homojen yapısı ve yüksek üretim kalitesi sayesinde kök kanal sistemine güvenilir adaptasyon sağlayarak başarılı obturasyon işlemlerini destekler.</span></p><p><span>Hem günlük klinik uygulamalarda hem de ileri endodontik vakalarda tercih edilen </span><strong>.04 taper</strong><span>, kullanım kolaylığı ve geniş endikasyon yelpazesiyle hekimlerin en çok tercih ettiği seçeneklerden biridir.</span></p><p><strong>Neden ISO .04 Taper?</strong></p><p><span>ISO .04 taper, günümüzde birçok manuel ve rotary preparasyon protokolüyle uyumlu olması nedeniyle endodontik uygulamalarda en yaygın kullanılan gutta-perka tiplerinden biridir.</span></p><p><span>Başlıca avantajları:</span></p><ol><li><span>Modern kanal preparasyon sistemleriyle uyum&nbsp;</span></li><li><span>Güvenilir kanal adaptasyonu&nbsp;</span></li><li><span>Kontrollü obturasyon&nbsp;</span></li><li><span>Kolay çalışma ve yerleştirme&nbsp;</span></li><li><span>Günlük klinik kullanım için ideal taper&nbsp;</span></li></ol><p><strong>Ürün Özellikleri</strong></p><ol><li><span>ISO standartlarına uygun üretim&nbsp;</span></li><li><span>Hassas .04 taper geometrisi&nbsp;</span></li><li><span>Yüksek boyutsal doğruluk&nbsp;</span></li><li><span>Homojen materyal yapısı&nbsp;</span></li><li><span>Yüksek radyoopasite&nbsp;</span></li><li><span>Kolay kesilebilir yapı&nbsp;</span></li><li><span>Esnek çalışma karakteristiği&nbsp;</span></li><li><span>ISO renk kodlaması&nbsp;</span></li><li><span>Klinik kullanıma uygun üretim toleransları&nbsp;</span></li></ol><p><strong>Kullanım Alanları</strong></p><ol><li><span>Manuel kanal preparasyonları&nbsp;</span></li><li><span>Rotary sistemlerle hazırlanmış kanallar&nbsp;</span></li><li><span>Lateral kondensasyon&nbsp;</span></li><li><span>Tek kon tekniği (Single Cone) için yardımcı kullanım&nbsp;</span></li><li><span>Soğuk obturasyon teknikleri&nbsp;</span></li><li><span>Endodontik kanal dolgu işlemleri&nbsp;</span></li></ol><p><strong>Teknik Özellikler</strong></p><table class=\"uzm-spec-table\"><colgroup><col width=\"101\"><col width=\"126\"></colgroup><thead><tr><th><p><strong>Özellik</strong></p></th><th><p><strong>Değer</strong></p></th></tr></thead><tbody><tr><td><p><span>Ürün Tipi</span></p></td><td><p><span>Gutta Percha Point</span></p></td></tr><tr><td><p><span>Taper</span></p></td><td><p><span>.04</span></p></td></tr><tr><td><p><span>Standart</span></p></td><td><p><span>ISO</span></p></td></tr><tr><td><p><span>Paket İçeriği</span></p></td><td><p><span>100 adet</span></p></td></tr><tr><td><p><span>Kullanım</span></p></td><td><p><span>Tek kullanımlık</span></p></td></tr><tr><td><p><span>Renk Kodlama</span></p></td><td><p><span>ISO Standardı</span></p></td></tr><tr><td><p><span>Radyoopasite</span></p></td><td><p><span>Yüksek</span></p></td></tr></tbody></table><p><strong>Mevcut Boyutlar</strong></p><ol><li><span>#20&nbsp;</span></li><li><span>#25&nbsp;</span></li><li><span>#30&nbsp;</span></li><li><span>#35&nbsp;</span></li><li><span>#40&nbsp;</span></li><li><span>#15-40 (</span><strong>Assorted)</strong></li><li><span>#45-80 (</span><strong>Assorted)</strong></li></ol><p><strong>UZM Dental Kalitesi</strong></p><p><span>Her UZM Dental Gutta Percha Point;</span></p><ol><li><span>Boyutsal doğruluk açısından kalite kontrolünden geçirilir.&nbsp;</span></li><li><span>ISO standartlarına uygun olarak üretilir.&nbsp;</span></li><li><span>Homojen materyal yapısıyla güvenilir klinik performans sunar.&nbsp;</span></li><li><span>QR kod sistemi sayesinde teknik bilgilere kolay erişim sağlar.&nbsp;</span></li><li><span>ÜTS süreçleri tamamlanarak Türkiye pazarına sunulur.&nbsp;</span></li></ol><p><strong>Saklama Koşulları</strong></p><ol><li><span>Serin ve kuru ortamda saklayınız.&nbsp;</span></li><li><span>Doğrudan güneş ışığından koruyunuz.&nbsp;</span></li><li><span>Ambalajı kullanılıncaya kadar kapalı tutunuz.&nbsp;</span></li><li><span>Aşırı sıcak ve nemden kaçınınız.&nbsp;</span></li></ol>",
+      "specs_html": "<table class=\"uzm-spec-table\"><colgroup><col width=\"101\"><col width=\"126\"></colgroup><thead><tr><th><p><strong>Özellik</strong></p></th><th><p><strong>Değer</strong></p></th></tr></thead><tbody><tr><td><p><span>Ürün Tipi</span></p></td><td><p><span>Gutta Percha Point</span></p></td></tr><tr><td><p><span>Taper</span></p></td><td><p><span>.04</span></p></td></tr><tr><td><p><span>Standart</span></p></td><td><p><span>ISO</span></p></td></tr><tr><td><p><span>Paket İçeriği</span></p></td><td><p><span>100 adet</span></p></td></tr><tr><td><p><span>Kullanım</span></p></td><td><p><span>Tek kullanımlık</span></p></td></tr><tr><td><p><span>Renk Kodlama</span></p></td><td><p><span>ISO Standardı</span></p></td></tr><tr><td><p><span>Radyoopasite</span></p></td><td><p><span>Yüksek</span></p></td></tr></tbody></table><p><strong>Mevcut Boyutlar</strong></p><ol><li><span>#20&nbsp;</span></li><li><span>#25&nbsp;</span></li><li><span>#30&nbsp;</span></li><li><span>#35&nbsp;</span></li><li><span>#40&nbsp;</span></li><li><span>#15-40 (</span><strong>Assorted)</strong></li><li><span>#45-80 (</span><strong>Assorted)</strong></li></ol>",
+      "indication_html": "",
+      "colors_html": ""
+    },
+    "f-serisi": {
+      "id": "21",
+      "name": "F Serisi",
+      "slug": "f-serisi",
+      "sku": "F Serisi",
+      "main_image": "/uploads/products/products_6a9425a94bde87.03357352.png",
+      "gallery_images": [],
+      "description_html": "<p><strong>UZM Dental F Serisi Gutta Percha Point</strong></p><p><strong>Rotary Kanal Preparasyon Sistemleriyle Uyumlu</strong></p><p><strong>UZM Dental F Serisi Gutta Percha Point</strong><span>, değişken taper (Variable Taper) geometriye sahip rotary kanal preparasyon sistemleriyle uyumlu olarak geliştirilmiştir. Hassas boyutsal üretimi sayesinde preparasyonu tamamlanmış kök kanalına güvenilir uyum sağlayarak başarılı obturasyon işlemlerine katkıda bulunur.</span></p><p><span>Modern endodontik uygulamalar için tasarlanan F Serisi, klinisyenlere kolay kullanım, güvenilir adaptasyon ve öngörülebilir sonuçlar sunar.</span></p><p><strong>Ürün Özellikleri</strong></p><ol><li><span>Değişken taper (Variable Taper) tasarımı&nbsp;</span></li><li><span>Rotary preparasyon sistemleriyle uyumlu geometri&nbsp;</span></li><li><span>Hassas boyutsal üretim&nbsp;</span></li><li><span>Homojen gutta-perka yapısı&nbsp;</span></li><li><span>Yüksek radyoopasite&nbsp;</span></li><li><span>Kolay yerleştirme&nbsp;</span></li><li><span>Kolay kesilebilir yapı&nbsp;</span></li><li><span>Renk kodlu ürün sistemi&nbsp;</span></li><li><span>Klinik kullanıma uygun kalite kontrolü&nbsp;</span></li></ol><p><strong>Kullanım Alanları</strong></p><ol><li><span>Rotary kanal preparasyonları&nbsp;</span></li><li><span>Tek kon (Single Cone) obturasyon tekniği&nbsp;</span></li><li><span>Sürekli dalga (Continuous Wave) obturasyon teknikleri&nbsp;</span></li><li><span>Günlük endodontik uygulamalar&nbsp;</span></li></ol><p><strong>Neden UZM Dental F Serisi?</strong></p><p><strong>Değişken Taper Geometrisi</strong></p><p><span>Rotary kanal preparasyon sistemlerinin kanal geometrisine uyum sağlayacak şekilde tasarlanmıştır.</span></p><p><strong>Hassas Üretim</strong></p><p><span>Boyutsal doğruluğu sayesinde güvenilir kanal adaptasyonu sunar.</span></p><p><strong>Homojen Materyal Yapısı</strong></p><p><span>Dengeli esneklik ve kontrollü çalışma hissi sağlar.</span></p><p><strong>Güvenilir Klinik Performans</strong></p><p><span>Günlük endodontik uygulamalarda öngörülebilir obturasyon sonuçlarına katkıda bulunur.</span></p><p><strong>Paket Seçenekleri</strong></p><ol><li><span>F1&nbsp;</span></li><li><span>F2&nbsp;</span></li><li><span>F3&nbsp;</span></li><li><span>F4</span></li><li><span>F5&nbsp;</span></li><li><span>F1-F2-F3</span></li><li><span>F1-F2-F3-F4-F5</span></li></ol>",
+      "specs_html": "<p><strong>Paket Seçenekleri </strong></p><ol><li><span>F1&nbsp;</span></li><li><span>F2&nbsp;</span></li><li><span>F3&nbsp;</span></li><li><span>F4</span></li><li><span>F5&nbsp;</span></li><li><span>F1-F2-F3</span></li><li><span>F1-F2-F3-F4-F5</span></li></ol>",
+      "indication_html": "",
+      "colors_html": ""
+    },
+    "x-serisi": {
+      "id": "22",
+      "name": "X Serisi",
+      "slug": "x-serisi",
+      "sku": "x-serisi",
+      "main_image": "/uploads/products/products_6a9425ebd0b150.97111500.png",
+      "gallery_images": [],
+      "description_html": "<p><strong>UZM Dental X Serisi Gutta Percha Point</strong></p><p><strong>X Serisi Rotary Kanal Preparasyon Sistemleriyle Uyumlu</strong></p><p><strong>UZM Dental X Serisi Gutta Percha Point</strong><span>, Protaper Next ve benzerleri ile genişletilen kök kanallarını doldurmak için geliştirilmiştir. Değişken taper geometrisine uygun tasarımı sayesinde preparasyonu tamamlanmış kök kanalına güvenilir adaptasyon sağlayarak başarılı ve öngörülebilir obturasyon işlemlerine katkıda bulunur.</span></p><p><span>Hassas boyutsal üretimi, homojen materyal yapısı ve güvenilir klinik performansı ile modern endodontik uygulamalar için ideal bir seçenektir.</span></p><p><strong>Ürün Özellikleri</strong></p><ol><li><span>X Serisi rotary sistemlerle uyumlu tasarım&nbsp;</span></li><li><span>Değişken taper (Variable Taper) geometrisi&nbsp;</span></li><li><span>Hassas boyutsal üretim&nbsp;</span></li><li><span>Homojen gutta-perka yapısı&nbsp;</span></li><li><span>Yüksek radyoopasite&nbsp;</span></li><li><span>Kolay yerleştirme&nbsp;</span></li><li><span>Kolay kesilebilir yapı&nbsp;</span></li><li><span>Renk kodlu ürün sistemi&nbsp;</span></li><li><span>Klinik kullanıma uygun kalite kontrolü</span></li></ol><p><strong>Neden UZM Dental X Serisi?</strong></p><p><strong>Değişken Taper Geometrisi</strong></p><p><span>X Serisi rotary preparasyon sistemlerinin kanal geometrisine uyum sağlayacak şekilde tasarlanmıştır.</span></p><p><strong>Hassas Üretim</strong></p><p><span>Boyutsal doğruluğu sayesinde güvenilir kanal adaptasyonu sunar.</span></p><p><strong>Homojen Materyal Yapısı</strong></p><p><span>Dengeli esneklik ve kontrollü çalışma hissi sağlar.</span></p><p><strong>Güvenilir Klinik Performans</strong></p><p><span>Modern rotary preparasyon teknikleriyle uyumlu, güvenilir obturasyon desteği sunar.</span></p><p><strong>Paket Seçenekleri</strong></p><ol><li><span>X1&nbsp;</span></li><li><span>X2&nbsp;</span></li><li><span>X3&nbsp;</span></li><li><span>X4&nbsp;</span></li><li><span>X5&nbsp;</span></li><li><span>X1-X2-X3</span></li><li><span>X1-X2-X3-X4-X5</span></li></ol>",
+      "specs_html": "<p><strong>Paket Seçenekleri;</strong></p><ol><li><span>X1&nbsp;</span></li><li><span>X2&nbsp;</span></li><li><span>X3&nbsp;</span></li><li><span>X4&nbsp;</span></li><li><span>X5&nbsp;</span></li><li><span>X1-X2-X3</span></li><li><span>X1-X2-X3-X4-X5</span></li></ol>",
+      "indication_html": "",
+      "colors_html": ""
+    },
+    "p-serisi": {
+      "id": "23",
+      "name": "P Serisi",
+      "slug": "p-serisi",
+      "sku": "",
+      "main_image": "/uploads/products/products_6a942626d5e884.79785913.png",
+      "gallery_images": [],
+      "description_html": "<p><strong>UZM Dental P Serisi Gutta Percha Point</strong></p><p><strong>Resiprokal Kanal Preparasyon Sistemleriyle Uyumlu</strong></p><p><strong>UZM Dental P Serisi Gutta Percha Point</strong><span>, resiprokal (reciprocating) kanal preparasyon sistemleriyle uyumlu olarak geliştirilmiştir. Değişken taper geometrisine uygun tasarımı sayesinde preparasyonu tamamlanmış kök kanallarında güvenilir adaptasyon sağlayarak başarılı ve öngörülebilir obturasyon işlemlerine katkıda bulunur.</span></p><p><span>Yüksek boyutsal hassasiyet, homojen materyal yapısı ve güvenilir klinik performansı ile modern endodontik uygulamalarda etkin kullanım sunar.</span></p><p><strong>Ürün Özellikleri</strong></p><ol><li><span>Resiprokal kanal preparasyon sistemleriyle uyumlu&nbsp;</span></li><li><span>Değişken taper (Variable Taper) geometrisi&nbsp;</span></li><li><span>Hassas boyutsal üretim&nbsp;</span></li><li><span>Homojen gutta-perka yapısı&nbsp;</span></li><li><span>Yüksek radyoopasite&nbsp;</span></li><li><span>Kolay yerleştirme ve kontrollü çalışma&nbsp;</span></li><li><span>Kolay kesilebilir yapı&nbsp;</span></li><li><span>Renk kodlu ürün sistemi&nbsp;</span></li><li><span>Klinik kullanıma uygun kalite kontrolü</span></li></ol><p><strong>UZM Dental P Serisi Gutta Percha Point</strong></p><p><strong>Resiprokal Kanal Preparasyon Sistemleriyle Uyumlu</strong></p><p><strong>UZM Dental P Serisi Gutta Percha Point</strong><span>, resiprokal (reciprocating) kanal preparasyon sistemleriyle uyumlu olarak geliştirilmiştir. Değişken taper geometrisine uygun tasarımı sayesinde preparasyonu tamamlanmış kök kanallarında güvenilir adaptasyon sağlayarak başarılı ve öngörülebilir obturasyon işlemlerine katkıda bulunur.</span></p><p><span>Yüksek boyutsal hassasiyet, homojen materyal yapısı ve güvenilir klinik performansı ile modern endodontik uygulamalarda etkin kullanım sunar.</span></p><p><strong>Ürün Özellikleri</strong></p><ol><li><span>Resiprokal kanal preparasyon sistemleriyle uyumlu&nbsp;</span></li><li><span>Değişken taper (Variable Taper) geometrisi&nbsp;</span></li><li><span>Hassas boyutsal üretim&nbsp;</span></li><li><span>Homojen gutta-perka yapısı&nbsp;</span></li><li><span>Yüksek radyoopasite&nbsp;</span></li><li><span>Kolay yerleştirme ve kontrollü çalışma&nbsp;</span></li><li><span>Kolay kesilebilir yapı&nbsp;</span></li><li><span>Renk kodlu ürün sistemi&nbsp;</span></li><li><span>Klinik kullanıma uygun kalite kontrolü</span></li></ol><p><strong>Neden UZM Dental P Serisi?</strong></p><p><strong>Resiprokal Sistemlerle Uyum</strong></p><p><span>Resiprokal preparasyon sistemlerinin kanal geometrisine uygun olarak tasarlanmıştır.</span></p><p><strong>Hassas Üretim</strong></p><p><span>Boyutsal doğruluğu sayesinde güvenilir kanal adaptasyonu sağlar.</span></p><p><strong>Homojen Materyal Yapısı</strong></p><p><span>Dengeli esneklik ve kontrollü yerleştirme olanağı sunar.</span></p><p><strong>Güvenilir Klinik Performans</strong></p><p><span>Modern endodontik tedavilerde güvenilir ve öngörülebilir obturasyon sonuçlarını destekler.</span></p><p><strong>Paket Seçenekleri</strong></p><ol><li><span>Primary&nbsp;</span></li></ol>",
+      "specs_html": "<p><strong>Ürün Özellikleri</strong></p><ol><li><span>Resiprokal kanal preparasyon sistemleriyle uyumlu&nbsp;</span></li><li><span>Değişken taper (Variable Taper) geometrisi&nbsp;</span></li><li><span>Hassas boyutsal üretim&nbsp;</span></li><li><span>Homojen gutta-perka yapısı&nbsp;</span></li><li><span>Yüksek radyoopasite&nbsp;</span></li><li><span>Kolay yerleştirme ve kontrollü çalışma&nbsp;</span></li><li><span>Kolay kesilebilir yapı&nbsp;</span></li><li><span>Renk kodlu ürün sistemi&nbsp;</span></li><li><span>Klinik kullanıma uygun kalite kontrolü</span></li></ol><p><strong>Paket Seçenekleri</strong></p><ol><li><span>Primary&nbsp;</span></li></ol>",
+      "indication_html": "",
+      "colors_html": ""
+    },
+    "02-paper": {
+      "id": "24",
+      "name": "02 Paper",
+      "slug": "02-paper",
+      "sku": "02-paper",
+      "main_image": "/uploads/products/products_6a942699645276.91275601.png",
+      "gallery_images": [],
+      "description_html": "<p><strong>UZM Dental ISO .02 Taper Absorbent Paper Points</strong></p><p><strong>ISO .02 taper Absorbent Paper Points</strong><span>, endodontinin klasik standartlarından biri olarak uzun yıllardır klinisyenlerin güvenle tercih ettiği ölçü sistemidir. Günümüzde de standart preparasyon protokolleri ve çok sayıda endodontik uygulamada güvenilirliğini koruyarak yaygın kullanımını sürdürmektedir.</span></p><p><strong>UZM Dental ISO .02 Taper Absorbent Paper Points</strong><span>, kök kanal preparasyonu sonrasında kanal içerisindeki nem ve irrigasyon solüsyonlarının etkin şekilde uzaklaştırılması amacıyla geliştirilmiştir.&nbsp;</span></p><p><span>ISO standartlarına uygun boyutlandırması sayesinde .02 taper kanal preparasyonlarıyla uyumlu çalışır ve güvenilir kurutma performansı sunar.</span></p><p><span>Yüksek emiciliği, boyutsal hassasiyeti ve kaliteli selüloz yapısı ile günlük endodontik uygulamalarda etkin kullanım sağlar.</span></p><p><strong>Ürün Özellikleri</strong></p><ol><li><span>ISO standartlarına uygun üretim&nbsp;</span></li><li><span>Hassas .02 taper geometrisi&nbsp;</span></li><li><span>Yüksek emicilik kapasitesi&nbsp;</span></li><li><span>Homojen selüloz yapısı&nbsp;</span></li><li><span>Kolay kanal yerleşimi&nbsp;</span></li><li><span>Lif bırakmayan yapı&nbsp;</span></li><li><span>ISO renk kodlaması&nbsp;</span></li><li><span>Klinik kullanıma uygun kalite kontrolü&nbsp;</span></li></ol><p><strong>Kullanım Alanları</strong></p><ol><li><span>Kök kanalının kurutulması&nbsp;</span></li><li><span>İrrigasyon sonrası nemin uzaklaştırılması&nbsp;</span></li><li><span>Kanal dolgu işlemi öncesi hazırlık&nbsp;</span></li><li><span>Manuel kanal preparasyonları&nbsp;</span></li><li><span>Günlük endodontik uygulamalar</span></li></ol><p><strong>Mevcut Boyutlar</strong></p><ol><li><span>45-80</span><strong> Assorted</strong></li></ol><p><strong>Neden UZM Dental Paper Point?</strong></p><p><strong>Yüksek Emicilik</strong></p><p><span>Kanal içerisindeki nemi ve irrigasyon solüsyonlarını hızlı ve etkin şekilde uzaklaştırmaya yardımcı olur.</span></p><p><strong>Hassas Boyutlandırma</strong></p><p><span>ISO standartlarına uygun ölçüleri sayesinde kanal preparasyonuna güvenilir uyum sağlar.</span></p><p><strong>Lif Bırakmayan Yapı</strong></p><p><span>Kaliteli selüloz yapısı sayesinde kontrollü kullanım sunar.</span></p><p><strong>Klinik Güvenilirlik</strong></p><p><span>Günlük endodontik uygulamalarda güvenilir performans için üretilmiştir.</span></p><p><strong>Saklama Koşulları</strong></p><ol><li><span>Kuru ve serin ortamda muhafaza ediniz.&nbsp;</span></li><li><span>Doğrudan güneş ışığından koruyunuz.&nbsp;</span></li><li><span>Ambalajı kullanılıncaya kadar kapalı tutunuz.&nbsp;</span></li><li><span>Nemli ortamlarda saklamayınız.</span></li></ol>",
+      "specs_html": "<p><strong>Ürün Özellikleri</strong></p><ol><li><span>ISO standartlarına uygun üretim&nbsp;</span></li><li><span>Hassas .02 taper geometrisi&nbsp;</span></li><li><span>Yüksek emicilik kapasitesi&nbsp;</span></li><li><span>Homojen selüloz yapısı&nbsp;</span></li><li><span>Kolay kanal yerleşimi&nbsp;</span></li><li><span>Lif bırakmayan yapı&nbsp;</span></li><li><span>ISO renk kodlaması&nbsp;</span></li><li><span>Klinik kullanıma uygun kalite kontrolü&nbsp;</span></li></ol><p><strong>Mevcut Boyutlar</strong></p><ol><li><span>45-80</span><strong> Assorted</strong></li></ol>",
+      "indication_html": "",
+      "colors_html": ""
+    },
+    "04-paper": {
+      "id": "25",
+      "name": "04 Paper",
+      "slug": "04-paper",
+      "sku": "04-paper",
+      "main_image": "/uploads/products/products_6a9426cbbd9507.92404134.png",
+      "gallery_images": [],
+      "description_html": "<p><strong>UZM Dental ISO .04 Taper Absorbent Paper Points</strong></p><p><span>Modern endodontik tedavilerde en yaygın tercih edilen taper seçeneklerinden biri olan </span><strong>ISO .04</strong><span>, günlük klinik uygulamalarda hızlı, güvenilir ve etkili kurutma performansı sunar.</span></p><p><strong>Modern Endodontik Uygulamalar İçin Güvenilir Kurutma</strong></p><p><strong>UZM Dental ISO .04 Taper Absorbent Paper Points</strong><span>, kök kanal preparasyonu sonrasında kanal içerisindeki nem ve irrigasyon solüsyonlarının etkin şekilde uzaklaştırılması amacıyla geliştirilmiştir. ISO standartlarına uygun boyutlandırması ve yüksek emicilik kapasitesi sayesinde .04 taper kanal preparasyonlarıyla güvenilir uyum sağlar.</span></p><p><strong>Neden ISO .04 Taper?</strong></p><p><strong>ISO .04 taper</strong><span>, günümüzde manuel ve rotary kanal preparasyon tekniklerinde en yaygın kullanılan taper seçeneklerinden biridir. Geniş kullanım alanı ve modern preparasyon sistemleriyle uyumluluğu sayesinde dünya genelinde endodontik uygulamalarda rutin olarak tercih edilmektedir.</span></p><p><strong>Ürün Özellikleri</strong></p><ol><li><span>ISO standartlarına uygun üretim&nbsp;</span></li><li><span>Hassas .04 taper geometrisi&nbsp;</span></li><li><span>Yüksek emicilik kapasitesi&nbsp;</span></li><li><span>Homojen selüloz yapısı&nbsp;</span></li><li><span>Lif bırakmayan yapı&nbsp;</span></li><li><span>Kolay kanal yerleşimi&nbsp;</span></li><li><span>ISO renk kodlaması&nbsp;</span></li><li><span>Klinik kullanıma uygun kalite kontrolü&nbsp;</span></li></ol><p><strong>Kullanım Alanları</strong></p><ol><li><span>Kanal preparasyonu sonrası kurutma&nbsp;</span></li><li><span>İrrigasyon solüsyonlarının uzaklaştırılması&nbsp;</span></li><li><span>Kanal dolgu işlemi öncesi kurutma&nbsp;</span></li><li><span>Manuel kanal preparasyonları&nbsp;</span></li><li><span>Rotary kanal preparasyonları&nbsp;</span></li><li><span>Günlük endodontik uygulamalar</span></li></ol><p><strong>Mevcut Boyutlar</strong></p><ol><li><span>#15-40 assorted</span></li><li><span>#45-80 assorted</span></li></ol><p><strong>Neden UZM Dental Paper Point?</strong></p><p><strong>Yüksek Emicilik</strong></p><p><span>Kanal içerisindeki nemi ve irrigasyon solüsyonlarını hızlı ve etkin şekilde uzaklaştırmaya yardımcı olur.</span></p><p><strong>Hassas Boyutlandırma</strong></p><p><span>ISO standartlarına uygun ölçüleri sayesinde .04 taper kanal preparasyonlarıyla güvenilir uyum sağlar.</span></p><p><strong>Lif Bırakmayan Yapı</strong></p><p><span>Kaliteli selüloz yapısı sayesinde kontrollü ve temiz kullanım sunar.</span></p><p><strong>Güvenilir Klinik Performans</strong></p><p><span>Modern endodontik tedavilerde ihtiyaç duyulan etkili kurutma performansını desteklemek üzere tasarlanmıştır.</span></p><p><strong>Saklama Koşulları</strong></p><ol><li><span>Serin ve kuru ortamda muhafaza ediniz.&nbsp;</span></li><li><span>Doğrudan güneş ışığından koruyunuz.&nbsp;</span></li><li><span>Ambalajı kullanılıncaya kadar kapalı tutunuz.&nbsp;</span></li><li><span>Nemden uzak ortamda saklayınız.</span></li></ol>",
+      "specs_html": "<p><strong>Ürün Özellikleri</strong></p><ol><li><span>ISO standartlarına uygun üretim&nbsp;</span></li><li><span>Hassas .04 taper geometrisi&nbsp;</span></li><li><span>Yüksek emicilik kapasitesi&nbsp;</span></li><li><span>Homojen selüloz yapısı&nbsp;</span></li><li><span>Lif bırakmayan yapı&nbsp;</span></li><li><span>Kolay kanal yerleşimi&nbsp;</span></li><li><span>ISO renk kodlaması&nbsp;</span></li><li><span>Klinik kullanıma uygun kalite kontrolü&nbsp;</span></li></ol><p><strong>Mevcut Boyutlar</strong></p><ol><li><span>#15-40 assorted</span></li><li><span>#45-80 assorted</span></li></ol>",
+      "indication_html": "",
+      "colors_html": ""
+    },
+    "06-paper": {
+      "id": "26",
+      "name": "06 Paper",
+      "slug": "06-paper",
+      "sku": "",
+      "main_image": "/uploads/products/products_6a9427195268c1.14751359.png",
+      "gallery_images": [],
+      "description_html": "<h1><span>UZM Dental ISO .06 Taper Absorbent Paper Points</span></h1><h2><span>Geniş Kanal Preparasyonları İçin Etkili Kurutma</span></h2><p><span>UZM Dental ISO .06 Taper Absorbent Paper Points, .06 taper kanal preparasyonları sonrasında kök kanalındaki nem ve irrigasyon solüsyonlarının etkin şekilde uzaklaştırılması amacıyla geliştirilmiştir. ISO standartlarına uygun boyutlandırması, yüksek emicilik kapasitesi ve hassas üretim toleransları sayesinde güvenilir ve kontrollü kanal kurutma performansı sunar.</span></p><p><span>Modern rotary preparasyon teknikleriyle uyumlu olan .06 taper paper pointler, genişletilmiş kanal preparasyonlarında etkin kurutma sağlayarak obturasyon öncesinde ideal çalışma koşullarının oluşturulmasına yardımcı olur.</span></p><h1><span>Neden ISO .06 Taper?</span></h1><p><span>ISO .06 taper, daha geniş taper ile hazırlanan kök kanallarında güvenilir kurutma sağlamak amacıyla geliştirilmiştir. Modern rotary preparasyon sistemleriyle uyumu sayesinde endodontik uygulamalarda yaygın olarak tercih edilen taper seçeneklerinden biridir.</span></p><h1><span>Ürün Özellikleri</span></h1><ol><li><span>ISO standartlarına uygun üretim&nbsp;</span></li><li><span>Hassas .06 taper geometrisi&nbsp;</span></li><li><span>Yüksek emicilik kapasitesi&nbsp;</span></li><li><span>Homojen selüloz yapısı&nbsp;</span></li><li><span>Lif bırakmayan yapı&nbsp;</span></li><li><span>Kolay kanal yerleşimi&nbsp;</span></li><li><span>ISO renk kodlaması&nbsp;</span></li><li><span>Klinik kullanıma uygun kalite kontrolü&nbsp;</span></li></ol><h1><span>Kullanım Alanları</span></h1><ol><li><span>.06 taper kanal preparasyonları&nbsp;</span></li><li><span>Rotary kanal preparasyonları&nbsp;</span></li><li><span>İrrigasyon sonrası kanal kurutma&nbsp;</span></li><li><span>Kanal dolgu işlemi öncesi hazırlık&nbsp;</span></li><li><span>Günlük ve ileri endodontik uygulamalar</span></li></ol><h1><span>Mevcut Boyutlar</span></h1><ol><li><span>#25</span></li><li><span>#15-40&nbsp;</span></li></ol><h1><span>Neden UZM Dental Paper Point?</span></h1><h3><span>Yüksek Emicilik</span></h3><p><span>Kanal içerisindeki nem ve irrigasyon solüsyonlarını hızlı ve etkili şekilde uzaklaştırmaya yardımcı olur.</span></p><h3><span>Hassas Boyutlandırma</span></h3><p><span>ISO standartlarına uygun ölçüleri sayesinde .06 taper kanal preparasyonlarına güvenilir uyum sağlar.</span></p><h3><span>Homojen Selüloz Yapısı</span></h3><p><span>Lif bırakmayan kaliteli yapısı ile güvenli ve kontrollü kullanım sunar.</span></p><h3><span>Güvenilir Klinik Performans</span></h3><p><span>Geniş taper ile hazırlanmış kök kanallarında etkin kurutma sağlayarak obturasyon öncesi ideal çalışma ortamının oluşturulmasına katkıda bulunur.</span></p><h1><span>Saklama Koşulları</span></h1><ol><li><span>Serin ve kuru ortamda muhafaza ediniz.&nbsp;</span></li><li><span>Doğrudan güneş ışığından koruyunuz.&nbsp;</span></li><li><span>Nemli ortamlardan uzak tutunuz.&nbsp;</span></li><li><span>Ambalajı kullanılıncaya kadar kapalı tutunuz.&nbsp;</span></li></ol>",
+      "specs_html": "<p><strong>Ürün Özellikleri</strong></p><ol><li>ISO standartlarına uygun üretim </li><li>Hassas .06 taper geometrisi </li><li>Yüksek emicilik kapasitesi </li><li>Homojen selüloz yapısı </li><li>Lif bırakmayan yapı </li><li>Kolay kanal yerleşimi </li><li>ISO renk kodlaması </li><li>Klinik kullanıma uygun kalite kontrolü </li></ol><p><strong>Mevcut Boyutlar</strong></p><ol><li>#25</li><li>#15-40 </li></ol>",
+      "indication_html": "",
+      "colors_html": ""
+    },
+    "f-serisi-2": {
+      "id": "27",
+      "name": "F Serisi",
+      "slug": "f-serisi-2",
+      "sku": "F Serisi",
+      "main_image": "/uploads/products/products_6a9428a3af0150.77665949.png",
+      "gallery_images": [],
+      "description_html": "<h1><span>UZM Dental F Serisi Absorbent Paper Points</span></h1><h2><span>Rotary Kanal Preparasyon Sistemleriyle Uyumlu</span></h2><p><span>UZM Dental F Serisi Absorbent Paper Points, değişken taper (Variable Taper) geometriye sahip rotary kanal preparasyon sistemleriyle uyumlu olarak geliştirilmiştir. Kanal preparasyonu sonrasında kök kanalındaki nem ve irrigasyon solüsyonlarının etkin şekilde uzaklaştırılmasına yardımcı olarak obturasyon öncesinde güvenilir kurutma sağlar.</span></p><p><span>Yüksek emicilik kapasitesi, hassas boyutsal üretimi ve homojen selüloz yapısı sayesinde modern endodontik uygulamalarda güvenilir klinik performans sunar.</span></p><h1><span>Ürün Özellikleri</span></h1><ol><li><span>Değişken taper (Variable Taper) geometriye uygun tasarım&nbsp;</span></li><li><span>Rotary preparasyon sistemleriyle uyumlu&nbsp;</span></li><li><span>Yüksek emicilik kapasitesi&nbsp;</span></li><li><span>Hassas boyutsal üretim&nbsp;</span></li><li><span>Homojen selüloz yapısı&nbsp;</span></li><li><span>Lif bırakmayan yapı&nbsp;</span></li><li><span>Kolay kanal yerleşimi&nbsp;</span></li><li><span>Renk kodlu ürün sistemi&nbsp;</span></li><li><span>Klinik kullanıma uygun kalite kontrolü</span></li></ol><h1><span>Kullanım Alanları</span></h1><ol><li><span>Rotary kanal preparasyonu sonrası kanalın kurutulması&nbsp;</span></li><li><span>İrrigasyon solüsyonlarının uzaklaştırılması&nbsp;</span></li><li><span>Tek kon (Single Cone) obturasyon öncesi kurutma&nbsp;</span></li><li><span>Sıcak vertikal kondensasyon öncesi hazırlık&nbsp;</span></li><li><span>Günlük endodontik uygulamalar&nbsp;</span></li></ol><h1><span>Neden UZM Dental F Serisi?</span></h1><h3><span>Rotary Sistemlerle Uyum</span></h3><p><span>F Serisi rotary kanal preparasyon sistemlerinin kanal geometrisine uygun olarak geliştirilmiştir.</span></p><h3><span>Yüksek Emicilik</span></h3><p><span>Kanal içerisindeki nem ve irrigasyon solüsyonlarını hızlı ve etkili şekilde uzaklaştırmaya yardımcı olur.</span></p><h3><span>Hassas Boyutlandırma</span></h3><p><span>Boyutsal doğruluğu sayesinde kanal içerisinde güvenilir uyum sağlar.</span></p><h3><span>Güvenilir Klinik Performans</span></h3><p><span>Modern endodontik uygulamalarda etkili kurutma ve güvenilir kullanım sunar.</span></p><h1><span>Paket Seçenekleri</span></h1><ol><li><span>F1&nbsp;</span></li><li><span>F2&nbsp;</span></li><li><span>F3&nbsp;</span></li><li><span>F1-F2-F3&nbsp;</span></li><li><span>F1-F2-F3-F4-F5&nbsp;</span></li></ol>",
+      "specs_html": "<p><strong>Ürün Özellikleri</strong></p><ol><li>Değişken taper (Variable Taper) geometriye uygun tasarım </li><li>Rotary preparasyon sistemleriyle uyumlu </li><li>Yüksek emicilik kapasitesi </li><li>Hassas boyutsal üretim </li><li>Homojen selüloz yapısı </li><li>Lif bırakmayan yapı </li><li>Kolay kanal yerleşimi </li><li>Renk kodlu ürün sistemi </li><li>Klinik kullanıma uygun kalite kontrolü</li></ol><p><strong>Paket Seçenekleri</strong></p><ol><li>F1 </li><li>F2 </li><li>F3 </li><li>F1-F2-F3 </li><li>F1-F2-F3-F4-F5 </li></ol>",
+      "indication_html": "",
+      "colors_html": ""
+    },
+    "x-serisi-2": {
+      "id": "28",
+      "name": "X Serisi",
+      "slug": "x-serisi-2",
+      "sku": "X Serisi",
+      "main_image": "/uploads/products/products_6a9428f3436510.76437747.png",
+      "gallery_images": [],
+      "description_html": "<h1><span>UZM Dental X Serisi Absorbent Paper Points</span></h1><h2><span>X Serisi Rotary Kanal Preparasyon Sistemleriyle Uyumlu</span></h2><p><span>UZM Dental X Serisi Absorbent Paper Points, değişken taper (Variable Taper) geometriye sahip X Serisi rotary kanal preparasyon sistemleriyle uyumlu olarak geliştirilmiştir. Kanal preparasyonu sonrasında kök kanalındaki nem ve irrigasyon solüsyonlarının etkin şekilde uzaklaştırılmasına yardımcı olarak obturasyon öncesinde güvenilir kurutma sağlar.</span></p><p><span>Yüksek emicilik kapasitesi, hassas boyutsal üretimi ve homojen selüloz yapısı sayesinde modern endodontik uygulamalarda güvenilir klinik performans sunar.</span></p><h1><span>Ürün Özellikleri</span></h1><ol><li><span>X Serisi rotary sistemlerle uyumlu tasarım&nbsp;</span></li><li><span>Değişken taper (Variable Taper) geometrisi&nbsp;</span></li><li><span>Yüksek emicilik kapasitesi&nbsp;</span></li><li><span>Hassas boyutsal üretim&nbsp;</span></li><li><span>Homojen selüloz yapısı&nbsp;</span></li><li><span>Lif bırakmayan yapı&nbsp;</span></li><li><span>Kolay kanal yerleşimi&nbsp;</span></li><li><span>Renk kodlu ürün sistemi&nbsp;</span></li><li><span>Klinik kullanıma uygun kalite kontrolü</span></li></ol><h1><span>Neden UZM Dental X Serisi?</span></h1><h3><span>X Serisi Rotary Sistemlerle Uyum</span></h3><p><span>X Serisi kanal preparasyon sistemlerinin kanal geometrisine uyum sağlayacak şekilde geliştirilmiştir.</span></p><h3><span>Yüksek Emicilik</span></h3><p><span>Kanal içerisindeki nemi ve irrigasyon solüsyonlarını hızlı ve etkili şekilde uzaklaştırmaya yardımcı olur.</span></p><h3><span>Hassas Boyutlandırma</span></h3><p><span>Boyutsal doğruluğu sayesinde güvenilir kanal uyumu ve kontrollü kullanım sunar.</span></p><h3><span>Güvenilir Klinik Performans</span></h3><p><span>Modern rotary endodontik tedavilerde etkin kurutma ve güvenilir kullanım sağlar.</span></p><h1><span>Paket Seçenekleri</span></h1><ol><li><span>X1&nbsp;</span></li><li><span>X2&nbsp;</span></li><li><span>X3&nbsp;</span></li><li><span>X1-X2-X3</span></li><li><span>X1-X2-X3-X4-X5&nbsp;</span></li></ol>",
+      "specs_html": "<p><strong>Ürün Özellikleri</strong></p><ol><li>X Serisi rotary sistemlerle uyumlu tasarım </li><li>Değişken taper (Variable Taper) geometrisi </li><li>Yüksek emicilik kapasitesi </li><li>Hassas boyutsal üretim </li><li>Homojen selüloz yapısı </li><li>Lif bırakmayan yapı </li><li>Kolay kanal yerleşimi </li><li>Renk kodlu ürün sistemi </li><li>Klinik kullanıma uygun kalite kontrolü</li></ol><p><strong>Paket Seçenekleri</strong></p><ol><li>X1 </li><li>X2 </li><li>X3 </li><li>X1-X2-X3</li><li>X1-X2-X3-X4-X5 </li></ol>",
+      "indication_html": "",
+      "colors_html": ""
+    }
+  },
+  "files": [
+    {
+      "id": "1",
+      "icon": "/images/file-1.svg",
+      "title": "ÜTS Süreçleri",
+      "description": "Ürünler gerekli kayıt işlemleri tamamlandıktan sonra satışa sunulur."
+    },
+    {
+      "id": "2",
+      "icon": "/images/file-2.svg",
+      "title": "CE ve ISO Belgeleri",
+      "description": "Tıbbi cihaz kalite yönetim süreçlerine ilişkin üretici belgeleri sunulur."
+    },
+    {
+      "id": "3",
+      "icon": "/images/file-3.svg",
+      "title": "QR Kod Desteği",
+      "description": "Ürüne ait teknik bilgi ve dokümanlara hızlı erişim imkânı sunulur."
+    }
+  ],
+  "process": [
+    {
+      "id": "1",
+      "title": "İzlenebilir Ürün Süreci",
+      "description": "Ürünlerimiz, kalite kontrol ve teknik dokümantasyon süreçleri değerlendirilerek kullanıcıya ulaştırılır."
+    },
+    {
+      "id": "2",
+      "title": "Kurumsal Satış Deneyimi",
+      "description": "Dental depolar, laboratuvarlar, zincir klinikler ve kamu kurumlarının farklı satın alma süreçlerine uygun çözümler sunulur."
+    },
+    {
+      "id": "3",
+      "title": "Teknik Destek",
+      "description": "Ürün seçimi, sistem uyumluluğu, kullanım bilgileri ve teknik dokümanlar konusunda satış öncesi ve sonrası destek sağlanır."
+    },
+    {
+      "id": "4",
+      "title": "Pazarlama Desteği",
+      "description": "Distribütör ve bayilere dijital katalog, ürün görseli, teknik içerik ve pazarlama materyali desteği sunulur."
+    },
+    {
+      "id": "5",
+      "title": "QR Kodlu Bilgi Sistemi",
+      "description": "Ürün üzerindeki QR kodlar aracılığıyla teknik bilgilere, kullanım talimatlarına ve mevcut sertifikalara erişim sağlanabilir."
+    }
+  ],
+  "settings": {
+    "about_content": "<h2><span style=\"color: rgb(60, 60, 60);\">UZM Dental</span></h2><p><span style=\"color: rgb(96, 96, 96);\">UZM Dental; diş hekimliği sektörüne güvenilir, izlenebilir ve yüksek performanslı dental materyaller sunmak amacıyla kurulmuştur.</span></p><p><strong style=\"color: rgb(96, 96, 96);\">Faaliyet alanımız;</strong></p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(96, 96, 96);\">CAD/CAM Zirconia Disc</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(96, 96, 96);\">PMMA Disc</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(96, 96, 96);\">Gutta Percha</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(96, 96, 96);\">Absorbent Paper Point</span></li></ol><p><span style=\"color: rgb(96, 96, 96);\">ürünlerinin OEM üretimi, ithalatı ve Türkiye dağıtımıdır.</span></p><p><span style=\"color: rgb(96, 96, 96);\">Her ürünümüz kalite, güvenilirlik ve mevzuata uygunluk açısından değerlendirilerek ÜTS sistemi kapsamında pazara sunulmaktadır.</span></p><p><span style=\"color: rgb(96, 96, 96);\">Amacımız yalnızca ürün satmak değil; diş laboratuvarları, klinikler ve distribütörler için uzun vadeli güvenilir iş ortaklığı oluşturmaktır.</span></p><h3><span style=\"color: rgb(96, 96, 96);\">Kalite Politikamız</span></h3><p><span style=\"color: rgb(96, 96, 96);\">Her ürün;</span></p><p><span style=\"color: rgb(96, 96, 96);\">✓ Üretici kalite kontrol süreçlerinden geçirilir.</span></p><p><span style=\"color: rgb(96, 96, 96);\">✓ Türkiye mevzuatına uygun olarak ithal edilir.</span></p><p><span style=\"color: rgb(96, 96, 96);\">✓ ÜTS kayıt süreçleri tamamlandıktan sonra pazara sunulur.</span></p><p><span style=\"color: rgb(96, 96, 96);\">✓ Teknik dokümantasyonu eksiksiz şekilde kullanıcıya ulaştırılır.</span></p><h3><span style=\"color: rgb(96, 96, 96);\">Neden UZM?</span></h3><p><span style=\"color: rgb(96, 96, 96);\">Aslında bu, \"Hakkımızda\"dan farklı.</span></p><p><span style=\"color: rgb(96, 96, 96);\">Burada tamamen müşteriyi ikna edecek maddeler olur.</span></p><p><span style=\"color: rgb(96, 96, 96);\">✓ ÜTS Kayıtlı</span></p><p><span style=\"color: rgb(96, 96, 96);\">✓ OEM Üretim</span></p><p><span style=\"color: rgb(96, 96, 96);\">✓ Premium Kalite</span></p><p><span style=\"color: rgb(96, 96, 96);\">✓ Rekabetçi Fiyat</span></p><p><span style=\"color: rgb(96, 96, 96);\">✓ Teknik Destek</span></p><p><span style=\"color: rgb(96, 96, 96);\">✓ Hızlı Tedarik</span></p><p><span style=\"color: rgb(96, 96, 96);\">✓ Sürekli Stok</span></p><p><span style=\"color: rgb(96, 96, 96);\">✓ QR Kod ile Doğrulama</span></p>",
+    "about_intro_desc": "UZM Dental, dental laboratuvarlar ve klinikler için yüksek performanslı zirkonya ve CAD/CAM materyalleri üreten ve tedarik eden bir dental teknoloji firmasıdır.",
+    "about_intro_title": "Hakkımızda",
+    "address": "DUMLUPINAR MAH. 2. SEDEF SK. Üstyıldız sitesi H NO: 13 A  Posta kodu:43020 MERKEZ/KÜTAHYA-TÜRKİYE",
+    "contact_intro_desc": "Ürün seçimi, fiyat teklifi, teknik doküman, numune ve bayilik talepleriniz için satış ekibimiz size yardımcı olmaktan memnuniyet duyar.",
+    "contact_intro_title": "Bizimle İletişime Geçin",
+    "copyright_text": "Copyright © UZM Dental 2026 | Tüm hakları saklıdır.",
+    "distributor_content": "<p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">UZM Dental ağırlıklı olarak dental depolar, laboratuvarlar, zincir klinikler ve kurumsal müşterilerle çalışmaktadır.</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Bölgesel iş ortaklarımızın ticari yapısını korumaya önem veririz.</span></p><p><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\">Dental Depolar</strong></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Bölgesel veya ulusal ölçekte faaliyet gösteren dental depolar için düzenli ürün tedariki sağlıyoruz.</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Avantajlar:</span></p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Rekabetçi fiyatlandırma&nbsp;</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Düzenli stok yönetimi&nbsp;</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Hızlı tedarik&nbsp;</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Teknik destek&nbsp;</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Pazarlama desteği&nbsp;</span></li></ol><p><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\">Diş Laboratuvarları</strong></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Yüksek hacimli üretim yapan laboratuvarlara özel çözümler sunuyoruz.</span></p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Zirconia Disc&nbsp;</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">PMMA Disc&nbsp;</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Teknik destek&nbsp;</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Numune çalışmaları&nbsp;</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Düretime uygun ürün seçenekleri&nbsp;</span></li></ol><p><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\">Zincir Klinikler</strong></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Kurumsal klinik grupları için toplu satın alma çözümleri.</span></p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Sabit fiyat anlaşmaları&nbsp;</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Düzenli sevkiyat&nbsp;</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Ürün standardizasyonu&nbsp;</span></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Teknik doküman desteği&nbsp;</span></li></ol><p><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\">Kamu Kurumları</strong></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Kamu hastaneleri, üniversiteler ve resmi kurumların satın alma süreçlerine uygun ürün ve teknik doküman desteği sunuyoruz.</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">✔ Rekabetçi bayi fiyatları</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">✔ Yüksek stok sürekliliği</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">✔ Teknik destek</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">✔ Pazarlama desteği</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">✔ Dijital kataloglar</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">✔ Ürün eğitimleri</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">✔ QR kod destek sistemi</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">✔ Hızlı lojistik</span></p>",
+    "distributor_intro_desc": "Dental depolar, diş laboratuvarları ve zincir klinikler için rekabetçi fiyat, sürekli stok ve pazarlama desteğiyle uzun vadeli iş birlikleri kuruyoruz. Bulunduğunuz bölge için distribütörlük veya bayilik başvurunuzu aşağıdaki formu doldurarak iletebilirsiniz.",
+    "distributor_intro_title": "UZM Dental İş Ortağı Olun",
+    "email": "uzmandisdental@gmail.com",
+    "faq_intro_desc": "",
+    "faq_intro_title": "",
+    "footer_desc": "UZM Dental; zirkonya, PMMA, Gutta Percha ve Paper Points ürünlerinde üretim, ithalat ve dağıtım hizmeti sunar.",
+    "notify_email": "",
+    "phone": "+90 542 646 02 20",
+    "site_logo": "images/uzm-logo.png",
+    "site_logo_footer": "images/uzm-footer.png",
+    "smtp_encryption": "tls",
+    "smtp_from_email": "",
+    "smtp_from_name": "UZM Dental",
+    "smtp_host": "",
+    "smtp_password": "",
+    "smtp_port": "587",
+    "smtp_username": "",
+    "social_facebook": "",
+    "social_instagram": "http://instagram.com/uzmdental",
+    "social_x": "",
+    "whatsapp": "905426460220"
+  }
+}

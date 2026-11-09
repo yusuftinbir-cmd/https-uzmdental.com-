@@ -1,0 +1,18 @@
+{
+  "site": "uzmdental.com",
+  "epoch": "2026-11-01",
+  "vector": "UZM_SEAL_MAIN|domain:uzmdental.com|epoch:2026-11-01|ring:0-1-2-3|eigen:1.6180339|p:22",
+  "expectedHash": "0x91f6f332",
+  "ed25519PubKeyHex": "63be4041887a306ffd91e802fd750638333135db5b8aae7986d2e574cf36e4c4",
+  "ed25519SigHex": "6863b74490ab537daa6cdc949d92b36a49e23c861e5e4f310234cc261f679ed22ae29423334004b294246a5f4e726adc05da30b05c195fe937caa6edc225b90c",
+  "t1": {
+    "vector": "UZM_SEAL_T1|bg:#FBF9F4|ink:#1A1612|gold:#C8A840|cmp:#eef5dc|r:1.382|p:22",
+    "expectedHash": "0xa1e3b8fd",
+    "ed25519SigHex": "10001dee2b88088a373c05674d60f973b22063e8365bd88f5330afafdbacb204ee281623285cb612c469269aaf75fc3a37206aedda71ff936691184dac89f300"
+  },
+  "t2": {
+    "vector": "UZM_SEAL_T2|bg:#F9F8F3|ink:#0E1B2A|teal:#1D5B6B|copper:#B87333|cmp:#eef5dc|r:1.618|p:22",
+    "expectedHash": "0x671a8500",
+    "ed25519SigHex": "8519c28faecafb38f1638ee348cb8d1e1aae4bc8d1afd14dd4e7028f8ef1da63e328c0aae98a390f6ddb021addd43155535249afc1ad420c3964a7b2d63f5e00"
+  }
+}

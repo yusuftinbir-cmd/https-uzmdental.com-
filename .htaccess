@@ -1,0 +1,65 @@
+# UZM Dental v2_vitrin Production LiteSpeed / Apache Configuration (2026-11-05)
+DirectoryIndex index.html index.php
+Options -Indexes
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+  Header always set X-Robots-Tag "index, follow"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Block AppleDouble (._*), .DS_Store, and __MACOSX metadata artifacts
+  RewriteRule (^|/)(\._.*|\.DS_Store|__MACOSX.*)$ - [F,L]
+
+  # Canonical HTTPS + www enforcement
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} ^uzmdental\.com$ [NC]
+  RewriteRule ^(.*)$ https://www.uzmdental.com/$1 [R=301,L]
+
+  # Legacy PHP & synonym route mappings -> Canonical v2_vitrin static HTML routes
+  RewriteRule ^tum-urunlerimiz/?$ /urunler.html [R=301,L]
+  RewriteRule ^hakkimizda/?$ /hakkimizda.html [R=301,L]
+  RewriteRule ^iletisim/?$ /iletisim.html [R=301,L]
+  RewriteRule ^distributorluk/?$ /distributorluk.html [R=301,L]
+  RewriteRule ^sss/?$ /sss.html [R=301,L]
+  RewriteRule ^blog/?$ /blog.html [R=301,L]
+  RewriteRule ^galeri(?:\.html)?/?$ /studyo-galeri.html [R=301,L]
+  RewriteRule ^studyo-galeri/?$ /studyo-galeri.html [R=301,L]
+
+  # Synonym canonical 301 redirects
+  RewriteRule ^zirkonyum(?:\.html)?/?$ /zirkonya.html [R=301,L]
+  RewriteRule ^endodonti-klinik(?:\.html)?/?$ /klinik-endodonti.html [R=301,L]
+  RewriteRule ^gutta-percha(?:\.html)?/?$ /gutta-perka.html [R=301,L]
+  RewriteRule ^guttaperka(?:\.html)?/?$ /gutta-perka.html [R=301,L]
+  RewriteRule ^pmma/?$ /pmma.html [R=301,L]
+  RewriteRule ^p-paper(?:\.html)?/?$ /urun/p-paper.html [R=301,L]
+  RewriteRule ^p-serisi-2(?:\.html)?/?$ /urun/p-paper.html [R=301,L]
+
+  # Root duplicate product & blog slugs -> Canonical /urun/<slug>.html and /blog/<slug>.html
+  RewriteRule ^(02\-paper|02\-taper|03\-taper|04\-paper|04\-taper|06\-paper|3d\-ml|3d\-pro|4d\-ml|5d\-ml|f\-serisi\-2|f\-serisi|monolayer|multilayer\-pmma\-disc|p\-serisi|st\-ml|x\-ray\-pmma\-disc|x\-serisi\-2|x\-serisi)(?:\.html)?/?$ /urun/$1.html [R=301,L]
+  RewriteRule ^(ce\-ve\-iso\-belgelerinin\-dental\-urunlerdeki\-rolu|dental\-depo\-ve\-bayilerle\-is\-birligi\-nasil\-isliyor|paper\-point\-seciminde\-iso\-renk\-kodlarinin\-onemi|pmma\-disklerde\-katman\-yapisi\-ne\-anlama\-gelir|uzm\-dental\-yeni\-uretim\-hattini\-devreye\-aldi|zirkonya\-disk\-secerken\-nelere\-dikkat\-edilmeli)(?:\.html)?/?$ /blog/$1.html [R=301,L]
+
+  # Any extensionless slug that matches a root .html file -> 301 to .html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^([a-zA-Z0-9\-]+)/?$ /$1.html [R=301,L]
+
+  # Any extensionless slug that matches urun/<slug>.html -> 301 to /urun/<slug>.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}/urun/$1.html -f
+  RewriteRule ^([a-zA-Z0-9\-]+)/?$ /urun/$1.html [R=301,L]
+
+  # Any extensionless slug that matches blog/<slug>.html -> 301 to /blog/<slug>.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}/blog/$1.html -f
+  RewriteRule ^([a-zA-Z0-9\-]+)/?$ /blog/$1.html [R=301,L]
+</IfModule>

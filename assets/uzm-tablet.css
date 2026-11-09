@@ -1,0 +1,21 @@
+/* ==========================================================================
+   2. TABLET SÜRÜMÜ (769px – 1024px · assets/uzm-tablet.css)
+   iPad klinik/laboratuvar 2 sütunlu ızgara, 48x48px dokunmatik tırnaklar
+   ========================================================================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .uzm-hero-inner {
+    grid-template-columns: 1fr;
+  }
+  .uzm-product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    align-items: start;
+  }
+  .uzm-tab-btn, .uzm-lang-btn, .uzm-nav a {
+    min-height: 46px;
+  }
+  .uzm-sticky-wa-bar {
+    display: none;
+  }
+}

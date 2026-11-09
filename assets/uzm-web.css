@@ -1,0 +1,15 @@
+/* ==========================================================================
+   1. WEB SÜRÜMÜ (>=1025px · assets/uzm-web.css)
+   1240px merkezli mağaza vitrini, 3 sütunlu kart + ürün-altı açılır tırnaklar
+   ========================================================================== */
+@media (min-width: 1025px) {
+  .uzm-product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: start;
+  }
+  .uzm-sticky-wa-bar {
+    display: none;
+  }
+}

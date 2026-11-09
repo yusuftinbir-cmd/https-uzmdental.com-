@@ -1,0 +1,33 @@
+# UZM Dental — Tam Teknik Veri, Sinterleme ve Endodonti Matrisi (llms-full.txt)
+
+> UZM Dental (`https://uzmdental.com`), Türkiye genelindeki dijital diş laboratuvarları, diş depoları ve kliniklere yüksek saflıkta Ø 98.5mm açık sistem CAD/CAM zirkonyum diskler (**ZirCrown® — Hangzhou IVISTA Medical Devices Co., Ltd., Kurucu & Baş Bilim İnsanı Dr. Yao Cheng, AB Temsilcisi MedPath GmbH Munich**), geçici restorasyon blokları (**UZM Dental 2026 CAD/CAM PMMA Diskler**) ve apikal kalibreli obtürasyon sistemleri (**ISO 6877 Gutta Percha, Steril Absorbent Paper Points, Gutta Percha Corrector Cetvel & Kesme Makası**) tedarik eden B2B dental malzeme merkezidir.
+> Kurumsal İletişim: Uzman Diş Deposu (UZM Dental) · Dumlupınar Mah. Kızılay Cad. No:17/1 Merkez / Kütahya · Tel / WhatsApp: 0542 646 02 20 (`https://wa.me/905426460220`) · E-Posta: `uzmandisdental@gmail.com` · Instagram: `@uzmdental`
+
+## 1. ZirCrown® CAD/CAM Zirkonyum Disk Serileri (Ø 98.5mm Açık Sistem · CIP Soğuk İzostatik Pres)
+
+| Seri | Eğilme Dayanımı (MPa) | Işık Geçirgenliği (%) | Katman Yapısı | Sinterleme Sıcaklığı | Kalınlıklar (mm) | Renk Seçenekleri | Birincil Endikasyon |
+|---|---|---|---|---|---|---|---|
+| **ZirCrown 5D-ML** | 650 – 950 MPa | %60 – %47 | 5 Katman / 10 Gradyan (3Y/5Y-TZP) | 1530°C (2 Saat) | 10, 12, 14, 16, 18, 20, 22, 25 | VITA 16 + 4 Bleach (BL1–BL4) | Anterior estetik, lamina, tek kron, 14 üye tam ark köprü |
+| **ZirCrown 4D-ML** | 700 – 1000 MPa | %59 – %45 | 5 Katman / 9 Gradyan | 1530°C (2 Saat) | 10, 12, 14, 16, 18, 20, 22, 25 | VITA 16 + 4 Bleach | Anterior kron, 3–4 üyeli köprü, implant üstü protez |
+| **ZirCrown 3D-PRO** | 800 – 1200 MPa | %57 – %43 | 6 Katmanlı Hibrit Geçiş | 1500°C (2 Saat) | 10, 12, 14, 16, 18, 20, 22, 25 | VITA 16 + 4 Bleach | Lamina, inley/onley, anterior/posterior tam kontur köprü |
+| **ZirCrown 3D-ML** | 900 – 1200 MPa | %46 – %43 | 6 Katmanlı Multilayer | 1530°C (2 Saat) | 10, 12, 14, 16, 18, 20, 22, 25 | VITA 16 + 4 Bleach | Posterior ve tam ark fonksiyonel restorasyonlar |
+| **ZirCrown ST-ML** | 1200 MPa | %43 Homojen | Super Translucent Multilayer | 1530°C (2 Saat) | 10, 12, 14, 16, 18, 20, 22, 25 | VITA 16 + 4 Bleach | Tam anatomik posterior kron ve çok üyeli köprü |
+| **ZirCrown Hızlı Sinterleme 3D-PRO** | 800 – 1200 MPa | %43 Homojen | High Translucent Monolitik | 1530°C (2 Saat) | 10, 12, 14, 16, 18, 20, 22, 25 | Beyaz & Ön-Renkli (A1–D4) | Uzun gövdeli köprü altyapıları, koyu güdük maskeleme, bar |
+
+## 2. UZM Dental 2026 CAD/CAM PMMA Disk Serisi (Ø 98mm / Ø 95mm / AG)
+
+- **Bükülme Dayanımı (3-Nokta):** `≥ 100 MPa`
+- **Elastisite Modülü / Vickers Sertliği:** `≥ 2.400 MPa` / `≥ 21 HV`
+- **Yoğunluk / Kül Kalıntısı:** `1.19 g/cm³` / `< %0.03` (Döküm/pres için tam yanma)
+- **Seriler:** Monolayer PMMA (A1/A2/A3/B1/BL3/Pink), Multilayer PMMA, Clear Splint PMMA (Gece Plağı / Cerrahi Rehber), Opaque X-Ray PMMA (CBCT Radyoopak Tomografi Stenti).
+
+## 3. ISO 6877 Endodontik Obtürasyon & Kalibrasyon Matrisi (6 Ana Ürün Grubu)
+
+| SKU Kodu | Ürün Serisi & Koniklik | ISO Boyut / Kalibrasyon Aralığı | Fiziksel Özellik & Standart | Ambalaj Düzeni |
+|---|---|---|---|---|
+| **UZM-GP-0204** | Gutta Percha Konileri (.02 / .03 / .04 Taper) | #15–#40, #45–#80, #15–#80 | ISO 6877 · ±0.02mm Lazer Kalibre · ≥6.5 MPa · Radyoopak · Kadmiyumsuz | 120 Adet (.02) / 100 Adet (.03–.04) |
+| **UZM-GP-FXP** | Gutta Percha Konileri (F1–F5 / X1–X5 / Primary P) | F1–F5 · X1–X5 · Primary (P) | Değişken Taper Tek-Kon Obtürasyon · 28 mm (±0.5 mm) · ISO 6877 | 60 Adet / Renk Kodlu Kaset Kutu |
+| **UZM-PP-0206** | Steril Absorbent Paper Points (.02 / .04 / .06 Taper) | #15–#40, #45–#80 (.02/.04/.06) | %100 Uzun Lifli Saf Pamuk · Gama Steril · ≤3 sn Emiş · Bağlayıcısız | 200 Adet (.02) / 100 Adet (.04–.06) |
+| **UZM-PP-FXP** | Steril Absorbent Paper Points (F1–F5 / X1–X5 / P) | F1–F5 · X1–X5 · Medium (P) | Yüksek Kapiler Emiş · Şekillendirilmiş Kanal Geometrisine Birebir Uyum | 100 Adet / Steril Blister Kutu |
+| **UZM-GPC-140** | Gutta Percha Corrector (Kalibrasyon ve Ölçüm Cetveli) | ISO #20–#140 (18 Delik) + 30 mm Cetvel | 134°C–135°C Otoklavlanabilir · Korozyona Dayanıklı Metal Gövde | 1 Adet / Koruyucu Kutu |
+| **UZM-GPS-01** | Endodontik Gutta Percha Kalibrasyon ve Kesme Makası | Apikal Uç Sıfırlama & Koronal Kesim | Paslanmaz Çelik (AISI 420) · Koniyi Ezmeden Dik Açılı Kesim · 134°C Otoklav | 1 Adet / Sterilizasyon Poşetli |

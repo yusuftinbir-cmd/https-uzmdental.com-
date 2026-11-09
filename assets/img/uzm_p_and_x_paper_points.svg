@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="UZM Dental P Series &amp; X Series Absorbent Paper Points">
+  <rect width="640" height="420" rx="18" fill="#FAF8F5"/>
+  <rect x="16" y="16" width="608" height="388" rx="14" fill="#FFFFFF" stroke="#E6E1D8"/>
+  <rect x="40" y="56" width="268" height="308" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="174" y="92" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#141413">P SERİSİ (RECIPROC UYUMLU)</text>
+  <polygon points="106,125 118,125 114,315 110,315" fill="#EF4444"/>
+  <polygon points="168,125 180,125 176,315 172,315" fill="#141413"/>
+  <polygon points="230,125 242,125 238,315 234,315" fill="#FACC15"/>
+  <text x="174" y="342" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#475569">P25 (Kırmızı) · P40 (Siyah) · P50 (Sarı)</text>
+  <rect x="332" y="56" width="268" height="308" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="466" y="92" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#141413">X SERİSİ (PROTAPER NEXT UYUMLU)</text>
+  <polygon points="382,125 394,125 390,315 386,315" fill="#FACC15"/>
+  <polygon points="434,125 446,125 442,315 438,315" fill="#EF4444"/>
+  <polygon points="486,125 498,125 494,315 490,315" fill="#3B82F6"/>
+  <polygon points="538,125 550,125 546,315 542,315" fill="#22C55E"/>
+  <text x="466" y="342" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#475569">X1 · X2 · X3 · X4 · X5 (100 Adet)</text>
+</svg>

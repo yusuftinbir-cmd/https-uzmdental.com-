@@ -1,0 +1,131 @@
+/* ==========================================================================
+   3. MOBİL SÜRÜMÜ (<=768px · assets/uzm-mobil.css · S25 FE 412px & 375px Sıfır Taşma)
+   Tek parmakla ürün-altı açılır tırnaklar, sıfır yatay taşma, yapışkan WhatsApp B2B bar
+   ========================================================================== */
+@media (max-width: 768px) {
+  .uzm-cert-ribbon {
+    padding: 6px 12px;
+  }
+  .uzm-cert-ribbon-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .uzm-header-inner {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 14px;
+    gap: 10px;
+  }
+  .uzm-nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 6px;
+  }
+  .uzm-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .uzm-nav a {
+    min-height: 42px;
+    display: inline-flex;
+    align-items: center;
+    background: var(--bg-warm);
+    padding: 6px 11px;
+    font-size: 0.8rem;
+  }
+  .uzm-hero {
+    padding: 22px 14px;
+  }
+  .uzm-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .uzm-doc-grid {
+    grid-template-columns: 1fr;
+  }
+  .uzm-section {
+    padding: 24px 14px;
+  }
+  .uzm-section-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .uzm-product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .uzm-tab-btn {
+    min-height: 44px;
+    font-size: 0.75rem;
+  }
+  .uzm-swatch-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .uzm-sticky-wa-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 54px;
+    background: #141413;
+    color: #FAF8F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    z-index: 9990;
+    border-top: 1px solid #292524;
+  }
+  .uzm-sticky-wa-bar a {
+    background: #15803D;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 0.82rem;
+    padding: 9px 14px;
+    border-radius: 7px;
+    min-height: 42px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+
+/* GÖREV-2C: S25 FE (412x915) & <=768px Slide-Over Mobil Drawer (z-index: 9999) */
+@media (max-width: 768px) {
+  html, body { max-width: 100vw; overflow-x: hidden; }
+  body.uzm-drawer-open { overflow: hidden; }
+  .uzm-mobile-drawer, .uzm-sidebar-drawer, .baot-sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: min(86vw, 340px);
+    height: 100dvh;
+    z-index: 9999;
+    background: #ffffff;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transform: translateX(-100%);
+    transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow: 0 20px 50px rgba(10, 17, 40, 0.28);
+  }
+  .uzm-mobile-drawer.is-open, .uzm-sidebar-drawer.is-open, .baot-sidebar.is-open {
+    transform: translateX(0);
+  }
+  .uzm-drawer-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    background: rgba(10, 17, 40, 0.52);
+    backdrop-filter: blur(4px);
+  }
+  .uzm-drawer-close-btn {
+    min-width: 44px;
+    min-height: 44px;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

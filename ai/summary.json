@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://www.uzmdental.com/#business",
+      "name": "UZM Dental",
+      "description": "CAD/CAM Zirkonyum Blokları, PMMA ve Endodonti Sistemleri Üreticisi ve Distribütörü.",
+      "url": "https://www.uzmdental.com/"
+    }
+  ]
+}

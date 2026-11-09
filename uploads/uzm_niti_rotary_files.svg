@@ -37,4 +37,5 @@
     <rect x="486" y="90" width="24" height="22" fill="#22c55e" stroke="#94a3b8"/>
     <polygon points="492,112 504,112 500,340 496,340" fill="url(#blue)"/>
   </g>
+  <text x="400" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#64748b">Representative Illustration / Temsili Görsel</text>
 </svg>

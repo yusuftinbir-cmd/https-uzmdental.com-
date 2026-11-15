@@ -31,12 +31,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://uzmdental.com/blog/egri-kanallarda-cm-wire-niti-ve-iso-6877-gutta-percha-uyumu.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://uzmdental.com/blog/her-vaka-ayni-degildir-5d-4d-3d-pro-3d-ml-st-ml-karsilastirma.html</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -128,12 +122,6 @@
   </url>
   <url>
     <loc>https://uzmdental.com/en/blog/dental-depo-ve-bayilerle-is-birligi-nasil-isliyor.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uzmdental.com/en/blog/egri-kanallarda-cm-wire-niti-ve-iso-6877-gutta-percha-uyumu.html</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -313,12 +301,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://uzmdental.com/en/urun/niti-rotary-ege.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://uzmdental.com/en/urun/p-paper.html</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -391,31 +373,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://uzmdental.com/en/urun/zircrown-ht.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://uzmdental.com/en/urun/zircrown-st-ml.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://uzmdental.com/en/urun/zircrown-ut-c.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://uzmdental.com/en/urun/zircrown-ut-ml.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://uzmdental.com/en/urun/zircrown-ut.html</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -535,12 +493,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://uzmdental.com/urun/niti-rotary-ege.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://uzmdental.com/urun/p-paper.html</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -613,31 +565,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://uzmdental.com/urun/zircrown-ht.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://uzmdental.com/urun/zircrown-st-ml.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uzmdental.com/urun/zircrown-ut-c.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uzmdental.com/urun/zircrown-ut-ml.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uzmdental.com/urun/zircrown-ut.html</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -647,5 +575,17 @@
     <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://uzmdental.com/studyo-galeri.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://uzmdental.com/en/studyo-galeri.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 </urlset>
